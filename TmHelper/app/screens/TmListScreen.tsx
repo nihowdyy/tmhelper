@@ -1,7 +1,7 @@
 // screens/HomeScreen.tsx
 
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import tmData from '../../assets/json/PKMN-SV-TMS.json';
 
@@ -21,23 +21,25 @@ interface TMData {
 
 const data: TMData[] = tmData as TMData[];
 
-const HomeScreen = ({ navigation }: any) => {
-  const handlePress = (tm: TMData) => {
-    navigation.navigate('TMDetail', { tm });
-  };
+const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item: TMData) => void }) => (
+  <Pressable onPress={() => onPress(item)} style={styles.item}>
+    <Text style={styles.title}>TM {item.tm_info.number}: {item.tm_info.name}</Text>
+  </Pressable>
+));
 
-  const renderItem = ({ item }: { item: TMData }) => (
-    <TouchableOpacity onPress={() => handlePress(item)} style={styles.item}>
-      <Text style={styles.title}>TM {item.tm_info.number}: {item.tm_info.name}</Text>
-    </TouchableOpacity>
-  );
+const HomeScreen = ({ navigation }: any) => {
+  const handlePress = React.useCallback((tm: TMData) => {
+    navigation.navigate('TMDetail', { tm });
+  }, [navigation]);
 
   return (
     <View style={styles.container}>
       <FlatList
-        data={data}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.tm_info.number}
+      data={data}
+      renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
+      keyExtractor={(item) => item.tm_info.number}
+      initialNumToRender={10}
+      maxToRenderPerBatch={10}
       />
     </View>
   );
@@ -52,6 +54,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
+    pointerEvents: 'auto',
   },
   title: {
     fontSize: 18,
