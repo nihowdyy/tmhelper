@@ -2,10 +2,6 @@
   "expo": {
     "name": "TmHelper",
     "slug": "TmHelper",
-    "platforms": [
-      "android",
-      "web"
-    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -23,8 +19,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.nihowdy.TmHelper"
+      }
     },
     "web": {
       "bundler": "metro",
@@ -36,11 +31,6 @@
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "eas": {
-        "projectId": "ba854f3c-3bc0-465b-bc53-18084f06a7c4"
-      }
     }
   }
 }

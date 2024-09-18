@@ -51,11 +51,6 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  tmHeader: {
-    backgroundColor: 'transparent',
-    position: 'relative',
-    lineHeight: 0.5,
-  },
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',

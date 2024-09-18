@@ -1,15 +1,22 @@
-import { Text, View } from "react-native";
+// App.tsx
 
-export default function Index() {
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import TMListScreen from './screens/TmListScreen';
+import TMDetailScreen from './screens/TmDetailScreen';
+
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <NavigationContainer independent = {true}>
+      <Stack.Navigator initialRouteName="TMList">
+        <Stack.Screen name="TMList" component={TMListScreen} />
+        <Stack.Screen name="TMDetail" component={TMDetailScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default App;
