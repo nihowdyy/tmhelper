@@ -13,10 +13,12 @@
             "materials": [
                 {
                     "material_name": "Lechonk Hair",
+                    "pokemon_name": "Lechonk",
                     "quantity": 3
                 },
                 {
                     "material_name": "Yungoos Fur",
+                    "pokemon_name": "Yungoos",
                     "quantity": 3
                 }
             ],
@@ -43,10 +45,12 @@
             "materials": [
                 {
                     "material_name": "Azurill Fur",
+                    "pokemon_name": "Azurill",
                     "quantity": 3
                 },
                 {
                     "material_name": "Teddiursa Claw",
+                    "pokemon_name": "Teddiursa",
                     "quantity": 3
                 }
             ],
@@ -76,10 +80,12 @@
             "materials": [
                 {
                     "material_name": "Bonsly Tears",
+                    "pokemon_name": "Bonsly",
                     "quantity": 3
                 },
                 {
                     "material_name": "Teddiursa Claw",
+                    "pokemon_name": "Teddiursa",
                     "quantity": 3
                 }
             ],
@@ -108,10 +114,12 @@
             "materials": [
                 {
                     "material_name": "Fletchling Feather",
+                    "pokemon_name": "Fletchling",
                     "quantity": 3
                 },
                 {
                     "material_name": "Oricorio Feather",
+                    "pokemon_name": "Oricorio",
                     "quantity": 3
                 }
             ],
@@ -138,6 +146,7 @@
             "materials": [
                 {
                     "material_name": "Wooper Slime",
+                    "pokemon_name": "Wooper",
                     "quantity": 3
                 }
             ],
@@ -166,10 +175,12 @@
             "materials": [
                 {
                     "material_name": "Stantler Hair",
+                    "pokemon_name": "Stantler",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sandile Claw",
+                    "pokemon_name": "Sandile",
                     "quantity": 3
                 }
             ],
@@ -200,10 +211,12 @@
             "materials": [
                 {
                     "material_name": "Lechonk Hair",
+                    "pokemon_name": "Lechonk",
                     "quantity": 3
                 },
                 {
                     "material_name": "Scatterbug Powder",
+                    "pokemon_name": "Scatterbug",
                     "quantity": 3
                 }
             ],
@@ -230,6 +243,7 @@
             "materials": [
                 {
                     "material_name": "Houndour Fang",
+                    "pokemon_name": "Houndour",
                     "quantity": 3
                 }
             ],
@@ -257,6 +271,7 @@
             "materials": [
                 {
                     "material_name": "Shinx Fang",
+                    "pokemon_name": "Shinx",
                     "quantity": 3
                 }
             ],
@@ -284,6 +299,7 @@
             "materials": [
                 {
                     "material_name": "Cubchoo Fur",
+                    "pokemon_name": "Cubchoo",
                     "quantity": 3
                 }
             ],
@@ -313,10 +329,12 @@
             "materials": [
                 {
                     "material_name": "Buizel Fur",
+                    "pokemon_name": "Buizel",
                     "quantity": 3
                 },
                 {
                     "material_name": "Magikarp Scales",
+                    "pokemon_name": "Magikarp",
                     "quantity": 3
                 }
             ],
@@ -342,6 +360,7 @@
             "materials": [
                 {
                     "material_name": "Mankey Fur",
+                    "pokemon_name": "Mankey",
                     "quantity": 3
                 }
             ],
@@ -372,10 +391,12 @@
             "materials": [
                 {
                     "material_name": "Toxel Sparks",
+                    "pokemon_name": "Toxel",
                     "quantity": 3
                 },
                 {
                     "material_name": "Wooper Slime",
+                    "pokemon_name": "Wooper",
                     "quantity": 3
                 }
             ],
@@ -405,10 +426,12 @@
             "materials": [
                 {
                     "material_name": "Wattrel Feather",
+                    "pokemon_name": "Wattrel",
                     "quantity": 3
                 },
                 {
                     "material_name": "Bombirdier Feather",
+                    "pokemon_name": "Bombirdier",
                     "quantity": 3
                 }
             ],
@@ -434,6 +457,7 @@
             "materials": [
                 {
                     "material_name": "Tarountula Thread",
+                    "pokemon_name": "Tarountula",
                     "quantity": 3
                 }
             ],
@@ -460,6 +484,7 @@
             "materials": [
                 {
                     "material_name": "Psyduck Down",
+                    "pokemon_name": "Psyduck",
                     "quantity": 3
                 }
             ],
@@ -488,10 +513,12 @@
             "materials": [
                 {
                     "material_name": "Gastly Gas",
+                    "pokemon_name": "Gastly",
                     "quantity": 3
                 },
                 {
                     "material_name": "Mareep Wool",
+                    "pokemon_name": "Mareep",
                     "quantity": 3
                 }
             ],
@@ -520,10 +547,12 @@
             "materials": [
                 {
                     "material_name": "Houndour Fang",
+                    "pokemon_name": "Houndour",
                     "quantity": 3
                 },
                 {
                     "material_name": "Shroodle Ink",
+                    "pokemon_name": "Shroodle",
                     "quantity": 3
                 }
             ],
@@ -549,6 +578,7 @@
             "materials": [
                 {
                     "material_name": "Ralts Dust",
+                    "pokemon_name": "Ralts",
                     "quantity": 3
                 }
             ],
@@ -573,10 +603,12 @@
             "materials": [
                 {
                     "material_name": "Petilil Leaf",
+                    "pokemon_name": "Petilil",
                     "quantity": 3
                 },
                 {
                     "material_name": "Hoppip Leaf",
+                    "pokemon_name": "Hoppip",
                     "quantity": 3
                 }
             ],
@@ -601,10 +633,12 @@
             "materials": [
                 {
                     "material_name": "Nymble Claw",
+                    "pokemon_name": "Nymble",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tarountula Thread",
+                    "pokemon_name": "Tarountula",
                     "quantity": 3
                 }
             ],
@@ -630,10 +664,12 @@
             "materials": [
                 {
                     "material_name": "Psyduck Down",
+                    "pokemon_name": "Psyduck",
                     "quantity": 3
                 },
                 {
                     "material_name": "Surskit Syrup",
+                    "pokemon_name": "Surskit",
                     "quantity": 3
                 }
             ],
@@ -660,10 +696,12 @@
             "materials": [
                 {
                     "material_name": "Mareep Wool",
+                    "pokemon_name": "Mareep",
                     "quantity": 3
                 },
                 {
                     "material_name": "Dedenne Fur",
+                    "pokemon_name": "Dedenne",
                     "quantity": 3
                 }
             ],
@@ -694,10 +732,12 @@
             "materials": [
                 {
                     "material_name": "Growlithe Fur",
+                    "pokemon_name": "Growlithe",
                     "quantity": 3
                 },
                 {
                     "material_name": "Torkoal Coal",
+                    "pokemon_name": "Torkoal",
                     "quantity": 3
                 }
             ],
@@ -722,14 +762,17 @@
             "materials": [
                 {
                     "material_name": "Komala Claw",
+                    "pokemon_name": "Komala",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tinkatink Hair",
+                    "pokemon_name": "Tinkatink",
                     "quantity": 3
                 },
                 {
                     "material_name": "Stantler Hair",
+                    "pokemon_name": "Stantler",
                     "quantity": 3
                 }
             ],
@@ -758,10 +801,12 @@
             "materials": [
                 {
                     "material_name": "Seviper Fang",
+                    "pokemon_name": "Seviper",
                     "quantity": 3
                 },
                 {
                     "material_name": "Shroodle Ink",
+                    "pokemon_name": "Shroodle",
                     "quantity": 3
                 }
             ],
@@ -788,10 +833,12 @@
             "materials": [
                 {
                     "material_name": "Starly Feather",
+                    "pokemon_name": "Starly",
                     "quantity": 3
                 },
                 {
                     "material_name": "Fletchling Feather",
+                    "pokemon_name": "Fletchling",
                     "quantity": 3
                 }
             ],
@@ -820,10 +867,12 @@
             "materials": [
                 {
                     "material_name": "Mudbray Mud",
+                    "pokemon_name": "Mudbray",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sandygast Sand",
+                    "pokemon_name": "Sandygast",
                     "quantity": 3
                 }
             ],
@@ -854,10 +903,12 @@
             "materials": [
                 {
                     "material_name": "Mimikyu Scrap",
+                    "pokemon_name": "Mimikyu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Greavard Wax",
+                    "pokemon_name": "Greavard",
                     "quantity": 3
                 }
             ],
@@ -888,10 +939,12 @@
             "materials": [
                 {
                     "material_name": "Maschiff Fang",
+                    "pokemon_name": "Maschiff",
                     "quantity": 3
                 },
                 {
                     "material_name": "Squawkabilly Feather",
+                    "pokemon_name": "Squawkabilly",
                     "quantity": 3
                 }
             ],
@@ -919,6 +972,7 @@
             "materials": [
                 {
                     "material_name": "Teddiursa Claw",
+                    "pokemon_name": "Teddiursa",
                     "quantity": 3
                 }
             ],
@@ -947,6 +1001,7 @@
             "materials": [
                 {
                     "material_name": "Fletchling Feather",
+                    "pokemon_name": "Fletchling",
                     "quantity": 3
                 }
             ],
@@ -975,10 +1030,12 @@
             "materials": [
                 {
                     "material_name": "Smoliv Oil",
+                    "pokemon_name": "Smoliv",
                     "quantity": 3
                 },
                 {
                     "material_name": "Petilil Leaf",
+                    "pokemon_name": "Petilil",
                     "quantity": 3
                 }
             ],
@@ -1009,10 +1066,12 @@
             "materials": [
                 {
                     "material_name": "Snom Thread",
+                    "pokemon_name": "Snom",
                     "quantity": 3
                 },
                 {
                     "material_name": "Snover Berries",
+                    "pokemon_name": "Snover",
                     "quantity": 3
                 }
             ],
@@ -1042,10 +1101,12 @@
             "materials": [
                 {
                     "material_name": "Sandile Claw",
+                    "pokemon_name": "Sandile",
                     "quantity": 3
                 },
                 {
                     "material_name": "Wooper Slime",
+                    "pokemon_name": "Wooper",
                     "quantity": 3
                 }
             ],
@@ -1073,10 +1134,12 @@
             "materials": [
                 {
                     "material_name": "Rockruff Rock",
+                    "pokemon_name": "Rockruff",
                     "quantity": 3
                 },
                 {
                     "material_name": "Klawf Claw",
+                    "pokemon_name": "Klawf",
                     "quantity": 3
                 }
             ],
@@ -1104,10 +1167,12 @@
             "materials": [
                 {
                     "material_name": "Igglybuff Fluff",
+                    "pokemon_name": "Igglybuff",
                     "quantity": 3
                 },
                 {
                     "material_name": "Flab\u00c3\u00a9b\u00c3\u00a9 Pollen",
+                    "pokemon_name": "Flab\u00c3\u00a9b\u00c3\u00a9",
                     "quantity": 3
                 }
             ],
@@ -1134,10 +1199,12 @@
             "materials": [
                 {
                     "material_name": "Fletchling Feather",
+                    "pokemon_name": "Fletchling",
                     "quantity": 3
                 },
                 {
                     "material_name": "Torkoal Coal",
+                    "pokemon_name": "Torkoal",
                     "quantity": 3
                 }
             ],
@@ -1165,10 +1232,12 @@
             "materials": [
                 {
                     "material_name": "Croagunk Poison",
+                    "pokemon_name": "Croagunk",
                     "quantity": 3
                 },
                 {
                     "material_name": "Mankey Fur",
+                    "pokemon_name": "Mankey",
                     "quantity": 3
                 }
             ],
@@ -1198,6 +1267,7 @@
             "materials": [
                 {
                     "material_name": "Combee Honey",
+                    "pokemon_name": "Combee",
                     "quantity": 3
                 }
             ],
@@ -1230,10 +1300,12 @@
             "materials": [
                 {
                     "material_name": "Gothita Eyelash",
+                    "pokemon_name": "Gothita",
                     "quantity": 3
                 },
                 {
                     "material_name": "Ralts Dust",
+                    "pokemon_name": "Ralts",
                     "quantity": 3
                 }
             ],
@@ -1262,10 +1334,12 @@
             "materials": [
                 {
                     "material_name": "Gastly Gas",
+                    "pokemon_name": "Gastly",
                     "quantity": 3
                 },
                 {
                     "material_name": "Murkrow Bauble",
+                    "pokemon_name": "Murkrow",
                     "quantity": 3
                 }
             ],
@@ -1294,10 +1368,12 @@
             "materials": [
                 {
                     "material_name": "Sneasel Claw",
+                    "pokemon_name": "Sneasel",
                     "quantity": 3
                 },
                 {
                     "material_name": "Happiny Dust",
+                    "pokemon_name": "Happiny",
                     "quantity": 3
                 }
             ],
@@ -1327,10 +1403,12 @@
             "materials": [
                 {
                     "material_name": "Dratini Scales",
+                    "pokemon_name": "Dratini",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sandile Claw",
+                    "pokemon_name": "Sandile",
                     "quantity": 3
                 }
             ],
@@ -1358,10 +1436,12 @@
             "materials": [
                 {
                     "material_name": "Toxel Sparks",
+                    "pokemon_name": "Toxel",
                     "quantity": 3
                 },
                 {
                     "material_name": "Salandit Gas",
+                    "pokemon_name": "Salandit",
                     "quantity": 3
                 }
             ],
@@ -1387,10 +1467,12 @@
             "materials": [
                 {
                     "material_name": "Bergmite Ice",
+                    "pokemon_name": "Bergmite",
                     "quantity": 3
                 },
                 {
                     "material_name": "Snorunt Fur",
+                    "pokemon_name": "Snorunt",
                     "quantity": 3
                 }
             ],
@@ -1418,6 +1500,7 @@
             "materials": [
                 {
                     "material_name": "Scatterbug Powder",
+                    "pokemon_name": "Scatterbug",
                     "quantity": 3
                 }
             ],
@@ -1442,10 +1525,12 @@
             "materials": [
                 {
                     "material_name": "Dedenne Fur",
+                    "pokemon_name": "Dedenne",
                     "quantity": 3
                 },
                 {
                     "material_name": "Shinx Fang",
+                    "pokemon_name": "Shinx",
                     "quantity": 3
                 }
             ],
@@ -1473,14 +1558,17 @@
             "materials": [
                 {
                     "material_name": "Sunkern Leaf",
+                    "pokemon_name": "Sunkern",
                     "quantity": 3
                 },
                 {
                     "material_name": "Torkoal Coal",
+                    "pokemon_name": "Torkoal",
                     "quantity": 3
                 },
                 {
                     "material_name": "Litleo Tuft",
+                    "pokemon_name": "Litleo",
                     "quantity": 3
                 }
             ],
@@ -1509,14 +1597,17 @@
             "materials": [
                 {
                     "material_name": "Shellos Mucus",
+                    "pokemon_name": "Shellos",
                     "quantity": 3
                 },
                 {
                     "material_name": "Azurill Fur",
+                    "pokemon_name": "Azurill",
                     "quantity": 3
                 },
                 {
                     "material_name": "Wattrel Feather",
+                    "pokemon_name": "Wattrel",
                     "quantity": 3
                 }
             ],
@@ -1544,14 +1635,17 @@
             "materials": [
                 {
                     "material_name": "Hippopotas Sand",
+                    "pokemon_name": "Hippopotas",
                     "quantity": 3
                 },
                 {
                     "material_name": "Silicobra Sand",
+                    "pokemon_name": "Silicobra",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sandygast Sand",
+                    "pokemon_name": "Sandygast",
                     "quantity": 3
                 }
             ],
@@ -1579,14 +1673,17 @@
             "materials": [
                 {
                     "material_name": "Snover Berries",
+                    "pokemon_name": "Snover",
                     "quantity": 3
                 },
                 {
                     "material_name": "Delibird Parcel",
+                    "pokemon_name": "Delibird",
                     "quantity": 3
                 },
                 {
                     "material_name": "Snom Thread",
+                    "pokemon_name": "Snom",
                     "quantity": 3
                 }
             ],
@@ -1614,10 +1711,12 @@
             "materials": [
                 {
                     "material_name": "Chewtle Claw",
+                    "pokemon_name": "Chewtle",
                     "quantity": 3
                 },
                 {
                     "material_name": "Heracross Claw",
+                    "pokemon_name": "Heracross",
                     "quantity": 3
                 }
             ],
@@ -1645,14 +1744,17 @@
             "materials": [
                 {
                     "material_name": "Meditite Sweat",
+                    "pokemon_name": "Meditite",
                     "quantity": 3
                 },
                 {
                     "material_name": "Spoink Pearl",
+                    "pokemon_name": "Spoink",
                     "quantity": 3
                 },
                 {
                     "material_name": "Drowzee Fur",
+                    "pokemon_name": "Drowzee",
                     "quantity": 3
                 }
             ],
@@ -1680,14 +1782,17 @@
             "materials": [
                 {
                     "material_name": "Diglett Dirt",
+                    "pokemon_name": "Diglett",
                     "quantity": 3
                 },
                 {
                     "material_name": "Greavard Wax",
+                    "pokemon_name": "Greavard",
                     "quantity": 3
                 },
                 {
                     "material_name": "Orthworm Tarnish",
+                    "pokemon_name": "Orthworm",
                     "quantity": 3
                 }
             ],
@@ -1719,10 +1824,12 @@
             "materials": [
                 {
                     "material_name": "Sunkern Leaf",
+                    "pokemon_name": "Sunkern",
                     "quantity": 3
                 },
                 {
                     "material_name": "Hoppip Leaf",
+                    "pokemon_name": "Hoppip",
                     "quantity": 3
                 }
             ],
@@ -1747,10 +1854,12 @@
             "materials": [
                 {
                     "material_name": "Kricketot Shell",
+                    "pokemon_name": "Kricketot",
                     "quantity": 3
                 },
                 {
                     "material_name": "Chewtle Claw",
+                    "pokemon_name": "Chewtle",
                     "quantity": 3
                 }
             ],
@@ -1780,14 +1889,17 @@
             "materials": [
                 {
                     "material_name": "Makuhita Sweat",
+                    "pokemon_name": "Makuhita",
                     "quantity": 3
                 },
                 {
                     "material_name": "Hawlucha Down",
+                    "pokemon_name": "Hawlucha",
                     "quantity": 3
                 },
                 {
                     "material_name": "Crabrawler Shell",
+                    "pokemon_name": "Crabrawler",
                     "quantity": 3
                 }
             ],
@@ -1815,14 +1927,17 @@
             "materials": [
                 {
                     "material_name": "Veluza Fillet",
+                    "pokemon_name": "Veluza",
                     "quantity": 3
                 },
                 {
                     "material_name": "Girafarig Fur",
+                    "pokemon_name": "Girafarig",
                     "quantity": 3
                 },
                 {
                     "material_name": "Dunsparce Scales",
+                    "pokemon_name": "Dunsparce",
                     "quantity": 3
                 }
             ],
@@ -1853,10 +1968,12 @@
             "materials": [
                 {
                     "material_name": "Nymble Claw",
+                    "pokemon_name": "Nymble",
                     "quantity": 3
                 },
                 {
                     "material_name": "Scyther Claw",
+                    "pokemon_name": "Scyther",
                     "quantity": 3
                 }
             ],
@@ -1884,10 +2001,12 @@
             "materials": [
                 {
                     "material_name": "Mimikyu Scrap",
+                    "pokemon_name": "Mimikyu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Komala Claw",
+                    "pokemon_name": "Komala",
                     "quantity": 3
                 }
             ],
@@ -1914,10 +2033,12 @@
             "materials": [
                 {
                     "material_name": "Murkrow Bauble",
+                    "pokemon_name": "Murkrow",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sandile Claw",
+                    "pokemon_name": "Sandile",
                     "quantity": 3
                 }
             ],
@@ -1948,14 +2069,17 @@
             "materials": [
                 {
                     "material_name": "Bruxish Tooth",
+                    "pokemon_name": "Bruxish",
                     "quantity": 5
                 },
                 {
                     "material_name": "Basculin Fang",
+                    "pokemon_name": "Basculin",
                     "quantity": 3
                 },
                 {
                     "material_name": "Veluza Fillet",
+                    "pokemon_name": "Veluza",
                     "quantity": 3
                 }
             ],
@@ -1986,10 +2110,12 @@
             "materials": [
                 {
                     "material_name": "Makuhita Sweat",
+                    "pokemon_name": "Makuhita",
                     "quantity": 3
                 },
                 {
                     "material_name": "Axew Scales",
+                    "pokemon_name": "Axew",
                     "quantity": 3
                 }
             ],
@@ -2018,14 +2144,17 @@
             "materials": [
                 {
                     "material_name": "Noibat Fur",
+                    "pokemon_name": "Noibat",
                     "quantity": 3
                 },
                 {
                     "material_name": "Wingull Feather",
+                    "pokemon_name": "Wingull",
                     "quantity": 3
                 },
                 {
                     "material_name": "Flamigo Down",
+                    "pokemon_name": "Flamigo",
                     "quantity": 3
                 }
             ],
@@ -2053,14 +2182,17 @@
             "materials": [
                 {
                     "material_name": "Skwovet Fur",
+                    "pokemon_name": "Skwovet",
                     "quantity": 3
                 },
                 {
                     "material_name": "Alomomola Mucus",
+                    "pokemon_name": "Alomomola",
                     "quantity": 3
                 },
                 {
                     "material_name": "Chewtle Claw",
+                    "pokemon_name": "Chewtle",
                     "quantity": 3
                 }
             ],
@@ -2087,10 +2219,12 @@
             "materials": [
                 {
                     "material_name": "Meditite Sweat",
+                    "pokemon_name": "Meditite",
                     "quantity": 3
                 },
                 {
                     "material_name": "Charcadet Soot",
+                    "pokemon_name": "Charcadet",
                     "quantity": 3
                 }
             ],
@@ -2117,10 +2251,12 @@
             "materials": [
                 {
                     "material_name": "Toxel Sparks",
+                    "pokemon_name": "Toxel",
                     "quantity": 3
                 },
                 {
                     "material_name": "Meditite Sweat",
+                    "pokemon_name": "Meditite",
                     "quantity": 3
                 }
             ],
@@ -2147,10 +2283,12 @@
             "materials": [
                 {
                     "material_name": "Cubchoo Fur",
+                    "pokemon_name": "Cubchoo",
                     "quantity": 3
                 },
                 {
                     "material_name": "Meditite Sweat",
+                    "pokemon_name": "Meditite",
                     "quantity": 3
                 }
             ],
@@ -2178,10 +2316,12 @@
             "materials": [
                 {
                     "material_name": "Hippopotas Sand",
+                    "pokemon_name": "Hippopotas",
                     "quantity": 3
                 },
                 {
                     "material_name": "Slowpoke Claw",
+                    "pokemon_name": "Slowpoke",
                     "quantity": 3
                 }
             ],
@@ -2211,14 +2351,17 @@
             "materials": [
                 {
                     "material_name": "Shroomish Spores",
+                    "pokemon_name": "Shroomish",
                     "quantity": 5
                 },
                 {
                     "material_name": "Bramblin Twig",
+                    "pokemon_name": "Bramblin",
                     "quantity": 3
                 },
                 {
                     "material_name": "Smoliv Oil",
+                    "pokemon_name": "Smoliv",
                     "quantity": 3
                 }
             ],
@@ -2249,14 +2392,17 @@
             "materials": [
                 {
                     "material_name": "Pachirisu Fur",
+                    "pokemon_name": "Pachirisu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Voltorb Sparks",
+                    "pokemon_name": "Voltorb",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tadbulb Mucus",
+                    "pokemon_name": "Tadbulb",
                     "quantity": 3
                 }
             ],
@@ -2284,14 +2430,17 @@
             "materials": [
                 {
                     "material_name": "Croagunk Poison",
+                    "pokemon_name": "Croagunk",
                     "quantity": 5
                 },
                 {
                     "material_name": "Mankey Fur",
+                    "pokemon_name": "Mankey",
                     "quantity": 3
                 },
                 {
                     "material_name": "Crabrawler Shell",
+                    "pokemon_name": "Crabrawler",
                     "quantity": 3
                 }
             ],
@@ -2323,10 +2472,12 @@
             "materials": [
                 {
                     "material_name": "Drowzee Fur",
+                    "pokemon_name": "Drowzee",
                     "quantity": 3
                 },
                 {
                     "material_name": "Flittle Down",
+                    "pokemon_name": "Flittle",
                     "quantity": 3
                 }
             ],
@@ -2358,10 +2509,12 @@
             "materials": [
                 {
                     "material_name": "Magnemite Screw",
+                    "pokemon_name": "Magnemite",
                     "quantity": 3
                 },
                 {
                     "material_name": "Voltorb Sparks",
+                    "pokemon_name": "Voltorb",
                     "quantity": 3
                 }
             ],
@@ -2389,10 +2542,12 @@
             "materials": [
                 {
                     "material_name": "Nacli Salt",
+                    "pokemon_name": "Nacli",
                     "quantity": 3
                 },
                 {
                     "material_name": "Chewtle Claw",
+                    "pokemon_name": "Chewtle",
                     "quantity": 3
                 }
             ],
@@ -2421,14 +2576,17 @@
             "materials": [
                 {
                     "material_name": "Magikarp Scales",
+                    "pokemon_name": "Magikarp",
                     "quantity": 5
                 },
                 {
                     "material_name": "Basculin Fang",
+                    "pokemon_name": "Basculin",
                     "quantity": 3
                 },
                 {
                     "material_name": "Arrokuda Scales",
+                    "pokemon_name": "Arrokuda",
                     "quantity": 3
                 }
             ],
@@ -2458,14 +2616,17 @@
             "materials": [
                 {
                     "material_name": "Axew Scales",
+                    "pokemon_name": "Axew",
                     "quantity": 5
                 },
                 {
                     "material_name": "Noibat Fur",
+                    "pokemon_name": "Noibat",
                     "quantity": 3
                 },
                 {
                     "material_name": "Gible Scales",
+                    "pokemon_name": "Gible",
                     "quantity": 3
                 }
             ],
@@ -2492,14 +2653,17 @@
             "materials": [
                 {
                     "material_name": "Hatenna Dust",
+                    "pokemon_name": "Hatenna",
                     "quantity": 3
                 },
                 {
                     "material_name": "Swablu Fluff",
+                    "pokemon_name": "Swablu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Fidough Fur",
+                    "pokemon_name": "Fidough",
                     "quantity": 3
                 }
             ],
@@ -2527,10 +2691,12 @@
             "materials": [
                 {
                     "material_name": "Igglybuff Fluff",
+                    "pokemon_name": "Igglybuff",
                     "quantity": 3
                 },
                 {
                     "material_name": "Happiny Dust",
+                    "pokemon_name": "Happiny",
                     "quantity": 3
                 }
             ],
@@ -2562,10 +2728,12 @@
             "materials": [
                 {
                     "material_name": "Cacnea Needle",
+                    "pokemon_name": "Cacnea",
                     "quantity": 3
                 },
                 {
                     "material_name": "Shroomish Spores",
+                    "pokemon_name": "Shroomish",
                     "quantity": 3
                 }
             ],
@@ -2592,10 +2760,12 @@
             "materials": [
                 {
                     "material_name": "Mareep Wool",
+                    "pokemon_name": "Mareep",
                     "quantity": 3
                 },
                 {
                     "material_name": "Pawmi Fur",
+                    "pokemon_name": "Pawmi",
                     "quantity": 3
                 }
             ],
@@ -2624,14 +2794,17 @@
             "materials": [
                 {
                     "material_name": "Shroodle Ink",
+                    "pokemon_name": "Shroodle",
                     "quantity": 3
                 },
                 {
                     "material_name": "Seviper Fang",
+                    "pokemon_name": "Seviper",
                     "quantity": 3
                 },
                 {
                     "material_name": "Mareanie Spike",
+                    "pokemon_name": "Mareanie",
                     "quantity": 3
                 }
             ],
@@ -2658,10 +2831,12 @@
             "materials": [
                 {
                     "material_name": "Mudbray Mud",
+                    "pokemon_name": "Mudbray",
                     "quantity": 3
                 },
                 {
                     "material_name": "Phanpy Nail",
+                    "pokemon_name": "Phanpy",
                     "quantity": 3
                 }
             ],
@@ -2690,6 +2865,7 @@
             "materials": [
                 {
                     "material_name": "Drowzee Fur",
+                    "pokemon_name": "Drowzee",
                     "quantity": 3
                 }
             ],
@@ -2719,14 +2895,17 @@
             "materials": [
                 {
                     "material_name": "Nacli Salt",
+                    "pokemon_name": "Nacli",
                     "quantity": 3
                 },
                 {
                     "material_name": "Rockruff Rock",
+                    "pokemon_name": "Rockruff",
                     "quantity": 3
                 },
                 {
                     "material_name": "Bonsly Tears",
+                    "pokemon_name": "Bonsly",
                     "quantity": 3
                 }
             ],
@@ -2758,14 +2937,17 @@
             "materials": [
                 {
                     "material_name": "Meowth Fur",
+                    "pokemon_name": "Meowth",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sableye Gem",
+                    "pokemon_name": "Sableye",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sneasel Claw",
+                    "pokemon_name": "Sneasel",
                     "quantity": 3
                 }
             ],
@@ -2796,14 +2978,17 @@
             "materials": [
                 {
                     "material_name": "Zangoose Claw",
+                    "pokemon_name": "Zangoose",
                     "quantity": 3
                 },
                 {
                     "material_name": "Gible Scales",
+                    "pokemon_name": "Gible",
                     "quantity": 3
                 },
                 {
                     "material_name": "Scyther Claw",
+                    "pokemon_name": "Scyther",
                     "quantity": 3
                 }
             ],
@@ -2836,14 +3021,17 @@
             "materials": [
                 {
                     "material_name": "Cetoddle Grease",
+                    "pokemon_name": "Cetoddle",
                     "quantity": 5
                 },
                 {
                     "material_name": "Hawlucha Down",
+                    "pokemon_name": "Hawlucha",
                     "quantity": 3
                 },
                 {
                     "material_name": "Pawniard Blade",
+                    "pokemon_name": "Pawniard",
                     "quantity": 3
                 }
             ],
@@ -2871,10 +3059,12 @@
             "materials": [
                 {
                     "material_name": "Pincurchin Spines",
+                    "pokemon_name": "Pincurchin",
                     "quantity": 3
                 },
                 {
                     "material_name": "Qwilfish Spines",
+                    "pokemon_name": "Qwilfish",
                     "quantity": 3
                 }
             ],
@@ -2901,10 +3091,12 @@
             "materials": [
                 {
                     "material_name": "Mareanie Spike",
+                    "pokemon_name": "Mareanie",
                     "quantity": 3
                 },
                 {
                     "material_name": "Pineco Husk",
+                    "pokemon_name": "Pineco",
                     "quantity": 3
                 }
             ],
@@ -2932,10 +3124,12 @@
             "materials": [
                 {
                     "material_name": "Bronzor Fragment",
+                    "pokemon_name": "Bronzor",
                     "quantity": 3
                 },
                 {
                     "material_name": "Zorua Fur",
+                    "pokemon_name": "Zorua",
                     "quantity": 3
                 }
             ],
@@ -2966,14 +3160,17 @@
             "materials": [
                 {
                     "material_name": "Varoom Fume",
+                    "pokemon_name": "Varoom",
                     "quantity": 3
                 },
                 {
                     "material_name": "Klefki Key",
+                    "pokemon_name": "Klefki",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tinkatink Hair",
+                    "pokemon_name": "Tinkatink",
                     "quantity": 3
                 }
             ],
@@ -3003,14 +3200,17 @@
             "materials": [
                 {
                     "material_name": "Zorua Fur",
+                    "pokemon_name": "Zorua",
                     "quantity": 3
                 },
                 {
                     "material_name": "Impidimp Hair",
+                    "pokemon_name": "Impidimp",
                     "quantity": 3
                 },
                 {
                     "material_name": "Spiritomb Fragment",
+                    "pokemon_name": "Spiritomb",
                     "quantity": 3
                 }
             ],
@@ -3039,14 +3239,17 @@
             "materials": [
                 {
                     "material_name": "Surskit Syrup",
+                    "pokemon_name": "Surskit",
                     "quantity": 3
                 },
                 {
                     "material_name": "Venonat Fang",
+                    "pokemon_name": "Venonat",
                     "quantity": 3
                 },
                 {
                     "material_name": "Kricketot Shell",
+                    "pokemon_name": "Kricketot",
                     "quantity": 3
                 }
             ],
@@ -3073,10 +3276,12 @@
             "materials": [
                 {
                     "material_name": "Voltorb Sparks",
+                    "pokemon_name": "Voltorb",
                     "quantity": 3
                 },
                 {
                     "material_name": "Shinx Fang",
+                    "pokemon_name": "Shinx",
                     "quantity": 3
                 }
             ],
@@ -3106,14 +3311,17 @@
             "materials": [
                 {
                     "material_name": "Squawkabilly Feather",
+                    "pokemon_name": "Squawkabilly",
                     "quantity": 3
                 },
                 {
                     "material_name": "Bombirdier Feather",
+                    "pokemon_name": "Bombirdier",
                     "quantity": 3
                 },
                 {
                     "material_name": "Rufflet Feather",
+                    "pokemon_name": "Rufflet",
                     "quantity": 3
                 }
             ],
@@ -3141,10 +3349,12 @@
             "materials": [
                 {
                     "material_name": "Girafarig Fur",
+                    "pokemon_name": "Girafarig",
                     "quantity": 3
                 },
                 {
                     "material_name": "Flittle Down",
+                    "pokemon_name": "Flittle",
                     "quantity": 3
                 }
             ],
@@ -3174,14 +3384,17 @@
             "materials": [
                 {
                     "material_name": "Cufant Tarnish",
+                    "pokemon_name": "Cufant",
                     "quantity": 5
                 },
                 {
                     "material_name": "Pawniard Blade",
+                    "pokemon_name": "Pawniard",
                     "quantity": 3
                 },
                 {
                     "material_name": "Rookidee Feather",
+                    "pokemon_name": "Rookidee",
                     "quantity": 3
                 }
             ],
@@ -3212,14 +3425,17 @@
             "materials": [
                 {
                     "material_name": "Tatsugiri Scales",
+                    "pokemon_name": "Tatsugiri",
                     "quantity": 3
                 },
                 {
                     "material_name": "Gible Scales",
+                    "pokemon_name": "Gible",
                     "quantity": 3
                 },
                 {
                     "material_name": "Noibat Fur",
+                    "pokemon_name": "Noibat",
                     "quantity": 3
                 }
             ],
@@ -3249,14 +3465,17 @@
             "materials": [
                 {
                     "material_name": "Spoink Pearl",
+                    "pokemon_name": "Spoink",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sableye Gem",
+                    "pokemon_name": "Sableye",
                     "quantity": 3
                 },
                 {
                     "material_name": "Mareep Wool",
+                    "pokemon_name": "Mareep",
                     "quantity": 3
                 }
             ],
@@ -3282,14 +3501,17 @@
             "materials": [
                 {
                     "material_name": "Grimer Toxin",
+                    "pokemon_name": "Grimer",
                     "quantity": 3
                 },
                 {
                     "material_name": "Croagunk Poison",
+                    "pokemon_name": "Croagunk",
                     "quantity": 3
                 },
                 {
                     "material_name": "Varoom Fume",
+                    "pokemon_name": "Varoom",
                     "quantity": 3
                 }
             ],
@@ -3319,14 +3541,17 @@
             "materials": [
                 {
                     "material_name": "Mimikyu Scrap",
+                    "pokemon_name": "Mimikyu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Azurill Fur",
+                    "pokemon_name": "Azurill",
                     "quantity": 3
                 },
                 {
                     "material_name": "Falinks Sweat",
+                    "pokemon_name": "Falinks",
                     "quantity": 3
                 }
             ],
@@ -3358,10 +3583,12 @@
             "materials": [
                 {
                     "material_name": "Bronzor Fragment",
+                    "pokemon_name": "Bronzor",
                     "quantity": 3
                 },
                 {
                     "material_name": "Pineco Husk",
+                    "pokemon_name": "Pineco",
                     "quantity": 3
                 }
             ],
@@ -3391,14 +3618,17 @@
             "materials": [
                 {
                     "material_name": "Fomantis Leaf",
+                    "pokemon_name": "Fomantis",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tarountula Thread",
+                    "pokemon_name": "Tarountula",
                     "quantity": 3
                 },
                 {
                     "material_name": "Kricketot Shell",
+                    "pokemon_name": "Kricketot",
                     "quantity": 3
                 }
             ],
@@ -3427,14 +3657,17 @@
             "materials": [
                 {
                     "material_name": "Pineco Husk",
+                    "pokemon_name": "Pineco",
                     "quantity": 5
                 },
                 {
                     "material_name": "Dunsparce Scales",
+                    "pokemon_name": "Dunsparce",
                     "quantity": 3
                 },
                 {
                     "material_name": "Arrokuda Scales",
+                    "pokemon_name": "Arrokuda",
                     "quantity": 3
                 }
             ],
@@ -3464,10 +3697,12 @@
             "materials": [
                 {
                     "material_name": "Salandit Gas",
+                    "pokemon_name": "Salandit",
                     "quantity": 3
                 },
                 {
                     "material_name": "Shuppet Scrap",
+                    "pokemon_name": "Shuppet",
                     "quantity": 3
                 }
             ],
@@ -3497,14 +3732,17 @@
             "materials": [
                 {
                     "material_name": "Maschiff Fang",
+                    "pokemon_name": "Maschiff",
                     "quantity": 5
                 },
                 {
                     "material_name": "Bruxish Tooth",
+                    "pokemon_name": "Bruxish",
                     "quantity": 3
                 },
                 {
                     "material_name": "Yungoos Fur",
+                    "pokemon_name": "Yungoos",
                     "quantity": 3
                 }
             ],
@@ -3534,14 +3772,17 @@
             "materials": [
                 {
                     "material_name": "Shuppet Scrap",
+                    "pokemon_name": "Shuppet",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sableye Gem",
+                    "pokemon_name": "Sableye",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sinistea Chip",
+                    "pokemon_name": "Sinistea",
                     "quantity": 3
                 }
             ],
@@ -3572,14 +3813,17 @@
             "materials": [
                 {
                     "material_name": "Arrokuda Scales",
+                    "pokemon_name": "Arrokuda",
                     "quantity": 5
                 },
                 {
                     "material_name": "Wiglett Sand",
+                    "pokemon_name": "Wiglett",
                     "quantity": 3
                 },
                 {
                     "material_name": "Buizel Fur",
+                    "pokemon_name": "Buizel",
                     "quantity": 3
                 }
             ],
@@ -3610,14 +3854,17 @@
             "materials": [
                 {
                     "material_name": "Capsakid Seed",
+                    "pokemon_name": "Capsakid",
                     "quantity": 5
                 },
                 {
                     "material_name": "Hoppip Leaf",
+                    "pokemon_name": "Hoppip",
                     "quantity": 3
                 },
                 {
                     "material_name": "Skiddo Leaf",
+                    "pokemon_name": "Skiddo",
                     "quantity": 3
                 }
             ],
@@ -3650,14 +3897,17 @@
             "materials": [
                 {
                     "material_name": "Ralts Dust",
+                    "pokemon_name": "Ralts",
                     "quantity": 5
                 },
                 {
                     "material_name": "Riolu Fur",
+                    "pokemon_name": "Riolu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Charcadet Soot",
+                    "pokemon_name": "Charcadet",
                     "quantity": 3
                 }
             ],
@@ -3688,14 +3938,17 @@
             "materials": [
                 {
                     "material_name": "Rufflet Feather",
+                    "pokemon_name": "Rufflet",
                     "quantity": 3
                 },
                 {
                     "material_name": "Rookidee Feather",
+                    "pokemon_name": "Rookidee",
                     "quantity": 3
                 },
                 {
                     "material_name": "Bombirdier Feather",
+                    "pokemon_name": "Bombirdier",
                     "quantity": 3
                 }
             ],
@@ -3721,14 +3974,17 @@
             "materials": [
                 {
                     "material_name": "Gastly Gas",
+                    "pokemon_name": "Gastly",
                     "quantity": 5
                 },
                 {
                     "material_name": "Sandygast Sand",
+                    "pokemon_name": "Sandygast",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sinistea Chip",
+                    "pokemon_name": "Sinistea",
                     "quantity": 3
                 }
             ],
@@ -3759,14 +4015,17 @@
             "materials": [
                 {
                     "material_name": "Goomy Goo",
+                    "pokemon_name": "Goomy",
                     "quantity": 5
                 },
                 {
                     "material_name": "Swablu Fluff",
+                    "pokemon_name": "Swablu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tatsugiri Scales",
+                    "pokemon_name": "Tatsugiri",
                     "quantity": 3
                 }
             ],
@@ -3794,10 +4053,12 @@
             "materials": [
                 {
                     "material_name": "Rolycoly Coal",
+                    "pokemon_name": "Rolycoly",
                     "quantity": 3
                 },
                 {
                     "material_name": "Rockruff Rock",
+                    "pokemon_name": "Rockruff",
                     "quantity": 3
                 }
             ],
@@ -3826,14 +4087,17 @@
             "materials": [
                 {
                     "material_name": "Litleo Tuft",
+                    "pokemon_name": "Litleo",
                     "quantity": 5
                 },
                 {
                     "material_name": "Tandemaus Fur",
+                    "pokemon_name": "Tandemaus",
                     "quantity": 3
                 },
                 {
                     "material_name": "Skwovet Fur",
+                    "pokemon_name": "Skwovet",
                     "quantity": 3
                 }
             ],
@@ -3864,14 +4128,17 @@
             "materials": [
                 {
                     "material_name": "Growlithe Fur",
+                    "pokemon_name": "Growlithe",
                     "quantity": 5
                 },
                 {
                     "material_name": "Torkoal Coal",
+                    "pokemon_name": "Torkoal",
                     "quantity": 3
                 },
                 {
                     "material_name": "Larvesta Fuzz",
+                    "pokemon_name": "Larvesta",
                     "quantity": 3
                 }
             ],
@@ -3902,14 +4169,17 @@
             "materials": [
                 {
                     "material_name": "Deerling Hair",
+                    "pokemon_name": "Deerling",
                     "quantity": 5
                 },
                 {
                     "material_name": "Applin Juice",
+                    "pokemon_name": "Applin",
                     "quantity": 3
                 },
                 {
                     "material_name": "Bramblin Twig",
+                    "pokemon_name": "Bramblin",
                     "quantity": 3
                 }
             ],
@@ -3934,14 +4204,17 @@
             "materials": [
                 {
                     "material_name": "Rellor Mud",
+                    "pokemon_name": "Rellor",
                     "quantity": 5
                 },
                 {
                     "material_name": "Indeedee Fur",
+                    "pokemon_name": "Indeedee",
                     "quantity": 3
                 },
                 {
                     "material_name": "Ralts Dust",
+                    "pokemon_name": "Ralts",
                     "quantity": 3
                 }
             ],
@@ -3971,14 +4244,17 @@
             "materials": [
                 {
                     "material_name": "Cufant Tarnish",
+                    "pokemon_name": "Cufant",
                     "quantity": 3
                 },
                 {
                     "material_name": "Bronzor Fragment",
+                    "pokemon_name": "Bronzor",
                     "quantity": 3
                 },
                 {
                     "material_name": "Dondozo Whisker",
+                    "pokemon_name": "Dondozo",
                     "quantity": 3
                 }
             ],
@@ -4008,10 +4284,12 @@
             "materials": [
                 {
                     "material_name": "Hawlucha Down",
+                    "pokemon_name": "Hawlucha",
                     "quantity": 3
                 },
                 {
                     "material_name": "Slakoth Fur",
+                    "pokemon_name": "Slakoth",
                     "quantity": 3
                 }
             ],
@@ -4039,14 +4317,17 @@
             "materials": [
                 {
                     "material_name": "Finneon Scales",
+                    "pokemon_name": "Finneon",
                     "quantity": 5
                 },
                 {
                     "material_name": "Finizen Mucus",
+                    "pokemon_name": "Finizen",
                     "quantity": 3
                 },
                 {
                     "material_name": "Wiglett Sand",
+                    "pokemon_name": "Wiglett",
                     "quantity": 3
                 }
             ],
@@ -4072,14 +4353,17 @@
             "materials": [
                 {
                     "material_name": "Cetoddle Grease",
+                    "pokemon_name": "Cetoddle",
                     "quantity": 5
                 },
                 {
                     "material_name": "Bergmite Ice",
+                    "pokemon_name": "Bergmite",
                     "quantity": 3
                 },
                 {
                     "material_name": "Frigibax Scales",
+                    "pokemon_name": "Frigibax",
                     "quantity": 3
                 }
             ],
@@ -4111,14 +4395,17 @@
             "materials": [
                 {
                     "material_name": "Litleo Tuft",
+                    "pokemon_name": "Litleo",
                     "quantity": 5
                 },
                 {
                     "material_name": "Houndour Fang",
+                    "pokemon_name": "Houndour",
                     "quantity": 3
                 },
                 {
                     "material_name": "Numel Lava",
+                    "pokemon_name": "Numel",
                     "quantity": 3
                 }
             ],
@@ -4150,14 +4437,17 @@
             "materials": [
                 {
                     "material_name": "Pachirisu Fur",
+                    "pokemon_name": "Pachirisu",
                     "quantity": 5
                 },
                 {
                     "material_name": "Tadbulb Mucus",
+                    "pokemon_name": "Tadbulb",
                     "quantity": 3
                 },
                 {
                     "material_name": "Pichu Fur",
+                    "pokemon_name": "Pichu",
                     "quantity": 3
                 }
             ],
@@ -4188,14 +4478,17 @@
             "materials": [
                 {
                     "material_name": "Fidough Fur",
+                    "pokemon_name": "Fidough",
                     "quantity": 5
                 },
                 {
                     "material_name": "Tandemaus Fur",
+                    "pokemon_name": "Tandemaus",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tinkatink Hair",
+                    "pokemon_name": "Tinkatink",
                     "quantity": 3
                 }
             ],
@@ -4226,10 +4519,12 @@
             "materials": [
                 {
                     "material_name": "Slowpoke Claw",
+                    "pokemon_name": "Slowpoke",
                     "quantity": 3
                 },
                 {
                     "material_name": "Slakoth Fur",
+                    "pokemon_name": "Slakoth",
                     "quantity": 3
                 }
             ],
@@ -4260,10 +4555,12 @@
             "materials": [
                 {
                     "material_name": "Stantler Hair",
+                    "pokemon_name": "Stantler",
                     "quantity": 3
                 },
                 {
                     "material_name": "Indeedee Fur",
+                    "pokemon_name": "Indeedee",
                     "quantity": 3
                 }
             ],
@@ -4294,6 +4591,7 @@
             "materials": [
                 {
                     "material_name": "Eevee Fur",
+                    "pokemon_name": "Eevee",
                     "quantity": 1
                 }
             ],
@@ -4323,14 +4621,17 @@
             "materials": [
                 {
                     "material_name": "Rellor Mud",
+                    "pokemon_name": "Rellor",
                     "quantity": 5
                 },
                 {
                     "material_name": "Petilil Leaf",
+                    "pokemon_name": "Petilil",
                     "quantity": 3
                 },
                 {
                     "material_name": "Kricketot Shell",
+                    "pokemon_name": "Kricketot",
                     "quantity": 3
                 }
             ],
@@ -4360,10 +4661,12 @@
             "materials": [
                 {
                     "material_name": "Girafarig Fur",
+                    "pokemon_name": "Girafarig",
                     "quantity": 3
                 },
                 {
                     "material_name": "Eevee Fur",
+                    "pokemon_name": "Eevee",
                     "quantity": 3
                 }
             ],
@@ -4394,14 +4697,17 @@
             "materials": [
                 {
                     "material_name": "Silicobra Sand",
+                    "pokemon_name": "Silicobra",
                     "quantity": 5
                 },
                 {
                     "material_name": "Shellos Mucus",
+                    "pokemon_name": "Shellos",
                     "quantity": 3
                 },
                 {
                     "material_name": "Barboach Slime",
+                    "pokemon_name": "Barboach",
                     "quantity": 3
                 }
             ],
@@ -4427,14 +4733,17 @@
             "materials": [
                 {
                     "material_name": "Falinks Sweat",
+                    "pokemon_name": "Falinks",
                     "quantity": 3
                 },
                 {
                     "material_name": "Heracross Claw",
+                    "pokemon_name": "Heracross",
                     "quantity": 3
                 },
                 {
                     "material_name": "Mankey Fur",
+                    "pokemon_name": "Mankey",
                     "quantity": 3
                 }
             ],
@@ -4468,14 +4777,17 @@
             "materials": [
                 {
                     "material_name": "Cryogonal Ice",
+                    "pokemon_name": "Cryogonal",
                     "quantity": 5
                 },
                 {
                     "material_name": "Shellder Pearl",
+                    "pokemon_name": "Shellder",
                     "quantity": 3
                 },
                 {
                     "material_name": "Delibird Parcel",
+                    "pokemon_name": "Delibird",
                     "quantity": 3
                 }
             ],
@@ -4503,14 +4815,17 @@
             "materials": [
                 {
                     "material_name": "Pincurchin Spines",
+                    "pokemon_name": "Pincurchin",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tadbulb Mucus",
+                    "pokemon_name": "Tadbulb",
                     "quantity": 3
                 },
                 {
                     "material_name": "Pawmi Fur",
+                    "pokemon_name": "Pawmi",
                     "quantity": 3
                 }
             ],
@@ -4542,14 +4857,17 @@
             "materials": [
                 {
                     "material_name": "Flab\u00c3\u00a9b\u00c3\u00a9 Pollen",
+                    "pokemon_name": "Flab\u00c3\u00a9b\u00c3\u00a9",
                     "quantity": 3
                 },
                 {
                     "material_name": "Sunkern Leaf",
+                    "pokemon_name": "Sunkern",
                     "quantity": 3
                 },
                 {
                     "material_name": "Fomantis Leaf",
+                    "pokemon_name": "Fomantis",
                     "quantity": 3
                 }
             ],
@@ -4579,14 +4897,17 @@
             "materials": [
                 {
                     "material_name": "Slowpoke Claw",
+                    "pokemon_name": "Slowpoke",
                     "quantity": 3
                 },
                 {
                     "material_name": "Indeedee Fur",
+                    "pokemon_name": "Indeedee",
                     "quantity": 3
                 },
                 {
                     "material_name": "Drowzee Fur",
+                    "pokemon_name": "Drowzee",
                     "quantity": 3
                 }
             ],
@@ -4615,14 +4936,17 @@
             "materials": [
                 {
                     "material_name": "Klefki Key",
+                    "pokemon_name": "Klefki",
                     "quantity": 3
                 },
                 {
                     "material_name": "Igglybuff Fluff",
+                    "pokemon_name": "Igglybuff",
                     "quantity": 3
                 },
                 {
                     "material_name": "Flab\u00c3\u00a9b\u00c3\u00a9 Pollen",
+                    "pokemon_name": "Flab\u00c3\u00a9b\u00c3\u00a9",
                     "quantity": 3
                 }
             ],
@@ -4651,14 +4975,17 @@
             "materials": [
                 {
                     "material_name": "Meowth Fur",
+                    "pokemon_name": "Meowth",
                     "quantity": 3
                 },
                 {
                     "material_name": "Spiritomb Fragment",
+                    "pokemon_name": "Spiritomb",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tatsugiri Scales",
+                    "pokemon_name": "Tatsugiri",
                     "quantity": 3
                 }
             ],
@@ -4689,14 +5016,17 @@
             "materials": [
                 {
                     "material_name": "Numel Lava",
+                    "pokemon_name": "Numel",
                     "quantity": 5
                 },
                 {
                     "material_name": "Larvesta Fuzz",
+                    "pokemon_name": "Larvesta",
                     "quantity": 3
                 },
                 {
                     "material_name": "Torkoal Coal",
+                    "pokemon_name": "Torkoal",
                     "quantity": 3
                 }
             ],
@@ -4727,14 +5057,17 @@
             "materials": [
                 {
                     "material_name": "Finizen Mucus",
+                    "pokemon_name": "Finizen",
                     "quantity": 5
                 },
                 {
                     "material_name": "Finneon Scales",
+                    "pokemon_name": "Finneon",
                     "quantity": 3
                 },
                 {
                     "material_name": "Luvdisc Scales",
+                    "pokemon_name": "Luvdisc",
                     "quantity": 3
                 }
             ],
@@ -4763,14 +5096,17 @@
             "materials": [
                 {
                     "material_name": "Snorunt Fur",
+                    "pokemon_name": "Snorunt",
                     "quantity": 5
                 },
                 {
                     "material_name": "Snover Berries",
+                    "pokemon_name": "Snover",
                     "quantity": 3
                 },
                 {
                     "material_name": "Cryogonal Ice",
+                    "pokemon_name": "Cryogonal",
                     "quantity": 3
                 }
             ],
@@ -4797,14 +5133,17 @@
             "materials": [
                 {
                     "material_name": "Salandit Gas",
+                    "pokemon_name": "Salandit",
                     "quantity": 3
                 },
                 {
                     "material_name": "Numel Lava",
+                    "pokemon_name": "Numel",
                     "quantity": 3
                 },
                 {
                     "material_name": "Capsakid Seed",
+                    "pokemon_name": "Capsakid",
                     "quantity": 3
                 }
             ],
@@ -4831,14 +5170,17 @@
             "materials": [
                 {
                     "material_name": "Luvdisc Scales",
+                    "pokemon_name": "Luvdisc",
                     "quantity": 3
                 },
                 {
                     "material_name": "Alomomola Mucus",
+                    "pokemon_name": "Alomomola",
                     "quantity": 3
                 },
                 {
                     "material_name": "Shellder Pearl",
+                    "pokemon_name": "Shellder",
                     "quantity": 3
                 }
             ],
@@ -4865,14 +5207,17 @@
             "materials": [
                 {
                     "material_name": "Applin Juice",
+                    "pokemon_name": "Applin",
                     "quantity": 3
                 },
                 {
                     "material_name": "Toedscool Flaps",
+                    "pokemon_name": "Toedscool",
                     "quantity": 3
                 },
                 {
                     "material_name": "Deerling Hair",
+                    "pokemon_name": "Deerling",
                     "quantity": 3
                 }
             ],
@@ -4899,14 +5244,17 @@
             "materials": [
                 {
                     "material_name": "Shinx Fang",
+                    "pokemon_name": "Shinx",
                     "quantity": 5
                 },
                 {
                     "material_name": "Pichu Fur",
+                    "pokemon_name": "Pichu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tynamo Slime",
+                    "pokemon_name": "Tynamo",
                     "quantity": 3
                 }
             ],
@@ -4936,14 +5284,17 @@
             "materials": [
                 {
                     "material_name": "Croagunk Poison",
+                    "pokemon_name": "Croagunk",
                     "quantity": 5
                 },
                 {
                     "material_name": "Grimer Toxin",
+                    "pokemon_name": "Grimer",
                     "quantity": 3
                 },
                 {
                     "material_name": "Foongus Spores",
+                    "pokemon_name": "Foongus",
                     "quantity": 3
                 }
             ],
@@ -4973,14 +5324,17 @@
             "materials": [
                 {
                     "material_name": "Phanpy Nail",
+                    "pokemon_name": "Phanpy",
                     "quantity": 5
                 },
                 {
                     "material_name": "Diglett Dirt",
+                    "pokemon_name": "Diglett",
                     "quantity": 3
                 },
                 {
                     "material_name": "Barboach Slime",
+                    "pokemon_name": "Barboach",
                     "quantity": 3
                 }
             ],
@@ -5010,14 +5364,17 @@
             "materials": [
                 {
                     "material_name": "Rolycoly Coal",
+                    "pokemon_name": "Rolycoly",
                     "quantity": 5
                 },
                 {
                     "material_name": "Rockruff Rock",
+                    "pokemon_name": "Rockruff",
                     "quantity": 3
                 },
                 {
                     "material_name": "Klawf Claw",
+                    "pokemon_name": "Klawf",
                     "quantity": 3
                 }
             ],
@@ -5045,14 +5402,17 @@
             "materials": [
                 {
                     "material_name": "Sinistea Chip",
+                    "pokemon_name": "Sinistea",
                     "quantity": 5
                 },
                 {
                     "material_name": "Shuppet Scrap",
+                    "pokemon_name": "Shuppet",
                     "quantity": 3
                 },
                 {
                     "material_name": "Greavard Wax",
+                    "pokemon_name": "Greavard",
                     "quantity": 3
                 }
             ],
@@ -5082,14 +5442,17 @@
             "materials": [
                 {
                     "material_name": "Tauros Hair",
+                    "pokemon_name": "Tauros",
                     "quantity": 8
                 },
                 {
                     "material_name": "Zangoose Claw",
+                    "pokemon_name": "Zangoose",
                     "quantity": 5
                 },
                 {
                     "material_name": "Slakoth Fur",
+                    "pokemon_name": "Slakoth",
                     "quantity": 3
                 }
             ],
@@ -5115,14 +5478,17 @@
             "materials": [
                 {
                     "material_name": "Houndour Fang",
+                    "pokemon_name": "Houndour",
                     "quantity": 8
                 },
                 {
                     "material_name": "Charcadet Soot",
+                    "pokemon_name": "Charcadet",
                     "quantity": 5
                 },
                 {
                     "material_name": "Growlithe Fur",
+                    "pokemon_name": "Growlithe",
                     "quantity": 3
                 }
             ],
@@ -5148,14 +5514,17 @@
             "materials": [
                 {
                     "material_name": "Qwilfish Spines",
+                    "pokemon_name": "Qwilfish",
                     "quantity": 8
                 },
                 {
                     "material_name": "Dondozo Whisker",
+                    "pokemon_name": "Dondozo",
                     "quantity": 5
                 },
                 {
                     "material_name": "Luvdisc Scales",
+                    "pokemon_name": "Luvdisc",
                     "quantity": 3
                 }
             ],
@@ -5181,14 +5550,17 @@
             "materials": [
                 {
                     "material_name": "Tropius Leaf",
+                    "pokemon_name": "Tropius",
                     "quantity": 8
                 },
                 {
                     "material_name": "Skiddo Leaf",
+                    "pokemon_name": "Skiddo",
                     "quantity": 5
                 },
                 {
                     "material_name": "Cacnea Needle",
+                    "pokemon_name": "Cacnea",
                     "quantity": 3
                 }
             ],
@@ -5216,14 +5588,17 @@
             "materials": [
                 {
                     "material_name": "Axew Scales",
+                    "pokemon_name": "Axew",
                     "quantity": 5
                 },
                 {
                     "material_name": "Dratini Scales",
+                    "pokemon_name": "Dratini",
                     "quantity": 3
                 },
                 {
                     "material_name": "Frigibax Scales",
+                    "pokemon_name": "Frigibax",
                     "quantity": 3
                 }
             ],
@@ -5250,14 +5625,17 @@
             "materials": [
                 {
                     "material_name": "Litleo Tuft",
+                    "pokemon_name": "Litleo",
                     "quantity": 5
                 },
                 {
                     "material_name": "Numel Lava",
+                    "pokemon_name": "Numel",
                     "quantity": 3
                 },
                 {
                     "material_name": "Capsakid Seed",
+                    "pokemon_name": "Capsakid",
                     "quantity": 3
                 }
             ],
@@ -5288,14 +5666,17 @@
             "materials": [
                 {
                     "material_name": "Flamigo Down",
+                    "pokemon_name": "Flamigo",
                     "quantity": 5
                 },
                 {
                     "material_name": "Meditite Sweat",
+                    "pokemon_name": "Meditite",
                     "quantity": 3
                 },
                 {
                     "material_name": "Impidimp Hair",
+                    "pokemon_name": "Impidimp",
                     "quantity": 3
                 }
             ],
@@ -5323,14 +5704,17 @@
             "materials": [
                 {
                     "material_name": "Bounsweet Sweat",
+                    "pokemon_name": "Bounsweet",
                     "quantity": 5
                 },
                 {
                     "material_name": "Tropius Leaf",
+                    "pokemon_name": "Tropius",
                     "quantity": 3
                 },
                 {
                     "material_name": "Toedscool Flaps",
+                    "pokemon_name": "Toedscool",
                     "quantity": 3
                 }
             ],
@@ -5360,14 +5744,17 @@
             "materials": [
                 {
                     "material_name": "Swablu Fluff",
+                    "pokemon_name": "Swablu",
                     "quantity": 5
                 },
                 {
                     "material_name": "Oricorio Feather",
+                    "pokemon_name": "Oricorio",
                     "quantity": 3
                 },
                 {
                     "material_name": "Wingull Feather",
+                    "pokemon_name": "Wingull",
                     "quantity": 3
                 }
             ],
@@ -5397,14 +5784,17 @@
             "materials": [
                 {
                     "material_name": "Hatenna Dust",
+                    "pokemon_name": "Hatenna",
                     "quantity": 3
                 },
                 {
                     "material_name": "Bronzor Fragment",
+                    "pokemon_name": "Bronzor",
                     "quantity": 3
                 },
                 {
                     "material_name": "Gothita Eyelash",
+                    "pokemon_name": "Gothita",
                     "quantity": 3
                 }
             ],
@@ -5434,14 +5824,17 @@
             "materials": [
                 {
                     "material_name": "Kricketot Shell",
+                    "pokemon_name": "Kricketot",
                     "quantity": 5
                 },
                 {
                     "material_name": "Combee Honey",
+                    "pokemon_name": "Combee",
                     "quantity": 3
                 },
                 {
                     "material_name": "Venonat Fang",
+                    "pokemon_name": "Venonat",
                     "quantity": 3
                 }
             ],
@@ -5472,14 +5865,17 @@
             "materials": [
                 {
                     "material_name": "Dratini Scales",
+                    "pokemon_name": "Dratini",
                     "quantity": 8
                 },
                 {
                     "material_name": "Goomy Goo",
+                    "pokemon_name": "Goomy",
                     "quantity": 5
                 },
                 {
                     "material_name": "Tauros Hair",
+                    "pokemon_name": "Tauros",
                     "quantity": 3
                 }
             ],
@@ -5508,14 +5904,17 @@
             "materials": [
                 {
                     "material_name": "Starly Feather",
+                    "pokemon_name": "Starly",
                     "quantity": 5
                 },
                 {
                     "material_name": "Rufflet Feather",
+                    "pokemon_name": "Rufflet",
                     "quantity": 3
                 },
                 {
                     "material_name": "Rookidee Feather",
+                    "pokemon_name": "Rookidee",
                     "quantity": 3
                 }
             ],
@@ -5545,14 +5944,17 @@
             "materials": [
                 {
                     "material_name": "Growlithe Fur",
+                    "pokemon_name": "Growlithe",
                     "quantity": 5
                 },
                 {
                     "material_name": "Fletchling Feather",
+                    "pokemon_name": "Fletchling",
                     "quantity": 3
                 },
                 {
                     "material_name": "Charcadet Soot",
+                    "pokemon_name": "Charcadet",
                     "quantity": 3
                 }
             ],
@@ -5582,14 +5984,17 @@
             "materials": [
                 {
                     "material_name": "Dedenne Fur",
+                    "pokemon_name": "Dedenne",
                     "quantity": 5
                 },
                 {
                     "material_name": "Pichu Fur",
+                    "pokemon_name": "Pichu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tynamo Slime",
+                    "pokemon_name": "Tynamo",
                     "quantity": 3
                 }
             ],
@@ -5615,14 +6020,17 @@
             "materials": [
                 {
                     "material_name": "Riolu Fur",
+                    "pokemon_name": "Riolu",
                     "quantity": 5
                 },
                 {
                     "material_name": "Crabrawler Shell",
+                    "pokemon_name": "Crabrawler",
                     "quantity": 3
                 },
                 {
                     "material_name": "Makuhita Sweat",
+                    "pokemon_name": "Makuhita",
                     "quantity": 3
                 }
             ],
@@ -5650,14 +6058,17 @@
             "materials": [
                 {
                     "material_name": "Bounsweet Sweat",
+                    "pokemon_name": "Bounsweet",
                     "quantity": 5
                 },
                 {
                     "material_name": "Tropius Leaf",
+                    "pokemon_name": "Tropius",
                     "quantity": 3
                 },
                 {
                     "material_name": "Foongus Spores",
+                    "pokemon_name": "Foongus",
                     "quantity": 3
                 }
             ],
@@ -5683,14 +6094,17 @@
             "materials": [
                 {
                     "material_name": "Goomy Goo",
+                    "pokemon_name": "Goomy",
                     "quantity": 8
                 },
                 {
                     "material_name": "Frigibax Scales",
+                    "pokemon_name": "Frigibax",
                     "quantity": 5
                 },
                 {
                     "material_name": "Applin Juice",
+                    "pokemon_name": "Applin",
                     "quantity": 3
                 }
             ],
@@ -5717,14 +6131,17 @@
             "materials": [
                 {
                     "material_name": "Magnemite Screw",
+                    "pokemon_name": "Magnemite",
                     "quantity": 8
                 },
                 {
                     "material_name": "Orthworm Tarnish",
+                    "pokemon_name": "Orthworm",
                     "quantity": 5
                 },
                 {
                     "material_name": "Cufant Tarnish",
+                    "pokemon_name": "Cufant",
                     "quantity": 3
                 }
             ],
@@ -5753,6 +6170,7 @@
             "materials": [
                 {
                     "material_name": "Glimmet Crystal",
+                    "pokemon_name": "Glimmet",
                     "quantity": 8
                 }
             ],
@@ -5777,10 +6195,12 @@
             "materials": [
                 {
                     "material_name": "Poochyena Fang",
+                    "pokemon_name": "Poochyena",
                     "quantity": 3
                 },
                 {
                     "material_name": "Houndour Fang",
+                    "pokemon_name": "Houndour",
                     "quantity": 2
                 }
             ],
@@ -5805,6 +6225,7 @@
             "materials": [
                 {
                     "material_name": "Pichu Fur",
+                    "pokemon_name": "Pichu",
                     "quantity": 3
                 }
             ],
@@ -5830,6 +6251,7 @@
             "materials": [
                 {
                     "material_name": "Feebas Scales",
+                    "pokemon_name": "Feebas",
                     "quantity": 2
                 }
             ],
@@ -5854,10 +6276,12 @@
             "materials": [
                 {
                     "material_name": "Ekans Fang",
+                    "pokemon_name": "Ekans",
                     "quantity": 3
                 },
                 {
                     "material_name": "Koffing Gas",
+                    "pokemon_name": "Koffing",
                     "quantity": 3
                 }
             ],
@@ -5882,10 +6306,12 @@
             "materials": [
                 {
                     "material_name": "Sandshrew Claw",
+                    "pokemon_name": "Sandshrew",
                     "quantity": 3
                 },
                 {
                     "material_name": "Diglett Dirt",
+                    "pokemon_name": "Diglett",
                     "quantity": 2
                 }
             ],
@@ -5910,10 +6336,12 @@
             "materials": [
                 {
                     "material_name": "Duskull Fragment",
+                    "pokemon_name": "Duskull",
                     "quantity": 2
                 },
                 {
                     "material_name": "Gastly Gas",
+                    "pokemon_name": "Gastly",
                     "quantity": 2
                 }
             ],
@@ -5938,10 +6366,12 @@
             "materials": [
                 {
                     "material_name": "Cleffa Fur",
+                    "pokemon_name": "Cleffa",
                     "quantity": 2
                 },
                 {
                     "material_name": "Nosepass Fragment",
+                    "pokemon_name": "Nosepass",
                     "quantity": 4
                 }
             ],
@@ -5966,10 +6396,12 @@
             "materials": [
                 {
                     "material_name": "Geodude Fragment",
+                    "pokemon_name": "Geodude",
                     "quantity": 3
                 },
                 {
                     "material_name": "Carbink Jewel",
+                    "pokemon_name": "Carbink",
                     "quantity": 3
                 }
             ],
@@ -5994,10 +6426,12 @@
             "materials": [
                 {
                     "material_name": "Nosepass Fragment",
+                    "pokemon_name": "Nosepass",
                     "quantity": 4
                 },
                 {
                     "material_name": "Bronzor Fragment",
+                    "pokemon_name": "Bronzor",
                     "quantity": 2
                 }
             ],
@@ -6023,10 +6457,12 @@
             "materials": [
                 {
                     "material_name": "Corphish Shell",
+                    "pokemon_name": "Corphish",
                     "quantity": 4
                 },
                 {
                     "material_name": "Seedot Stem",
+                    "pokemon_name": "Seedot",
                     "quantity": 4
                 }
             ],
@@ -6051,14 +6487,17 @@
             "materials": [
                 {
                     "material_name": "Yanma Spike",
+                    "pokemon_name": "Yanma",
                     "quantity": 2
                 },
                 {
                     "material_name": "Surskit Syrup",
+                    "pokemon_name": "Surskit",
                     "quantity": 2
                 },
                 {
                     "material_name": "Sewaddle Leaf",
+                    "pokemon_name": "Sewaddle",
                     "quantity": 2
                 }
             ],
@@ -6083,10 +6522,12 @@
             "materials": [
                 {
                     "material_name": "Sandshrew Claw",
+                    "pokemon_name": "Sandshrew",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tandemaus Fur",
+                    "pokemon_name": "Tandemaus",
                     "quantity": 3
                 }
             ],
@@ -6111,10 +6552,12 @@
             "materials": [
                 {
                     "material_name": "Riolu Fur",
+                    "pokemon_name": "Riolu",
                     "quantity": 3
                 },
                 {
                     "material_name": "Croagunk Poison",
+                    "pokemon_name": "Croagunk",
                     "quantity": 2
                 }
             ],
@@ -6140,10 +6583,12 @@
             "materials": [
                 {
                     "material_name": "Sewaddle Leaf",
+                    "pokemon_name": "Sewaddle",
                     "quantity": 3
                 },
                 {
                     "material_name": "Kricketot Shell",
+                    "pokemon_name": "Kricketot",
                     "quantity": 3
                 }
             ],
@@ -6169,10 +6614,12 @@
             "materials": [
                 {
                     "material_name": "Swinub Hair",
+                    "pokemon_name": "Swinub",
                     "quantity": 2
                 },
                 {
                     "material_name": "Mudbray Mud",
+                    "pokemon_name": "Mudbray",
                     "quantity": 4
                 }
             ],
@@ -6199,10 +6646,12 @@
             "materials": [
                 {
                     "material_name": "Swinub Hair",
+                    "pokemon_name": "Swinub",
                     "quantity": 2
                 },
                 {
                     "material_name": "Snorunt Fur",
+                    "pokemon_name": "Snorunt",
                     "quantity": 3
                 }
             ],
@@ -6228,10 +6677,12 @@
             "materials": [
                 {
                     "material_name": "Poltchageist Powder",
+                    "pokemon_name": "Poltchageist",
                     "quantity": 3
                 },
                 {
                     "material_name": "Slowpoke Claw",
+                    "pokemon_name": "Slowpoke",
                     "quantity": 3
                 }
             ],
@@ -6256,10 +6707,12 @@
             "materials": [
                 {
                     "material_name": "Slugma Lava",
+                    "pokemon_name": "Slugma",
                     "quantity": 4
                 },
                 {
                     "material_name": "Munchlax Fang",
+                    "pokemon_name": "Munchlax",
                     "quantity": 2
                 }
             ],
@@ -6285,10 +6738,12 @@
             "materials": [
                 {
                     "material_name": "Seedot Stem",
+                    "pokemon_name": "Seedot",
                     "quantity": 4
                 },
                 {
                     "material_name": "Sewaddle Leaf",
+                    "pokemon_name": "Sewaddle",
                     "quantity": 2
                 }
             ],
@@ -6313,10 +6768,12 @@
             "materials": [
                 {
                     "material_name": "Lotad Leaf",
+                    "pokemon_name": "Lotad",
                     "quantity": 4
                 },
                 {
                     "material_name": "Chingling Fragment",
+                    "pokemon_name": "Chingling",
                     "quantity": 2
                 }
             ],
@@ -6341,10 +6798,12 @@
             "materials": [
                 {
                     "material_name": "Timburr Sweat",
+                    "pokemon_name": "Timburr",
                     "quantity": 3
                 },
                 {
                     "material_name": "Jangmo-o Scales",
+                    "pokemon_name": "Jangmo-o",
                     "quantity": 3
                 }
             ],
@@ -6370,10 +6829,12 @@
             "materials": [
                 {
                     "material_name": "Vulpix Fur",
+                    "pokemon_name": "Vulpix",
                     "quantity": 3
                 },
                 {
                     "material_name": "Petilil Leaf",
+                    "pokemon_name": "Petilil",
                     "quantity": 3
                 }
             ],
@@ -6399,10 +6860,12 @@
             "materials": [
                 {
                     "material_name": "Bellsprout Vine",
+                    "pokemon_name": "Bellsprout",
                     "quantity": 3
                 },
                 {
                     "material_name": "Seedot Stem",
+                    "pokemon_name": "Seedot",
                     "quantity": 3
                 }
             ],
@@ -6427,14 +6890,17 @@
             "materials": [
                 {
                     "material_name": "Litwick Soot",
+                    "pokemon_name": "Litwick",
                     "quantity": 2
                 },
                 {
                     "material_name": "Vulpix Fur",
+                    "pokemon_name": "Vulpix",
                     "quantity": 2
                 },
                 {
                     "material_name": "Mimikyu Scrap",
+                    "pokemon_name": "Mimikyu",
                     "quantity": 2
                 }
             ],
@@ -6461,14 +6927,17 @@
             "materials": [
                 {
                     "material_name": "Basculin Fang",
+                    "pokemon_name": "Basculin",
                     "quantity": 2
                 },
                 {
                     "material_name": "Veluza Fillet",
+                    "pokemon_name": "Veluza",
                     "quantity": 2
                 },
                 {
                     "material_name": "Finizen Mucus",
+                    "pokemon_name": "Finizen",
                     "quantity": 2
                 }
             ],
@@ -6494,10 +6963,12 @@
             "materials": [
                 {
                     "material_name": "Ducklett Feather",
+                    "pokemon_name": "Ducklett",
                     "quantity": 3
                 },
                 {
                     "material_name": "Bombirdier Feather",
+                    "pokemon_name": "Bombirdier",
                     "quantity": 3
                 }
             ],
@@ -6522,14 +6993,17 @@
             "materials": [
                 {
                     "material_name": "Litwick Soot",
+                    "pokemon_name": "Litwick",
                     "quantity": 2
                 },
                 {
                     "material_name": "Phantump Twig",
+                    "pokemon_name": "Phantump",
                     "quantity": 2
                 },
                 {
                     "material_name": "Duskull Fragment",
+                    "pokemon_name": "Duskull",
                     "quantity": 2
                 }
             ],
@@ -6554,14 +7028,17 @@
             "materials": [
                 {
                     "material_name": "Vullaby Feather",
+                    "pokemon_name": "Vullaby",
                     "quantity": 3
                 },
                 {
                     "material_name": "Pawniard Blade",
+                    "pokemon_name": "Pawniard",
                     "quantity": 2
                 },
                 {
                     "material_name": "Poochyena Fang",
+                    "pokemon_name": "Poochyena",
                     "quantity": 2
                 }
             ],
@@ -6587,14 +7064,17 @@
             "materials": [
                 {
                     "material_name": "Jangmo-o Scales",
+                    "pokemon_name": "Jangmo-o",
                     "quantity": 2
                 },
                 {
                     "material_name": "Gible Scales",
+                    "pokemon_name": "Gible",
                     "quantity": 2
                 },
                 {
                     "material_name": "Arrokuda Scales",
+                    "pokemon_name": "Arrokuda",
                     "quantity": 2
                 }
             ],
@@ -6620,10 +7100,12 @@
             "materials": [
                 {
                     "material_name": "Carbink Jewel",
+                    "pokemon_name": "Carbink",
                     "quantity": 2
                 },
                 {
                     "material_name": "Cleffa Fur",
+                    "pokemon_name": "Cleffa",
                     "quantity": 3
                 }
             ],
@@ -6648,10 +7130,12 @@
             "materials": [
                 {
                     "material_name": "Solosis Gel",
+                    "pokemon_name": "Solosis",
                     "quantity": 2
                 },
                 {
                     "material_name": "Comfey Flower",
+                    "pokemon_name": "Comfey",
                     "quantity": 3
                 }
             ],
@@ -6676,10 +7160,12 @@
             "materials": [
                 {
                     "material_name": "Porygon Fragment",
+                    "pokemon_name": "Porygon",
                     "quantity": 2
                 },
                 {
                     "material_name": "Stantler Hair",
+                    "pokemon_name": "Stantler",
                     "quantity": 3
                 }
             ],
@@ -6704,10 +7190,12 @@
             "materials": [
                 {
                     "material_name": "Rhyhorn Fang",
+                    "pokemon_name": "Rhyhorn",
                     "quantity": 2
                 },
                 {
                     "material_name": "Tauros Hair",
+                    "pokemon_name": "Tauros",
                     "quantity": 3
                 }
             ],
@@ -6732,10 +7220,12 @@
             "materials": [
                 {
                     "material_name": "Porygon Fragment",
+                    "pokemon_name": "Porygon",
                     "quantity": 2
                 },
                 {
                     "material_name": "Stantler Hair",
+                    "pokemon_name": "Stantler",
                     "quantity": 3
                 }
             ],
@@ -6760,14 +7250,17 @@
             "materials": [
                 {
                     "material_name": "Oddish Leaf",
+                    "pokemon_name": "Oddish",
                     "quantity": 2
                 },
                 {
                     "material_name": "Comfey Flower",
+                    "pokemon_name": "Comfey",
                     "quantity": 2
                 },
                 {
                     "material_name": "Cottonee Fluff",
+                    "pokemon_name": "Cottonee",
                     "quantity": 1
                 }
             ],
@@ -6792,10 +7285,12 @@
             "materials": [
                 {
                     "material_name": "Magby Hair",
+                    "pokemon_name": "Magby",
                     "quantity": 3
                 },
                 {
                     "material_name": "Numel Lava",
+                    "pokemon_name": "Numel",
                     "quantity": 2
                 }
             ],
@@ -6820,14 +7315,17 @@
             "materials": [
                 {
                     "material_name": "Horsea Ink",
+                    "pokemon_name": "Horsea",
                     "quantity": 2
                 },
                 {
                     "material_name": "Seel Fur",
+                    "pokemon_name": "Seel",
                     "quantity": 2
                 },
                 {
                     "material_name": "Lapras Teardrop",
+                    "pokemon_name": "Lapras",
                     "quantity": 1
                 }
             ],
@@ -6853,10 +7351,12 @@
             "materials": [
                 {
                     "material_name": "Horsea Ink",
+                    "pokemon_name": "Horsea",
                     "quantity": 3
                 },
                 {
                     "material_name": "Wooper Slime",
+                    "pokemon_name": "Wooper",
                     "quantity": 3
                 }
             ],
@@ -6882,10 +7382,12 @@
             "materials": [
                 {
                     "material_name": "Elekid Fur",
+                    "pokemon_name": "Elekid",
                     "quantity": 3
                 },
                 {
                     "material_name": "Blitzle Mane Hair",
+                    "pokemon_name": "Blitzle",
                     "quantity": 2
                 }
             ],
@@ -6910,6 +7412,7 @@
             "materials": [
                 {
                     "material_name": "Joltik Thread",
+                    "pokemon_name": "Joltik",
                     "quantity": 5
                 }
             ],
@@ -6934,14 +7437,17 @@
             "materials": [
                 {
                     "material_name": "Tyrogue Sweat",
+                    "pokemon_name": "Tyrogue",
                     "quantity": 1
                 },
                 {
                     "material_name": "Minccino Fur",
+                    "pokemon_name": "Minccino",
                     "quantity": 1
                 },
                 {
                     "material_name": "Sneasel Claw",
+                    "pokemon_name": "Sneasel",
                     "quantity": 3
                 }
             ],
@@ -6966,14 +7472,17 @@
             "materials": [
                 {
                     "material_name": "Scraggy Sweat",
+                    "pokemon_name": "Scraggy",
                     "quantity": 3
                 },
                 {
                     "material_name": "Pawmi Fur",
+                    "pokemon_name": "Pawmi",
                     "quantity": 1
                 },
                 {
                     "material_name": "Tyrogue Sweat",
+                    "pokemon_name": "Tyrogue",
                     "quantity": 1
                 }
             ],
@@ -6998,14 +7507,17 @@
             "materials": [
                 {
                     "material_name": "Tentacool Stinger",
+                    "pokemon_name": "Tentacool",
                     "quantity": 2
                 },
                 {
                     "material_name": "Qwilfish Spines",
+                    "pokemon_name": "Qwilfish",
                     "quantity": 2
                 },
                 {
                     "material_name": "Gastly Gas",
+                    "pokemon_name": "Gastly",
                     "quantity": 2
                 }
             ],
@@ -7031,14 +7543,17 @@
             "materials": [
                 {
                     "material_name": "Trapinch Shell",
+                    "pokemon_name": "Trapinch",
                     "quantity": 2
                 },
                 {
                     "material_name": "Sandile Claw",
+                    "pokemon_name": "Sandile",
                     "quantity": 1
                 },
                 {
                     "material_name": "Drilbur Claw",
+                    "pokemon_name": "Drilbur",
                     "quantity": 2
                 }
             ],
@@ -7063,10 +7578,12 @@
             "materials": [
                 {
                     "material_name": "Pikipek Feather",
+                    "pokemon_name": "Pikipek",
                     "quantity": 3
                 },
                 {
                     "material_name": "Murkrow Bauble",
+                    "pokemon_name": "Murkrow",
                     "quantity": 2
                 }
             ],
@@ -7091,14 +7608,17 @@
             "materials": [
                 {
                     "material_name": "Solosis Gel",
+                    "pokemon_name": "Solosis",
                     "quantity": 2
                 },
                 {
                     "material_name": "Slowpoke Claw",
+                    "pokemon_name": "Slowpoke",
                     "quantity": 2
                 },
                 {
                     "material_name": "Drowzee Fur",
+                    "pokemon_name": "Drowzee",
                     "quantity": 2
                 }
             ],
@@ -7123,10 +7643,12 @@
             "materials": [
                 {
                     "material_name": "Espurr Fur",
+                    "pokemon_name": "Espurr",
                     "quantity": 3
                 },
                 {
                     "material_name": "Exeggcute Shell",
+                    "pokemon_name": "Exeggcute",
                     "quantity": 2
                 }
             ],
@@ -7151,10 +7673,12 @@
             "materials": [
                 {
                     "material_name": "Dewpider Thread",
+                    "pokemon_name": "Dewpider",
                     "quantity": 3
                 },
                 {
                     "material_name": "Rellor Mud",
+                    "pokemon_name": "Rellor",
                     "quantity": 2
                 }
             ],
@@ -7181,6 +7705,7 @@
             "materials": [
                 {
                     "material_name": "Minior Shell",
+                    "pokemon_name": "Minior",
                     "quantity": 8
                 }
             ],
@@ -7205,10 +7730,12 @@
             "materials": [
                 {
                     "material_name": "Scraggy Sweat",
+                    "pokemon_name": "Scraggy",
                     "quantity": 2
                 },
                 {
                     "material_name": "Zorua Fur",
+                    "pokemon_name": "Zorua",
                     "quantity": 3
                 }
             ],
@@ -7233,14 +7760,17 @@
             "materials": [
                 {
                     "material_name": "Duraludon Tarnish",
+                    "pokemon_name": "Duraludon",
                     "quantity": 3
                 },
                 {
                     "material_name": "Axew Scales",
+                    "pokemon_name": "Axew",
                     "quantity": 2
                 },
                 {
                     "material_name": "Cyclizar Scales",
+                    "pokemon_name": "Cyclizar",
                     "quantity": 1
                 }
             ],
@@ -7265,10 +7795,12 @@
             "materials": [
                 {
                     "material_name": "Magnemite Screw",
+                    "pokemon_name": "Magnemite",
                     "quantity": 2
                 },
                 {
                     "material_name": "Elekid Fur",
+                    "pokemon_name": "Elekid",
                     "quantity": 2
                 }
             ],
@@ -7293,10 +7825,12 @@
             "materials": [
                 {
                     "material_name": "Golett Shard",
+                    "pokemon_name": "Golett",
                     "quantity": 4
                 },
                 {
                     "material_name": "Nacli Salt",
+                    "pokemon_name": "Nacli",
                     "quantity": 2
                 }
             ],
@@ -7321,10 +7855,12 @@
             "materials": [
                 {
                     "material_name": "Beldum Claw",
+                    "pokemon_name": "Beldum",
                     "quantity": 3
                 },
                 {
                     "material_name": "Cufant Tarnish",
+                    "pokemon_name": "Cufant",
                     "quantity": 3
                 }
             ],
@@ -7349,14 +7885,17 @@
             "materials": [
                 {
                     "material_name": "Tatsugiri Scales",
+                    "pokemon_name": "Tatsugiri",
                     "quantity": 2
                 },
                 {
                     "material_name": "Lapras Teardrop",
+                    "pokemon_name": "Lapras",
                     "quantity": 2
                 },
                 {
                     "material_name": "Applin Juice",
+                    "pokemon_name": "Applin",
                     "quantity": 1
                 }
             ],
@@ -7381,14 +7920,17 @@
             "materials": [
                 {
                     "material_name": "Igglybuff Fluff",
+                    "pokemon_name": "Igglybuff",
                     "quantity": 3
                 },
                 {
                     "material_name": "Ralts Dust",
+                    "pokemon_name": "Ralts",
                     "quantity": 2
                 },
                 {
                     "material_name": "Cottonee Fluff",
+                    "pokemon_name": "Cottonee",
                     "quantity": 2
                 }
             ],
@@ -7413,10 +7955,12 @@
             "materials": [
                 {
                     "material_name": "Psyduck Down",
+                    "pokemon_name": "Psyduck",
                     "quantity": 3
                 },
                 {
                     "material_name": "Chingling Fragment",
+                    "pokemon_name": "Chingling",
                     "quantity": 3
                 }
             ],
@@ -7441,10 +7985,12 @@
             "materials": [
                 {
                     "material_name": "Makuhita Sweat",
+                    "pokemon_name": "Makuhita",
                     "quantity": 3
                 },
                 {
                     "material_name": "Tyrogue Sweat",
+                    "pokemon_name": "Tyrogue",
                     "quantity": 3
                 }
             ],
