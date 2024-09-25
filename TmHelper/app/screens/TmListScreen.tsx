@@ -3,7 +3,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import tmData from '../../assets/json/PKMN-SV-TMS.json';
+const tmData = require('../../assets/json/PKMN-SV-TMS.json');
 
 interface TMData {
   tm_info: {

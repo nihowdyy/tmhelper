@@ -1,10 +1,17 @@
+// Existing imports
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, Image, Pressable, Modal } from 'react-native';
-import locationMappings from '../../assets/json/imageMap.json';
+
+// Define the type for your locationMappings
+interface LocationMappings {
+  [key: string]: string[];
+}
+
+const locationMappings: LocationMappings = require('../../assets/json/imageMap.json');
 
 const TMDetailScreen = ({ route }: any) => {
   const { tm } = route.params;
-  
+
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -15,9 +22,9 @@ const TMDetailScreen = ({ route }: any) => {
   const materialsPokemonNames = materials.map((material: { pokemon_name: string; }) => material.pokemon_name);
 
   // Filter locationMappings based on the Pokémon names in materialsPokemonNames
-  const filteredMappings = Object.entries(locationMappings).filter(([pokemonName]) =>
+  const filteredMappings: [string, string[]][] = Object.entries(locationMappings).filter(([pokemonName]) =>
     materialsPokemonNames.includes(pokemonName)
-  );
+  ) as [string, string[]][]; // Explicit type assertion
 
   const openImage = (imageUri: string) => {
     setSelectedImage(imageUri);
@@ -56,7 +63,7 @@ const TMDetailScreen = ({ route }: any) => {
       {filteredMappings.map(([pokemonName, imagePaths], index) => (
         <View key={index} style={styles.item}>
           <Text style={styles.pokemonName}>{pokemonName}</Text>
-          {imagePaths.map((path, i) => (
+          {imagePaths.map((path: string, i: React.Key | null | undefined) => (
             <Pressable key={i} onPress={() => openImage(`../../assets/images/${path}`)}>
               <Image
                 source={{ uri: `../../assets/images/${path}` }} // Adjust path based on your project structure

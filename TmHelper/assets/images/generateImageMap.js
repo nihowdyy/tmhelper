@@ -51,7 +51,7 @@ const generateImageMap = () => {
             console.log('Processing file:', file); // Debug line
 
             // Check if the file is a valid image
-            if (path.extname(file) === '.jpg') { // Adjust to your file type
+            if (path.extname(file) === '.jpg') { 
                 const pokemonName = extractPokemonName(file);
 
                 if (pokemonName) {
@@ -60,7 +60,8 @@ const generateImageMap = () => {
                     }
       
                     // Add the image path to the Pokémon's list
-                    imageMap[pokemonName].push(path.posix.join('locations', file));
+                    const imagePath = require('../../assets/images/' + path.posix.join('locations', file))
+                    imageMap[pokemonName].push(imagePath);
                 }
             } else {
                 console.log(`Skipping non-image file: ${file}`);
@@ -89,6 +90,7 @@ if (!fs.existsSync(outputDir)) {
 const imageMap = generateImageMap();
 console.log(JSON.stringify(imageMap, null, 2));
 const imageMapPath = path.posix.join(outputDir, 'imageMap.json');
+
 
 try {
     fs.writeFileSync(imageMapPath, JSON.stringify(imageMap, null, 2), 'utf8');
