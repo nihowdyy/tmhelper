@@ -1,6 +1,5 @@
-// Imports
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, Image, Pressable, Modal, Platform} from 'react-native';
+import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal } from 'react-native';
 import pokemonImages from '../../assets/images/pokemonImages';
 
 const TMDetailScreen = ({ route }: any) => {
@@ -39,44 +38,53 @@ const TMDetailScreen = ({ route }: any) => {
     setSelectedImage(null);
   };
 
-  return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>{tm.tm_info.name} (TM {tm.tm_info.number})</Text>
-      <Text style={styles.subtitle}>Location:</Text>
-      {tm.tm_info.location.map((loc: string, index: number) => (
-        <Text key={index} style={styles.text}>{loc}</Text>
-      ))}
-      <Text style={styles.subtitle}>LP Cost: {tm.tm_info.lp_cost}</Text>
-      <Text style={styles.subtitle}>Sell Price: {tm.tm_info.sell_price}</Text>
-      <Text style={styles.subtitle}>Materials:</Text>
-      {tm.tm_info.materials.map((material: any, index: number) => (
-        <Text key={index} style={styles.text}>
-          {material.quantity} x {material.material_name}
-        </Text>
-      ))}
-      <Text style={styles.subtitle}>Move Info:</Text>
-      <Text style={styles.text}>Type: {tm.move_info.type}</Text>
-      <Text style={styles.text}>Category: {tm.move_info.category}</Text>
-      <Text style={styles.text}>Power: {tm.move_info.power}</Text>
-      <Text style={styles.text}>Accuracy: {tm.move_info.accuracy}</Text>
-      <Text style={styles.text}>PP: {tm.move_info.pp}</Text>
+  // Render item function for FlatList
+  const renderItem = ({ item }: { item: { name: string; images: string[] } }) => (
+    <View style={styles.item}>
+      <Text style={styles.pokemonName}>{item.name} Images:</Text>
+      {item.images.length > 0 ? (
+        item.images.map((image, i) => (
+          <Pressable key={i} onPress={() => openImage(image)}>
+            <Image source={image} style={styles.image} />
+          </Pressable>
+        ))
+      ) : (
+        <Text>No images available</Text>
+      )}
+    </View>
+  );
 
-      <View>
-        {pokemonImagesToDisplay.map(({ name, images }, index) => (
-          <View key={index}>
-            <Text>{name} Images:</Text>
-            {images.length > 0 ? (
-              images.map((image, i) => (
-                <Pressable key={i} onPress={() => openImage(image)}>
-                  <Image source={image} style={styles.image} />
-                </Pressable>
-              ))
-            ) : (
-              <Text>No images available</Text>
-            )}
-          </View>
-        ))}
-      </View>
+  return (
+    <View style={styles.container}>
+      <FlatList
+        data={pokemonImagesToDisplay}
+        keyExtractor={(item) => item.name}
+        renderItem={renderItem}
+        ListHeaderComponent={
+          <>
+            <Text style={styles.title}>{tm.tm_info.name} (TM {tm.tm_info.number})</Text>
+            <Text style={styles.subtitle}>Location:</Text>
+            {tm.tm_info.location.map((loc: string, index: number) => (
+              <Text key={index} style={styles.text}>{loc}</Text>
+            ))}
+            <Text style={styles.subtitle}>LP Cost: {tm.tm_info.lp_cost}</Text>
+            <Text style={styles.subtitle}>Sell Price: {tm.tm_info.sell_price}</Text>
+            <Text style={styles.subtitle}>Materials:</Text>
+            {tm.tm_info.materials.map((material: any, index: number) => (
+              <Text key={index} style={styles.text}>
+                {material.quantity} x {material.material_name}
+              </Text>
+            ))}
+            <Text style={styles.subtitle}>Move Info:</Text>
+            <Text style={styles.text}>Type: {tm.move_info.type}</Text>
+            <Text style={styles.text}>Category: {tm.move_info.category}</Text>
+            <Text style={styles.text}>Power: {tm.move_info.power}</Text>
+            <Text style={styles.text}>Accuracy: {tm.move_info.accuracy}</Text>
+            <Text style={styles.text}>PP: {tm.move_info.pp}</Text>
+          </>
+        }
+        contentContainerStyle={{ paddingBottom: 100 }} // Ensure there's padding at the bottom if needed
+      />
 
       {/* Fullscreen image modal */}
       {selectedImage && (
@@ -89,7 +97,7 @@ const TMDetailScreen = ({ route }: any) => {
           </Pressable>
         </Modal>
       )}
-    </ScrollView>
+    </View>
   );
 };
 
