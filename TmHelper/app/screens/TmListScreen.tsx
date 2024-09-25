@@ -29,7 +29,7 @@ const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item
 
 const HomeScreen = ({ navigation }: any) => {
   const handlePress = React.useCallback((tm: TMData) => {
-    navigation.navigate('TMDetail', { tm });
+    navigation.navigate('TMDetails', { tm });
   }, [navigation]);
 
   return (

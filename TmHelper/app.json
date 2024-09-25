@@ -4,7 +4,8 @@
     "slug": "TmHelper",
     "platforms": [
       "android",
-      "web"
+      "web",
+      "ios"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
