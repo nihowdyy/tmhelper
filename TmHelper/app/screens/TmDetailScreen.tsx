@@ -1,13 +1,7 @@
-// Existing imports
+// Imports
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, Image, Pressable, Modal } from 'react-native';
-
-// Define the type for your locationMappings
-interface LocationMappings {
-  [key: string]: string[];
-}
-
-const locationMappings: LocationMappings = require('../../assets/json/imageMap.json');
+import { StyleSheet, Text, View, ScrollView, Image, Pressable, Modal, Platform} from 'react-native';
+import pokemonImages from '../../assets/images/pokemonImages';
 
 const TMDetailScreen = ({ route }: any) => {
   const { tm } = route.params;
@@ -21,10 +15,19 @@ const TMDetailScreen = ({ route }: any) => {
   // Get the list of Pokémon names from materials
   const materialsPokemonNames = materials.map((material: { pokemon_name: string; }) => material.pokemon_name);
 
-  // Filter locationMappings based on the Pokémon names in materialsPokemonNames
-  const filteredMappings: [string, string[]][] = Object.entries(locationMappings).filter(([pokemonName]) =>
-    materialsPokemonNames.includes(pokemonName)
-  ) as [string, string[]][]; // Explicit type assertion
+  // Remove spaces and dashes from pokemon names
+  const formatPokemonName = (pokemonName: string) => {
+    return pokemonName.replace(/[\s-]/g, '');
+  };
+
+  // Access images for each Pokémon name
+  const pokemonImagesToDisplay = materialsPokemonNames.map((pokemonName: string) => {
+    const formattedName = formatPokemonName(pokemonName); // Format the name
+    return {
+      name: pokemonName,
+      images: pokemonImages[formattedName] || [], // Access images or return an empty array
+    };
+  });
 
   const openImage = (imageUri: string) => {
     setSelectedImage(imageUri);
@@ -58,35 +61,32 @@ const TMDetailScreen = ({ route }: any) => {
       <Text style={styles.text}>Accuracy: {tm.move_info.accuracy}</Text>
       <Text style={styles.text}>PP: {tm.move_info.pp}</Text>
 
-      {/* Display images for filtered Pokémon */}
-      <Text style={styles.subtitle}>Pokémon Images:</Text>
-      {filteredMappings.map(([pokemonName, imagePaths], index) => (
-        <View key={index} style={styles.item}>
-          <Text style={styles.pokemonName}>{pokemonName}</Text>
-          {imagePaths.map((path: string, i: React.Key | null | undefined) => (
-            <Pressable key={i} onPress={() => openImage(`../../assets/images/${path}`)}>
-              <Image
-                source={{ uri: `../../assets/images/${path}` }} // Adjust path based on your project structure
-                style={styles.image}
-              />
-            </Pressable>
-          ))}
-        </View>
-      ))}
+      <View>
+        {pokemonImagesToDisplay.map(({ name, images }, index) => (
+          <View key={index}>
+            <Text>{name} Images:</Text>
+            {images.length > 0 ? (
+              images.map((image, i) => (
+                <Pressable key={i} onPress={() => openImage(image)}>
+                  <Image source={image} style={styles.image} />
+                </Pressable>
+              ))
+            ) : (
+              <Text>No images available</Text>
+            )}
+          </View>
+        ))}
+      </View>
 
       {/* Fullscreen image modal */}
       {selectedImage && (
         <Modal visible={modalVisible} transparent={true} onRequestClose={closeImage}>
-          <View style={styles.modalBackground}>
+          <Pressable style={styles.modalBackground} onPress={closeImage}>
             <Image
-              source={{ uri: selectedImage }}
+              source={selectedImage}
               style={styles.fullscreenImage}
-              resizeMode='contain'
             />
-            <Pressable style={styles.closeButton} onPress={closeImage}>
-              <Text style={styles.closeButtonText}>Close</Text>
-            </Pressable>
-          </View>
+          </Pressable>
         </Modal>
       )}
     </ScrollView>
@@ -120,10 +120,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   image: {
-    width: '10%', // Adjust size as needed
-    height: 200,
-    resizeMode: 'contain',
+    width: '30%', // Adjust size as needed
+    height: 100,
     marginBottom: 10,
+    resizeMode: 'contain',
   },
   modalBackground: {
     flex: 1,
@@ -134,18 +134,7 @@ const styles = StyleSheet.create({
   fullscreenImage: {
     width: '100%',
     height: '80%',
-  },
-  closeButton: {
-    position: 'absolute',
-    top: 40,
-    right: 20,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    padding: 10,
-    borderRadius: 5,
-  },
-  closeButtonText: {
-    color: 'white',
-    fontSize: 16,
+    resizeMode: 'contain',
   },
 });
 

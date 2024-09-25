@@ -51,7 +51,7 @@ const generateImageMap = () => {
             console.log('Processing file:', file); // Debug line
 
             // Check if the file is a valid image
-            if (path.extname(file) === '.jpg') { 
+            if (path.extname(file) === '.jpg') { // Adjust to your file type
                 const pokemonName = extractPokemonName(file);
 
                 if (pokemonName) {
@@ -60,7 +60,7 @@ const generateImageMap = () => {
                     }
       
                     // Add the image path to the Pokémon's list
-                    imageMap[pokemonName].push(path.posix.join('locations', file));
+                    imageMap[pokemonName].push('../../assets/images/' + path.posix.join('locations', file));
                 }
             } else {
                 console.log(`Skipping non-image file: ${file}`);
