@@ -3,6 +3,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, Pressable, Image} from 'react-native';
 import moveTypes from '../../assets/images/moveTypes';
+import moveCategories from '../../assets/images/moveCategories';
 const tmData = require('../../assets/json/PKMN-SV-TMS.json');
 
 // TM Data Information
@@ -40,19 +41,28 @@ type MoveType =
   | "Steel"
   | "Water";
 
+type MoveCategory =
+  | "Physical"
+  | "Special"
+  | "Status";  
+
 const data: TMData[] = tmData as TMData[];
 
 const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item: TMData) => void }) => {
-  // Get the SVG image corresponding to the move type
-  const moveTypeImage = moveTypes[item.move_info.type as MoveType] || moveTypes['Normal']; // Fallback to 'Normal' if the type is not found
+  const moveTypeImage = moveTypes[item.move_info.type as MoveType] || moveTypes['Normal'];
+  const moveCategoryImage = moveCategories[item.move_info.category as MoveCategory] || moveCategories['Status'];
 
   return (
     <Pressable onPress={() => onPress(item)} style={styles.item}>
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <Text style={styles.title}>
-          TM {item.tm_info.number}: {item.tm_info.name}
-        </Text>
-        <Image source={moveTypeImage} style={styles.image} />
+      <View style={styles.row}>
+        <View style={styles.textContainer}>
+          <Text style={styles.tmNumber}>TM {item.tm_info.number}</Text>
+          <Text style={styles.tmName}>{item.tm_info.name}</Text>
+        </View>
+        <View style={styles.imageContainer}>
+          <Image source={moveTypeImage} style={styles.image} resizeMode='contain' />
+          <Image source={moveCategoryImage} style={styles.image} resizeMode='contain' />
+        </View>
       </View>
     </Pressable>
   );
@@ -64,7 +74,7 @@ const HomeScreen = ({ navigation }: any) => {
   }, [navigation]);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.row}>
       <FlatList
       data={data}
       renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
@@ -77,23 +87,41 @@ const HomeScreen = ({ navigation }: any) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    alignItems: 'center', 
   },
   item: {
     padding: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
-    pointerEvents: 'auto',
   },
   image: {
     width: 30,
     height: 30,
+    marginLeft: 5, 
+  },
+  textContainer: {
+    flex: 1,
     marginRight: 10,
   },
-  title: {
+  nameContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  tmNumber: {
+    fontSize: 14,
+    color: '#555',
+  },
+  tmName: {
     fontSize: 18,
+    fontWeight: 'bold',
+  },
+  imageContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });
 
