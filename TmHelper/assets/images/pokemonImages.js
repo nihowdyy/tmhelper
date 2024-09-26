@@ -1,1897 +1,1897 @@
 const pokemonImages = {
-    Abomasnow: [
-      require('../../assets/images/locations/Abomasnow Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Abomasnow Location Map.jpg')
+    "Abomasnow": [
+      "../../assets/images/locations/Abomasnow Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Abomasnow Location Map.jpg"
     ],
-    Aipom: [
-      require('../../assets/images/locations/Aipom Teal Mask Location Map.jpg')
+    "Aipom": [
+      "../../assets/images/locations/Aipom Teal Mask Location Map.jpg"
     ],
-    Alcremie: [
-      require('../../assets/images/locations/Alcremie Indigo Disk Location Map.jpg')
+    "Alcremie": [
+      "../../assets/images/locations/Alcremie Indigo Disk Location Map.jpg"
     ],
-    AlolanDiglett: [
-      require('../../assets/images/locations/Alolan Diglett Indigo Disk Location Map.jpg')
+    "Alolan Diglett": [
+      "../../assets/images/locations/Alolan Diglett Indigo Disk Location Map.jpg"
     ],
-    AlolanDugtrio: [
-      require('../../assets/images/locations/Alolan Dugtrio Indigo Disk Location Map.jpg')
+    "Alolan Dugtrio": [
+      "../../assets/images/locations/Alolan Dugtrio Indigo Disk Location Map.jpg"
     ],
-    AlolanExeggutor: [
-      require('../../assets/images/locations/Alolan Exeggutor Indigo Disk Location Map.jpg')
+    "Alolan Exeggutor": [
+      "../../assets/images/locations/Alolan Exeggutor Indigo Disk Location Map.jpg"
     ],
-    AlolanGeodude: [
-      require('../../assets/images/locations/Alolan Geodude Indigo Disk Location Map.jpg')
+    "Alolan Geodude": [
+      "../../assets/images/locations/Alolan Geodude Indigo Disk Location Map.jpg"
     ],
-    AlolanGolem: [
-      require('../../assets/images/locations/Alolan Golem Indigo Disk Location Map.jpg')
+    "Alolan Golem": [
+      "../../assets/images/locations/Alolan Golem Indigo Disk Location Map.jpg"
     ],
-    AlolanGraveler: [
-      require('../../assets/images/locations/Alolan Graveler Indigo Disk Location Map.jpg')
+    "Alolan Graveler": [
+      "../../assets/images/locations/Alolan Graveler Indigo Disk Location Map.jpg"
     ],
-    AlolanGrimer: [
-      require('../../assets/images/locations/Alolan Grimer Indigo Disk Location Map.jpg')
+    "Alolan Grimer": [
+      "../../assets/images/locations/Alolan Grimer Indigo Disk Location Map.jpg"
     ],
-    AlolanMuk: [
-      require('../../assets/images/locations/Alolan Muk Indigo Disk Location Map.jpg')
+    "Alolan Muk": [
+      "../../assets/images/locations/Alolan Muk Indigo Disk Location Map.jpg"
     ],
-    AlolanNinetales: [
-      require('../../assets/images/locations/Alolan Ninetales Indigo Disk Location Map.jpg')
+    "Alolan Ninetales": [
+      "../../assets/images/locations/Alolan Ninetales Indigo Disk Location Map.jpg"
     ],
-    AlolanSandshrew: [
-      require('../../assets/images/locations/Alolan Sandshrew Indigo Disk Location Map.jpg')
+    "Alolan Sandshrew": [
+      "../../assets/images/locations/Alolan Sandshrew Indigo Disk Location Map.jpg"
     ],
-    AlolanSandslash: [
-      require('../../assets/images/locations/Alolan Sandslash Indigo Disk Location Map.jpg')
+    "Alolan Sandslash": [
+      "../../assets/images/locations/Alolan Sandslash Indigo Disk Location Map.jpg"
     ],
-    AlolanVulpix: [
-      require('../../assets/images/locations/Alolan Vulpix Indigo Disk Location Map.jpg')
+    "Alolan Vulpix": [
+      "../../assets/images/locations/Alolan Vulpix Indigo Disk Location Map.jpg"
     ],
-    Alomomola: [
-      require('../../assets/images/locations/Alomomola Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Alomomola Location Map.jpg')
+    "Alomomola": [
+      "../../assets/images/locations/Alomomola Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Alomomola Location Map.jpg"
     ],
-    Altaria: [
-      require('../../assets/images/locations/Altaria Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Altaria Location Map.jpg')
+    "Altaria": [
+      "../../assets/images/locations/Altaria Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Altaria Location Map.jpg"
     ],
-    Amoonguss: [
-      require('../../assets/images/locations/Amoonguss Location Map.jpg')
+    "Amoonguss": [
+      "../../assets/images/locations/Amoonguss Location Map.jpg"
     ],
-    Ampharos: [
-      require('../../assets/images/locations/Ampharos Location Map.jpg')
+    "Ampharos": [
+      "../../assets/images/locations/Ampharos Location Map.jpg"
     ],
-    Annihilape: [
-      require('../../assets/images/locations/Annihilape Teal Mask Location Map.jpg')
+    "Annihilape": [
+      "../../assets/images/locations/Annihilape Teal Mask Location Map.jpg"
     ],
-    Appletun: [
-      require('../../assets/images/locations/Appletun Teal Mask Location Map.jpg')
+    "Appletun": [
+      "../../assets/images/locations/Appletun Teal Mask Location Map.jpg"
     ],
-    Applin: [
-      require('../../assets/images/locations/Applin Location Map.jpg'),
-      require('../../assets/images/locations/Applin Teal Mask Location Map.jpg')
+    "Applin": [
+      "../../assets/images/locations/Applin Location Map.jpg",
+      "../../assets/images/locations/Applin Teal Mask Location Map.jpg"
     ],
-    Araquanid: [
-      require('../../assets/images/locations/Araquanid Indigo Disk Location Map.jpg')
+    "Araquanid": [
+      "../../assets/images/locations/Araquanid Indigo Disk Location Map.jpg"
     ],
-    Arbok: [
-      require('../../assets/images/locations/Arbok Teal Mask Location Map.jpg')
+    "Arbok": [
+      "../../assets/images/locations/Arbok Teal Mask Location Map.jpg"
     ],
-    Arboliva: [
-      require('../../assets/images/locations/Arboliva Location Map.jpg')
+    "Arboliva": [
+      "../../assets/images/locations/Arboliva Location Map.jpg"
     ],
-    Arcanine: [
-      require('../../assets/images/locations/Arcanine Location Map.jpg')
+    "Arcanine": [
+      "../../assets/images/locations/Arcanine Location Map.jpg"
     ],
-    Archaludon: [
-      require('../../assets/images/locations/Archaludon Indigo Disk Location Map.jpg')
+    "Archaludon": [
+      "../../assets/images/locations/Archaludon Indigo Disk Location Map.jpg"
     ],
-    Arctibax: [
-      require('../../assets/images/locations/Arctibax Location Map.jpg')
+    "Arctibax": [
+      "../../assets/images/locations/Arctibax Location Map.jpg"
     ],
-    Ariados: [
-      require('../../assets/images/locations/Ariados Teal Mask Location Map.jpg')
+    "Ariados": [
+      "../../assets/images/locations/Ariados Teal Mask Location Map.jpg"
     ],
-    Arrokuda: [
-      require('../../assets/images/locations/Arrokuda Location Map.jpg'),
-      require('../../assets/images/locations/Arrokuda Teal Mask Location Map.jpg')
+    "Arrokuda": [
+      "../../assets/images/locations/Arrokuda Location Map.jpg",
+      "../../assets/images/locations/Arrokuda Teal Mask Location Map.jpg"
     ],
-    Avalugg: [
-      require('../../assets/images/locations/Avalugg Location Map.jpg')
+    "Avalugg": [
+      "../../assets/images/locations/Avalugg Location Map.jpg"
     ],
-    Axew: [
-      require('../../assets/images/locations/Axew Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Axew Location Map.jpg')
+    "Axew": [
+      "../../assets/images/locations/Axew Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Axew Location Map.jpg"
     ],
-    Azumarill: [
-      require('../../assets/images/locations/Azumarill Location Map.jpg')
+    "Azumarill": [
+      "../../assets/images/locations/Azumarill Location Map.jpg"
     ],
-    Azurill: [
-      require('../../assets/images/locations/Azurill Location Map.jpg')
+    "Azurill": [
+      "../../assets/images/locations/Azurill Location Map.jpg"
     ],
-    Bagon: [
-      require('../../assets/images/locations/Bagon Location Map.jpg')
+    "Bagon": [
+      "../../assets/images/locations/Bagon Location Map.jpg"
     ],
-    Banette: [
-      require('../../assets/images/locations/Banette Location Map.jpg')
+    "Banette": [
+      "../../assets/images/locations/Banette Location Map.jpg"
     ],
-    Barboach: [
-      require('../../assets/images/locations/Barboach Location Map.jpg'),
-      require('../../assets/images/locations/Barboach Teal Mask Location Map.jpg')
+    "Barboach": [
+      "../../assets/images/locations/Barboach Location Map.jpg",
+      "../../assets/images/locations/Barboach Teal Mask Location Map.jpg"
     ],
-    Barraskewda: [
-      require('../../assets/images/locations/Barraskewda Location Map.jpg'),
-      require('../../assets/images/locations/Barraskewda Teal Mask Location Map.jpg')
+    "Barraskewda": [
+      "../../assets/images/locations/Barraskewda Location Map.jpg",
+      "../../assets/images/locations/Barraskewda Teal Mask Location Map.jpg"
     ],
-    Basculin: [
-      require('../../assets/images/locations/Basculin (White Striped Form) Teal Mask Location Map.jpg'),
-      require('../../assets/images/locations/Basculin Location Map.jpg')
+    "Basculin": [
+      "../../assets/images/locations/Basculin (White Striped Form) Teal Mask Location Map.jpg",
+      "../../assets/images/locations/Basculin Location Map.jpg"
     ],
-    Bastiodon: [
-      require('../../assets/images/locations/Bastiodon Indigo Disk Location Map.jpg')
+    "Bastiodon": [
+      "../../assets/images/locations/Bastiodon Indigo Disk Location Map.jpg"
     ],
-    Bayleef: [
-      require('../../assets/images/locations/Bayleef Indigo Disk Location Map.jpg')
+    "Bayleef": [
+      "../../assets/images/locations/Bayleef Indigo Disk Location Map.jpg"
     ],
-    Beartic: [
-      require('../../assets/images/locations/Beartic Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Beartic Location Map.jpg')
+    "Beartic": [
+      "../../assets/images/locations/Beartic Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Beartic Location Map.jpg"
     ],
-    Beldum: [
-      require('../../assets/images/locations/Beldum Indigo Disk Location Map.jpg')
+    "Beldum": [
+      "../../assets/images/locations/Beldum Indigo Disk Location Map.jpg"
     ],
-    Bellibolt: [
-      require('../../assets/images/locations/Bellibolt Location Map.jpg')
+    "Bellibolt": [
+      "../../assets/images/locations/Bellibolt Location Map.jpg"
     ],
-    Bellossom: [
-      require('../../assets/images/locations/Bellossom Indigo Disk Location Map.jpg')
+    "Bellossom": [
+      "../../assets/images/locations/Bellossom Indigo Disk Location Map.jpg"
     ],
-    Bellsprout: [
-      require('../../assets/images/locations/Bellsprout Teal Mask Location Map.jpg')
+    "Bellsprout": [
+      "../../assets/images/locations/Bellsprout Teal Mask Location Map.jpg"
     ],
-    Bergmite: [
-      require('../../assets/images/locations/Bergmite Location Map.jpg')
+    "Bergmite": [
+      "../../assets/images/locations/Bergmite Location Map.jpg"
     ],
-    Bisharp: [
-      require('../../assets/images/locations/Bisharp Location Map.jpg'),
-      require('../../assets/images/locations/Bisharp Teal Mask Location Map.jpg')
+    "Bisharp": [
+      "../../assets/images/locations/Bisharp Location Map.jpg",
+      "../../assets/images/locations/Bisharp Teal Mask Location Map.jpg"
     ],
-    Blastoise: [
-      require('../../assets/images/locations/Blastoise Indigo Disk Location Map.jpg')
+    "Blastoise": [
+      "../../assets/images/locations/Blastoise Indigo Disk Location Map.jpg"
     ],
-    Blaziken: [
-      require('../../assets/images/locations/Blaziken Indigo Disk Location Map.jpg')
+    "Blaziken": [
+      "../../assets/images/locations/Blaziken Indigo Disk Location Map.jpg"
     ],
-    Blissey: [
-      require('../../assets/images/locations/Blissey Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Blissey Location Map.jpg')
+    "Blissey": [
+      "../../assets/images/locations/Blissey Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Blissey Location Map.jpg"
     ],
-    Blitzle: [
-      require('../../assets/images/locations/Blitzle Indigo Disk Location Map.jpg')
+    "Blitzle": [
+      "../../assets/images/locations/Blitzle Indigo Disk Location Map.jpg"
     ],
-    Bombirdier: [
-      require('../../assets/images/locations/Bombirdier Location Map.jpg'),
-      require('../../assets/images/locations/Bombirdier Teal Mask Location Map.jpg')
+    "Bombirdier": [
+      "../../assets/images/locations/Bombirdier Location Map.jpg",
+      "../../assets/images/locations/Bombirdier Teal Mask Location Map.jpg"
     ],
-    Bonsly: [
-      require('../../assets/images/locations/Bonsly Location Map.jpg'),
-      require('../../assets/images/locations/Bonsly Teal Mask Location Map.jpg')
+    "Bonsly": [
+      "../../assets/images/locations/Bonsly Location Map.jpg",
+      "../../assets/images/locations/Bonsly Teal Mask Location Map.jpg"
     ],
-    Bounsweet: [
-      require('../../assets/images/locations/Bounsweet Location Map.jpg')
+    "Bounsweet": [
+      "../../assets/images/locations/Bounsweet Location Map.jpg"
     ],
-    Braixen: [
-      require('../../assets/images/locations/Braixen Indigo Disk Location Map.jpg')
+    "Braixen": [
+      "../../assets/images/locations/Braixen Indigo Disk Location Map.jpg"
     ],
-    Brambleghast: [
-      require('../../assets/images/locations/Brambleghast Location Map.jpg')
+    "Brambleghast": [
+      "../../assets/images/locations/Brambleghast Location Map.jpg"
     ],
-    Bramblin: [
-      require('../../assets/images/locations/Bramblin Location Map.jpg')
+    "Bramblin": [
+      "../../assets/images/locations/Bramblin Location Map.jpg"
     ],
-    Braviary: [
-      require('../../assets/images/locations/Braviary Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Braviary Location Map.jpg')
+    "Braviary": [
+      "../../assets/images/locations/Braviary Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Braviary Location Map.jpg"
     ],
-    Breloom: [
-      require('../../assets/images/locations/Breloom Location Map.jpg')
+    "Breloom": [
+      "../../assets/images/locations/Breloom Location Map.jpg"
     ],
-    Brionne: [
-      require('../../assets/images/locations/Brionne Indigo Disk Location Map.jpg')
+    "Brionne": [
+      "../../assets/images/locations/Brionne Indigo Disk Location Map.jpg"
     ],
-    Bronzong: [
-      require('../../assets/images/locations/Bronzong Location Map.jpg'),
-      require('../../assets/images/locations/Bronzong Teal Mask Location Map.jpg')
+    "Bronzong": [
+      "../../assets/images/locations/Bronzong Location Map.jpg",
+      "../../assets/images/locations/Bronzong Teal Mask Location Map.jpg"
     ],
-    Bronzor: [
-      require('../../assets/images/locations/Bronzor Location Map.jpg'),
-      require('../../assets/images/locations/Bronzor Teal Mask Location Map.jpg')
+    "Bronzor": [
+      "../../assets/images/locations/Bronzor Location Map.jpg",
+      "../../assets/images/locations/Bronzor Teal Mask Location Map.jpg"
     ],
-    Bruxish: [
-      require('../../assets/images/locations/Bruxish Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Bruxish Location Map.jpg')
+    "Bruxish": [
+      "../../assets/images/locations/Bruxish Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Bruxish Location Map.jpg"
     ],
-    Buizel: [
-      require('../../assets/images/locations/Buizel Location Map.jpg')
+    "Buizel": [
+      "../../assets/images/locations/Buizel Location Map.jpg"
     ],
-    Bulbasaur: [
-      require('../../assets/images/locations/Bulbasaur Indigo Disk Location Map.jpg')
+    "Bulbasaur": [
+      "../../assets/images/locations/Bulbasaur Indigo Disk Location Map.jpg"
     ],
-    Cacnea: [
-      require('../../assets/images/locations/Cacnea Location Map.jpg')
+    "Cacnea": [
+      "../../assets/images/locations/Cacnea Location Map.jpg"
     ],
-    Cacturne: [
-      require('../../assets/images/locations/Cacturne Location Map.jpg')
+    "Cacturne": [
+      "../../assets/images/locations/Cacturne Location Map.jpg"
     ],
-    Camerupt: [
-      require('../../assets/images/locations/Camerupt Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Camerupt Location Map.jpg')
+    "Camerupt": [
+      "../../assets/images/locations/Camerupt Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Camerupt Location Map.jpg"
     ],
-    Capsakid: [
-      require('../../assets/images/locations/Capsakid Location Map.jpg')
+    "Capsakid": [
+      "../../assets/images/locations/Capsakid Location Map.jpg"
     ],
-    Carbink: [
-      require('../../assets/images/locations/Carbink Teal Mask Location Map.jpg')
+    "Carbink": [
+      "../../assets/images/locations/Carbink Teal Mask Location Map.jpg"
     ],
-    Carkol: [
-      require('../../assets/images/locations/Carkol Location Map.jpg')
+    "Carkol": [
+      "../../assets/images/locations/Carkol Location Map.jpg"
     ],
-    Cetitan: [
-      require('../../assets/images/locations/Cetitan Location Map.jpg')
+    "Cetitan": [
+      "../../assets/images/locations/Cetitan Location Map.jpg"
     ],
-    Cetoddle: [
-      require('../../assets/images/locations/Cetoddle Location Map.jpg')
+    "Cetoddle": [
+      "../../assets/images/locations/Cetoddle Location Map.jpg"
     ],
-    Chansey: [
-      require('../../assets/images/locations/Chansey Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Chansey Location Map.jpg')
+    "Chansey": [
+      "../../assets/images/locations/Chansey Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Chansey Location Map.jpg"
     ],
-    Charcadet: [
-      require('../../assets/images/locations/Charcadet Location Map.jpg')
+    "Charcadet": [
+      "../../assets/images/locations/Charcadet Location Map.jpg"
     ],
-    Charizard: [
-      require('../../assets/images/locations/Charizard Indigo Disk Location Map.jpg')
+    "Charizard": [
+      "../../assets/images/locations/Charizard Indigo Disk Location Map.jpg"
     ],
-    Charjabug: [
-      require('../../assets/images/locations/Charjabug Teal Mask Location Map.jpg')
+    "Charjabug": [
+      "../../assets/images/locations/Charjabug Teal Mask Location Map.jpg"
     ],
-    Charmander: [
-      require('../../assets/images/locations/Charmander Indigo Disk Location Map.jpg')
+    "Charmander": [
+      "../../assets/images/locations/Charmander Indigo Disk Location Map.jpg"
     ],
-    Charmeleon: [
-      require('../../assets/images/locations/Charmeleon Indigo Disk Location Map.jpg')
+    "Charmeleon": [
+      "../../assets/images/locations/Charmeleon Indigo Disk Location Map.jpg"
     ],
-    Chesnaught: [
-      require('../../assets/images/locations/Chesnaught Indigo Disk Location Map.jpg')
+    "Chesnaught": [
+      "../../assets/images/locations/Chesnaught Indigo Disk Location Map.jpg"
     ],
-    Chespin: [
-      require('../../assets/images/locations/Chespin Indigo Disk Location Map.jpg')
+    "Chespin": [
+      "../../assets/images/locations/Chespin Indigo Disk Location Map.jpg"
     ],
-    Chewtle: [
-      require('../../assets/images/locations/Chewtle Location Map.jpg'),
-      require('../../assets/images/locations/Chewtle Teal Mask Location Map.jpg')
+    "Chewtle": [
+      "../../assets/images/locations/Chewtle Location Map.jpg",
+      "../../assets/images/locations/Chewtle Teal Mask Location Map.jpg"
     ],
-    Chikorita: [
-      require('../../assets/images/locations/Chikorita Indigo Disk Location Map.jpg')
+    "Chikorita": [
+      "../../assets/images/locations/Chikorita Indigo Disk Location Map.jpg"
     ],
-    Chimchar: [
-      require('../../assets/images/locations/Chimchar Indigo Disk Location Map.jpg')
+    "Chimchar": [
+      "../../assets/images/locations/Chimchar Indigo Disk Location Map.jpg"
     ],
-    Chimecho: [
-      require('../../assets/images/locations/Chimecho Teal Mask Location Map.jpg')
+    "Chimecho": [
+      "../../assets/images/locations/Chimecho Teal Mask Location Map.jpg"
     ],
-    Chinchou: [
-      require('../../assets/images/locations/Chinchou Indigo Disk Location Map.jpg')
+    "Chinchou": [
+      "../../assets/images/locations/Chinchou Indigo Disk Location Map.jpg"
     ],
-    Chingling: [
-      require('../../assets/images/locations/Chingling Teal Mask Location Map.jpg')
+    "Chingling": [
+      "../../assets/images/locations/Chingling Teal Mask Location Map.jpg"
     ],
-    Cinccino: [
-      require('../../assets/images/locations/Cinccino Indigo Disk Location Map.jpg')
+    "Cinccino": [
+      "../../assets/images/locations/Cinccino Indigo Disk Location Map.jpg"
     ],
-    Cinderace: [
-      require('../../assets/images/locations/Cinderace Indigo Disk Location Map.jpg')
+    "Cinderace": [
+      "../../assets/images/locations/Cinderace Indigo Disk Location Map.jpg"
     ],
-    Clauncher: [
-      require('../../assets/images/locations/Clauncher Location Map.jpg')
+    "Clauncher": [
+      "../../assets/images/locations/Clauncher Location Map.jpg"
     ],
-    Clawitzer: [
-      require('../../assets/images/locations/Clawitzer Location Map.jpg')
+    "Clawitzer": [
+      "../../assets/images/locations/Clawitzer Location Map.jpg"
     ],
-    Clefairy: [
-      require('../../assets/images/locations/Clefairy Teal Mask Location Map.jpg')
+    "Clefairy": [
+      "../../assets/images/locations/Clefairy Teal Mask Location Map.jpg"
     ],
-    Cleffa: [
-      require('../../assets/images/locations/Cleffa Teal Mask Location Map.jpg')
+    "Cleffa": [
+      "../../assets/images/locations/Cleffa Teal Mask Location Map.jpg"
     ],
-    Clodsire: [
-      require('../../assets/images/locations/Clodsire Location Map.jpg')
+    "Clodsire": [
+      "../../assets/images/locations/Clodsire Location Map.jpg"
     ],
-    Cloyster: [
-      require('../../assets/images/locations/Cloyster Location Map.jpg')
+    "Cloyster": [
+      "../../assets/images/locations/Cloyster Location Map.jpg"
     ],
-    Combee: [
-      require('../../assets/images/locations/Combee Location Map.jpg')
+    "Combee": [
+      "../../assets/images/locations/Combee Location Map.jpg"
     ],
-    Combusken: [
-      require('../../assets/images/locations/Combusken Indigo Disk Location Map.jpg')
+    "Combusken": [
+      "../../assets/images/locations/Combusken Indigo Disk Location Map.jpg"
     ],
-    Comfey: [
-      require('../../assets/images/locations/Comfey Indigo Disk Location Map.jpg')
+    "Comfey": [
+      "../../assets/images/locations/Comfey Indigo Disk Location Map.jpg"
     ],
-    Copperajah: [
-      require('../../assets/images/locations/Copperajah Location Map.jpg')
+    "Copperajah": [
+      "../../assets/images/locations/Copperajah Location Map.jpg"
     ],
-    Corphish: [
-      require('../../assets/images/locations/Corphish Teal Mask Location Map.jpg')
+    "Corphish": [
+      "../../assets/images/locations/Corphish Teal Mask Location Map.jpg"
     ],
-    Corviknight: [
-      require('../../assets/images/locations/Corviknight Location Map.jpg')
+    "Corviknight": [
+      "../../assets/images/locations/Corviknight Location Map.jpg"
     ],
-    Corvisquire: [
-      require('../../assets/images/locations/Corvisquire Location Map.jpg')
+    "Corvisquire": [
+      "../../assets/images/locations/Corvisquire Location Map.jpg"
     ],
-    Cottonee: [
-      require('../../assets/images/locations/Cottonee Indigo Disk Location Map.jpg')
+    "Cottonee": [
+      "../../assets/images/locations/Cottonee Indigo Disk Location Map.jpg"
     ],
-    Crabominable: [
-      require('../../assets/images/locations/Crabominable Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Crabominable Location Map.jpg')
+    "Crabominable": [
+      "../../assets/images/locations/Crabominable Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Crabominable Location Map.jpg"
     ],
-    Crabrawler: [
-      require('../../assets/images/locations/Crabrawler Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Crabrawler Location Map.jpg')
+    "Crabrawler": [
+      "../../assets/images/locations/Crabrawler Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Crabrawler Location Map.jpg"
     ],
-    Cramorant: [
-      require('../../assets/images/locations/Cramorant Teal Mask Location Map.jpg')
+    "Cramorant": [
+      "../../assets/images/locations/Cramorant Teal Mask Location Map.jpg"
     ],
-    Cranidos: [
-      require('../../assets/images/locations/Cranidos Indigo Disk Location Map.jpg')
+    "Cranidos": [
+      "../../assets/images/locations/Cranidos Indigo Disk Location Map.jpg"
     ],
-    Crawdaunt: [
-      require('../../assets/images/locations/Crawdaunt Teal Mask Location Map.jpg')
+    "Crawdaunt": [
+      "../../assets/images/locations/Crawdaunt Teal Mask Location Map.jpg"
     ],
-    Croagunk: [
-      require('../../assets/images/locations/Croagunk Location Map.jpg')
+    "Croagunk": [
+      "../../assets/images/locations/Croagunk Location Map.jpg"
     ],
-    Croconaw: [
-      require('../../assets/images/locations/Croconaw Indigo Disk Location Map.jpg')
+    "Croconaw": [
+      "../../assets/images/locations/Croconaw Indigo Disk Location Map.jpg"
     ],
-    Cryogonal: [
-      require('../../assets/images/locations/Cryogonal Location Map.jpg')
+    "Cryogonal": [
+      "../../assets/images/locations/Cryogonal Location Map.jpg"
     ],
-    Cubchoo: [
-      require('../../assets/images/locations/Cubchoo Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Cubchoo Location Map.jpg')
+    "Cubchoo": [
+      "../../assets/images/locations/Cubchoo Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Cubchoo Location Map.jpg"
     ],
-    Cufant: [
-      require('../../assets/images/locations/Cufant Location Map.jpg')
+    "Cufant": [
+      "../../assets/images/locations/Cufant Location Map.jpg"
     ],
-    Cutiefly: [
-      require('../../assets/images/locations/Cutiefly Teal Mask Location Map.jpg')
+    "Cutiefly": [
+      "../../assets/images/locations/Cutiefly Teal Mask Location Map.jpg"
     ],
-    Cyclizar: [
-      require('../../assets/images/locations/Cyclizar Location Map.jpg')
+    "Cyclizar": [
+      "../../assets/images/locations/Cyclizar Location Map.jpg"
     ],
-    Cyndaquil: [
-      require('../../assets/images/locations/Cyndaquil Indigo Disk Location Map.jpg')
+    "Cyndaquil": [
+      "../../assets/images/locations/Cyndaquil Indigo Disk Location Map.jpg"
     ],
-    Dachsbun: [
-      require('../../assets/images/locations/Dachsbun Location Map.jpg')
+    "Dachsbun": [
+      "../../assets/images/locations/Dachsbun Location Map.jpg"
     ],
-    Dartrix: [
-      require('../../assets/images/locations/Dartrix Indigo Disk Location Map.jpg')
+    "Dartrix": [
+      "../../assets/images/locations/Dartrix Indigo Disk Location Map.jpg"
     ],
-    Decidueye: [
-      require('../../assets/images/locations/Decidueye Indigo Disk Location Map.jpg')
+    "Decidueye": [
+      "../../assets/images/locations/Decidueye Indigo Disk Location Map.jpg"
     ],
-    Dedenne: [
-      require('../../assets/images/locations/Dedenne Location Map.jpg')
+    "Dedenne": [
+      "../../assets/images/locations/Dedenne Location Map.jpg"
     ],
-    Deerling: [
-      require('../../assets/images/locations/Deerling Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Deerling Location Map.jpg')
+    "Deerling": [
+      "../../assets/images/locations/Deerling Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Deerling Location Map.jpg"
     ],
-    Deino: [
-      require('../../assets/images/locations/Deino Location Map.jpg')
+    "Deino": [
+      "../../assets/images/locations/Deino Location Map.jpg"
     ],
-    Delibird: [
-      require('../../assets/images/locations/Delibird Location Map.jpg')
+    "Delibird": [
+      "../../assets/images/locations/Delibird Location Map.jpg"
     ],
-    Delphox: [
-      require('../../assets/images/locations/Delphox Indigo Disk Location Map.jpg')
+    "Delphox": [
+      "../../assets/images/locations/Delphox Indigo Disk Location Map.jpg"
     ],
-    Dewgong: [
-      require('../../assets/images/locations/Dewgong Indigo Disk Location Map.jpg')
+    "Dewgong": [
+      "../../assets/images/locations/Dewgong Indigo Disk Location Map.jpg"
     ],
-    Dewott: [
-      require('../../assets/images/locations/Dewott Indigo Disk Location Map.jpg')
+    "Dewott": [
+      "../../assets/images/locations/Dewott Indigo Disk Location Map.jpg"
     ],
-    Dewpider: [
-      require('../../assets/images/locations/Dewpider Indigo Disk Location Map.jpg')
+    "Dewpider": [
+      "../../assets/images/locations/Dewpider Indigo Disk Location Map.jpg"
     ],
-    Diglett: [
-      require('../../assets/images/locations/Diglett Location Map.jpg')
+    "Diglett": [
+      "../../assets/images/locations/Diglett Location Map.jpg"
     ],
-    Ditto: [
-      require('../../assets/images/locations/Ditto Location Map.jpg')
+    "Ditto": [
+      "../../assets/images/locations/Ditto Location Map.jpg"
     ],
-    Dodrio: [
-      require('../../assets/images/locations/Dodrio Indigo Disk Location Map.jpg')
+    "Dodrio": [
+      "../../assets/images/locations/Dodrio Indigo Disk Location Map.jpg"
     ],
-    Doduo: [
-      require('../../assets/images/locations/Doduo Indigo Disk Location Map.jpg')
+    "Doduo": [
+      "../../assets/images/locations/Doduo Indigo Disk Location Map.jpg"
     ],
-    Dolliv: [
-      require('../../assets/images/locations/Dolliv Location Map.jpg')
+    "Dolliv": [
+      "../../assets/images/locations/Dolliv Location Map.jpg"
     ],
-    Dondozo: [
-      require('../../assets/images/locations/Dondozo Location Map.jpg')
+    "Dondozo": [
+      "../../assets/images/locations/Dondozo Location Map.jpg"
     ],
-    Donphan: [
-      require('../../assets/images/locations/Donphan Location Map.jpg')
+    "Donphan": [
+      "../../assets/images/locations/Donphan Location Map.jpg"
     ],
-    Dragalge: [
-      require('../../assets/images/locations/Dragalge Location Map.jpg')
+    "Dragalge": [
+      "../../assets/images/locations/Dragalge Location Map.jpg"
     ],
-    Dragonair: [
-      require('../../assets/images/locations/Dragonair Location Map.jpg')
+    "Dragonair": [
+      "../../assets/images/locations/Dragonair Location Map.jpg"
     ],
-    Drakloak: [
-      require('../../assets/images/locations/Drakloak Location Map.jpg')
+    "Drakloak": [
+      "../../assets/images/locations/Drakloak Location Map.jpg"
     ],
-    Dratini: [
-      require('../../assets/images/locations/Dratini Location Map.jpg')
+    "Dratini": [
+      "../../assets/images/locations/Dratini Location Map.jpg"
     ],
-    Drednaw: [
-      require('../../assets/images/locations/Drednaw Location Map.jpg'),
-      require('../../assets/images/locations/Drednaw Teal Mask Location Map.jpg')
+    "Drednaw": [
+      "../../assets/images/locations/Drednaw Location Map.jpg",
+      "../../assets/images/locations/Drednaw Teal Mask Location Map.jpg"
     ],
-    Dreepy: [
-      require('../../assets/images/locations/Dreepy Location Map.jpg')
+    "Dreepy": [
+      "../../assets/images/locations/Dreepy Location Map.jpg"
     ],
-    Drifblim: [
-      require('../../assets/images/locations/Drifblim Location Map.jpg')
+    "Drifblim": [
+      "../../assets/images/locations/Drifblim Location Map.jpg"
     ],
-    Drifloon: [
-      require('../../assets/images/locations/Drifloon Location Map.jpg')
+    "Drifloon": [
+      "../../assets/images/locations/Drifloon Location Map.jpg"
     ],
-    Drilbur: [
-      require('../../assets/images/locations/Drilbur Indigo Disk Location Map.jpg')
+    "Drilbur": [
+      "../../assets/images/locations/Drilbur Indigo Disk Location Map.jpg"
     ],
-    Drizzile: [
-      require('../../assets/images/locations/Drizzile Indigo Disk Location Map.jpg')
+    "Drizzile": [
+      "../../assets/images/locations/Drizzile Indigo Disk Location Map.jpg"
     ],
-    Drowzee: [
-      require('../../assets/images/locations/Drowzee Location Map.jpg')
+    "Drowzee": [
+      "../../assets/images/locations/Drowzee Location Map.jpg"
     ],
-    Ducklett: [
-      require('../../assets/images/locations/Ducklett Teal Mask Location Map.jpg')
+    "Ducklett": [
+      "../../assets/images/locations/Ducklett Teal Mask Location Map.jpg"
     ],
-    Dudunsparce: [
-      require('../../assets/images/locations/Dudunsparce Teal Mask Location Map.jpg')
+    "Dudunsparce": [
+      "../../assets/images/locations/Dudunsparce Teal Mask Location Map.jpg"
     ],
-    Dugtrio: [
-      require('../../assets/images/locations/Dugtrio Location Map.jpg')
+    "Dugtrio": [
+      "../../assets/images/locations/Dugtrio Location Map.jpg"
     ],
-    Dunsparce: [
-      require('../../assets/images/locations/Dunsparce Location Map.jpg'),
-      require('../../assets/images/locations/Dunsparce Teal Mask Location Map.jpg')
+    "Dunsparce": [
+      "../../assets/images/locations/Dunsparce Location Map.jpg",
+      "../../assets/images/locations/Dunsparce Teal Mask Location Map.jpg"
     ],
-    Duosion: [
-      require('../../assets/images/locations/Duosion Indigo Disk Location Map.jpg')
+    "Duosion": [
+      "../../assets/images/locations/Duosion Indigo Disk Location Map.jpg"
     ],
-    Duraludon: [
-      require('../../assets/images/locations/Duraludon Indigo Disk Location Map.jpg')
+    "Duraludon": [
+      "../../assets/images/locations/Duraludon Indigo Disk Location Map.jpg"
     ],
-    Dusclops: [
-      require('../../assets/images/locations/Dusclops Teal Mask Location Map.jpg')
+    "Dusclops": [
+      "../../assets/images/locations/Dusclops Teal Mask Location Map.jpg"
     ],
-    Duskull: [
-      require('../../assets/images/locations/Duskull Teal Mask Location Map.jpg')
+    "Duskull": [
+      "../../assets/images/locations/Duskull Teal Mask Location Map.jpg"
     ],
-    Eelektrik: [
-      require('../../assets/images/locations/Eelektrik Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Eelektrik Location Map.jpg'),
-      require('../../assets/images/locations/Eelektrik Teal Mask Location Map.jpg')
+    "Eelektrik": [
+      "../../assets/images/locations/Eelektrik Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Eelektrik Location Map.jpg",
+      "../../assets/images/locations/Eelektrik Teal Mask Location Map.jpg"
     ],
-    Eelektross: [
-      require('../../assets/images/locations/Eelektross Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Eelektross Location Map.jpg')
+    "Eelektross": [
+      "../../assets/images/locations/Eelektross Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Eelektross Location Map.jpg"
     ],
-    Eevee: [
-      require('../../assets/images/locations/Eevee Location Map.jpg')
+    "Eevee": [
+      "../../assets/images/locations/Eevee Location Map.jpg"
     ],
-    Eiscue: [
-      require('../../assets/images/locations/Eiscue (Ice Face) Location Map.jpg')
+    "Eiscue": [
+      "../../assets/images/locations/Eiscue (Ice Face) Location Map.jpg"
     ],
-    Ekans: [
-      require('../../assets/images/locations/Ekans Teal Mask Location Map.jpg')
+    "Ekans": [
+      "../../assets/images/locations/Ekans Teal Mask Location Map.jpg"
     ],
-    Electabuzz: [
-      require('../../assets/images/locations/Electabuzz Indigo Disk Location Map.jpg')
+    "Electabuzz": [
+      "../../assets/images/locations/Electabuzz Indigo Disk Location Map.jpg"
     ],
-    Electivire: [
-      require('../../assets/images/locations/Electivire Indigo Disk Location Map.jpg')
+    "Electivire": [
+      "../../assets/images/locations/Electivire Indigo Disk Location Map.jpg"
     ],
-    Electrode: [
-      require('../../assets/images/locations/Electrode Location Map.jpg')
+    "Electrode": [
+      "../../assets/images/locations/Electrode Location Map.jpg"
     ],
-    Elekid: [
-      require('../../assets/images/locations/Elekid Indigo Disk Location Map.jpg')
+    "Elekid": [
+      "../../assets/images/locations/Elekid Indigo Disk Location Map.jpg"
     ],
-    Emboar: [
-      require('../../assets/images/locations/Emboar Indigo Disk Location Map.jpg')
+    "Emboar": [
+      "../../assets/images/locations/Emboar Indigo Disk Location Map.jpg"
     ],
-    Empoleon: [
-      require('../../assets/images/locations/Empoleon Indigo Disk Location Map.jpg')
+    "Empoleon": [
+      "../../assets/images/locations/Empoleon Indigo Disk Location Map.jpg"
     ],
-    Espathra: [
-      require('../../assets/images/locations/Espathra Location Map.jpg')
+    "Espathra": [
+      "../../assets/images/locations/Espathra Location Map.jpg"
     ],
-    Espeon: [
-      require('../../assets/images/locations/Espeon Location Map.jpg')
+    "Espeon": [
+      "../../assets/images/locations/Espeon Location Map.jpg"
     ],
-    Espurr: [
-      require('../../assets/images/locations/Espurr Indigo Disk Location Map.jpg')
+    "Espurr": [
+      "../../assets/images/locations/Espurr Indigo Disk Location Map.jpg"
     ],
-    Excadrill: [
-      require('../../assets/images/locations/Excadrill Indigo Disk Location Map.jpg')
+    "Excadrill": [
+      "../../assets/images/locations/Excadrill Indigo Disk Location Map.jpg"
     ],
-    Exeggcute: [
-      require('../../assets/images/locations/Exeggcute Indigo Disk Location Map.jpg')
+    "Exeggcute": [
+      "../../assets/images/locations/Exeggcute Indigo Disk Location Map.jpg"
     ],
-    Exeggutor: [
-      require('../../assets/images/locations/Exeggutor Indigo Disk Location Map.jpg')
+    "Exeggutor": [
+      "../../assets/images/locations/Exeggutor Indigo Disk Location Map.jpg"
     ],
-    Falinks: [
-      require('../../assets/images/locations/Falinks Location Map.jpg')
+    "Falinks": [
+      "../../assets/images/locations/Falinks Location Map.jpg"
     ],
-    Farigiraf: [
-      require('../../assets/images/locations/Farigiraf Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Farigiraf Location Map.jpg')
+    "Farigiraf": [
+      "../../assets/images/locations/Farigiraf Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Farigiraf Location Map.jpg"
     ],
-    Feebas: [
-      require('../../assets/images/locations/Feebas Teal Mask Location Map.jpg')
+    "Feebas": [
+      "../../assets/images/locations/Feebas Teal Mask Location Map.jpg"
     ],
-    Fennekin: [
-      require('../../assets/images/locations/Fennekin Indigo Disk Location Map.jpg')
+    "Fennekin": [
+      "../../assets/images/locations/Fennekin Indigo Disk Location Map.jpg"
     ],
-    Feraligatr: [
-      require('../../assets/images/locations/Feraligatr Indigo Disk Location Map.jpg')
+    "Feraligatr": [
+      "../../assets/images/locations/Feraligatr Indigo Disk Location Map.jpg"
     ],
-    Fidough: [
-      require('../../assets/images/locations/Fidough Location Map.jpg')
+    "Fidough": [
+      "../../assets/images/locations/Fidough Location Map.jpg"
     ],
-    Finizen: [
-      require('../../assets/images/locations/Finizen Location Map.jpg')
+    "Finizen": [
+      "../../assets/images/locations/Finizen Location Map.jpg"
     ],
-    Finneon: [
-      require('../../assets/images/locations/Finneon Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Finneon Location Map.jpg')
+    "Finneon": [
+      "../../assets/images/locations/Finneon Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Finneon Location Map.jpg"
     ],
-    Flaaffy: [
-      require('../../assets/images/locations/Flaaffy Location Map.jpg')
+    "Flaaffy": [
+      "../../assets/images/locations/Flaaffy Location Map.jpg"
     ],
-    Flabebe: [
-      require('../../assets/images/locations/Flabebe Location Map.jpg')
+    "Flabébé": [
+      "../../assets/images/locations/Flabebe Location Map.jpg"
     ],
-    Flamigo: [
-      require('../../assets/images/locations/Flamigo Location Map.jpg')
+    "Flamigo": [
+      "../../assets/images/locations/Flamigo Location Map.jpg"
     ],
-    Flapple: [
-      require('../../assets/images/locations/Flapple Teal Mask Location Map.jpg')
+    "Flapple": [
+      "../../assets/images/locations/Flapple Teal Mask Location Map.jpg"
     ],
-    Flareon: [
-      require('../../assets/images/locations/Flareon Location Map.jpg')
+    "Flareon": [
+      "../../assets/images/locations/Flareon Location Map.jpg"
     ],
-    Fletchinder: [
-      require('../../assets/images/locations/Fletchinder Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Fletchinder Location Map.jpg')
+    "Fletchinder": [
+      "../../assets/images/locations/Fletchinder Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Fletchinder Location Map.jpg"
     ],
-    Fletchling: [
-      require('../../assets/images/locations/Fletchling Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Fletchling Location Map.jpg')
+    "Fletchling": [
+      "../../assets/images/locations/Fletchling Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Fletchling Location Map.jpg"
     ],
-    Flittle: [
-      require('../../assets/images/locations/Flittle Location Map.jpg')
+    "Flittle": [
+      "../../assets/images/locations/Flittle Location Map.jpg"
     ],
-    Floatzel: [
-      require('../../assets/images/locations/Floatzel Location Map.jpg')
+    "Floatzel": [
+      "../../assets/images/locations/Floatzel Location Map.jpg"
     ],
-    Floette: [
-      require('../../assets/images/locations/Floette Location Map.jpg')
+    "Floette": [
+      "../../assets/images/locations/Floette Location Map.jpg"
     ],
-    Florges: [
-      require('../../assets/images/locations/Florges Location Map.jpg')
+    "Florges": [
+      "../../assets/images/locations/Florges Location Map.jpg"
     ],
-    Flygon: [
-      require('../../assets/images/locations/Flygon Indigo Disk Location Map.jpg')
+    "Flygon": [
+      "../../assets/images/locations/Flygon Indigo Disk Location Map.jpg"
     ],
-    Fomantis: [
-      require('../../assets/images/locations/Fomantis Location Map.jpg'),
-      require('../../assets/images/locations/Fomantis Teal Mask Location Map.jpg')
+    "Fomantis": [
+      "../../assets/images/locations/Fomantis Location Map.jpg",
+      "../../assets/images/locations/Fomantis Teal Mask Location Map.jpg"
     ],
-    Foongus: [
-      require('../../assets/images/locations/Foongus Location Map.jpg')
+    "Foongus": [
+      "../../assets/images/locations/Foongus Location Map.jpg"
     ],
-    Forretress: [
-      require('../../assets/images/locations/Forretress Location Map.jpg')
+    "Forretress": [
+      "../../assets/images/locations/Forretress Location Map.jpg"
     ],
-    Fraxure: [
-      require('../../assets/images/locations/Fraxure Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Fraxure Location Map.jpg')
+    "Fraxure": [
+      "../../assets/images/locations/Fraxure Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Fraxure Location Map.jpg"
     ],
-    Frigibax: [
-      require('../../assets/images/locations/Frigibax Location Map.jpg')
+    "Frigibax": [
+      "../../assets/images/locations/Frigibax Location Map.jpg"
     ],
-    Froakie: [
-      require('../../assets/images/locations/Froakie Indigo Disk Location Map.jpg')
+    "Froakie": [
+      "../../assets/images/locations/Froakie Indigo Disk Location Map.jpg"
     ],
-    Frogadier: [
-      require('../../assets/images/locations/Frogadier Indigo Disk Location Map.jpg')
+    "Frogadier": [
+      "../../assets/images/locations/Frogadier Indigo Disk Location Map.jpg"
     ],
-    Froslass: [
-      require('../../assets/images/locations/Froslass Location Map.jpg')
+    "Froslass": [
+      "../../assets/images/locations/Froslass Location Map.jpg"
     ],
-    Frosmoth: [
-      require('../../assets/images/locations/Frosmoth Location Map.jpg')
+    "Frosmoth": [
+      "../../assets/images/locations/Frosmoth Location Map.jpg"
     ],
-    Furret: [
-      require('../../assets/images/locations/Furret Teal Mask Location Map.jpg')
+    "Furret": [
+      "../../assets/images/locations/Furret Teal Mask Location Map.jpg"
     ],
-    Gabite: [
-      require('../../assets/images/locations/Gabite Location Map.jpg'),
-      require('../../assets/images/locations/Gabite Teal Mask Location Map.jpg')
+    "Gabite": [
+      "../../assets/images/locations/Gabite Location Map.jpg",
+      "../../assets/images/locations/Gabite Teal Mask Location Map.jpg"
     ],
-    GalarianSlowbro: [
-      require('../../assets/images/locations/Galarian Slowbro Indigo Disk Location Map.jpg')
+    "Galarian Slowbro": [
+      "../../assets/images/locations/Galarian Slowbro Indigo Disk Location Map.jpg"
     ],
-    GalarianSlowking: [
-      require('../../assets/images/locations/Galarian Slowking Indigo Disk Location Map.jpg')
+    "Galarian Slowking": [
+      "../../assets/images/locations/Galarian Slowking Indigo Disk Location Map.jpg"
     ],
-    GalarianSlowpoke: [
-      require('../../assets/images/locations/Galarian Slowpoke Indigo Disk Location Map.jpg')
+    "Galarian Slowpoke": [
+      "../../assets/images/locations/Galarian Slowpoke Indigo Disk Location Map.jpg"
     ],
-    Gallade: [
-      require('../../assets/images/locations/Gallade Location Map.jpg'),
-      require('../../assets/images/locations/Gallade Teal Mask Location Map.jpg')
+    "Gallade": [
+      "../../assets/images/locations/Gallade Location Map.jpg",
+      "../../assets/images/locations/Gallade Teal Mask Location Map.jpg"
     ],
-    Galvantula: [
-      require('../../assets/images/locations/Galvantula Indigo Disk Location Map.jpg')
+    "Galvantula": [
+      "../../assets/images/locations/Galvantula Indigo Disk Location Map.jpg"
     ],
-    Gardevoir: [
-      require('../../assets/images/locations/Gardevoir Location Map.jpg'),
-      require('../../assets/images/locations/Gardevoir Teal Mask Location Map.jpg')
+    "Gardevoir": [
+      "../../assets/images/locations/Gardevoir Location Map.jpg",
+      "../../assets/images/locations/Gardevoir Teal Mask Location Map.jpg"
     ],
-    Garganacl: [
-      require('../../assets/images/locations/Garganacl Location Map.jpg')
+    "Garganacl": [
+      "../../assets/images/locations/Garganacl Location Map.jpg"
     ],
-    Gastly: [
-      require('../../assets/images/locations/Gastly Location Map.jpg'),
-      require('../../assets/images/locations/Gastly Teal Mask Location Map.jpg')
+    "Gastly": [
+      "../../assets/images/locations/Gastly Location Map.jpg",
+      "../../assets/images/locations/Gastly Teal Mask Location Map.jpg"
     ],
-    Gastrodon: [
-      require('../../assets/images/locations/Gastrodon (East Sea) Location Map.jpg'),
-      require('../../assets/images/locations/Gastrodon (West Sea) Location Map.jpg')
+    "Gastrodon": [
+      "../../assets/images/locations/Gastrodon (East Sea) Location Map.jpg",
+      "../../assets/images/locations/Gastrodon (West Sea) Location Map.jpg"
     ],
-    Gengar: [
-      require('../../assets/images/locations/Gengar Teal Mask Location Map.jpg')
+    "Gengar": [
+      "../../assets/images/locations/Gengar Teal Mask Location Map.jpg"
     ],
-    Geodude: [
-      require('../../assets/images/locations/Geodude Teal Mask Location Map.jpg')
+    "Geodude": [
+      "../../assets/images/locations/Geodude Teal Mask Location Map.jpg"
     ],
-    Gible: [
-      require('../../assets/images/locations/Gible Location Map.jpg'),
-      require('../../assets/images/locations/Gible Teal Mask Location Map.jpg')
+    "Gible": [
+      "../../assets/images/locations/Gible Location Map.jpg",
+      "../../assets/images/locations/Gible Teal Mask Location Map.jpg"
     ],
-    Girafarig: [
-      require('../../assets/images/locations/Girafarig Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Girafarig Location Map.jpg')
+    "Girafarig": [
+      "../../assets/images/locations/Girafarig Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Girafarig Location Map.jpg"
     ],
-    Glaceon: [
-      require('../../assets/images/locations/Glaceon Location Map.jpg')
+    "Glaceon": [
+      "../../assets/images/locations/Glaceon Location Map.jpg"
     ],
-    Glalie: [
-      require('../../assets/images/locations/Glalie Location Map.jpg')
+    "Glalie": [
+      "../../assets/images/locations/Glalie Location Map.jpg"
     ],
-    Gligar: [
-      require('../../assets/images/locations/Gligar Teal Mask Location Map.jpg')
+    "Gligar": [
+      "../../assets/images/locations/Gligar Teal Mask Location Map.jpg"
     ],
-    Glimmet: [
-      require('../../assets/images/locations/Glimmet Location Map.jpg'),
-      require('../../assets/images/locations/Glimmet Teal Mask Location Map.jpg')
+    "Glimmet": [
+      "../../assets/images/locations/Glimmet Location Map.jpg",
+      "../../assets/images/locations/Glimmet Teal Mask Location Map.jpg"
     ],
-    Glimmora: [
-      require('../../assets/images/locations/Glimmora Location Map.jpg')
+    "Glimmora": [
+      "../../assets/images/locations/Glimmora Location Map.jpg"
     ],
-    Gloom: [
-      require('../../assets/images/locations/Gloom Indigo Disk Location Map.jpg')
+    "Gloom": [
+      "../../assets/images/locations/Gloom Indigo Disk Location Map.jpg"
     ],
-    Gogoat: [
-      require('../../assets/images/locations/Gogoat Location Map.jpg')
+    "Gogoat": [
+      "../../assets/images/locations/Gogoat Location Map.jpg"
     ],
-    Golduck: [
-      require('../../assets/images/locations/Golduck Location Map.jpg')
+    "Golduck": [
+      "../../assets/images/locations/Golduck Location Map.jpg"
     ],
-    Golett: [
-      require('../../assets/images/locations/Golett Indigo Disk Location Map.jpg')
+    "Golett": [
+      "../../assets/images/locations/Golett Indigo Disk Location Map.jpg"
     ],
-    Golurk: [
-      require('../../assets/images/locations/Golurk Indigo Disk Location Map.jpg')
+    "Golurk": [
+      "../../assets/images/locations/Golurk Indigo Disk Location Map.jpg"
     ],
-    Goomy: [
-      require('../../assets/images/locations/Goomy Location Map.jpg'),
-      require('../../assets/images/locations/Goomy Teal Mask Location Map.jpg')
+    "Goomy": [
+      "../../assets/images/locations/Goomy Location Map.jpg",
+      "../../assets/images/locations/Goomy Teal Mask Location Map.jpg"
     ],
-    Gothita: [
-      require('../../assets/images/locations/Gothita Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Gothita Location Map.jpg')
+    "Gothita": [
+      "../../assets/images/locations/Gothita Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Gothita Location Map.jpg"
     ],
-    Gothitelle: [
-      require('../../assets/images/locations/Gothitelle Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Gothitelle Location Map.jpg')
+    "Gothitelle": [
+      "../../assets/images/locations/Gothitelle Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Gothitelle Location Map.jpg"
     ],
-    Gothorita: [
-      require('../../assets/images/locations/Gothorita Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Gothorita Location Map.jpg')
+    "Gothorita": [
+      "../../assets/images/locations/Gothorita Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Gothorita Location Map.jpg"
     ],
-    Grafaiai: [
-      require('../../assets/images/locations/Grafaiai Location Map.jpg')
+    "Grafaiai": [
+      "../../assets/images/locations/Grafaiai Location Map.jpg"
     ],
-    Granbull: [
-      require('../../assets/images/locations/Granbull Indigo Disk Location Map.jpg')
+    "Granbull": [
+      "../../assets/images/locations/Granbull Indigo Disk Location Map.jpg"
     ],
-    Graveler: [
-      require('../../assets/images/locations/Graveler Teal Mask Location Map.jpg')
+    "Graveler": [
+      "../../assets/images/locations/Graveler Teal Mask Location Map.jpg"
     ],
-    Greavard: [
-      require('../../assets/images/locations/Greavard Location Map.jpg')
+    "Greavard": [
+      "../../assets/images/locations/Greavard Location Map.jpg"
     ],
-    Greedent: [
-      require('../../assets/images/locations/Greedent Location Map.jpg'),
-      require('../../assets/images/locations/Greedent Teal Mask Location Map.jpg')
+    "Greedent": [
+      "../../assets/images/locations/Greedent Location Map.jpg",
+      "../../assets/images/locations/Greedent Teal Mask Location Map.jpg"
     ],
-    Greninja: [
-      require('../../assets/images/locations/Greninja Indigo Disk Location Map.jpg')
+    "Greninja": [
+      "../../assets/images/locations/Greninja Indigo Disk Location Map.jpg"
     ],
-    Grimer: [
-      require('../../assets/images/locations/Grimer Location Map.jpg')
+    "Grimer": [
+      "../../assets/images/locations/Grimer Location Map.jpg"
     ],
-    Grimmsnarl: [
-      require('../../assets/images/locations/Grimmsnarl Teal Mask Location Map.jpg')
+    "Grimmsnarl": [
+      "../../assets/images/locations/Grimmsnarl Teal Mask Location Map.jpg"
     ],
-    Grookey: [
-      require('../../assets/images/locations/Grookey Indigo Disk Location Map.jpg')
+    "Grookey": [
+      "../../assets/images/locations/Grookey Indigo Disk Location Map.jpg"
     ],
-    Grotle: [
-      require('../../assets/images/locations/Grotle Indigo Disk Location Map.jpg')
+    "Grotle": [
+      "../../assets/images/locations/Grotle Indigo Disk Location Map.jpg"
     ],
-    Grovyle: [
-      require('../../assets/images/locations/Grovyle Indigo Disk Location Map.jpg')
+    "Grovyle": [
+      "../../assets/images/locations/Grovyle Indigo Disk Location Map.jpg"
     ],
-    Growlithe: [
-      require('../../assets/images/locations/Growlithe Location Map.jpg'),
-      require('../../assets/images/locations/Growlithe Teal Mask Location Map.jpg')
+    "Growlithe": [
+      "../../assets/images/locations/Growlithe Location Map.jpg",
+      "../../assets/images/locations/Growlithe Teal Mask Location Map.jpg"
     ],
-    Grubbin: [
-      require('../../assets/images/locations/Grubbin Teal Mask Location Map.jpg')
+    "Grubbin": [
+      "../../assets/images/locations/Grubbin Teal Mask Location Map.jpg"
     ],
-    Grumpig: [
-      require('../../assets/images/locations/Grumpig Location Map.jpg')
+    "Grumpig": [
+      "../../assets/images/locations/Grumpig Location Map.jpg"
     ],
-    Gulpin: [
-      require('../../assets/images/locations/Gulpin Location Map.jpg')
+    "Gulpin": [
+      "../../assets/images/locations/Gulpin Location Map.jpg"
     ],
-    Gumshoos: [
-      require('../../assets/images/locations/Gumshoos Location Map.jpg')
+    "Gumshoos": [
+      "../../assets/images/locations/Gumshoos Location Map.jpg"
     ],
-    Gurdurr: [
-      require('../../assets/images/locations/Gurdurr Teal Mask Location Map.jpg')
+    "Gurdurr": [
+      "../../assets/images/locations/Gurdurr Teal Mask Location Map.jpg"
     ],
-    Gyarados: [
-      require('../../assets/images/locations/Gyarados Location Map.jpg'),
-      require('../../assets/images/locations/Gyarados Teal Mask Location Map.jpg')
+    "Gyarados": [
+      "../../assets/images/locations/Gyarados Location Map.jpg",
+      "../../assets/images/locations/Gyarados Teal Mask Location Map.jpg"
     ],
-    Hakamoo: [
-      require('../../assets/images/locations/Hakamo-o Teal Mask Location Map.jpg')
+    "Hakamo-o": [
+      "../../assets/images/locations/Hakamo-o Teal Mask Location Map.jpg"
     ],
-    Happiny: [
-      require('../../assets/images/locations/Happiny Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Happiny Location Map.jpg')
+    "Happiny": [
+      "../../assets/images/locations/Happiny Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Happiny Location Map.jpg"
     ],
-    Hariyama: [
-      require('../../assets/images/locations/Hariyama Location Map.jpg')
+    "Hariyama": [
+      "../../assets/images/locations/Hariyama Location Map.jpg"
     ],
-    Hatenna: [
-      require('../../assets/images/locations/Hatenna Location Map.jpg'),
-      require('../../assets/images/locations/Hatenna Teal Mask Location Map.jpg')
+    "Hatenna": [
+      "../../assets/images/locations/Hatenna Location Map.jpg",
+      "../../assets/images/locations/Hatenna Teal Mask Location Map.jpg"
     ],
-    Hatterene: [
-      require('../../assets/images/locations/Hatterene Teal Mask Location Map.jpg')
+    "Hatterene": [
+      "../../assets/images/locations/Hatterene Teal Mask Location Map.jpg"
     ],
-    Hattrem: [
-      require('../../assets/images/locations/Hattrem Location Map.jpg'),
-      require('../../assets/images/locations/Hattrem Teal Mask Location Map.jpg')
+    "Hattrem": [
+      "../../assets/images/locations/Hattrem Location Map.jpg",
+      "../../assets/images/locations/Hattrem Teal Mask Location Map.jpg"
     ],
-    Haunter: [
-      require('../../assets/images/locations/Haunter Location Map.jpg'),
-      require('../../assets/images/locations/Haunter Teal Mask Location Map.jpg')
+    "Haunter": [
+      "../../assets/images/locations/Haunter Location Map.jpg",
+      "../../assets/images/locations/Haunter Teal Mask Location Map.jpg"
     ],
-    Hawlucha: [
-      require('../../assets/images/locations/Hawlucha Location Map.jpg')
+    "Hawlucha": [
+      "../../assets/images/locations/Hawlucha Location Map.jpg"
     ],
-    Haxorus: [
-      require('../../assets/images/locations/Haxorus Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Haxorus Location Map.jpg')
+    "Haxorus": [
+      "../../assets/images/locations/Haxorus Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Haxorus Location Map.jpg"
     ],
-    Heracross: [
-      require('../../assets/images/locations/Heracross Location Map.jpg'),
-      require('../../assets/images/locations/Heracross Teal Mask Location Map.jpg')
+    "Heracross": [
+      "../../assets/images/locations/Heracross Location Map.jpg",
+      "../../assets/images/locations/Heracross Teal Mask Location Map.jpg"
     ],
-    Hippopotas: [
-      require('../../assets/images/locations/Hippopotas Location Map.jpg')
+    "Hippopotas": [
+      "../../assets/images/locations/Hippopotas Location Map.jpg"
     ],
-    Hippowdon: [
-      require('../../assets/images/locations/Hippowdon Location Map.jpg')
+    "Hippowdon": [
+      "../../assets/images/locations/Hippowdon Location Map.jpg"
     ],
-    HisuianQwilfish: [
-      require('../../assets/images/locations/Hisuian Qwilfish Indigo Disk Location Map.jpg')
+    "Hisuian Qwilfish": [
+      "../../assets/images/locations/Hisuian Qwilfish Indigo Disk Location Map.jpg"
     ],
-    Hitmonchan: [
-      require('../../assets/images/locations/Hitmonchan Indigo Disk Location Map.jpg')
+    "Hitmonchan": [
+      "../../assets/images/locations/Hitmonchan Indigo Disk Location Map.jpg"
     ],
-    Hitmonlee: [
-      require('../../assets/images/locations/Hitmonlee Indigo Disk Location Map.jpg')
+    "Hitmonlee": [
+      "../../assets/images/locations/Hitmonlee Indigo Disk Location Map.jpg"
     ],
-    Hitmontop: [
-      require('../../assets/images/locations/Hitmontop Indigo Disk Location Map.jpg')
+    "Hitmontop": [
+      "../../assets/images/locations/Hitmontop Indigo Disk Location Map.jpg"
     ],
-    Honchkrow: [
-      require('../../assets/images/locations/Honchkrow Location Map.jpg')
+    "Honchkrow": [
+      "../../assets/images/locations/Honchkrow Location Map.jpg"
     ],
-    Hoothoot: [
-      require('../../assets/images/locations/Hoothoot Teal Mask Location Map.jpg')
+    "Hoothoot": [
+      "../../assets/images/locations/Hoothoot Teal Mask Location Map.jpg"
     ],
-    Hoppip: [
-      require('../../assets/images/locations/Hoppip Location Map.jpg')
+    "Hoppip": [
+      "../../assets/images/locations/Hoppip Location Map.jpg"
     ],
-    Horsea: [
-      require('../../assets/images/locations/Horsea Indigo Disk Location Map.jpg')
+    "Horsea": [
+      "../../assets/images/locations/Horsea Indigo Disk Location Map.jpg"
     ],
-    Houndoom: [
-      require('../../assets/images/locations/Houndoom Location Map.jpg'),
-      require('../../assets/images/locations/Houndoom Teal Mask Location Map.jpg')
+    "Houndoom": [
+      "../../assets/images/locations/Houndoom Location Map.jpg",
+      "../../assets/images/locations/Houndoom Teal Mask Location Map.jpg"
     ],
-    Houndour: [
-      require('../../assets/images/locations/Houndour Location Map.jpg'),
-      require('../../assets/images/locations/Houndour Teal Mask Location Map.jpg')
+    "Houndour": [
+      "../../assets/images/locations/Houndour Location Map.jpg",
+      "../../assets/images/locations/Houndour Teal Mask Location Map.jpg"
     ],
-    Houndstone: [
-      require('../../assets/images/locations/Houndstone Location Map.jpg')
+    "Houndstone": [
+      "../../assets/images/locations/Houndstone Location Map.jpg"
     ],
-    Hydrapple: [
-      require('../../assets/images/locations/Hydrapple Indigo Disk Location Map.jpg')
+    "Hydrapple": [
+      "../../assets/images/locations/Hydrapple Indigo Disk Location Map.jpg"
     ],
-    Hypno: [
-      require('../../assets/images/locations/Hypno Location Map.jpg')
+    "Hypno": [
+      "../../assets/images/locations/Hypno Location Map.jpg"
     ],
-    Igglybuff: [
-      require('../../assets/images/locations/Igglybuff Location Map.jpg')
+    "Igglybuff": [
+      "../../assets/images/locations/Igglybuff Location Map.jpg"
     ],
-    Illumise: [
-      require('../../assets/images/locations/Illumise Teal Mask Location Map.jpg')
+    "Illumise": [
+      "../../assets/images/locations/Illumise Teal Mask Location Map.jpg"
     ],
-    Impidimp: [
-      require('../../assets/images/locations/Impidimp Location Map.jpg'),
-      require('../../assets/images/locations/Impidimp Teal Mask Location Map.jpg')
+    "Impidimp": [
+      "../../assets/images/locations/Impidimp Location Map.jpg",
+      "../../assets/images/locations/Impidimp Teal Mask Location Map.jpg"
     ],
-    Incineroar: [
-      require('../../assets/images/locations/Incineroar Indigo Disk Location Map.jpg')
+    "Incineroar": [
+      "../../assets/images/locations/Incineroar Indigo Disk Location Map.jpg"
     ],
-    Indeedee: [
-      require('../../assets/images/locations/Indeedee (Male) Location Map.jpg'),
-      require('../../assets/images/locations/Indeedee (Male) Teal Mask Location Map.jpg')
+    "Indeedee": [
+      "../../assets/images/locations/Indeedee (Male) Location Map.jpg",
+      "../../assets/images/locations/Indeedee (Male) Teal Mask Location Map.jpg"
     ],
-    Infernape: [
-      require('../../assets/images/locations/Infernape Indigo Disk Location Map.jpg')
+    "Infernape": [
+      "../../assets/images/locations/Infernape Indigo Disk Location Map.jpg"
     ],
-    Inkay: [
-      require('../../assets/images/locations/Inkay Indigo Disk Location Map.jpg')
+    "Inkay": [
+      "../../assets/images/locations/Inkay Indigo Disk Location Map.jpg"
     ],
-    Inteleon: [
-      require('../../assets/images/locations/Inteleon Indigo Disk Location Map.jpg')
+    "Inteleon": [
+      "../../assets/images/locations/Inteleon Indigo Disk Location Map.jpg"
     ],
-    Ivysaur: [
-      require('../../assets/images/locations/Ivysaur Indigo Disk Location Map.jpg')
+    "Ivysaur": [
+      "../../assets/images/locations/Ivysaur Indigo Disk Location Map.jpg"
     ],
-    Jangmoo: [
-      require('../../assets/images/locations/Jangmo-o Teal Mask Location Map.jpg')
+    "Jangmo-o": [
+      "../../assets/images/locations/Jangmo-o Teal Mask Location Map.jpg"
     ],
-    Jigglypuff: [
-      require('../../assets/images/locations/Jigglypuff Location Map.jpg')
+    "Jigglypuff": [
+      "../../assets/images/locations/Jigglypuff Location Map.jpg"
     ],
-    Jolteon: [
-      require('../../assets/images/locations/Jolteon Location Map.jpg')
+    "Jolteon": [
+      "../../assets/images/locations/Jolteon Location Map.jpg"
     ],
-    Joltik: [
-      require('../../assets/images/locations/Joltik Indigo Disk Location Map.jpg')
+    "Joltik": [
+      "../../assets/images/locations/Joltik Indigo Disk Location Map.jpg"
     ],
-    Jumpluff: [
-      require('../../assets/images/locations/Jumpluff Location Map.jpg')
+    "Jumpluff": [
+      "../../assets/images/locations/Jumpluff Location Map.jpg"
     ],
-    Kilowattrel: [
-      require('../../assets/images/locations/Kilowattrel Location Map.jpg')
+    "Kilowattrel": [
+      "../../assets/images/locations/Kilowattrel Location Map.jpg"
     ],
-    Kingambit: [
-      require('../../assets/images/locations/Kingambit Teal Mask Location Map.jpg')
+    "Kingambit": [
+      "../../assets/images/locations/Kingambit Teal Mask Location Map.jpg"
     ],
-    Kingdra: [
-      require('../../assets/images/locations/Kingdra Indigo Disk Location Map.jpg')
+    "Kingdra": [
+      "../../assets/images/locations/Kingdra Indigo Disk Location Map.jpg"
     ],
-    Kirlia: [
-      require('../../assets/images/locations/Kirlia Location Map.jpg'),
-      require('../../assets/images/locations/Kirlia Teal Mask Location Map.jpg')
+    "Kirlia": [
+      "../../assets/images/locations/Kirlia Location Map.jpg",
+      "../../assets/images/locations/Kirlia Teal Mask Location Map.jpg"
     ],
-    Klawf: [
-      require('../../assets/images/locations/Klawf Location Map.jpg')
+    "Klawf": [
+      "../../assets/images/locations/Klawf Location Map.jpg"
     ],
-    Kleavor: [
-      require('../../assets/images/locations/Kleavor Indigo Disk Location Map.jpg')
+    "Kleavor": [
+      "../../assets/images/locations/Kleavor Indigo Disk Location Map.jpg"
     ],
-    Klefki: [
-      require('../../assets/images/locations/Klefki Location Map.jpg')
+    "Klefki": [
+      "../../assets/images/locations/Klefki Location Map.jpg"
     ],
-    Koffing: [
-      require('../../assets/images/locations/Koffing Teal Mask Location Map.jpg')
+    "Koffing": [
+      "../../assets/images/locations/Koffing Teal Mask Location Map.jpg"
     ],
-    Komala: [
-      require('../../assets/images/locations/Komala Location Map.jpg')
+    "Komala": [
+      "../../assets/images/locations/Komala Location Map.jpg"
     ],
-    Kricketot: [
-      require('../../assets/images/locations/Kricketot Location Map.jpg'),
-      require('../../assets/images/locations/Kricketot Teal Mask Location Map.jpg')
+    "Kricketot": [
+      "../../assets/images/locations/Kricketot Location Map.jpg",
+      "../../assets/images/locations/Kricketot Teal Mask Location Map.jpg"
     ],
-    Kricketune: [
-      require('../../assets/images/locations/Kricketune Location Map.jpg'),
-      require('../../assets/images/locations/Kricketune Teal Mask Location Map.jpg')
+    "Kricketune": [
+      "../../assets/images/locations/Kricketune Location Map.jpg",
+      "../../assets/images/locations/Kricketune Teal Mask Location Map.jpg"
     ],
-    Krokorok: [
-      require('../../assets/images/locations/Krokorok Indigo Disk Location Map.jpg')
+    "Krokorok": [
+      "../../assets/images/locations/Krokorok Indigo Disk Location Map.jpg"
     ],
-    Krookodile: [
-      require('../../assets/images/locations/Krookodile Indigo Disk Location Map.jpg')
+    "Krookodile": [
+      "../../assets/images/locations/Krookodile Indigo Disk Location Map.jpg"
     ],
-    Lampent: [
-      require('../../assets/images/locations/Lampent Teal Mask Location Map.jpg')
+    "Lampent": [
+      "../../assets/images/locations/Lampent Teal Mask Location Map.jpg"
     ],
-    Lanturn: [
-      require('../../assets/images/locations/Lanturn Indigo Disk Location Map.jpg')
+    "Lanturn": [
+      "../../assets/images/locations/Lanturn Indigo Disk Location Map.jpg"
     ],
-    Lapras: [
-      require('../../assets/images/locations/Lapras Indigo Disk Location Map.jpg')
+    "Lapras": [
+      "../../assets/images/locations/Lapras Indigo Disk Location Map.jpg"
     ],
-    Larvesta: [
-      require('../../assets/images/locations/Larvesta Location Map.jpg')
+    "Larvesta": [
+      "../../assets/images/locations/Larvesta Location Map.jpg"
     ],
-    Larvitar: [
-      require('../../assets/images/locations/Larvitar Location Map.jpg')
+    "Larvitar": [
+      "../../assets/images/locations/Larvitar Location Map.jpg"
     ],
-    Leafeon: [
-      require('../../assets/images/locations/Leafeon Location Map.jpg')
+    "Leafeon": [
+      "../../assets/images/locations/Leafeon Location Map.jpg"
     ],
-    Leavanny: [
-      require('../../assets/images/locations/Leavanny Teal Mask Location Map.jpg')
+    "Leavanny": [
+      "../../assets/images/locations/Leavanny Teal Mask Location Map.jpg"
     ],
-    Lechonk: [
-      require('../../assets/images/locations/Lechonk Location Map.jpg')
+    "Lechonk": [
+      "../../assets/images/locations/Lechonk Location Map.jpg"
     ],
-    Lilligant: [
-      require('../../assets/images/locations/Lilligant Location Map.jpg')
+    "Lilligant": [
+      "../../assets/images/locations/Lilligant Location Map.jpg"
     ],
-    Litleo: [
-      require('../../assets/images/locations/Litleo Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Litleo Location Map.jpg')
+    "Litleo": [
+      "../../assets/images/locations/Litleo Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Litleo Location Map.jpg"
     ],
-    Litten: [
-      require('../../assets/images/locations/Litten Indigo Disk Location Map.jpg')
+    "Litten": [
+      "../../assets/images/locations/Litten Indigo Disk Location Map.jpg"
     ],
-    Litwick: [
-      require('../../assets/images/locations/Litwick Teal Mask Location Map.jpg')
+    "Litwick": [
+      "../../assets/images/locations/Litwick Teal Mask Location Map.jpg"
     ],
-    Lokix: [
-      require('../../assets/images/locations/Lokix Location Map.jpg')
+    "Lokix": [
+      "../../assets/images/locations/Lokix Location Map.jpg"
     ],
-    Lombre: [
-      require('../../assets/images/locations/Lombre Teal Mask Location Map.jpg')
+    "Lombre": [
+      "../../assets/images/locations/Lombre Teal Mask Location Map.jpg"
     ],
-    Lotad: [
-      require('../../assets/images/locations/Lotad Teal Mask Location Map.jpg')
+    "Lotad": [
+      "../../assets/images/locations/Lotad Teal Mask Location Map.jpg"
     ],
-    Lucario: [
-      require('../../assets/images/locations/Lucario Location Map.jpg'),
-      require('../../assets/images/locations/Lucario Teal Mask Location Map.jpg')
+    "Lucario": [
+      "../../assets/images/locations/Lucario Location Map.jpg",
+      "../../assets/images/locations/Lucario Teal Mask Location Map.jpg"
     ],
-    Lumineon: [
-      require('../../assets/images/locations/Lumineon Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Lumineon Location Map.jpg')
+    "Lumineon": [
+      "../../assets/images/locations/Lumineon Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Lumineon Location Map.jpg"
     ],
-    Lurantis: [
-      require('../../assets/images/locations/Lurantis Location Map.jpg'),
-      require('../../assets/images/locations/Lurantis Teal Mask Location Map.jpg')
+    "Lurantis": [
+      "../../assets/images/locations/Lurantis Location Map.jpg",
+      "../../assets/images/locations/Lurantis Teal Mask Location Map.jpg"
     ],
-    Luvdisc: [
-      require('../../assets/images/locations/Luvdisc Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Luvdisc Location Map.jpg')
+    "Luvdisc": [
+      "../../assets/images/locations/Luvdisc Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Luvdisc Location Map.jpg"
     ],
-    Luxio: [
-      require('../../assets/images/locations/Luxio Location Map.jpg'),
-      require('../../assets/images/locations/Luxio Teal Mask Location Map.jpg')
+    "Luxio": [
+      "../../assets/images/locations/Luxio Location Map.jpg",
+      "../../assets/images/locations/Luxio Teal Mask Location Map.jpg"
     ],
-    Luxray: [
-      require('../../assets/images/locations/Luxray Location Map.jpg'),
-      require('../../assets/images/locations/Luxray Teal Mask Location Map.jpg')
+    "Luxray": [
+      "../../assets/images/locations/Luxray Location Map.jpg",
+      "../../assets/images/locations/Luxray Teal Mask Location Map.jpg"
     ],
-    Lycanroc: [
-      require('../../assets/images/locations/Lycanroc (Dusk Form) Location Map.jpg'),
-      require('../../assets/images/locations/Lycanroc (Midday Form) Location Map.jpg'),
-      require('../../assets/images/locations/Lycanroc (Midday Form) Teal Mask Location Map.jpg'),
-      require('../../assets/images/locations/Lycanroc (Midnight Form) Location Map.jpg'),
-      require('../../assets/images/locations/Lycanroc (Midnight Form) Teal Mask Location Map.jpg')
+    "Lycanroc": [
+      "../../assets/images/locations/Lycanroc (Dusk Form) Location Map.jpg",
+      "../../assets/images/locations/Lycanroc (Midday Form) Location Map.jpg",
+      "../../assets/images/locations/Lycanroc (Midday Form) Teal Mask Location Map.jpg",
+      "../../assets/images/locations/Lycanroc (Midnight Form) Location Map.jpg",
+      "../../assets/images/locations/Lycanroc (Midnight Form) Teal Mask Location Map.jpg"
     ],
-    Mabosstiff: [
-      require('../../assets/images/locations/Mabosstiff Location Map.jpg')
+    "Mabosstiff": [
+      "../../assets/images/locations/Mabosstiff Location Map.jpg"
     ],
-    Magby: [
-      require('../../assets/images/locations/Magby Indigo Disk Location Map.jpg')
+    "Magby": [
+      "../../assets/images/locations/Magby Indigo Disk Location Map.jpg"
     ],
-    Magikarp: [
-      require('../../assets/images/locations/Magikarp Location Map.jpg'),
-      require('../../assets/images/locations/Magikarp Teal Mask Location Map.jpg')
+    "Magikarp": [
+      "../../assets/images/locations/Magikarp Location Map.jpg",
+      "../../assets/images/locations/Magikarp Teal Mask Location Map.jpg"
     ],
-    Magmar: [
-      require('../../assets/images/locations/Magmar Indigo Disk Location Map.jpg')
+    "Magmar": [
+      "../../assets/images/locations/Magmar Indigo Disk Location Map.jpg"
     ],
-    Magmortar: [
-      require('../../assets/images/locations/Magmortar Indigo Disk Location Map.jpg')
+    "Magmortar": [
+      "../../assets/images/locations/Magmortar Indigo Disk Location Map.jpg"
     ],
-    Magnemite: [
-      require('../../assets/images/locations/Magnemite Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Magnemite Location Map.jpg')
+    "Magnemite": [
+      "../../assets/images/locations/Magnemite Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Magnemite Location Map.jpg"
     ],
-    Magneton: [
-      require('../../assets/images/locations/Magneton Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Magneton Location Map.jpg')
+    "Magneton": [
+      "../../assets/images/locations/Magneton Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Magneton Location Map.jpg"
     ],
-    Makuhita: [
-      require('../../assets/images/locations/Makuhita Location Map.jpg')
+    "Makuhita": [
+      "../../assets/images/locations/Makuhita Location Map.jpg"
     ],
-    Malamar: [
-      require('../../assets/images/locations/Malamar Indigo Disk Location Map.jpg')
+    "Malamar": [
+      "../../assets/images/locations/Malamar Indigo Disk Location Map.jpg"
     ],
-    Mandibuzz: [
-      require('../../assets/images/locations/Mandibuzz Indigo Disk Location Map.jpg')
+    "Mandibuzz": [
+      "../../assets/images/locations/Mandibuzz Indigo Disk Location Map.jpg"
     ],
-    Mankey: [
-      require('../../assets/images/locations/Mankey Location Map.jpg'),
-      require('../../assets/images/locations/Mankey Teal Mask Location Map.jpg')
+    "Mankey": [
+      "../../assets/images/locations/Mankey Location Map.jpg",
+      "../../assets/images/locations/Mankey Teal Mask Location Map.jpg"
     ],
-    Mareanie: [
-      require('../../assets/images/locations/Mareanie Location Map.jpg')
+    "Mareanie": [
+      "../../assets/images/locations/Mareanie Location Map.jpg"
     ],
-    Mareep: [
-      require('../../assets/images/locations/Mareep Location Map.jpg')
+    "Mareep": [
+      "../../assets/images/locations/Mareep Location Map.jpg"
     ],
-    Marill: [
-      require('../../assets/images/locations/Marill Location Map.jpg')
+    "Marill": [
+      "../../assets/images/locations/Marill Location Map.jpg"
     ],
-    Marshtomp: [
-      require('../../assets/images/locations/Marshtomp Indigo Disk Location Map.jpg')
+    "Marshtomp": [
+      "../../assets/images/locations/Marshtomp Indigo Disk Location Map.jpg"
     ],
-    Maschiff: [
-      require('../../assets/images/locations/Maschiff Location Map.jpg')
+    "Maschiff": [
+      "../../assets/images/locations/Maschiff Location Map.jpg"
     ],
-    Masquerain: [
-      require('../../assets/images/locations/Masquerain Location Map.jpg'),
-      require('../../assets/images/locations/Masquerain Teal Mask Location Map.jpg')
+    "Masquerain": [
+      "../../assets/images/locations/Masquerain Location Map.jpg",
+      "../../assets/images/locations/Masquerain Teal Mask Location Map.jpg"
     ],
-    Medicham: [
-      require('../../assets/images/locations/Medicham Location Map.jpg')
+    "Medicham": [
+      "../../assets/images/locations/Medicham Location Map.jpg"
     ],
-    Meditite: [
-      require('../../assets/images/locations/Meditite Location Map.jpg')
+    "Meditite": [
+      "../../assets/images/locations/Meditite Location Map.jpg"
     ],
-    Meganium: [
-      require('../../assets/images/locations/Meganium Indigo Disk Location Map.jpg')
+    "Meganium": [
+      "../../assets/images/locations/Meganium Indigo Disk Location Map.jpg"
     ],
-    Meowstic: [
-      require('../../assets/images/locations/Meowstic (Male) Indigo Disk Location Map.jpg')
+    "Meowstic": [
+      "../../assets/images/locations/Meowstic (Male) Indigo Disk Location Map.jpg"
     ],
-    Meowth: [
-      require('../../assets/images/locations/Meowth Location Map.jpg')
+    "Meowth": [
+      "../../assets/images/locations/Meowth Location Map.jpg"
     ],
-    Metagross: [
-      require('../../assets/images/locations/Metagross Indigo Disk Location Map.jpg')
+    "Metagross": [
+      "../../assets/images/locations/Metagross Indigo Disk Location Map.jpg"
     ],
-    Metang: [
-      require('../../assets/images/locations/Metang Indigo Disk Location Map.jpg')
+    "Metang": [
+      "../../assets/images/locations/Metang Indigo Disk Location Map.jpg"
     ],
-    Mienfoo: [
-      require('../../assets/images/locations/Mienfoo Teal Mask Location Map.jpg')
+    "Mienfoo": [
+      "../../assets/images/locations/Mienfoo Teal Mask Location Map.jpg"
     ],
-    Mightyena: [
-      require('../../assets/images/locations/Mightyena Teal Mask Location Map.jpg')
+    "Mightyena": [
+      "../../assets/images/locations/Mightyena Teal Mask Location Map.jpg"
     ],
-    Milcery: [
-      require('../../assets/images/locations/Milcery Indigo Disk Location Map.jpg')
+    "Milcery": [
+      "../../assets/images/locations/Milcery Indigo Disk Location Map.jpg"
     ],
-    Mimikyu: [
-      require('../../assets/images/locations/Mimikyu Location Map.jpg'),
-      require('../../assets/images/locations/Mimikyu Teal Mask Location Map.jpg')
+    "Mimikyu": [
+      "../../assets/images/locations/Mimikyu Location Map.jpg",
+      "../../assets/images/locations/Mimikyu Teal Mask Location Map.jpg"
     ],
-    Minccino: [
-      require('../../assets/images/locations/Minccino Indigo Disk Location Map.jpg')
+    "Minccino": [
+      "../../assets/images/locations/Minccino Indigo Disk Location Map.jpg"
     ],
-    Minior: [
-      require('../../assets/images/locations/Minior (Core) Indigo Disk Location Map.jpg')
+    "Minior": [
+      "../../assets/images/locations/Minior (Core) Indigo Disk Location Map.jpg"
     ],
-    Minun: [
-      require('../../assets/images/locations/Minun Indigo Disk Location Map.jpg')
+    "Minun": [
+      "../../assets/images/locations/Minun Indigo Disk Location Map.jpg"
     ],
-    Misdreavus: [
-      require('../../assets/images/locations/Misdreavus Location Map.jpg')
+    "Misdreavus": [
+      "../../assets/images/locations/Misdreavus Location Map.jpg"
     ],
-    Mismagius: [
-      require('../../assets/images/locations/Mismagius Location Map.jpg')
+    "Mismagius": [
+      "../../assets/images/locations/Mismagius Location Map.jpg"
     ],
-    Monferno: [
-      require('../../assets/images/locations/Monferno Indigo Disk Location Map.jpg')
+    "Monferno": [
+      "../../assets/images/locations/Monferno Indigo Disk Location Map.jpg"
     ],
-    Morgrem: [
-      require('../../assets/images/locations/Morgrem Location Map.jpg'),
-      require('../../assets/images/locations/Morgrem Teal Mask Location Map.jpg')
+    "Morgrem": [
+      "../../assets/images/locations/Morgrem Location Map.jpg",
+      "../../assets/images/locations/Morgrem Teal Mask Location Map.jpg"
     ],
-    Morpeko: [
-      require('../../assets/images/locations/Morpeko Teal Mask Location Map.jpg')
+    "Morpeko": [
+      "../../assets/images/locations/Morpeko Teal Mask Location Map.jpg"
     ],
-    Mudbray: [
-      require('../../assets/images/locations/Mudbray Location Map.jpg'),
-      require('../../assets/images/locations/Mudbray Teal Mask Location Map.jpg')
+    "Mudbray": [
+      "../../assets/images/locations/Mudbray Location Map.jpg",
+      "../../assets/images/locations/Mudbray Teal Mask Location Map.jpg"
     ],
-    Mudkip: [
-      require('../../assets/images/locations/Mudkip Indigo Disk Location Map.jpg')
+    "Mudkip": [
+      "../../assets/images/locations/Mudkip Indigo Disk Location Map.jpg"
     ],
-    Mudsdale: [
-      require('../../assets/images/locations/Mudsdale Location Map.jpg')
+    "Mudsdale": [
+      "../../assets/images/locations/Mudsdale Location Map.jpg"
     ],
-    Munchlax: [
-      require('../../assets/images/locations/Munchlax Teal Mask Location Map.jpg')
+    "Munchlax": [
+      "../../assets/images/locations/Munchlax Teal Mask Location Map.jpg"
     ],
-    Murkrow: [
-      require('../../assets/images/locations/Murkrow Location Map.jpg')
+    "Murkrow": [
+      "../../assets/images/locations/Murkrow Location Map.jpg"
     ],
-    Nacli: [
-      require('../../assets/images/locations/Nacli Location Map.jpg')
+    "Nacli": [
+      "../../assets/images/locations/Nacli Location Map.jpg"
     ],
-    Naclstack: [
-      require('../../assets/images/locations/Naclstack Location Map.jpg')
+    "Naclstack": [
+      "../../assets/images/locations/Naclstack Location Map.jpg"
     ],
-    Noctowl: [
-      require('../../assets/images/locations/Noctowl Teal Mask Location Map.jpg')
+    "Noctowl": [
+      "../../assets/images/locations/Noctowl Teal Mask Location Map.jpg"
     ],
-    Noibat: [
-      require('../../assets/images/locations/Noibat Location Map.jpg'),
-      require('../../assets/images/locations/Noibat Teal Mask Location Map.jpg')
+    "Noibat": [
+      "../../assets/images/locations/Noibat Location Map.jpg",
+      "../../assets/images/locations/Noibat Teal Mask Location Map.jpg"
     ],
-    Noivern: [
-      require('../../assets/images/locations/Noivern Location Map.jpg')
+    "Noivern": [
+      "../../assets/images/locations/Noivern Location Map.jpg"
     ],
-    Nosepass: [
-      require('../../assets/images/locations/Nosepass Teal Mask Location Map.jpg')
+    "Nosepass": [
+      "../../assets/images/locations/Nosepass Teal Mask Location Map.jpg"
     ],
-    Numel: [
-      require('../../assets/images/locations/Numel Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Numel Location Map.jpg')
+    "Numel": [
+      "../../assets/images/locations/Numel Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Numel Location Map.jpg"
     ],
-    Nuzleaf: [
-      require('../../assets/images/locations/Nuzleaf Teal Mask Location Map.jpg')
+    "Nuzleaf": [
+      "../../assets/images/locations/Nuzleaf Teal Mask Location Map.jpg"
     ],
-    Nymble: [
-      require('../../assets/images/locations/Nymble Location Map.jpg')
+    "Nymble": [
+      "../../assets/images/locations/Nymble Location Map.jpg"
     ],
-    Oddish: [
-      require('../../assets/images/locations/Oddish Indigo Disk Location Map.jpg')
+    "Oddish": [
+      "../../assets/images/locations/Oddish Indigo Disk Location Map.jpg"
     ],
-    Oinkologne: [
-      require('../../assets/images/locations/Oinkologne (Male) Location Map.jpg')
+    "Oinkologne": [
+      "../../assets/images/locations/Oinkologne (Male) Location Map.jpg"
     ],
-    Oranguru: [
-      require('../../assets/images/locations/Oranguru Location Map.jpg')
+    "Oranguru": [
+      "../../assets/images/locations/Oranguru Location Map.jpg"
     ],
-    Oricorio: [
-      require('../../assets/images/locations/Oricorio (Baile Style) Location Map.jpg'),
-      require('../../assets/images/locations/Oricorio (Sensu Style) Teal Mask Location Map.jpg')
+    "Oricorio": [
+      "../../assets/images/locations/Oricorio (Baile Style) Location Map.jpg",
+      "../../assets/images/locations/Oricorio (Sensu Style) Teal Mask Location Map.jpg"
     ],
-    Orthworm: [
-      require('../../assets/images/locations/Orthworm Location Map.jpg'),
-      require('../../assets/images/locations/Orthworm Teal Mask Location Map.jpg')
+    "Orthworm": [
+      "../../assets/images/locations/Orthworm Location Map.jpg",
+      "../../assets/images/locations/Orthworm Teal Mask Location Map.jpg"
     ],
-    Oshawott: [
-      require('../../assets/images/locations/Oshawott Indigo Disk Location Map.jpg')
+    "Oshawott": [
+      "../../assets/images/locations/Oshawott Indigo Disk Location Map.jpg"
     ],
-    Overqwil: [
-      require('../../assets/images/locations/Overqwil Indigo Disk Location Map.jpg')
+    "Overqwil": [
+      "../../assets/images/locations/Overqwil Indigo Disk Location Map.jpg"
     ],
-    Pachirisu: [
-      require('../../assets/images/locations/Pachirisu Location Map.jpg'),
-      require('../../assets/images/locations/Pachirisu Teal Mask Location Map.jpg')
+    "Pachirisu": [
+      "../../assets/images/locations/Pachirisu Location Map.jpg",
+      "../../assets/images/locations/Pachirisu Teal Mask Location Map.jpg"
     ],
-    Paldean: [
-      require('../../assets/images/locations/Paldean Wooper Location Map.jpg')
+    "Paldean": [
+      "../../assets/images/locations/Paldean Wooper Location Map.jpg"
     ],
-    Palossand: [
-      require('../../assets/images/locations/Palossand Location Map.jpg')
+    "Palossand": [
+      "../../assets/images/locations/Palossand Location Map.jpg"
     ],
-    Passimian: [
-      require('../../assets/images/locations/Passimian Location Map.jpg')
+    "Passimian": [
+      "../../assets/images/locations/Passimian Location Map.jpg"
     ],
-    Pawmi: [
-      require('../../assets/images/locations/Pawmi Location Map.jpg')
+    "Pawmi": [
+      "../../assets/images/locations/Pawmi Location Map.jpg"
     ],
-    Pawmo: [
-      require('../../assets/images/locations/Pawmo Location Map.jpg')
+    "Pawmo": [
+      "../../assets/images/locations/Pawmo Location Map.jpg"
     ],
-    Pawniard: [
-      require('../../assets/images/locations/Pawniard Location Map.jpg'),
-      require('../../assets/images/locations/Pawniard Teal Mask Location Map.jpg')
+    "Pawniard": [
+      "../../assets/images/locations/Pawniard Location Map.jpg",
+      "../../assets/images/locations/Pawniard Teal Mask Location Map.jpg"
     ],
-    Pelipper: [
-      require('../../assets/images/locations/Pelipper Location Map.jpg')
+    "Pelipper": [
+      "../../assets/images/locations/Pelipper Location Map.jpg"
     ],
-    Persian: [
-      require('../../assets/images/locations/Persian Location Map.jpg')
+    "Persian": [
+      "../../assets/images/locations/Persian Location Map.jpg"
     ],
-    Petilil: [
-      require('../../assets/images/locations/Petilil Location Map.jpg'),
-      require('../../assets/images/locations/Petilil Teal Mask Location Map.jpg')
+    "Petilil": [
+      "../../assets/images/locations/Petilil Location Map.jpg",
+      "../../assets/images/locations/Petilil Teal Mask Location Map.jpg"
     ],
-    Phanpy: [
-      require('../../assets/images/locations/Phanpy Location Map.jpg')
+    "Phanpy": [
+      "../../assets/images/locations/Phanpy Location Map.jpg"
     ],
-    Phantump: [
-      require('../../assets/images/locations/Phantump Teal Mask Location Map.jpg')
+    "Phantump": [
+      "../../assets/images/locations/Phantump Teal Mask Location Map.jpg"
     ],
-    Pichu: [
-      require('../../assets/images/locations/Pichu Location Map.jpg'),
-      require('../../assets/images/locations/Pichu Teal Mask Location Map.jpg')
+    "Pichu": [
+      "../../assets/images/locations/Pichu Location Map.jpg",
+      "../../assets/images/locations/Pichu Teal Mask Location Map.jpg"
     ],
-    Pignite: [
-      require('../../assets/images/locations/Pignite Indigo Disk Location Map.jpg')
+    "Pignite": [
+      "../../assets/images/locations/Pignite Indigo Disk Location Map.jpg"
     ],
-    Pikachu: [
-      require('../../assets/images/locations/Pikachu Location Map.jpg'),
-      require('../../assets/images/locations/Pikachu Teal Mask Location Map.jpg')
+    "Pikachu": [
+      "../../assets/images/locations/Pikachu Location Map.jpg",
+      "../../assets/images/locations/Pikachu Teal Mask Location Map.jpg"
     ],
-    Pikipek: [
-      require('../../assets/images/locations/Pikipek Indigo Disk Location Map.jpg')
+    "Pikipek": [
+      "../../assets/images/locations/Pikipek Indigo Disk Location Map.jpg"
     ],
-    Piloswine: [
-      require('../../assets/images/locations/Piloswine Teal Mask Location Map.jpg')
+    "Piloswine": [
+      "../../assets/images/locations/Piloswine Teal Mask Location Map.jpg"
     ],
-    Pincurchin: [
-      require('../../assets/images/locations/Pincurchin Location Map.jpg')
+    "Pincurchin": [
+      "../../assets/images/locations/Pincurchin Location Map.jpg"
     ],
-    Pineco: [
-      require('../../assets/images/locations/Pineco Location Map.jpg')
+    "Pineco": [
+      "../../assets/images/locations/Pineco Location Map.jpg"
     ],
-    Piplup: [
-      require('../../assets/images/locations/Piplup Indigo Disk Location Map.jpg')
+    "Piplup": [
+      "../../assets/images/locations/Piplup Indigo Disk Location Map.jpg"
     ],
-    Plusle: [
-      require('../../assets/images/locations/Plusle Indigo Disk Location Map.jpg')
+    "Plusle": [
+      "../../assets/images/locations/Plusle Indigo Disk Location Map.jpg"
     ],
-    Poliwag: [
-      require('../../assets/images/locations/Poliwag Teal Mask Location Map.jpg')
+    "Poliwag": [
+      "../../assets/images/locations/Poliwag Teal Mask Location Map.jpg"
     ],
-    Poliwhirl: [
-      require('../../assets/images/locations/Poliwhirl Teal Mask Location Map.jpg')
+    "Poliwhirl": [
+      "../../assets/images/locations/Poliwhirl Teal Mask Location Map.jpg"
     ],
-    Poltchageist: [
-      require('../../assets/images/locations/Poltchageist Teal Mask Location Map.jpg')
+    "Poltchageist": [
+      "../../assets/images/locations/Poltchageist Teal Mask Location Map.jpg"
     ],
-    Poochyena: [
-      require('../../assets/images/locations/Poochyena Teal Mask Location Map.jpg')
+    "Poochyena": [
+      "../../assets/images/locations/Poochyena Teal Mask Location Map.jpg"
     ],
-    Popplio: [
-      require('../../assets/images/locations/Popplio Indigo Disk Location Map.jpg')
+    "Popplio": [
+      "../../assets/images/locations/Popplio Indigo Disk Location Map.jpg"
     ],
-    Porygon: [
-      require('../../assets/images/locations/Porygon Indigo Disk Location Map.jpg')
+    "Porygon": [
+      "../../assets/images/locations/Porygon Indigo Disk Location Map.jpg"
     ],
-    PorygonZ: [
-      require('../../assets/images/locations/Porygon-Z Indigo Disk Location Map.jpg')
+    "Porygon-Z": [
+      "../../assets/images/locations/Porygon-Z Indigo Disk Location Map.jpg"
     ],
-    Porygon2: [
-      require('../../assets/images/locations/Porygon2 Indigo Disk Location Map.jpg')
+    "Porygon2": [
+      "../../assets/images/locations/Porygon2 Indigo Disk Location Map.jpg"
     ],
-    Primarina: [
-      require('../../assets/images/locations/Primarina Indigo Disk Location Map.jpg')
+    "Primarina": [
+      "../../assets/images/locations/Primarina Indigo Disk Location Map.jpg"
     ],
-    Primeape: [
-      require('../../assets/images/locations/Primeape Location Map.jpg'),
-      require('../../assets/images/locations/Primeape Teal Mask Location Map.jpg')
+    "Primeape": [
+      "../../assets/images/locations/Primeape Location Map.jpg",
+      "../../assets/images/locations/Primeape Teal Mask Location Map.jpg"
     ],
-    Prinplup: [
-      require('../../assets/images/locations/Prinplup Indigo Disk Location Map.jpg')
+    "Prinplup": [
+      "../../assets/images/locations/Prinplup Indigo Disk Location Map.jpg"
     ],
-    Psyduck: [
-      require('../../assets/images/locations/Psyduck Location Map.jpg')
+    "Psyduck": [
+      "../../assets/images/locations/Psyduck Location Map.jpg"
     ],
-    Pupitar: [
-      require('../../assets/images/locations/Pupitar Location Map.jpg')
+    "Pupitar": [
+      "../../assets/images/locations/Pupitar Location Map.jpg"
     ],
-    Pyroar: [
-      require('../../assets/images/locations/Pyroar Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Pyroar Location Map.jpg')
+    "Pyroar": [
+      "../../assets/images/locations/Pyroar Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Pyroar Location Map.jpg"
     ],
-    Quagsire: [
-      require('../../assets/images/locations/Quagsire Teal Mask Location Map.jpg')
+    "Quagsire": [
+      "../../assets/images/locations/Quagsire Teal Mask Location Map.jpg"
     ],
-    Quilava: [
-      require('../../assets/images/locations/Quilava Indigo Disk Location Map.jpg')
+    "Quilava": [
+      "../../assets/images/locations/Quilava Indigo Disk Location Map.jpg"
     ],
-    Quilladin: [
-      require('../../assets/images/locations/Quilladin Indigo Disk Location Map.jpg')
+    "Quilladin": [
+      "../../assets/images/locations/Quilladin Indigo Disk Location Map.jpg"
     ],
-    Qwilfish: [
-      require('../../assets/images/locations/Qwilfish Location Map.jpg')
+    "Qwilfish": [
+      "../../assets/images/locations/Qwilfish Location Map.jpg"
     ],
-    Raboot: [
-      require('../../assets/images/locations/Raboot Indigo Disk Location Map.jpg')
+    "Raboot": [
+      "../../assets/images/locations/Raboot Indigo Disk Location Map.jpg"
     ],
-    Rabsca: [
-      require('../../assets/images/locations/Rabsca Indigo Disk Location Map.jpg')
+    "Rabsca": [
+      "../../assets/images/locations/Rabsca Indigo Disk Location Map.jpg"
     ],
-    Raichu: [
-      require('../../assets/images/locations/Raichu Location Map.jpg')
+    "Raichu": [
+      "../../assets/images/locations/Raichu Location Map.jpg"
     ],
-    Ralts: [
-      require('../../assets/images/locations/Ralts Location Map.jpg'),
-      require('../../assets/images/locations/Ralts Teal Mask Location Map.jpg')
+    "Ralts": [
+      "../../assets/images/locations/Ralts Location Map.jpg",
+      "../../assets/images/locations/Ralts Teal Mask Location Map.jpg"
     ],
-    Rampardos: [
-      require('../../assets/images/locations/Rampardos Indigo Disk Location Map.jpg')
+    "Rampardos": [
+      "../../assets/images/locations/Rampardos Indigo Disk Location Map.jpg"
     ],
-    Rellor: [
-      require('../../assets/images/locations/Rellor Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Rellor Location Map.jpg')
+    "Rellor": [
+      "../../assets/images/locations/Rellor Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Rellor Location Map.jpg"
     ],
-    Reuniclus: [
-      require('../../assets/images/locations/Reuniclus Indigo Disk Location Map.jpg')
+    "Reuniclus": [
+      "../../assets/images/locations/Reuniclus Indigo Disk Location Map.jpg"
     ],
-    Revavroom: [
-      require('../../assets/images/locations/Revavroom Location Map.jpg')
+    "Revavroom": [
+      "../../assets/images/locations/Revavroom Location Map.jpg"
     ],
-    Rhydon: [
-      require('../../assets/images/locations/Rhydon Indigo Disk Location Map.jpg')
+    "Rhydon": [
+      "../../assets/images/locations/Rhydon Indigo Disk Location Map.jpg"
     ],
-    Rhyhorn: [
-      require('../../assets/images/locations/Rhyhorn Indigo Disk Location Map.jpg')
+    "Rhyhorn": [
+      "../../assets/images/locations/Rhyhorn Indigo Disk Location Map.jpg"
     ],
-    Rhyperior: [
-      require('../../assets/images/locations/Rhyperior Indigo Disk Location Map.jpg')
+    "Rhyperior": [
+      "../../assets/images/locations/Rhyperior Indigo Disk Location Map.jpg"
     ],
-    Ribombee: [
-      require('../../assets/images/locations/Ribombee Teal Mask Location Map.jpg')
+    "Ribombee": [
+      "../../assets/images/locations/Ribombee Teal Mask Location Map.jpg"
     ],
-    Rillaboom: [
-      require('../../assets/images/locations/Rillaboom Indigo Disk Location Map.jpg')
+    "Rillaboom": [
+      "../../assets/images/locations/Rillaboom Indigo Disk Location Map.jpg"
     ],
-    Riolu: [
-      require('../../assets/images/locations/Riolu Location Map.jpg'),
-      require('../../assets/images/locations/Riolu Teal Mask Location Map.jpg')
+    "Riolu": [
+      "../../assets/images/locations/Riolu Location Map.jpg",
+      "../../assets/images/locations/Riolu Teal Mask Location Map.jpg"
     ],
-    Rockruff: [
-      require('../../assets/images/locations/Rockruff Location Map.jpg'),
-      require('../../assets/images/locations/Rockruff Teal Mask Location Map.jpg')
+    "Rockruff": [
+      "../../assets/images/locations/Rockruff Location Map.jpg",
+      "../../assets/images/locations/Rockruff Teal Mask Location Map.jpg"
     ],
-    Rolycoly: [
-      require('../../assets/images/locations/Rolycoly Location Map.jpg')
+    "Rolycoly": [
+      "../../assets/images/locations/Rolycoly Location Map.jpg"
     ],
-    Rookidee: [
-      require('../../assets/images/locations/Rookidee Location Map.jpg')
+    "Rookidee": [
+      "../../assets/images/locations/Rookidee Location Map.jpg"
     ],
-    Rotom: [
-      require('../../assets/images/locations/Rotom Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Rotom Location Map.jpg')
+    "Rotom": [
+      "../../assets/images/locations/Rotom Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Rotom Location Map.jpg"
     ],
-    Rowlet: [
-      require('../../assets/images/locations/Rowlet Indigo Disk Location Map.jpg')
+    "Rowlet": [
+      "../../assets/images/locations/Rowlet Indigo Disk Location Map.jpg"
     ],
-    Rufflet: [
-      require('../../assets/images/locations/Rufflet Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Rufflet Location Map.jpg')
+    "Rufflet": [
+      "../../assets/images/locations/Rufflet Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Rufflet Location Map.jpg"
     ],
-    Sableye: [
-      require('../../assets/images/locations/Sableye Location Map.jpg')
+    "Sableye": [
+      "../../assets/images/locations/Sableye Location Map.jpg"
     ],
-    Salandit: [
-      require('../../assets/images/locations/Salandit Location Map.jpg'),
-      require('../../assets/images/locations/Salandit Teal Mask Location Map.jpg')
+    "Salandit": [
+      "../../assets/images/locations/Salandit Location Map.jpg",
+      "../../assets/images/locations/Salandit Teal Mask Location Map.jpg"
     ],
-    Salazzle: [
-      require('../../assets/images/locations/Salazzle Location Map.jpg')
+    "Salazzle": [
+      "../../assets/images/locations/Salazzle Location Map.jpg"
     ],
-    Samurott: [
-      require('../../assets/images/locations/Samurott Indigo Disk Location Map.jpg')
+    "Samurott": [
+      "../../assets/images/locations/Samurott Indigo Disk Location Map.jpg"
     ],
-    Sandile: [
-      require('../../assets/images/locations/Sandile Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Sandile Location Map.jpg')
+    "Sandile": [
+      "../../assets/images/locations/Sandile Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Sandile Location Map.jpg"
     ],
-    Sandshrew: [
-      require('../../assets/images/locations/Sandshrew Teal Mask Location Map.jpg')
+    "Sandshrew": [
+      "../../assets/images/locations/Sandshrew Teal Mask Location Map.jpg"
     ],
-    Sandslash: [
-      require('../../assets/images/locations/Sandslash Teal Mask Location Map.jpg')
+    "Sandslash": [
+      "../../assets/images/locations/Sandslash Teal Mask Location Map.jpg"
     ],
-    Sandygast: [
-      require('../../assets/images/locations/Sandygast Location Map.jpg')
+    "Sandygast": [
+      "../../assets/images/locations/Sandygast Location Map.jpg"
     ],
-    Sawsbuck: [
-      require('../../assets/images/locations/Sawsbuck Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Sawsbuck Location Map.jpg')
+    "Sawsbuck": [
+      "../../assets/images/locations/Sawsbuck Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Sawsbuck Location Map.jpg"
     ],
-    Scatterbug: [
-      require('../../assets/images/locations/Scatterbug Location Map.jpg')
+    "Scatterbug": [
+      "../../assets/images/locations/Scatterbug Location Map.jpg"
     ],
-    Sceptile: [
-      require('../../assets/images/locations/Sceptile Indigo Disk Location Map.jpg')
+    "Sceptile": [
+      "../../assets/images/locations/Sceptile Indigo Disk Location Map.jpg"
     ],
-    Scizor: [
-      require('../../assets/images/locations/Scizor Indigo Disk Location Map.jpg')
+    "Scizor": [
+      "../../assets/images/locations/Scizor Indigo Disk Location Map.jpg"
     ],
-    Scorbunny: [
-      require('../../assets/images/locations/Scorbunny Indigo Disk Location Map.jpg')
+    "Scorbunny": [
+      "../../assets/images/locations/Scorbunny Indigo Disk Location Map.jpg"
     ],
-    Scovillain: [
-      require('../../assets/images/locations/Scovillain Location Map.jpg')
+    "Scovillain": [
+      "../../assets/images/locations/Scovillain Location Map.jpg"
     ],
-    Scrafty: [
-      require('../../assets/images/locations/Scrafty Indigo Disk Location Map.jpg')
+    "Scrafty": [
+      "../../assets/images/locations/Scrafty Indigo Disk Location Map.jpg"
     ],
-    Scraggy: [
-      require('../../assets/images/locations/Scraggy Indigo Disk Location Map.jpg')
+    "Scraggy": [
+      "../../assets/images/locations/Scraggy Indigo Disk Location Map.jpg"
     ],
-    Scyther: [
-      require('../../assets/images/locations/Scyther Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Scyther Location Map.jpg')
+    "Scyther": [
+      "../../assets/images/locations/Scyther Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Scyther Location Map.jpg"
     ],
-    Seadra: [
-      require('../../assets/images/locations/Seadra Indigo Disk Location Map.jpg')
+    "Seadra": [
+      "../../assets/images/locations/Seadra Indigo Disk Location Map.jpg"
     ],
-    Seedot: [
-      require('../../assets/images/locations/Seedot Teal Mask Location Map.jpg')
+    "Seedot": [
+      "../../assets/images/locations/Seedot Teal Mask Location Map.jpg"
     ],
-    Seel: [
-      require('../../assets/images/locations/Seel Indigo Disk Location Map.jpg')
+    "Seel": [
+      "../../assets/images/locations/Seel Indigo Disk Location Map.jpg"
     ],
-    Sentret: [
-      require('../../assets/images/locations/Sentret Teal Mask Location Map.jpg')
+    "Sentret": [
+      "../../assets/images/locations/Sentret Teal Mask Location Map.jpg"
     ],
-    Serperior: [
-      require('../../assets/images/locations/Serperior Indigo Disk Location Map.jpg')
+    "Serperior": [
+      "../../assets/images/locations/Serperior Indigo Disk Location Map.jpg"
     ],
-    Servine: [
-      require('../../assets/images/locations/Servine Indigo Disk Location Map.jpg')
+    "Servine": [
+      "../../assets/images/locations/Servine Indigo Disk Location Map.jpg"
     ],
-    Seviper: [
-      require('../../assets/images/locations/Seviper Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Seviper Location Map.jpg')
+    "Seviper": [
+      "../../assets/images/locations/Seviper Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Seviper Location Map.jpg"
     ],
-    Sewaddle: [
-      require('../../assets/images/locations/Sewaddle Teal Mask Location Map.jpg')
+    "Sewaddle": [
+      "../../assets/images/locations/Sewaddle Teal Mask Location Map.jpg"
     ],
-    Shelgon: [
-      require('../../assets/images/locations/Shelgon Location Map.jpg')
+    "Shelgon": [
+      "../../assets/images/locations/Shelgon Location Map.jpg"
     ],
-    Shellder: [
-      require('../../assets/images/locations/Shellder Location Map.jpg')
+    "Shellder": [
+      "../../assets/images/locations/Shellder Location Map.jpg"
     ],
-    Shellos: [
-      require('../../assets/images/locations/Shellos (East Sea) Location Map.jpg'),
-      require('../../assets/images/locations/Shellos (West Sea) Location Map.jpg')
+    "Shellos": [
+      "../../assets/images/locations/Shellos (East Sea) Location Map.jpg",
+      "../../assets/images/locations/Shellos (West Sea) Location Map.jpg"
     ],
-    Shieldon: [
-      require('../../assets/images/locations/Shieldon Indigo Disk Location Map.jpg')
+    "Shieldon": [
+      "../../assets/images/locations/Shieldon Indigo Disk Location Map.jpg"
     ],
-    Shinx: [
-      require('../../assets/images/locations/Shinx Location Map.jpg'),
-      require('../../assets/images/locations/Shinx Teal Mask Location Map.jpg')
+    "Shinx": [
+      "../../assets/images/locations/Shinx Location Map.jpg",
+      "../../assets/images/locations/Shinx Teal Mask Location Map.jpg"
     ],
-    Shroodle: [
-      require('../../assets/images/locations/Shroodle Location Map.jpg')
+    "Shroodle": [
+      "../../assets/images/locations/Shroodle Location Map.jpg"
     ],
-    Shroomish: [
-      require('../../assets/images/locations/Shroomish Location Map.jpg')
+    "Shroomish": [
+      "../../assets/images/locations/Shroomish Location Map.jpg"
     ],
-    Shuppet: [
-      require('../../assets/images/locations/Shuppet Location Map.jpg')
+    "Shuppet": [
+      "../../assets/images/locations/Shuppet Location Map.jpg"
     ],
-    Silicobra: [
-      require('../../assets/images/locations/Silicobra Location Map.jpg')
+    "Silicobra": [
+      "../../assets/images/locations/Silicobra Location Map.jpg"
     ],
-    Sinistea: [
-      require('../../assets/images/locations/Sinistea Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Sinistea Location Map.jpg')
+    "Sinistea": [
+      "../../assets/images/locations/Sinistea Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Sinistea Location Map.jpg"
     ],
-    Skarmory: [
-      require('../../assets/images/locations/Skarmory Indigo Disk Location Map.jpg')
+    "Skarmory": [
+      "../../assets/images/locations/Skarmory Indigo Disk Location Map.jpg"
     ],
-    Skiddo: [
-      require('../../assets/images/locations/Skiddo Location Map.jpg')
+    "Skiddo": [
+      "../../assets/images/locations/Skiddo Location Map.jpg"
     ],
-    Skiploom: [
-      require('../../assets/images/locations/Skiploom Location Map.jpg')
+    "Skiploom": [
+      "../../assets/images/locations/Skiploom Location Map.jpg"
     ],
-    Skrelp: [
-      require('../../assets/images/locations/Skrelp Location Map.jpg')
+    "Skrelp": [
+      "../../assets/images/locations/Skrelp Location Map.jpg"
     ],
-    Skuntank: [
-      require('../../assets/images/locations/Skuntank Location Map.jpg')
+    "Skuntank": [
+      "../../assets/images/locations/Skuntank Location Map.jpg"
     ],
-    Skwovet: [
-      require('../../assets/images/locations/Skwovet Location Map.jpg'),
-      require('../../assets/images/locations/Skwovet Teal Mask Location Map.jpg')
+    "Skwovet": [
+      "../../assets/images/locations/Skwovet Location Map.jpg",
+      "../../assets/images/locations/Skwovet Teal Mask Location Map.jpg"
     ],
-    Slaking: [
-      require('../../assets/images/locations/Slaking Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Slaking Location Map.jpg')
+    "Slaking": [
+      "../../assets/images/locations/Slaking Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Slaking Location Map.jpg"
     ],
-    Slakoth: [
-      require('../../assets/images/locations/Slakoth Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Slakoth Location Map.jpg')
+    "Slakoth": [
+      "../../assets/images/locations/Slakoth Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Slakoth Location Map.jpg"
     ],
-    Sliggoo: [
-      require('../../assets/images/locations/Sliggoo Location Map.jpg'),
-      require('../../assets/images/locations/Sliggoo Teal Mask Location Map.jpg')
+    "Sliggoo": [
+      "../../assets/images/locations/Sliggoo Location Map.jpg",
+      "../../assets/images/locations/Sliggoo Teal Mask Location Map.jpg"
     ],
-    Slowbro: [
-      require('../../assets/images/locations/Slowbro Location Map.jpg')
+    "Slowbro": [
+      "../../assets/images/locations/Slowbro Location Map.jpg"
     ],
-    Slowpoke: [
-      require('../../assets/images/locations/Slowpoke Location Map.jpg')
+    "Slowpoke": [
+      "../../assets/images/locations/Slowpoke Location Map.jpg"
     ],
-    Slugma: [
-      require('../../assets/images/locations/Slugma Teal Mask Location Map.jpg')
+    "Slugma": [
+      "../../assets/images/locations/Slugma Teal Mask Location Map.jpg"
     ],
-    Smeargle: [
-      require('../../assets/images/locations/Smeargle Indigo Disk Location Map.jpg')
+    "Smeargle": [
+      "../../assets/images/locations/Smeargle Indigo Disk Location Map.jpg"
     ],
-    Smoliv: [
-      require('../../assets/images/locations/Smoliv Location Map.jpg')
+    "Smoliv": [
+      "../../assets/images/locations/Smoliv Location Map.jpg"
     ],
-    Sneasel: [
-      require('../../assets/images/locations/Sneasel Location Map.jpg'),
-      require('../../assets/images/locations/Sneasel Teal Mask Location Map.jpg')
+    "Sneasel": [
+      "../../assets/images/locations/Sneasel Location Map.jpg",
+      "../../assets/images/locations/Sneasel Teal Mask Location Map.jpg"
     ],
-    Snivy: [
-      require('../../assets/images/locations/Snivy Indigo Disk Location Map.jpg')
+    "Snivy": [
+      "../../assets/images/locations/Snivy Indigo Disk Location Map.jpg"
     ],
-    Snom: [
-      require('../../assets/images/locations/Snom Location Map.jpg')
+    "Snom": [
+      "../../assets/images/locations/Snom Location Map.jpg"
     ],
-    Snorunt: [
-      require('../../assets/images/locations/Snorunt Location Map.jpg'),
-      require('../../assets/images/locations/Snorunt Teal Mask Location Map.jpg')
+    "Snorunt": [
+      "../../assets/images/locations/Snorunt Location Map.jpg",
+      "../../assets/images/locations/Snorunt Teal Mask Location Map.jpg"
     ],
-    Snover: [
-      require('../../assets/images/locations/Snover Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Snover Location Map.jpg')
+    "Snover": [
+      "../../assets/images/locations/Snover Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Snover Location Map.jpg"
     ],
-    Snubbull: [
-      require('../../assets/images/locations/Snubbull Indigo Disk Location Map.jpg')
+    "Snubbull": [
+      "../../assets/images/locations/Snubbull Indigo Disk Location Map.jpg"
     ],
-    Sobble: [
-      require('../../assets/images/locations/Sobble Indigo Disk Location Map.jpg')
+    "Sobble": [
+      "../../assets/images/locations/Sobble Indigo Disk Location Map.jpg"
     ],
-    Solosis: [
-      require('../../assets/images/locations/Solosis Indigo Disk Location Map.jpg')
+    "Solosis": [
+      "../../assets/images/locations/Solosis Indigo Disk Location Map.jpg"
     ],
-    Spewpa: [
-      require('../../assets/images/locations/Spewpa Location Map.jpg')
+    "Spewpa": [
+      "../../assets/images/locations/Spewpa Location Map.jpg"
     ],
-    Spidops: [
-      require('../../assets/images/locations/Spidops Location Map.jpg')
+    "Spidops": [
+      "../../assets/images/locations/Spidops Location Map.jpg"
     ],
-    Spinarak: [
-      require('../../assets/images/locations/Spinarak Teal Mask Location Map.jpg')
+    "Spinarak": [
+      "../../assets/images/locations/Spinarak Teal Mask Location Map.jpg"
     ],
-    Spoink: [
-      require('../../assets/images/locations/Spoink Location Map.jpg'),
-      require('../../assets/images/locations/Spoink Teal Mask Location Map.jpg')
+    "Spoink": [
+      "../../assets/images/locations/Spoink Location Map.jpg",
+      "../../assets/images/locations/Spoink Teal Mask Location Map.jpg"
     ],
-    Squawkabilly: [
-      require('../../assets/images/locations/Squawkabilly Location Map.jpg')
+    "Squawkabilly": [
+      "../../assets/images/locations/Squawkabilly Location Map.jpg"
     ],
-    Squirtle: [
-      require('../../assets/images/locations/Squirtle Indigo Disk Location Map.jpg')
+    "Squirtle": [
+      "../../assets/images/locations/Squirtle Indigo Disk Location Map.jpg"
     ],
-    Stantler: [
-      require('../../assets/images/locations/Stantler Location Map.jpg'),
-      require('../../assets/images/locations/Stantler Teal Mask Location Map.jpg')
+    "Stantler": [
+      "../../assets/images/locations/Stantler Location Map.jpg",
+      "../../assets/images/locations/Stantler Teal Mask Location Map.jpg"
     ],
-    Staraptor: [
-      require('../../assets/images/locations/Staraptor Location Map.jpg'),
-      require('../../assets/images/locations/Staraptor Teal Mask Location Map.jpg')
+    "Staraptor": [
+      "../../assets/images/locations/Staraptor Location Map.jpg",
+      "../../assets/images/locations/Staraptor Teal Mask Location Map.jpg"
     ],
-    Staravia: [
-      require('../../assets/images/locations/Staravia Location Map.jpg'),
-      require('../../assets/images/locations/Staravia Teal Mask Location Map.jpg')
+    "Staravia": [
+      "../../assets/images/locations/Staravia Location Map.jpg",
+      "../../assets/images/locations/Staravia Teal Mask Location Map.jpg"
     ],
-    Starly: [
-      require('../../assets/images/locations/Starly Location Map.jpg'),
-      require('../../assets/images/locations/Starly Teal Mask Location Map.jpg')
+    "Starly": [
+      "../../assets/images/locations/Starly Location Map.jpg",
+      "../../assets/images/locations/Starly Teal Mask Location Map.jpg"
     ],
-    Steenee: [
-      require('../../assets/images/locations/Steenee Location Map.jpg')
+    "Steenee": [
+      "../../assets/images/locations/Steenee Location Map.jpg"
     ],
-    Stonjourner: [
-      require('../../assets/images/locations/Stonjourner Location Map.jpg')
+    "Stonjourner": [
+      "../../assets/images/locations/Stonjourner Location Map.jpg"
     ],
-    Stunky: [
-      require('../../assets/images/locations/Stunky Location Map.jpg')
+    "Stunky": [
+      "../../assets/images/locations/Stunky Location Map.jpg"
     ],
-    Sudowoodo: [
-      require('../../assets/images/locations/Sudowoodo Location Map.jpg'),
-      require('../../assets/images/locations/Sudowoodo Teal Mask Location Map.jpg')
+    "Sudowoodo": [
+      "../../assets/images/locations/Sudowoodo Location Map.jpg",
+      "../../assets/images/locations/Sudowoodo Teal Mask Location Map.jpg"
     ],
-    Sunflora: [
-      require('../../assets/images/locations/Sunflora Location Map.jpg')
+    "Sunflora": [
+      "../../assets/images/locations/Sunflora Location Map.jpg"
     ],
-    Sunkern: [
-      require('../../assets/images/locations/Sunkern Location Map.jpg')
+    "Sunkern": [
+      "../../assets/images/locations/Sunkern Location Map.jpg"
     ],
-    Surskit: [
-      require('../../assets/images/locations/Surskit Location Map.jpg'),
-      require('../../assets/images/locations/Surskit Teal Mask Location Map.jpg')
+    "Surskit": [
+      "../../assets/images/locations/Surskit Location Map.jpg",
+      "../../assets/images/locations/Surskit Teal Mask Location Map.jpg"
     ],
-    Swablu: [
-      require('../../assets/images/locations/Swablu Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Swablu Location Map.jpg')
+    "Swablu": [
+      "../../assets/images/locations/Swablu Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Swablu Location Map.jpg"
     ],
-    Swadloon: [
-      require('../../assets/images/locations/Swadloon Teal Mask Location Map.jpg')
+    "Swadloon": [
+      "../../assets/images/locations/Swadloon Teal Mask Location Map.jpg"
     ],
-    Swalot: [
-      require('../../assets/images/locations/Swalot Location Map.jpg')
+    "Swalot": [
+      "../../assets/images/locations/Swalot Location Map.jpg"
     ],
-    Swampert: [
-      require('../../assets/images/locations/Swampert Indigo Disk Location Map.jpg')
+    "Swampert": [
+      "../../assets/images/locations/Swampert Indigo Disk Location Map.jpg"
     ],
-    Swinub: [
-      require('../../assets/images/locations/Swinub Teal Mask Location Map.jpg')
+    "Swinub": [
+      "../../assets/images/locations/Swinub Teal Mask Location Map.jpg"
     ],
-    Sylveon: [
-      require('../../assets/images/locations/Sylveon Location Map.jpg')
+    "Sylveon": [
+      "../../assets/images/locations/Sylveon Location Map.jpg"
     ],
-    Tadbulb: [
-      require('../../assets/images/locations/Tadbulb Location Map.jpg')
+    "Tadbulb": [
+      "../../assets/images/locations/Tadbulb Location Map.jpg"
     ],
-    Talonflame: [
-      require('../../assets/images/locations/Talonflame Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Talonflame Location Map.jpg')
+    "Talonflame": [
+      "../../assets/images/locations/Talonflame Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Talonflame Location Map.jpg"
     ],
-    Tandemaus: [
-      require('../../assets/images/locations/Tandemaus Location Map.jpg'),
-      require('../../assets/images/locations/Tandemaus Teal Mask Location Map.jpg')
+    "Tandemaus": [
+      "../../assets/images/locations/Tandemaus Location Map.jpg",
+      "../../assets/images/locations/Tandemaus Teal Mask Location Map.jpg"
     ],
-    Tarountula: [
-      require('../../assets/images/locations/Tarountula Location Map.jpg')
+    "Tarountula": [
+      "../../assets/images/locations/Tarountula Location Map.jpg"
     ],
-    Tatsugiri: [
-      require('../../assets/images/locations/Tatsugiri Location Map.jpg')
+    "Tatsugiri": [
+      "../../assets/images/locations/Tatsugiri Location Map.jpg"
     ],
-    Tauros: [
-      require('../../assets/images/locations/Tauros Indigo Disk Location Map.jpg')
+    "Tauros": [
+      "../../assets/images/locations/Tauros Indigo Disk Location Map.jpg"
     ],
-    Teddiursa: [
-      require('../../assets/images/locations/Teddiursa Location Map.jpg')
+    "Teddiursa": [
+      "../../assets/images/locations/Teddiursa Location Map.jpg"
     ],
-    Tentacool: [
-      require('../../assets/images/locations/Tentacool Indigo Disk Location Map.jpg')
+    "Tentacool": [
+      "../../assets/images/locations/Tentacool Indigo Disk Location Map.jpg"
     ],
-    Tentacruel: [
-      require('../../assets/images/locations/Tentacruel Indigo Disk Location Map.jpg')
+    "Tentacruel": [
+      "../../assets/images/locations/Tentacruel Indigo Disk Location Map.jpg"
     ],
-    Tepig: [
-      require('../../assets/images/locations/Tepig Indigo Disk Location Map.jpg')
+    "Tepig": [
+      "../../assets/images/locations/Tepig Indigo Disk Location Map.jpg"
     ],
-    Thwackey: [
-      require('../../assets/images/locations/Thwackey Indigo Disk Location Map.jpg')
+    "Thwackey": [
+      "../../assets/images/locations/Thwackey Indigo Disk Location Map.jpg"
     ],
-    Timburr: [
-      require('../../assets/images/locations/Timburr Teal Mask Location Map.jpg')
+    "Timburr": [
+      "../../assets/images/locations/Timburr Teal Mask Location Map.jpg"
     ],
-    Tinkatink: [
-      require('../../assets/images/locations/Tinkatink Location Map.jpg')
+    "Tinkatink": [
+      "../../assets/images/locations/Tinkatink Location Map.jpg"
     ],
-    Tinkatuff: [
-      require('../../assets/images/locations/Tinkatuff Location Map.jpg')
+    "Tinkatuff": [
+      "../../assets/images/locations/Tinkatuff Location Map.jpg"
     ],
-    Toedscool: [
-      require('../../assets/images/locations/Toedscool Location Map.jpg'),
-      require('../../assets/images/locations/Toedscool Teal Mask Location Map.jpg')
+    "Toedscool": [
+      "../../assets/images/locations/Toedscool Location Map.jpg",
+      "../../assets/images/locations/Toedscool Teal Mask Location Map.jpg"
     ],
-    Toedscruel: [
-      require('../../assets/images/locations/Toedscruel Location Map.jpg'),
-      require('../../assets/images/locations/Toedscruel Teal Mask Location Map.jpg')
+    "Toedscruel": [
+      "../../assets/images/locations/Toedscruel Location Map.jpg",
+      "../../assets/images/locations/Toedscruel Teal Mask Location Map.jpg"
     ],
-    Torchic: [
-      require('../../assets/images/locations/Torchic Indigo Disk Location Map.jpg')
+    "Torchic": [
+      "../../assets/images/locations/Torchic Indigo Disk Location Map.jpg"
     ],
-    Torkoal: [
-      require('../../assets/images/locations/Torkoal Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Torkoal Location Map.jpg')
+    "Torkoal": [
+      "../../assets/images/locations/Torkoal Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Torkoal Location Map.jpg"
     ],
-    Torracat: [
-      require('../../assets/images/locations/Torracat Indigo Disk Location Map.jpg')
+    "Torracat": [
+      "../../assets/images/locations/Torracat Indigo Disk Location Map.jpg"
     ],
-    Torterra: [
-      require('../../assets/images/locations/Torterra Indigo Disk Location Map.jpg')
+    "Torterra": [
+      "../../assets/images/locations/Torterra Indigo Disk Location Map.jpg"
     ],
-    Totodile: [
-      require('../../assets/images/locations/Totodile Indigo Disk Location Map.jpg')
+    "Totodile": [
+      "../../assets/images/locations/Totodile Indigo Disk Location Map.jpg"
     ],
-    Toucannon: [
-      require('../../assets/images/locations/Toucannon Indigo Disk Location Map.jpg')
+    "Toucannon": [
+      "../../assets/images/locations/Toucannon Indigo Disk Location Map.jpg"
     ],
-    Toxel: [
-      require('../../assets/images/locations/Toxel Location Map.jpg')
+    "Toxel": [
+      "../../assets/images/locations/Toxel Location Map.jpg"
     ],
-    Toxicroak: [
-      require('../../assets/images/locations/Toxicroak Location Map.jpg')
+    "Toxicroak": [
+      "../../assets/images/locations/Toxicroak Location Map.jpg"
     ],
-    Toxtricity: [
-      require('../../assets/images/locations/Toxtricity (Amped Form) Location Map.jpg')
+    "Toxtricity": [
+      "../../assets/images/locations/Toxtricity (Amped Form) Location Map.jpg"
     ],
-    Trapinch: [
-      require('../../assets/images/locations/Trapinch Indigo Disk Location Map.jpg')
+    "Trapinch": [
+      "../../assets/images/locations/Trapinch Indigo Disk Location Map.jpg"
     ],
-    Treecko: [
-      require('../../assets/images/locations/Treecko Indigo Disk Location Map.jpg')
+    "Treecko": [
+      "../../assets/images/locations/Treecko Indigo Disk Location Map.jpg"
     ],
-    Trevenant: [
-      require('../../assets/images/locations/Trevenant Teal Mask Location Map.jpg')
+    "Trevenant": [
+      "../../assets/images/locations/Trevenant Teal Mask Location Map.jpg"
     ],
-    Tropius: [
-      require('../../assets/images/locations/Tropius Location Map.jpg')
+    "Tropius": [
+      "../../assets/images/locations/Tropius Location Map.jpg"
     ],
-    Trumbeak: [
-      require('../../assets/images/locations/Trumbeak Indigo Disk Location Map.jpg')
+    "Trumbeak": [
+      "../../assets/images/locations/Trumbeak Indigo Disk Location Map.jpg"
     ],
-    Turtwig: [
-      require('../../assets/images/locations/Turtwig Indigo Disk Location Map.jpg')
+    "Turtwig": [
+      "../../assets/images/locations/Turtwig Indigo Disk Location Map.jpg"
     ],
-    Tynamo: [
-      require('../../assets/images/locations/Tynamo Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Tynamo Location Map.jpg'),
-      require('../../assets/images/locations/Tynamo Teal Mask Location Map.jpg')
+    "Tynamo": [
+      "../../assets/images/locations/Tynamo Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Tynamo Location Map.jpg",
+      "../../assets/images/locations/Tynamo Teal Mask Location Map.jpg"
     ],
-    Typhlosion: [
-      require('../../assets/images/locations/Typhlosion Indigo Disk Location Map.jpg')
+    "Typhlosion": [
+      "../../assets/images/locations/Typhlosion Indigo Disk Location Map.jpg"
     ],
-    Tyrogue: [
-      require('../../assets/images/locations/Tyrogue Indigo Disk Location Map.jpg')
+    "Tyrogue": [
+      "../../assets/images/locations/Tyrogue Indigo Disk Location Map.jpg"
     ],
-    Umbreon: [
-      require('../../assets/images/locations/Umbreon Location Map.jpg')
+    "Umbreon": [
+      "../../assets/images/locations/Umbreon Location Map.jpg"
     ],
-    Ursaring: [
-      require('../../assets/images/locations/Ursaring Location Map.jpg')
+    "Ursaring": [
+      "../../assets/images/locations/Ursaring Location Map.jpg"
     ],
-    Vaporeon: [
-      require('../../assets/images/locations/Vaporeon Location Map.jpg')
+    "Vaporeon": [
+      "../../assets/images/locations/Vaporeon Location Map.jpg"
     ],
-    Varoom: [
-      require('../../assets/images/locations/Varoom Location Map.jpg')
+    "Varoom": [
+      "../../assets/images/locations/Varoom Location Map.jpg"
     ],
-    Veluza: [
-      require('../../assets/images/locations/Veluza Location Map.jpg')
+    "Veluza": [
+      "../../assets/images/locations/Veluza Location Map.jpg"
     ],
-    Venomoth: [
-      require('../../assets/images/locations/Venomoth Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Venomoth Location Map.jpg')
+    "Venomoth": [
+      "../../assets/images/locations/Venomoth Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Venomoth Location Map.jpg"
     ],
-    Venonat: [
-      require('../../assets/images/locations/Venonat Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Venonat Location Map.jpg')
+    "Venonat": [
+      "../../assets/images/locations/Venonat Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Venonat Location Map.jpg"
     ],
-    Venusaur: [
-      require('../../assets/images/locations/Venusaur Indigo Disk Location Map.jpg')
+    "Venusaur": [
+      "../../assets/images/locations/Venusaur Indigo Disk Location Map.jpg"
     ],
-    Vespiquen: [
-      require('../../assets/images/locations/Vespiquen Location Map.jpg')
+    "Vespiquen": [
+      "../../assets/images/locations/Vespiquen Location Map.jpg"
     ],
-    Vibrava: [
-      require('../../assets/images/locations/Vibrava Indigo Disk Location Map.jpg')
+    "Vibrava": [
+      "../../assets/images/locations/Vibrava Indigo Disk Location Map.jpg"
     ],
-    Vigoroth: [
-      require('../../assets/images/locations/Vigoroth Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Vigoroth Location Map.jpg')
+    "Vigoroth": [
+      "../../assets/images/locations/Vigoroth Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Vigoroth Location Map.jpg"
     ],
-    Vileplume: [
-      require('../../assets/images/locations/Vileplume Indigo Disk Location Map.jpg')
+    "Vileplume": [
+      "../../assets/images/locations/Vileplume Indigo Disk Location Map.jpg"
     ],
-    Vivillon: [
-      require('../../assets/images/locations/Vivillon Location Map.jpg')
+    "Vivillon": [
+      "../../assets/images/locations/Vivillon Location Map.jpg"
     ],
-    Volbeat: [
-      require('../../assets/images/locations/Volbeat Teal Mask Location Map.jpg')
+    "Volbeat": [
+      "../../assets/images/locations/Volbeat Teal Mask Location Map.jpg"
     ],
-    Voltorb: [
-      require('../../assets/images/locations/Voltorb Location Map.jpg')
+    "Voltorb": [
+      "../../assets/images/locations/Voltorb Location Map.jpg"
     ],
-    Vullaby: [
-      require('../../assets/images/locations/Vullaby Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Vullaby Teal Mask Location Map.jpg')
+    "Vullaby": [
+      "../../assets/images/locations/Vullaby Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Vullaby Teal Mask Location Map.jpg"
     ],
-    Vulpix: [
-      require('../../assets/images/locations/Vulpix Teal Mask Location Map.jpg')
+    "Vulpix": [
+      "../../assets/images/locations/Vulpix Teal Mask Location Map.jpg"
     ],
-    Wartortle: [
-      require('../../assets/images/locations/Wartortle Indigo Disk Location Map.jpg')
+    "Wartortle": [
+      "../../assets/images/locations/Wartortle Indigo Disk Location Map.jpg"
     ],
-    Wattrel: [
-      require('../../assets/images/locations/Wattrel Location Map.jpg')
+    "Wattrel": [
+      "../../assets/images/locations/Wattrel Location Map.jpg"
     ],
-    Weavile: [
-      require('../../assets/images/locations/Weavile Location Map.jpg')
+    "Weavile": [
+      "../../assets/images/locations/Weavile Location Map.jpg"
     ],
-    Weepinbell: [
-      require('../../assets/images/locations/Weepinbell Teal Mask Location Map.jpg')
+    "Weepinbell": [
+      "../../assets/images/locations/Weepinbell Teal Mask Location Map.jpg"
     ],
-    Whimsicott: [
-      require('../../assets/images/locations/Whimsicott Indigo Disk Location Map.jpg')
+    "Whimsicott": [
+      "../../assets/images/locations/Whimsicott Indigo Disk Location Map.jpg"
     ],
-    Whiscash: [
-      require('../../assets/images/locations/Whiscash Location Map.jpg'),
-      require('../../assets/images/locations/Whiscash Teal Mask Location Map.jpg')
+    "Whiscash": [
+      "../../assets/images/locations/Whiscash Location Map.jpg",
+      "../../assets/images/locations/Whiscash Teal Mask Location Map.jpg"
     ],
-    Wigglytuff: [
-      require('../../assets/images/locations/Wigglytuff Location Map.jpg')
+    "Wigglytuff": [
+      "../../assets/images/locations/Wigglytuff Location Map.jpg"
     ],
-    Wiglett: [
-      require('../../assets/images/locations/Wiglett Location Map.jpg')
+    "Wiglett": [
+      "../../assets/images/locations/Wiglett Location Map.jpg"
     ],
-    Wingull: [
-      require('../../assets/images/locations/Wingull Location Map.jpg')
+    "Wingull": [
+      "../../assets/images/locations/Wingull Location Map.jpg"
     ],
-    Wooper: [
-      require('../../assets/images/locations/Wooper Teal Mask Location Map.jpg')
+    "Wooper": [
+      "../../assets/images/locations/Wooper Teal Mask Location Map.jpg"
     ],
-    Wugtrio: [
-      require('../../assets/images/locations/Wugtrio Location Map.jpg')
+    "Wugtrio": [
+      "../../assets/images/locations/Wugtrio Location Map.jpg"
     ],
-    Yanma: [
-      require('../../assets/images/locations/Yanma Teal Mask Location Map.jpg')
+    "Yanma": [
+      "../../assets/images/locations/Yanma Teal Mask Location Map.jpg"
     ],
-    Yungoos: [
-      require('../../assets/images/locations/Yungoos Location Map.jpg')
+    "Yungoos": [
+      "../../assets/images/locations/Yungoos Location Map.jpg"
     ],
-    Zangoose: [
-      require('../../assets/images/locations/Zangoose Indigo Disk Location Map.jpg'),
-      require('../../assets/images/locations/Zangoose Location Map.jpg')
+    "Zangoose": [
+      "../../assets/images/locations/Zangoose Indigo Disk Location Map.jpg",
+      "../../assets/images/locations/Zangoose Location Map.jpg"
     ],
-    Zebstrika: [
-      require('../../assets/images/locations/Zebstrika Indigo Disk Location Map.jpg')
+    "Zebstrika": [
+      "../../assets/images/locations/Zebstrika Indigo Disk Location Map.jpg"
     ],
-    Zoroark: [
-      require('../../assets/images/locations/Zoroark Location Map.jpg')
+    "Zoroark": [
+      "../../assets/images/locations/Zoroark Location Map.jpg"
     ],
-    Zorua: [
-      require('../../assets/images/locations/Zorua Location Map.jpg')
+    "Zorua": [
+      "../../assets/images/locations/Zorua Location Map.jpg"
     ],
-    Zweilous: [
-      require('../../assets/images/locations/Zweilous Location Map.jpg')
+    "Zweilous": [
+      "../../assets/images/locations/Zweilous Location Map.jpg"
     ]
 };
 

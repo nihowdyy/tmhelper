@@ -14,17 +14,11 @@ const TMDetailScreen = ({ route }: any) => {
   // Get the list of Pokémon names from materials
   const materialsPokemonNames = materials.map((material: { pokemon_name: string; }) => material.pokemon_name);
 
-  // Remove spaces and dashes from pokemon names
-  const formatPokemonName = (pokemonName: string) => {
-    return pokemonName.replace(/[\s-]/g, '');
-  };
-
   // Access images for each Pokémon name
   const pokemonImagesToDisplay = materialsPokemonNames.map((pokemonName: string) => {
-    const formattedName = formatPokemonName(pokemonName); // Format the name
     return {
       name: pokemonName,
-      images: pokemonImages[formattedName] || [], // Access images or return an empty array
+      images: pokemonImages[pokemonName] || [], // Access images or return an empty array
     };
   });
 
