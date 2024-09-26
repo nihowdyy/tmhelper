@@ -4,7 +4,9 @@ import pokemonLocations from '../../assets/images/pokemonLocations';
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
 import pokemonImages from '../../assets/images/pokemonImages';
-import LPIcon from '../../assets/images/LP Icon.png';
+
+// LP Icon
+const LPIcon = require('../../assets/images/LP Icon.png');
 
 const TMDetailScreen = ({ route }: any) => {
   const { tm } = route.params;
@@ -200,7 +202,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   image: {
-    width: '30%', // Adjust size as needed
+    width: '30%',
     height: 100,
     marginBottom: 10,
     resizeMode: 'contain',
@@ -272,7 +274,7 @@ const styles = StyleSheet.create({
   quantityText: {
     fontSize: 16,
     marginBottom: 5,
-    textAlign: 'right', // Right-align the quantity text
+    textAlign: 'right',
 },
 });
 
