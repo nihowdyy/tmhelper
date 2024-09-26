@@ -37,20 +37,29 @@ const TMDetailScreen = ({ route }: any) => {
   };
 
   // Render item function for FlatList
-  const renderItem = ({ item }: { item: { name: string; locationImages: string[]} }) => (
-    <View style={styles.item}>
-      <Text style={styles.pokemonName}>{item.name} Images:</Text>
-      {item.locationImages.length > 0 ? (
-        item.locationImages.map((image, i) => (
-          <Pressable key={i} onPress={() => openImage(image)}>
-            <Image source={image} style={styles.image} />
-          </Pressable>
-        ))
-      ) : (
-        <Text>No images available</Text>
-      )}
-    </View>
-  );
+  const renderItem = ({ item }: { item: { name: string; locationImages: string[] } }) => {
+    return (
+      <View style={styles.item}>
+        <Text style={styles.pokemonName}>{item.name} Images:</Text>
+        {item.locationImages.length > 0 ? (
+          item.locationImages.map((image, i) => (
+            <Pressable key={i} onPress={() => openImage(image)}>
+              <Image source={image} style={styles.image} />
+            </Pressable>
+          ))
+        ) : (
+          <View>
+            <Pressable onPress={() => openImage(pokemonLocations["None"][0])}>
+              <Image 
+                source={pokemonLocations["None"][0]} // Use the placeholder image when no images are available
+                style={styles.image} 
+              />
+            </Pressable>
+          </View>
+        )}
+      </View>
+    );
+  };
 
   // Move Types
   type MoveType = 
@@ -182,7 +191,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   item: {
-    marginBottom: 20,
+    marginBottom: 5,
   },
   pokemonName: {
     fontSize: 18,

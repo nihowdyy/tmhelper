@@ -1892,7 +1892,10 @@ const pokemonLocations = {
     ],
     "Zweilous": [
       require("../../assets/images/locations/Zweilous Location Map.jpg")
-    ]
+    ],
+    "None": [
+      require("../../assets/images/locations/Location Not Found.jpg")
+    ],
 };
 
 export default pokemonLocations;
