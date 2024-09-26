@@ -40,7 +40,7 @@ const TMDetailScreen = ({ route }: any) => {
   const renderItem = ({ item }: { item: { name: string; locationImages: string[] } }) => {
     return (
       <View style={styles.item}>
-        <Text style={styles.pokemonName}>{item.name} Images:</Text>
+        <Text style={styles.pokemonName}>{item.name} Locations:</Text>
         {item.locationImages.length > 0 ? (
           item.locationImages.map((image, i) => (
             <Pressable key={i} onPress={() => openImage(image)}>
@@ -111,13 +111,13 @@ const TMDetailScreen = ({ route }: any) => {
             </View>
 
             <View style={styles.table}>
-              <View style={styles.row}>
+              <View style={styles.tableRow}>
                 <Text style={styles.headerCell}>Power</Text>
                 <Text style={styles.headerCell}>Accuracy</Text>
                 <Text style={styles.headerCell}>PP</Text>
               </View>
 
-              <View style={styles.row}>
+              <View style={styles.tableRow}>
                 <Text style={styles.cell}>{tm.move_info.power}</Text>
                 <Text style={styles.cell}>{tm.move_info.accuracy}</Text>
                 <Text style={styles.cell}>{tm.move_info.pp}</Text>
@@ -189,6 +189,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     marginBottom: 5,
+    fontWeight: 'bold',
   },
   item: {
     marginBottom: 5,
@@ -232,19 +233,23 @@ const styles = StyleSheet.create({
   },
   table: {
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#eee',
     borderRadius: 10,
     overflow: 'hidden',
     margin: 10,
     backgroundColor: '#fff',
   },
-  row: {
+  tableRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#eee',
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 5,
   },
   headerCell: {
     fontWeight: 'bold',
@@ -265,6 +270,8 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   quantityText: {
+    fontSize: 16,
+    marginBottom: 5,
     textAlign: 'right', // Right-align the quantity text
 },
 });
