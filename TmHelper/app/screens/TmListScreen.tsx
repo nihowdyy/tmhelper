@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, Pressable, Image} from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 import moveTypes from '../../assets/images/moveTypes';
 const tmData = require('../../assets/json/PKMN-SV-TMS.json');
 
