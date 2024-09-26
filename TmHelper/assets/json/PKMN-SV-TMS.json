@@ -59,7 +59,7 @@
         "move_info": {
             "type": "Fairy",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "20"
         }
@@ -94,7 +94,7 @@
         "move_info": {
             "type": "Dark",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "20"
         }
@@ -128,8 +128,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "30"
         }
     },
@@ -189,7 +189,7 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -225,8 +225,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -369,7 +369,7 @@
         "move_info": {
             "type": "Fighting",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "20"
         }
@@ -527,7 +527,7 @@
         "move_info": {
             "type": "Ghost",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -588,7 +588,7 @@
             "type": "Fairy",
             "category": "Special",
             "power": "40",
-            "accuracy": "Cannot Miss",
+            "accuracy": "—",
             "pp": "15"
         }
     },
@@ -848,7 +848,7 @@
             "type": "Flying",
             "category": "Physical",
             "power": "60",
-            "accuracy": "Cannot Miss",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -1011,7 +1011,7 @@
             "type": "Normal",
             "category": "Special",
             "power": "60",
-            "accuracy": "Cannot Miss",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -1045,7 +1045,7 @@
             "type": "Grass",
             "category": "Special",
             "power": "60",
-            "accuracy": "Cannot Miss",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -1348,7 +1348,7 @@
         "move_info": {
             "type": "Ghost",
             "category": "Special",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "15"
         }
@@ -1382,7 +1382,7 @@
         "move_info": {
             "type": "Dark",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -1509,8 +1509,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -1577,8 +1577,8 @@
         "move_info": {
             "type": "Fire",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "5"
         }
     },
@@ -1616,8 +1616,8 @@
         "move_info": {
             "type": "Water",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "5"
         }
     },
@@ -1654,8 +1654,8 @@
         "move_info": {
             "type": "Rock",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -1692,8 +1692,8 @@
         "move_info": {
             "type": "Ice",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -1726,7 +1726,7 @@
             "type": "Steel",
             "category": "Physical",
             "power": "70",
-            "accuracy": "Cannot Miss",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -2124,8 +2124,8 @@
         "move_info": {
             "type": "Fighting",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -2330,8 +2330,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -2411,7 +2411,7 @@
         "move_info": {
             "type": "Electric",
             "category": "Special",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -2486,8 +2486,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -2523,8 +2523,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "30"
         }
     },
@@ -2705,8 +2705,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -2742,7 +2742,7 @@
         "move_info": {
             "type": "Grass",
             "category": "Special",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "20"
         }
@@ -2774,7 +2774,7 @@
         "move_info": {
             "type": "Electric",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "90",
             "pp": "20"
         }
@@ -2874,8 +2874,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "5"
         }
     },
@@ -2956,7 +2956,7 @@
         "move_info": {
             "type": "Dark",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "20"
         }
@@ -2997,8 +2997,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -3073,8 +3073,8 @@
         "move_info": {
             "type": "Ground",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -3105,8 +3105,8 @@
         "move_info": {
             "type": "Poison",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -3138,8 +3138,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -3290,7 +3290,7 @@
         "move_info": {
             "type": "Electric",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "15"
         }
@@ -3363,8 +3363,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -3444,8 +3444,8 @@
         "move_info": {
             "type": "Dragon",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -3560,8 +3560,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -3597,8 +3597,8 @@
         "move_info": {
             "type": "Steel",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "15"
         }
     },
@@ -3711,7 +3711,7 @@
         "move_info": {
             "type": "Fire",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "85",
             "pp": "15"
         }
@@ -3791,7 +3791,7 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -3917,7 +3917,7 @@
             "type": "Fighting",
             "category": "Special",
             "power": "80",
-            "accuracy": "Cannot Miss",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -3957,8 +3957,8 @@
         "move_info": {
             "type": "Flying",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "15"
         }
     },
@@ -4067,8 +4067,8 @@
         "move_info": {
             "type": "Rock",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -4263,7 +4263,7 @@
         "move_info": {
             "type": "Steel",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -4298,7 +4298,7 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "5"
         }
@@ -4533,8 +4533,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -4569,8 +4569,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -4600,8 +4600,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -4675,8 +4675,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "40"
         }
     },
@@ -4752,7 +4752,7 @@
         "move_info": {
             "type": "Fighting",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "15"
         }
@@ -4834,8 +4834,8 @@
         "move_info": {
             "type": "Electric",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -4876,8 +4876,8 @@
         "move_info": {
             "type": "Grass",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -4916,8 +4916,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -4955,8 +4955,8 @@
         "move_info": {
             "type": "Fairy",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -4994,8 +4994,8 @@
         "move_info": {
             "type": "Dark",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -5803,8 +5803,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "5"
         }
     },
@@ -6209,8 +6209,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -6234,8 +6234,8 @@
         "move_info": {
             "type": "Electric",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -6260,8 +6260,8 @@
         "move_info": {
             "type": "Ice",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "30"
         }
     },
@@ -6290,7 +6290,7 @@
         "move_info": {
             "type": "Poison",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "90",
             "pp": "10"
         }
@@ -6350,7 +6350,7 @@
         "move_info": {
             "type": "Ghost",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -6380,8 +6380,8 @@
         "move_info": {
             "type": "Psychic",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "5"
         }
     },
@@ -6440,7 +6440,7 @@
         "move_info": {
             "type": "Steel",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "5"
         }
@@ -6536,7 +6536,7 @@
         "move_info": {
             "type": "Normal",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "90",
             "pp": "10"
         }
@@ -6721,7 +6721,7 @@
         "move_info": {
             "type": "Fire",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -7144,8 +7144,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "20"
         }
     },
@@ -7174,8 +7174,8 @@
         "move_info": {
             "type": "Normal",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -7234,7 +7234,7 @@
         "move_info": {
             "type": "Normal",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "5"
         }
@@ -7491,8 +7491,8 @@
         "move_info": {
             "type": "Fighting",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -7592,7 +7592,7 @@
         "move_info": {
             "type": "Flying",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "15"
         }
@@ -7809,7 +7809,7 @@
         "move_info": {
             "type": "Steel",
             "category": "Status",
-            "power": "None",
+            "power": "—",
             "accuracy": "85",
             "pp": "40"
         }
@@ -7839,8 +7839,8 @@
         "move_info": {
             "type": "Ghost",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
@@ -7869,7 +7869,7 @@
         "move_info": {
             "type": "Steel",
             "category": "Physical",
-            "power": "None",
+            "power": "—",
             "accuracy": "100",
             "pp": "10"
         }
@@ -7904,8 +7904,8 @@
         "move_info": {
             "type": "Dragon",
             "category": "Status",
-            "power": "None",
-            "accuracy": "Cannot Miss",
+            "power": "—",
+            "accuracy": "—",
             "pp": "10"
         }
     },
