@@ -1,1898 +1,922 @@
 const pokemonImages = {
-    "Abomasnow": [
-      require("../../assets/images/locations/Abomasnow Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Abomasnow Location Map.jpg")
-    ],
-    "Aipom": [
-      require("../../assets/images/locations/Aipom Teal Mask Location Map.jpg")
-    ],
-    "Alcremie": [
-      require("../../assets/images/locations/Alcremie Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Diglett": [
-      require("../../assets/images/locations/Alolan Diglett Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Dugtrio": [
-      require("../../assets/images/locations/Alolan Dugtrio Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Exeggutor": [
-      require("../../assets/images/locations/Alolan Exeggutor Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Geodude": [
-      require("../../assets/images/locations/Alolan Geodude Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Golem": [
-      require("../../assets/images/locations/Alolan Golem Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Graveler": [
-      require("../../assets/images/locations/Alolan Graveler Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Grimer": [
-      require("../../assets/images/locations/Alolan Grimer Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Muk": [
-      require("../../assets/images/locations/Alolan Muk Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Ninetales": [
-      require("../../assets/images/locations/Alolan Ninetales Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Sandshrew": [
-      require("../../assets/images/locations/Alolan Sandshrew Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Sandslash": [
-      require("../../assets/images/locations/Alolan Sandslash Indigo Disk Location Map.jpg")
-    ],
-    "Alolan Vulpix": [
-      require("../../assets/images/locations/Alolan Vulpix Indigo Disk Location Map.jpg")
-    ],
-    "Alomomola": [
-      require("../../assets/images/locations/Alomomola Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Alomomola Location Map.jpg")
-    ],
-    "Altaria": [
-      require("../../assets/images/locations/Altaria Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Altaria Location Map.jpg")
-    ],
-    "Amoonguss": [
-      require("../../assets/images/locations/Amoonguss Location Map.jpg")
-    ],
-    "Ampharos": [
-      require("../../assets/images/locations/Ampharos Location Map.jpg")
-    ],
-    "Annihilape": [
-      require("../../assets/images/locations/Annihilape Teal Mask Location Map.jpg")
-    ],
-    "Appletun": [
-      require("../../assets/images/locations/Appletun Teal Mask Location Map.jpg")
-    ],
-    "Applin": [
-      require("../../assets/images/locations/Applin Location Map.jpg"),
-      require("../../assets/images/locations/Applin Teal Mask Location Map.jpg")
-    ],
-    "Araquanid": [
-      require("../../assets/images/locations/Araquanid Indigo Disk Location Map.jpg")
-    ],
-    "Arbok": [
-      require("../../assets/images/locations/Arbok Teal Mask Location Map.jpg")
-    ],
-    "Arboliva": [
-      require("../../assets/images/locations/Arboliva Location Map.jpg")
-    ],
-    "Arcanine": [
-      require("../../assets/images/locations/Arcanine Location Map.jpg")
-    ],
-    "Archaludon": [
-      require("../../assets/images/locations/Archaludon Indigo Disk Location Map.jpg")
-    ],
-    "Arctibax": [
-      require("../../assets/images/locations/Arctibax Location Map.jpg")
-    ],
-    "Ariados": [
-      require("../../assets/images/locations/Ariados Teal Mask Location Map.jpg")
-    ],
-    "Arrokuda": [
-      require("../../assets/images/locations/Arrokuda Location Map.jpg"),
-      require("../../assets/images/locations/Arrokuda Teal Mask Location Map.jpg")
-    ],
-    "Avalugg": [
-      require("../../assets/images/locations/Avalugg Location Map.jpg")
-    ],
-    "Axew": [
-      require("../../assets/images/locations/Axew Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Axew Location Map.jpg")
-    ],
-    "Azumarill": [
-      require("../../assets/images/locations/Azumarill Location Map.jpg")
-    ],
-    "Azurill": [
-      require("../../assets/images/locations/Azurill Location Map.jpg")
-    ],
-    "Bagon": [
-      require("../../assets/images/locations/Bagon Location Map.jpg")
-    ],
-    "Banette": [
-      require("../../assets/images/locations/Banette Location Map.jpg")
-    ],
-    "Barboach": [
-      require("../../assets/images/locations/Barboach Location Map.jpg"),
-      require("../../assets/images/locations/Barboach Teal Mask Location Map.jpg")
-    ],
-    "Barraskewda": [
-      require("../../assets/images/locations/Barraskewda Location Map.jpg"),
-      require("../../assets/images/locations/Barraskewda Teal Mask Location Map.jpg")
-    ],
-    "Basculin": [
-      require("../../assets/images/locations/Basculin (White Striped Form) Teal Mask Location Map.jpg"),
-      require("../../assets/images/locations/Basculin Location Map.jpg")
-    ],
-    "Bastiodon": [
-      require("../../assets/images/locations/Bastiodon Indigo Disk Location Map.jpg")
-    ],
-    "Bayleef": [
-      require("../../assets/images/locations/Bayleef Indigo Disk Location Map.jpg")
-    ],
-    "Beartic": [
-      require("../../assets/images/locations/Beartic Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Beartic Location Map.jpg")
-    ],
-    "Beldum": [
-      require("../../assets/images/locations/Beldum Indigo Disk Location Map.jpg")
-    ],
-    "Bellibolt": [
-      require("../../assets/images/locations/Bellibolt Location Map.jpg")
-    ],
-    "Bellossom": [
-      require("../../assets/images/locations/Bellossom Indigo Disk Location Map.jpg")
-    ],
-    "Bellsprout": [
-      require("../../assets/images/locations/Bellsprout Teal Mask Location Map.jpg")
-    ],
-    "Bergmite": [
-      require("../../assets/images/locations/Bergmite Location Map.jpg")
-    ],
-    "Bisharp": [
-      require("../../assets/images/locations/Bisharp Location Map.jpg"),
-      require("../../assets/images/locations/Bisharp Teal Mask Location Map.jpg")
-    ],
-    "Blastoise": [
-      require("../../assets/images/locations/Blastoise Indigo Disk Location Map.jpg")
-    ],
-    "Blaziken": [
-      require("../../assets/images/locations/Blaziken Indigo Disk Location Map.jpg")
-    ],
-    "Blissey": [
-      require("../../assets/images/locations/Blissey Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Blissey Location Map.jpg")
-    ],
-    "Blitzle": [
-      require("../../assets/images/locations/Blitzle Indigo Disk Location Map.jpg")
-    ],
-    "Bombirdier": [
-      require("../../assets/images/locations/Bombirdier Location Map.jpg"),
-      require("../../assets/images/locations/Bombirdier Teal Mask Location Map.jpg")
-    ],
-    "Bonsly": [
-      require("../../assets/images/locations/Bonsly Location Map.jpg"),
-      require("../../assets/images/locations/Bonsly Teal Mask Location Map.jpg")
-    ],
-    "Bounsweet": [
-      require("../../assets/images/locations/Bounsweet Location Map.jpg")
-    ],
-    "Braixen": [
-      require("../../assets/images/locations/Braixen Indigo Disk Location Map.jpg")
-    ],
-    "Brambleghast": [
-      require("../../assets/images/locations/Brambleghast Location Map.jpg")
-    ],
-    "Bramblin": [
-      require("../../assets/images/locations/Bramblin Location Map.jpg")
-    ],
-    "Braviary": [
-      require("../../assets/images/locations/Braviary Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Braviary Location Map.jpg")
-    ],
-    "Breloom": [
-      require("../../assets/images/locations/Breloom Location Map.jpg")
-    ],
-    "Brionne": [
-      require("../../assets/images/locations/Brionne Indigo Disk Location Map.jpg")
-    ],
-    "Bronzong": [
-      require("../../assets/images/locations/Bronzong Location Map.jpg"),
-      require("../../assets/images/locations/Bronzong Teal Mask Location Map.jpg")
-    ],
-    "Bronzor": [
-      require("../../assets/images/locations/Bronzor Location Map.jpg"),
-      require("../../assets/images/locations/Bronzor Teal Mask Location Map.jpg")
-    ],
-    "Bruxish": [
-      require("../../assets/images/locations/Bruxish Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Bruxish Location Map.jpg")
-    ],
-    "Buizel": [
-      require("../../assets/images/locations/Buizel Location Map.jpg")
-    ],
-    "Bulbasaur": [
-      require("../../assets/images/locations/Bulbasaur Indigo Disk Location Map.jpg")
-    ],
-    "Cacnea": [
-      require("../../assets/images/locations/Cacnea Location Map.jpg")
-    ],
-    "Cacturne": [
-      require("../../assets/images/locations/Cacturne Location Map.jpg")
-    ],
-    "Camerupt": [
-      require("../../assets/images/locations/Camerupt Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Camerupt Location Map.jpg")
-    ],
-    "Capsakid": [
-      require("../../assets/images/locations/Capsakid Location Map.jpg")
-    ],
-    "Carbink": [
-      require("../../assets/images/locations/Carbink Teal Mask Location Map.jpg")
-    ],
-    "Carkol": [
-      require("../../assets/images/locations/Carkol Location Map.jpg")
-    ],
-    "Cetitan": [
-      require("../../assets/images/locations/Cetitan Location Map.jpg")
-    ],
-    "Cetoddle": [
-      require("../../assets/images/locations/Cetoddle Location Map.jpg")
-    ],
-    "Chansey": [
-      require("../../assets/images/locations/Chansey Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Chansey Location Map.jpg")
-    ],
-    "Charcadet": [
-      require("../../assets/images/locations/Charcadet Location Map.jpg")
-    ],
-    "Charizard": [
-      require("../../assets/images/locations/Charizard Indigo Disk Location Map.jpg")
-    ],
-    "Charjabug": [
-      require("../../assets/images/locations/Charjabug Teal Mask Location Map.jpg")
-    ],
-    "Charmander": [
-      require("../../assets/images/locations/Charmander Indigo Disk Location Map.jpg")
-    ],
-    "Charmeleon": [
-      require("../../assets/images/locations/Charmeleon Indigo Disk Location Map.jpg")
-    ],
-    "Chesnaught": [
-      require("../../assets/images/locations/Chesnaught Indigo Disk Location Map.jpg")
-    ],
-    "Chespin": [
-      require("../../assets/images/locations/Chespin Indigo Disk Location Map.jpg")
-    ],
-    "Chewtle": [
-      require("../../assets/images/locations/Chewtle Location Map.jpg"),
-      require("../../assets/images/locations/Chewtle Teal Mask Location Map.jpg")
-    ],
-    "Chikorita": [
-      require("../../assets/images/locations/Chikorita Indigo Disk Location Map.jpg")
-    ],
-    "Chimchar": [
-      require("../../assets/images/locations/Chimchar Indigo Disk Location Map.jpg")
-    ],
-    "Chimecho": [
-      require("../../assets/images/locations/Chimecho Teal Mask Location Map.jpg")
-    ],
-    "Chinchou": [
-      require("../../assets/images/locations/Chinchou Indigo Disk Location Map.jpg")
-    ],
-    "Chingling": [
-      require("../../assets/images/locations/Chingling Teal Mask Location Map.jpg")
-    ],
-    "Cinccino": [
-      require("../../assets/images/locations/Cinccino Indigo Disk Location Map.jpg")
-    ],
-    "Cinderace": [
-      require("../../assets/images/locations/Cinderace Indigo Disk Location Map.jpg")
-    ],
-    "Clauncher": [
-      require("../../assets/images/locations/Clauncher Location Map.jpg")
-    ],
-    "Clawitzer": [
-      require("../../assets/images/locations/Clawitzer Location Map.jpg")
-    ],
-    "Clefairy": [
-      require("../../assets/images/locations/Clefairy Teal Mask Location Map.jpg")
-    ],
-    "Cleffa": [
-      require("../../assets/images/locations/Cleffa Teal Mask Location Map.jpg")
-    ],
-    "Clodsire": [
-      require("../../assets/images/locations/Clodsire Location Map.jpg")
-    ],
-    "Cloyster": [
-      require("../../assets/images/locations/Cloyster Location Map.jpg")
-    ],
-    "Combee": [
-      require("../../assets/images/locations/Combee Location Map.jpg")
-    ],
-    "Combusken": [
-      require("../../assets/images/locations/Combusken Indigo Disk Location Map.jpg")
-    ],
-    "Comfey": [
-      require("../../assets/images/locations/Comfey Indigo Disk Location Map.jpg")
-    ],
-    "Copperajah": [
-      require("../../assets/images/locations/Copperajah Location Map.jpg")
-    ],
-    "Corphish": [
-      require("../../assets/images/locations/Corphish Teal Mask Location Map.jpg")
-    ],
-    "Corviknight": [
-      require("../../assets/images/locations/Corviknight Location Map.jpg")
-    ],
-    "Corvisquire": [
-      require("../../assets/images/locations/Corvisquire Location Map.jpg")
-    ],
-    "Cottonee": [
-      require("../../assets/images/locations/Cottonee Indigo Disk Location Map.jpg")
-    ],
-    "Crabominable": [
-      require("../../assets/images/locations/Crabominable Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Crabominable Location Map.jpg")
-    ],
-    "Crabrawler": [
-      require("../../assets/images/locations/Crabrawler Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Crabrawler Location Map.jpg")
-    ],
-    "Cramorant": [
-      require("../../assets/images/locations/Cramorant Teal Mask Location Map.jpg")
-    ],
-    "Cranidos": [
-      require("../../assets/images/locations/Cranidos Indigo Disk Location Map.jpg")
-    ],
-    "Crawdaunt": [
-      require("../../assets/images/locations/Crawdaunt Teal Mask Location Map.jpg")
-    ],
-    "Croagunk": [
-      require("../../assets/images/locations/Croagunk Location Map.jpg")
-    ],
-    "Croconaw": [
-      require("../../assets/images/locations/Croconaw Indigo Disk Location Map.jpg")
-    ],
-    "Cryogonal": [
-      require("../../assets/images/locations/Cryogonal Location Map.jpg")
-    ],
-    "Cubchoo": [
-      require("../../assets/images/locations/Cubchoo Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Cubchoo Location Map.jpg")
-    ],
-    "Cufant": [
-      require("../../assets/images/locations/Cufant Location Map.jpg")
-    ],
-    "Cutiefly": [
-      require("../../assets/images/locations/Cutiefly Teal Mask Location Map.jpg")
-    ],
-    "Cyclizar": [
-      require("../../assets/images/locations/Cyclizar Location Map.jpg")
-    ],
-    "Cyndaquil": [
-      require("../../assets/images/locations/Cyndaquil Indigo Disk Location Map.jpg")
-    ],
-    "Dachsbun": [
-      require("../../assets/images/locations/Dachsbun Location Map.jpg")
-    ],
-    "Dartrix": [
-      require("../../assets/images/locations/Dartrix Indigo Disk Location Map.jpg")
-    ],
-    "Decidueye": [
-      require("../../assets/images/locations/Decidueye Indigo Disk Location Map.jpg")
-    ],
-    "Dedenne": [
-      require("../../assets/images/locations/Dedenne Location Map.jpg")
-    ],
-    "Deerling": [
-      require("../../assets/images/locations/Deerling Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Deerling Location Map.jpg")
-    ],
-    "Deino": [
-      require("../../assets/images/locations/Deino Location Map.jpg")
-    ],
-    "Delibird": [
-      require("../../assets/images/locations/Delibird Location Map.jpg")
-    ],
-    "Delphox": [
-      require("../../assets/images/locations/Delphox Indigo Disk Location Map.jpg")
-    ],
-    "Dewgong": [
-      require("../../assets/images/locations/Dewgong Indigo Disk Location Map.jpg")
-    ],
-    "Dewott": [
-      require("../../assets/images/locations/Dewott Indigo Disk Location Map.jpg")
-    ],
-    "Dewpider": [
-      require("../../assets/images/locations/Dewpider Indigo Disk Location Map.jpg")
-    ],
-    "Diglett": [
-      require("../../assets/images/locations/Diglett Location Map.jpg")
-    ],
-    "Ditto": [
-      require("../../assets/images/locations/Ditto Location Map.jpg")
-    ],
-    "Dodrio": [
-      require("../../assets/images/locations/Dodrio Indigo Disk Location Map.jpg")
-    ],
-    "Doduo": [
-      require("../../assets/images/locations/Doduo Indigo Disk Location Map.jpg")
-    ],
-    "Dolliv": [
-      require("../../assets/images/locations/Dolliv Location Map.jpg")
-    ],
-    "Dondozo": [
-      require("../../assets/images/locations/Dondozo Location Map.jpg")
-    ],
-    "Donphan": [
-      require("../../assets/images/locations/Donphan Location Map.jpg")
-    ],
-    "Dragalge": [
-      require("../../assets/images/locations/Dragalge Location Map.jpg")
-    ],
-    "Dragonair": [
-      require("../../assets/images/locations/Dragonair Location Map.jpg")
-    ],
-    "Drakloak": [
-      require("../../assets/images/locations/Drakloak Location Map.jpg")
-    ],
-    "Dratini": [
-      require("../../assets/images/locations/Dratini Location Map.jpg")
-    ],
-    "Drednaw": [
-      require("../../assets/images/locations/Drednaw Location Map.jpg"),
-      require("../../assets/images/locations/Drednaw Teal Mask Location Map.jpg")
-    ],
-    "Dreepy": [
-      require("../../assets/images/locations/Dreepy Location Map.jpg")
-    ],
-    "Drifblim": [
-      require("../../assets/images/locations/Drifblim Location Map.jpg")
-    ],
-    "Drifloon": [
-      require("../../assets/images/locations/Drifloon Location Map.jpg")
-    ],
-    "Drilbur": [
-      require("../../assets/images/locations/Drilbur Indigo Disk Location Map.jpg")
-    ],
-    "Drizzile": [
-      require("../../assets/images/locations/Drizzile Indigo Disk Location Map.jpg")
-    ],
-    "Drowzee": [
-      require("../../assets/images/locations/Drowzee Location Map.jpg")
-    ],
-    "Ducklett": [
-      require("../../assets/images/locations/Ducklett Teal Mask Location Map.jpg")
-    ],
-    "Dudunsparce": [
-      require("../../assets/images/locations/Dudunsparce Teal Mask Location Map.jpg")
-    ],
-    "Dugtrio": [
-      require("../../assets/images/locations/Dugtrio Location Map.jpg")
-    ],
-    "Dunsparce": [
-      require("../../assets/images/locations/Dunsparce Location Map.jpg"),
-      require("../../assets/images/locations/Dunsparce Teal Mask Location Map.jpg")
-    ],
-    "Duosion": [
-      require("../../assets/images/locations/Duosion Indigo Disk Location Map.jpg")
-    ],
-    "Duraludon": [
-      require("../../assets/images/locations/Duraludon Indigo Disk Location Map.jpg")
-    ],
-    "Dusclops": [
-      require("../../assets/images/locations/Dusclops Teal Mask Location Map.jpg")
-    ],
-    "Duskull": [
-      require("../../assets/images/locations/Duskull Teal Mask Location Map.jpg")
-    ],
-    "Eelektrik": [
-      require("../../assets/images/locations/Eelektrik Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Eelektrik Location Map.jpg"),
-      require("../../assets/images/locations/Eelektrik Teal Mask Location Map.jpg")
-    ],
-    "Eelektross": [
-      require("../../assets/images/locations/Eelektross Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Eelektross Location Map.jpg")
-    ],
-    "Eevee": [
-      require("../../assets/images/locations/Eevee Location Map.jpg")
-    ],
-    "Eiscue": [
-      require("../../assets/images/locations/Eiscue (Ice Face) Location Map.jpg")
-    ],
-    "Ekans": [
-      require("../../assets/images/locations/Ekans Teal Mask Location Map.jpg")
-    ],
-    "Electabuzz": [
-      require("../../assets/images/locations/Electabuzz Indigo Disk Location Map.jpg")
-    ],
-    "Electivire": [
-      require("../../assets/images/locations/Electivire Indigo Disk Location Map.jpg")
-    ],
-    "Electrode": [
-      require("../../assets/images/locations/Electrode Location Map.jpg")
-    ],
-    "Elekid": [
-      require("../../assets/images/locations/Elekid Indigo Disk Location Map.jpg")
-    ],
-    "Emboar": [
-      require("../../assets/images/locations/Emboar Indigo Disk Location Map.jpg")
-    ],
-    "Empoleon": [
-      require("../../assets/images/locations/Empoleon Indigo Disk Location Map.jpg")
-    ],
-    "Espathra": [
-      require("../../assets/images/locations/Espathra Location Map.jpg")
-    ],
-    "Espeon": [
-      require("../../assets/images/locations/Espeon Location Map.jpg")
-    ],
-    "Espurr": [
-      require("../../assets/images/locations/Espurr Indigo Disk Location Map.jpg")
-    ],
-    "Excadrill": [
-      require("../../assets/images/locations/Excadrill Indigo Disk Location Map.jpg")
-    ],
-    "Exeggcute": [
-      require("../../assets/images/locations/Exeggcute Indigo Disk Location Map.jpg")
-    ],
-    "Exeggutor": [
-      require("../../assets/images/locations/Exeggutor Indigo Disk Location Map.jpg")
-    ],
-    "Falinks": [
-      require("../../assets/images/locations/Falinks Location Map.jpg")
-    ],
-    "Farigiraf": [
-      require("../../assets/images/locations/Farigiraf Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Farigiraf Location Map.jpg")
-    ],
-    "Feebas": [
-      require("../../assets/images/locations/Feebas Teal Mask Location Map.jpg")
-    ],
-    "Fennekin": [
-      require("../../assets/images/locations/Fennekin Indigo Disk Location Map.jpg")
-    ],
-    "Feraligatr": [
-      require("../../assets/images/locations/Feraligatr Indigo Disk Location Map.jpg")
-    ],
-    "Fidough": [
-      require("../../assets/images/locations/Fidough Location Map.jpg")
-    ],
-    "Finizen": [
-      require("../../assets/images/locations/Finizen Location Map.jpg")
-    ],
-    "Finneon": [
-      require("../../assets/images/locations/Finneon Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Finneon Location Map.jpg")
-    ],
-    "Flaaffy": [
-      require("../../assets/images/locations/Flaaffy Location Map.jpg")
-    ],
-    "Flabébé": [
-      require("../../assets/images/locations/Flabebe Location Map.jpg")
-    ],
-    "Flamigo": [
-      require("../../assets/images/locations/Flamigo Location Map.jpg")
-    ],
-    "Flapple": [
-      require("../../assets/images/locations/Flapple Teal Mask Location Map.jpg")
-    ],
-    "Flareon": [
-      require("../../assets/images/locations/Flareon Location Map.jpg")
-    ],
-    "Fletchinder": [
-      require("../../assets/images/locations/Fletchinder Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Fletchinder Location Map.jpg")
-    ],
-    "Fletchling": [
-      require("../../assets/images/locations/Fletchling Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Fletchling Location Map.jpg")
-    ],
-    "Flittle": [
-      require("../../assets/images/locations/Flittle Location Map.jpg")
-    ],
-    "Floatzel": [
-      require("../../assets/images/locations/Floatzel Location Map.jpg")
-    ],
-    "Floette": [
-      require("../../assets/images/locations/Floette Location Map.jpg")
-    ],
-    "Florges": [
-      require("../../assets/images/locations/Florges Location Map.jpg")
-    ],
-    "Flygon": [
-      require("../../assets/images/locations/Flygon Indigo Disk Location Map.jpg")
-    ],
-    "Fomantis": [
-      require("../../assets/images/locations/Fomantis Location Map.jpg"),
-      require("../../assets/images/locations/Fomantis Teal Mask Location Map.jpg")
-    ],
-    "Foongus": [
-      require("../../assets/images/locations/Foongus Location Map.jpg")
-    ],
-    "Forretress": [
-      require("../../assets/images/locations/Forretress Location Map.jpg")
-    ],
-    "Fraxure": [
-      require("../../assets/images/locations/Fraxure Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Fraxure Location Map.jpg")
-    ],
-    "Frigibax": [
-      require("../../assets/images/locations/Frigibax Location Map.jpg")
-    ],
-    "Froakie": [
-      require("../../assets/images/locations/Froakie Indigo Disk Location Map.jpg")
-    ],
-    "Frogadier": [
-      require("../../assets/images/locations/Frogadier Indigo Disk Location Map.jpg")
-    ],
-    "Froslass": [
-      require("../../assets/images/locations/Froslass Location Map.jpg")
-    ],
-    "Frosmoth": [
-      require("../../assets/images/locations/Frosmoth Location Map.jpg")
-    ],
-    "Furret": [
-      require("../../assets/images/locations/Furret Teal Mask Location Map.jpg")
-    ],
-    "Gabite": [
-      require("../../assets/images/locations/Gabite Location Map.jpg"),
-      require("../../assets/images/locations/Gabite Teal Mask Location Map.jpg")
-    ],
-    "Galarian Slowbro": [
-      require("../../assets/images/locations/Galarian Slowbro Indigo Disk Location Map.jpg")
-    ],
-    "Galarian Slowking": [
-      require("../../assets/images/locations/Galarian Slowking Indigo Disk Location Map.jpg")
-    ],
-    "Galarian Slowpoke": [
-      require("../../assets/images/locations/Galarian Slowpoke Indigo Disk Location Map.jpg")
-    ],
-    "Gallade": [
-      require("../../assets/images/locations/Gallade Location Map.jpg"),
-      require("../../assets/images/locations/Gallade Teal Mask Location Map.jpg")
-    ],
-    "Galvantula": [
-      require("../../assets/images/locations/Galvantula Indigo Disk Location Map.jpg")
-    ],
-    "Gardevoir": [
-      require("../../assets/images/locations/Gardevoir Location Map.jpg"),
-      require("../../assets/images/locations/Gardevoir Teal Mask Location Map.jpg")
-    ],
-    "Garganacl": [
-      require("../../assets/images/locations/Garganacl Location Map.jpg")
-    ],
-    "Gastly": [
-      require("../../assets/images/locations/Gastly Location Map.jpg"),
-      require("../../assets/images/locations/Gastly Teal Mask Location Map.jpg")
-    ],
-    "Gastrodon": [
-      require("../../assets/images/locations/Gastrodon (East Sea) Location Map.jpg"),
-      require("../../assets/images/locations/Gastrodon (West Sea) Location Map.jpg")
-    ],
-    "Gengar": [
-      require("../../assets/images/locations/Gengar Teal Mask Location Map.jpg")
-    ],
-    "Geodude": [
-      require("../../assets/images/locations/Geodude Teal Mask Location Map.jpg")
-    ],
-    "Gible": [
-      require("../../assets/images/locations/Gible Location Map.jpg"),
-      require("../../assets/images/locations/Gible Teal Mask Location Map.jpg")
-    ],
-    "Girafarig": [
-      require("../../assets/images/locations/Girafarig Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Girafarig Location Map.jpg")
-    ],
-    "Glaceon": [
-      require("../../assets/images/locations/Glaceon Location Map.jpg")
-    ],
-    "Glalie": [
-      require("../../assets/images/locations/Glalie Location Map.jpg")
-    ],
-    "Gligar": [
-      require("../../assets/images/locations/Gligar Teal Mask Location Map.jpg")
-    ],
-    "Glimmet": [
-      require("../../assets/images/locations/Glimmet Location Map.jpg"),
-      require("../../assets/images/locations/Glimmet Teal Mask Location Map.jpg")
-    ],
-    "Glimmora": [
-      require("../../assets/images/locations/Glimmora Location Map.jpg")
-    ],
-    "Gloom": [
-      require("../../assets/images/locations/Gloom Indigo Disk Location Map.jpg")
-    ],
-    "Gogoat": [
-      require("../../assets/images/locations/Gogoat Location Map.jpg")
-    ],
-    "Golduck": [
-      require("../../assets/images/locations/Golduck Location Map.jpg")
-    ],
-    "Golett": [
-      require("../../assets/images/locations/Golett Indigo Disk Location Map.jpg")
-    ],
-    "Golurk": [
-      require("../../assets/images/locations/Golurk Indigo Disk Location Map.jpg")
-    ],
-    "Goomy": [
-      require("../../assets/images/locations/Goomy Location Map.jpg"),
-      require("../../assets/images/locations/Goomy Teal Mask Location Map.jpg")
-    ],
-    "Gothita": [
-      require("../../assets/images/locations/Gothita Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Gothita Location Map.jpg")
-    ],
-    "Gothitelle": [
-      require("../../assets/images/locations/Gothitelle Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Gothitelle Location Map.jpg")
-    ],
-    "Gothorita": [
-      require("../../assets/images/locations/Gothorita Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Gothorita Location Map.jpg")
-    ],
-    "Grafaiai": [
-      require("../../assets/images/locations/Grafaiai Location Map.jpg")
-    ],
-    "Granbull": [
-      require("../../assets/images/locations/Granbull Indigo Disk Location Map.jpg")
-    ],
-    "Graveler": [
-      require("../../assets/images/locations/Graveler Teal Mask Location Map.jpg")
-    ],
-    "Greavard": [
-      require("../../assets/images/locations/Greavard Location Map.jpg")
-    ],
-    "Greedent": [
-      require("../../assets/images/locations/Greedent Location Map.jpg"),
-      require("../../assets/images/locations/Greedent Teal Mask Location Map.jpg")
-    ],
-    "Greninja": [
-      require("../../assets/images/locations/Greninja Indigo Disk Location Map.jpg")
-    ],
-    "Grimer": [
-      require("../../assets/images/locations/Grimer Location Map.jpg")
-    ],
-    "Grimmsnarl": [
-      require("../../assets/images/locations/Grimmsnarl Teal Mask Location Map.jpg")
-    ],
-    "Grookey": [
-      require("../../assets/images/locations/Grookey Indigo Disk Location Map.jpg")
-    ],
-    "Grotle": [
-      require("../../assets/images/locations/Grotle Indigo Disk Location Map.jpg")
-    ],
-    "Grovyle": [
-      require("../../assets/images/locations/Grovyle Indigo Disk Location Map.jpg")
-    ],
-    "Growlithe": [
-      require("../../assets/images/locations/Growlithe Location Map.jpg"),
-      require("../../assets/images/locations/Growlithe Teal Mask Location Map.jpg")
-    ],
-    "Grubbin": [
-      require("../../assets/images/locations/Grubbin Teal Mask Location Map.jpg")
-    ],
-    "Grumpig": [
-      require("../../assets/images/locations/Grumpig Location Map.jpg")
-    ],
-    "Gulpin": [
-      require("../../assets/images/locations/Gulpin Location Map.jpg")
-    ],
-    "Gumshoos": [
-      require("../../assets/images/locations/Gumshoos Location Map.jpg")
-    ],
-    "Gurdurr": [
-      require("../../assets/images/locations/Gurdurr Teal Mask Location Map.jpg")
-    ],
-    "Gyarados": [
-      require("../../assets/images/locations/Gyarados Location Map.jpg"),
-      require("../../assets/images/locations/Gyarados Teal Mask Location Map.jpg")
-    ],
-    "Hakamo-o": [
-      require("../../assets/images/locations/Hakamo-o Teal Mask Location Map.jpg")
-    ],
-    "Happiny": [
-      require("../../assets/images/locations/Happiny Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Happiny Location Map.jpg")
-    ],
-    "Hariyama": [
-      require("../../assets/images/locations/Hariyama Location Map.jpg")
-    ],
-    "Hatenna": [
-      require("../../assets/images/locations/Hatenna Location Map.jpg"),
-      require("../../assets/images/locations/Hatenna Teal Mask Location Map.jpg")
-    ],
-    "Hatterene": [
-      require("../../assets/images/locations/Hatterene Teal Mask Location Map.jpg")
-    ],
-    "Hattrem": [
-      require("../../assets/images/locations/Hattrem Location Map.jpg"),
-      require("../../assets/images/locations/Hattrem Teal Mask Location Map.jpg")
-    ],
-    "Haunter": [
-      require("../../assets/images/locations/Haunter Location Map.jpg"),
-      require("../../assets/images/locations/Haunter Teal Mask Location Map.jpg")
-    ],
-    "Hawlucha": [
-      require("../../assets/images/locations/Hawlucha Location Map.jpg")
-    ],
-    "Haxorus": [
-      require("../../assets/images/locations/Haxorus Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Haxorus Location Map.jpg")
-    ],
-    "Heracross": [
-      require("../../assets/images/locations/Heracross Location Map.jpg"),
-      require("../../assets/images/locations/Heracross Teal Mask Location Map.jpg")
-    ],
-    "Hippopotas": [
-      require("../../assets/images/locations/Hippopotas Location Map.jpg")
-    ],
-    "Hippowdon": [
-      require("../../assets/images/locations/Hippowdon Location Map.jpg")
-    ],
-    "Hisuian Qwilfish": [
-      require("../../assets/images/locations/Hisuian Qwilfish Indigo Disk Location Map.jpg")
-    ],
-    "Hitmonchan": [
-      require("../../assets/images/locations/Hitmonchan Indigo Disk Location Map.jpg")
-    ],
-    "Hitmonlee": [
-      require("../../assets/images/locations/Hitmonlee Indigo Disk Location Map.jpg")
-    ],
-    "Hitmontop": [
-      require("../../assets/images/locations/Hitmontop Indigo Disk Location Map.jpg")
-    ],
-    "Honchkrow": [
-      require("../../assets/images/locations/Honchkrow Location Map.jpg")
-    ],
-    "Hoothoot": [
-      require("../../assets/images/locations/Hoothoot Teal Mask Location Map.jpg")
-    ],
-    "Hoppip": [
-      require("../../assets/images/locations/Hoppip Location Map.jpg")
-    ],
-    "Horsea": [
-      require("../../assets/images/locations/Horsea Indigo Disk Location Map.jpg")
-    ],
-    "Houndoom": [
-      require("../../assets/images/locations/Houndoom Location Map.jpg"),
-      require("../../assets/images/locations/Houndoom Teal Mask Location Map.jpg")
-    ],
-    "Houndour": [
-      require("../../assets/images/locations/Houndour Location Map.jpg"),
-      require("../../assets/images/locations/Houndour Teal Mask Location Map.jpg")
-    ],
-    "Houndstone": [
-      require("../../assets/images/locations/Houndstone Location Map.jpg")
-    ],
-    "Hydrapple": [
-      require("../../assets/images/locations/Hydrapple Indigo Disk Location Map.jpg")
-    ],
-    "Hypno": [
-      require("../../assets/images/locations/Hypno Location Map.jpg")
-    ],
-    "Igglybuff": [
-      require("../../assets/images/locations/Igglybuff Location Map.jpg")
-    ],
-    "Illumise": [
-      require("../../assets/images/locations/Illumise Teal Mask Location Map.jpg")
-    ],
-    "Impidimp": [
-      require("../../assets/images/locations/Impidimp Location Map.jpg"),
-      require("../../assets/images/locations/Impidimp Teal Mask Location Map.jpg")
-    ],
-    "Incineroar": [
-      require("../../assets/images/locations/Incineroar Indigo Disk Location Map.jpg")
-    ],
-    "Indeedee": [
-      require("../../assets/images/locations/Indeedee (Male) Location Map.jpg"),
-      require("../../assets/images/locations/Indeedee (Male) Teal Mask Location Map.jpg")
-    ],
-    "Infernape": [
-      require("../../assets/images/locations/Infernape Indigo Disk Location Map.jpg")
-    ],
-    "Inkay": [
-      require("../../assets/images/locations/Inkay Indigo Disk Location Map.jpg")
-    ],
-    "Inteleon": [
-      require("../../assets/images/locations/Inteleon Indigo Disk Location Map.jpg")
-    ],
-    "Ivysaur": [
-      require("../../assets/images/locations/Ivysaur Indigo Disk Location Map.jpg")
-    ],
-    "Jangmo-o": [
-      require("../../assets/images/locations/Jangmo-o Teal Mask Location Map.jpg")
-    ],
-    "Jigglypuff": [
-      require("../../assets/images/locations/Jigglypuff Location Map.jpg")
-    ],
-    "Jolteon": [
-      require("../../assets/images/locations/Jolteon Location Map.jpg")
-    ],
-    "Joltik": [
-      require("../../assets/images/locations/Joltik Indigo Disk Location Map.jpg")
-    ],
-    "Jumpluff": [
-      require("../../assets/images/locations/Jumpluff Location Map.jpg")
-    ],
-    "Kilowattrel": [
-      require("../../assets/images/locations/Kilowattrel Location Map.jpg")
-    ],
-    "Kingambit": [
-      require("../../assets/images/locations/Kingambit Teal Mask Location Map.jpg")
-    ],
-    "Kingdra": [
-      require("../../assets/images/locations/Kingdra Indigo Disk Location Map.jpg")
-    ],
-    "Kirlia": [
-      require("../../assets/images/locations/Kirlia Location Map.jpg"),
-      require("../../assets/images/locations/Kirlia Teal Mask Location Map.jpg")
-    ],
-    "Klawf": [
-      require("../../assets/images/locations/Klawf Location Map.jpg")
-    ],
-    "Kleavor": [
-      require("../../assets/images/locations/Kleavor Indigo Disk Location Map.jpg")
-    ],
-    "Klefki": [
-      require("../../assets/images/locations/Klefki Location Map.jpg")
-    ],
-    "Koffing": [
-      require("../../assets/images/locations/Koffing Teal Mask Location Map.jpg")
-    ],
-    "Komala": [
-      require("../../assets/images/locations/Komala Location Map.jpg")
-    ],
-    "Kricketot": [
-      require("../../assets/images/locations/Kricketot Location Map.jpg"),
-      require("../../assets/images/locations/Kricketot Teal Mask Location Map.jpg")
-    ],
-    "Kricketune": [
-      require("../../assets/images/locations/Kricketune Location Map.jpg"),
-      require("../../assets/images/locations/Kricketune Teal Mask Location Map.jpg")
-    ],
-    "Krokorok": [
-      require("../../assets/images/locations/Krokorok Indigo Disk Location Map.jpg")
-    ],
-    "Krookodile": [
-      require("../../assets/images/locations/Krookodile Indigo Disk Location Map.jpg")
-    ],
-    "Lampent": [
-      require("../../assets/images/locations/Lampent Teal Mask Location Map.jpg")
-    ],
-    "Lanturn": [
-      require("../../assets/images/locations/Lanturn Indigo Disk Location Map.jpg")
-    ],
-    "Lapras": [
-      require("../../assets/images/locations/Lapras Indigo Disk Location Map.jpg")
-    ],
-    "Larvesta": [
-      require("../../assets/images/locations/Larvesta Location Map.jpg")
-    ],
-    "Larvitar": [
-      require("../../assets/images/locations/Larvitar Location Map.jpg")
-    ],
-    "Leafeon": [
-      require("../../assets/images/locations/Leafeon Location Map.jpg")
-    ],
-    "Leavanny": [
-      require("../../assets/images/locations/Leavanny Teal Mask Location Map.jpg")
-    ],
-    "Lechonk": [
-      require("../../assets/images/locations/Lechonk Location Map.jpg")
-    ],
-    "Lilligant": [
-      require("../../assets/images/locations/Lilligant Location Map.jpg")
-    ],
-    "Litleo": [
-      require("../../assets/images/locations/Litleo Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Litleo Location Map.jpg")
-    ],
-    "Litten": [
-      require("../../assets/images/locations/Litten Indigo Disk Location Map.jpg")
-    ],
-    "Litwick": [
-      require("../../assets/images/locations/Litwick Teal Mask Location Map.jpg")
-    ],
-    "Lokix": [
-      require("../../assets/images/locations/Lokix Location Map.jpg")
-    ],
-    "Lombre": [
-      require("../../assets/images/locations/Lombre Teal Mask Location Map.jpg")
-    ],
-    "Lotad": [
-      require("../../assets/images/locations/Lotad Teal Mask Location Map.jpg")
-    ],
-    "Lucario": [
-      require("../../assets/images/locations/Lucario Location Map.jpg"),
-      require("../../assets/images/locations/Lucario Teal Mask Location Map.jpg")
-    ],
-    "Lumineon": [
-      require("../../assets/images/locations/Lumineon Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Lumineon Location Map.jpg")
-    ],
-    "Lurantis": [
-      require("../../assets/images/locations/Lurantis Location Map.jpg"),
-      require("../../assets/images/locations/Lurantis Teal Mask Location Map.jpg")
-    ],
-    "Luvdisc": [
-      require("../../assets/images/locations/Luvdisc Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Luvdisc Location Map.jpg")
-    ],
-    "Luxio": [
-      require("../../assets/images/locations/Luxio Location Map.jpg"),
-      require("../../assets/images/locations/Luxio Teal Mask Location Map.jpg")
-    ],
-    "Luxray": [
-      require("../../assets/images/locations/Luxray Location Map.jpg"),
-      require("../../assets/images/locations/Luxray Teal Mask Location Map.jpg")
-    ],
-    "Lycanroc": [
-      require("../../assets/images/locations/Lycanroc (Dusk Form) Location Map.jpg"),
-      require("../../assets/images/locations/Lycanroc (Midday Form) Location Map.jpg"),
-      require("../../assets/images/locations/Lycanroc (Midday Form) Teal Mask Location Map.jpg"),
-      require("../../assets/images/locations/Lycanroc (Midnight Form) Location Map.jpg"),
-      require("../../assets/images/locations/Lycanroc (Midnight Form) Teal Mask Location Map.jpg")
-    ],
-    "Mabosstiff": [
-      require("../../assets/images/locations/Mabosstiff Location Map.jpg")
-    ],
-    "Magby": [
-      require("../../assets/images/locations/Magby Indigo Disk Location Map.jpg")
-    ],
-    "Magikarp": [
-      require("../../assets/images/locations/Magikarp Location Map.jpg"),
-      require("../../assets/images/locations/Magikarp Teal Mask Location Map.jpg")
-    ],
-    "Magmar": [
-      require("../../assets/images/locations/Magmar Indigo Disk Location Map.jpg")
-    ],
-    "Magmortar": [
-      require("../../assets/images/locations/Magmortar Indigo Disk Location Map.jpg")
-    ],
-    "Magnemite": [
-      require("../../assets/images/locations/Magnemite Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Magnemite Location Map.jpg")
-    ],
-    "Magneton": [
-      require("../../assets/images/locations/Magneton Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Magneton Location Map.jpg")
-    ],
-    "Makuhita": [
-      require("../../assets/images/locations/Makuhita Location Map.jpg")
-    ],
-    "Malamar": [
-      require("../../assets/images/locations/Malamar Indigo Disk Location Map.jpg")
-    ],
-    "Mandibuzz": [
-      require("../../assets/images/locations/Mandibuzz Indigo Disk Location Map.jpg")
-    ],
-    "Mankey": [
-      require("../../assets/images/locations/Mankey Location Map.jpg"),
-      require("../../assets/images/locations/Mankey Teal Mask Location Map.jpg")
-    ],
-    "Mareanie": [
-      require("../../assets/images/locations/Mareanie Location Map.jpg")
-    ],
-    "Mareep": [
-      require("../../assets/images/locations/Mareep Location Map.jpg")
-    ],
-    "Marill": [
-      require("../../assets/images/locations/Marill Location Map.jpg")
-    ],
-    "Marshtomp": [
-      require("../../assets/images/locations/Marshtomp Indigo Disk Location Map.jpg")
-    ],
-    "Maschiff": [
-      require("../../assets/images/locations/Maschiff Location Map.jpg")
-    ],
-    "Masquerain": [
-      require("../../assets/images/locations/Masquerain Location Map.jpg"),
-      require("../../assets/images/locations/Masquerain Teal Mask Location Map.jpg")
-    ],
-    "Medicham": [
-      require("../../assets/images/locations/Medicham Location Map.jpg")
-    ],
-    "Meditite": [
-      require("../../assets/images/locations/Meditite Location Map.jpg")
-    ],
-    "Meganium": [
-      require("../../assets/images/locations/Meganium Indigo Disk Location Map.jpg")
-    ],
-    "Meowstic": [
-      require("../../assets/images/locations/Meowstic (Male) Indigo Disk Location Map.jpg")
-    ],
-    "Meowth": [
-      require("../../assets/images/locations/Meowth Location Map.jpg")
-    ],
-    "Metagross": [
-      require("../../assets/images/locations/Metagross Indigo Disk Location Map.jpg")
-    ],
-    "Metang": [
-      require("../../assets/images/locations/Metang Indigo Disk Location Map.jpg")
-    ],
-    "Mienfoo": [
-      require("../../assets/images/locations/Mienfoo Teal Mask Location Map.jpg")
-    ],
-    "Mightyena": [
-      require("../../assets/images/locations/Mightyena Teal Mask Location Map.jpg")
-    ],
-    "Milcery": [
-      require("../../assets/images/locations/Milcery Indigo Disk Location Map.jpg")
-    ],
-    "Mimikyu": [
-      require("../../assets/images/locations/Mimikyu Location Map.jpg"),
-      require("../../assets/images/locations/Mimikyu Teal Mask Location Map.jpg")
-    ],
-    "Minccino": [
-      require("../../assets/images/locations/Minccino Indigo Disk Location Map.jpg")
-    ],
-    "Minior": [
-      require("../../assets/images/locations/Minior (Core) Indigo Disk Location Map.jpg")
-    ],
-    "Minun": [
-      require("../../assets/images/locations/Minun Indigo Disk Location Map.jpg")
-    ],
-    "Misdreavus": [
-      require("../../assets/images/locations/Misdreavus Location Map.jpg")
-    ],
-    "Mismagius": [
-      require("../../assets/images/locations/Mismagius Location Map.jpg")
-    ],
-    "Monferno": [
-      require("../../assets/images/locations/Monferno Indigo Disk Location Map.jpg")
-    ],
-    "Morgrem": [
-      require("../../assets/images/locations/Morgrem Location Map.jpg"),
-      require("../../assets/images/locations/Morgrem Teal Mask Location Map.jpg")
-    ],
-    "Morpeko": [
-      require("../../assets/images/locations/Morpeko Teal Mask Location Map.jpg")
-    ],
-    "Mudbray": [
-      require("../../assets/images/locations/Mudbray Location Map.jpg"),
-      require("../../assets/images/locations/Mudbray Teal Mask Location Map.jpg")
-    ],
-    "Mudkip": [
-      require("../../assets/images/locations/Mudkip Indigo Disk Location Map.jpg")
-    ],
-    "Mudsdale": [
-      require("../../assets/images/locations/Mudsdale Location Map.jpg")
-    ],
-    "Munchlax": [
-      require("../../assets/images/locations/Munchlax Teal Mask Location Map.jpg")
-    ],
-    "Murkrow": [
-      require("../../assets/images/locations/Murkrow Location Map.jpg")
-    ],
-    "Nacli": [
-      require("../../assets/images/locations/Nacli Location Map.jpg")
-    ],
-    "Naclstack": [
-      require("../../assets/images/locations/Naclstack Location Map.jpg")
-    ],
-    "Noctowl": [
-      require("../../assets/images/locations/Noctowl Teal Mask Location Map.jpg")
-    ],
-    "Noibat": [
-      require("../../assets/images/locations/Noibat Location Map.jpg"),
-      require("../../assets/images/locations/Noibat Teal Mask Location Map.jpg")
-    ],
-    "Noivern": [
-      require("../../assets/images/locations/Noivern Location Map.jpg")
-    ],
-    "Nosepass": [
-      require("../../assets/images/locations/Nosepass Teal Mask Location Map.jpg")
-    ],
-    "Numel": [
-      require("../../assets/images/locations/Numel Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Numel Location Map.jpg")
-    ],
-    "Nuzleaf": [
-      require("../../assets/images/locations/Nuzleaf Teal Mask Location Map.jpg")
-    ],
-    "Nymble": [
-      require("../../assets/images/locations/Nymble Location Map.jpg")
-    ],
-    "Oddish": [
-      require("../../assets/images/locations/Oddish Indigo Disk Location Map.jpg")
-    ],
-    "Oinkologne": [
-      require("../../assets/images/locations/Oinkologne (Male) Location Map.jpg")
-    ],
-    "Oranguru": [
-      require("../../assets/images/locations/Oranguru Location Map.jpg")
-    ],
-    "Oricorio": [
-      require("../../assets/images/locations/Oricorio (Baile Style) Location Map.jpg"),
-      require("../../assets/images/locations/Oricorio (Sensu Style) Teal Mask Location Map.jpg")
-    ],
-    "Orthworm": [
-      require("../../assets/images/locations/Orthworm Location Map.jpg"),
-      require("../../assets/images/locations/Orthworm Teal Mask Location Map.jpg")
-    ],
-    "Oshawott": [
-      require("../../assets/images/locations/Oshawott Indigo Disk Location Map.jpg")
-    ],
-    "Overqwil": [
-      require("../../assets/images/locations/Overqwil Indigo Disk Location Map.jpg")
-    ],
-    "Pachirisu": [
-      require("../../assets/images/locations/Pachirisu Location Map.jpg"),
-      require("../../assets/images/locations/Pachirisu Teal Mask Location Map.jpg")
-    ],
-    "Paldean": [
-      require("../../assets/images/locations/Paldean Wooper Location Map.jpg")
-    ],
-    "Palossand": [
-      require("../../assets/images/locations/Palossand Location Map.jpg")
-    ],
-    "Passimian": [
-      require("../../assets/images/locations/Passimian Location Map.jpg")
-    ],
-    "Pawmi": [
-      require("../../assets/images/locations/Pawmi Location Map.jpg")
-    ],
-    "Pawmo": [
-      require("../../assets/images/locations/Pawmo Location Map.jpg")
-    ],
-    "Pawniard": [
-      require("../../assets/images/locations/Pawniard Location Map.jpg"),
-      require("../../assets/images/locations/Pawniard Teal Mask Location Map.jpg")
-    ],
-    "Pelipper": [
-      require("../../assets/images/locations/Pelipper Location Map.jpg")
-    ],
-    "Persian": [
-      require("../../assets/images/locations/Persian Location Map.jpg")
-    ],
-    "Petilil": [
-      require("../../assets/images/locations/Petilil Location Map.jpg"),
-      require("../../assets/images/locations/Petilil Teal Mask Location Map.jpg")
-    ],
-    "Phanpy": [
-      require("../../assets/images/locations/Phanpy Location Map.jpg")
-    ],
-    "Phantump": [
-      require("../../assets/images/locations/Phantump Teal Mask Location Map.jpg")
-    ],
-    "Pichu": [
-      require("../../assets/images/locations/Pichu Location Map.jpg"),
-      require("../../assets/images/locations/Pichu Teal Mask Location Map.jpg")
-    ],
-    "Pignite": [
-      require("../../assets/images/locations/Pignite Indigo Disk Location Map.jpg")
-    ],
-    "Pikachu": [
-      require("../../assets/images/locations/Pikachu Location Map.jpg"),
-      require("../../assets/images/locations/Pikachu Teal Mask Location Map.jpg")
-    ],
-    "Pikipek": [
-      require("../../assets/images/locations/Pikipek Indigo Disk Location Map.jpg")
-    ],
-    "Piloswine": [
-      require("../../assets/images/locations/Piloswine Teal Mask Location Map.jpg")
-    ],
-    "Pincurchin": [
-      require("../../assets/images/locations/Pincurchin Location Map.jpg")
-    ],
-    "Pineco": [
-      require("../../assets/images/locations/Pineco Location Map.jpg")
-    ],
-    "Piplup": [
-      require("../../assets/images/locations/Piplup Indigo Disk Location Map.jpg")
-    ],
-    "Plusle": [
-      require("../../assets/images/locations/Plusle Indigo Disk Location Map.jpg")
-    ],
-    "Poliwag": [
-      require("../../assets/images/locations/Poliwag Teal Mask Location Map.jpg")
-    ],
-    "Poliwhirl": [
-      require("../../assets/images/locations/Poliwhirl Teal Mask Location Map.jpg")
-    ],
-    "Poltchageist": [
-      require("../../assets/images/locations/Poltchageist Teal Mask Location Map.jpg")
-    ],
-    "Poochyena": [
-      require("../../assets/images/locations/Poochyena Teal Mask Location Map.jpg")
-    ],
-    "Popplio": [
-      require("../../assets/images/locations/Popplio Indigo Disk Location Map.jpg")
-    ],
-    "Porygon": [
-      require("../../assets/images/locations/Porygon Indigo Disk Location Map.jpg")
-    ],
-    "Porygon-Z": [
-      require("../../assets/images/locations/Porygon-Z Indigo Disk Location Map.jpg")
-    ],
-    "Porygon2": [
-      require("../../assets/images/locations/Porygon2 Indigo Disk Location Map.jpg")
-    ],
-    "Primarina": [
-      require("../../assets/images/locations/Primarina Indigo Disk Location Map.jpg")
-    ],
-    "Primeape": [
-      require("../../assets/images/locations/Primeape Location Map.jpg"),
-      require("../../assets/images/locations/Primeape Teal Mask Location Map.jpg")
-    ],
-    "Prinplup": [
-      require("../../assets/images/locations/Prinplup Indigo Disk Location Map.jpg")
-    ],
-    "Psyduck": [
-      require("../../assets/images/locations/Psyduck Location Map.jpg")
-    ],
-    "Pupitar": [
-      require("../../assets/images/locations/Pupitar Location Map.jpg")
-    ],
-    "Pyroar": [
-      require("../../assets/images/locations/Pyroar Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Pyroar Location Map.jpg")
-    ],
-    "Quagsire": [
-      require("../../assets/images/locations/Quagsire Teal Mask Location Map.jpg")
-    ],
-    "Quilava": [
-      require("../../assets/images/locations/Quilava Indigo Disk Location Map.jpg")
-    ],
-    "Quilladin": [
-      require("../../assets/images/locations/Quilladin Indigo Disk Location Map.jpg")
-    ],
-    "Qwilfish": [
-      require("../../assets/images/locations/Qwilfish Location Map.jpg")
-    ],
-    "Raboot": [
-      require("../../assets/images/locations/Raboot Indigo Disk Location Map.jpg")
-    ],
-    "Rabsca": [
-      require("../../assets/images/locations/Rabsca Indigo Disk Location Map.jpg")
-    ],
-    "Raichu": [
-      require("../../assets/images/locations/Raichu Location Map.jpg")
-    ],
-    "Ralts": [
-      require("../../assets/images/locations/Ralts Location Map.jpg"),
-      require("../../assets/images/locations/Ralts Teal Mask Location Map.jpg")
-    ],
-    "Rampardos": [
-      require("../../assets/images/locations/Rampardos Indigo Disk Location Map.jpg")
-    ],
-    "Rellor": [
-      require("../../assets/images/locations/Rellor Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Rellor Location Map.jpg")
-    ],
-    "Reuniclus": [
-      require("../../assets/images/locations/Reuniclus Indigo Disk Location Map.jpg")
-    ],
-    "Revavroom": [
-      require("../../assets/images/locations/Revavroom Location Map.jpg")
-    ],
-    "Rhydon": [
-      require("../../assets/images/locations/Rhydon Indigo Disk Location Map.jpg")
-    ],
-    "Rhyhorn": [
-      require("../../assets/images/locations/Rhyhorn Indigo Disk Location Map.jpg")
-    ],
-    "Rhyperior": [
-      require("../../assets/images/locations/Rhyperior Indigo Disk Location Map.jpg")
-    ],
-    "Ribombee": [
-      require("../../assets/images/locations/Ribombee Teal Mask Location Map.jpg")
-    ],
-    "Rillaboom": [
-      require("../../assets/images/locations/Rillaboom Indigo Disk Location Map.jpg")
-    ],
-    "Riolu": [
-      require("../../assets/images/locations/Riolu Location Map.jpg"),
-      require("../../assets/images/locations/Riolu Teal Mask Location Map.jpg")
-    ],
-    "Rockruff": [
-      require("../../assets/images/locations/Rockruff Location Map.jpg"),
-      require("../../assets/images/locations/Rockruff Teal Mask Location Map.jpg")
-    ],
-    "Rolycoly": [
-      require("../../assets/images/locations/Rolycoly Location Map.jpg")
-    ],
-    "Rookidee": [
-      require("../../assets/images/locations/Rookidee Location Map.jpg")
-    ],
-    "Rotom": [
-      require("../../assets/images/locations/Rotom Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Rotom Location Map.jpg")
-    ],
-    "Rowlet": [
-      require("../../assets/images/locations/Rowlet Indigo Disk Location Map.jpg")
-    ],
-    "Rufflet": [
-      require("../../assets/images/locations/Rufflet Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Rufflet Location Map.jpg")
-    ],
-    "Sableye": [
-      require("../../assets/images/locations/Sableye Location Map.jpg")
-    ],
-    "Salandit": [
-      require("../../assets/images/locations/Salandit Location Map.jpg"),
-      require("../../assets/images/locations/Salandit Teal Mask Location Map.jpg")
-    ],
-    "Salazzle": [
-      require("../../assets/images/locations/Salazzle Location Map.jpg")
-    ],
-    "Samurott": [
-      require("../../assets/images/locations/Samurott Indigo Disk Location Map.jpg")
-    ],
-    "Sandile": [
-      require("../../assets/images/locations/Sandile Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Sandile Location Map.jpg")
-    ],
-    "Sandshrew": [
-      require("../../assets/images/locations/Sandshrew Teal Mask Location Map.jpg")
-    ],
-    "Sandslash": [
-      require("../../assets/images/locations/Sandslash Teal Mask Location Map.jpg")
-    ],
-    "Sandygast": [
-      require("../../assets/images/locations/Sandygast Location Map.jpg")
-    ],
-    "Sawsbuck": [
-      require("../../assets/images/locations/Sawsbuck Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Sawsbuck Location Map.jpg")
-    ],
-    "Scatterbug": [
-      require("../../assets/images/locations/Scatterbug Location Map.jpg")
-    ],
-    "Sceptile": [
-      require("../../assets/images/locations/Sceptile Indigo Disk Location Map.jpg")
-    ],
-    "Scizor": [
-      require("../../assets/images/locations/Scizor Indigo Disk Location Map.jpg")
-    ],
-    "Scorbunny": [
-      require("../../assets/images/locations/Scorbunny Indigo Disk Location Map.jpg")
-    ],
-    "Scovillain": [
-      require("../../assets/images/locations/Scovillain Location Map.jpg")
-    ],
-    "Scrafty": [
-      require("../../assets/images/locations/Scrafty Indigo Disk Location Map.jpg")
-    ],
-    "Scraggy": [
-      require("../../assets/images/locations/Scraggy Indigo Disk Location Map.jpg")
-    ],
-    "Scyther": [
-      require("../../assets/images/locations/Scyther Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Scyther Location Map.jpg")
-    ],
-    "Seadra": [
-      require("../../assets/images/locations/Seadra Indigo Disk Location Map.jpg")
-    ],
-    "Seedot": [
-      require("../../assets/images/locations/Seedot Teal Mask Location Map.jpg")
-    ],
-    "Seel": [
-      require("../../assets/images/locations/Seel Indigo Disk Location Map.jpg")
-    ],
-    "Sentret": [
-      require("../../assets/images/locations/Sentret Teal Mask Location Map.jpg")
-    ],
-    "Serperior": [
-      require("../../assets/images/locations/Serperior Indigo Disk Location Map.jpg")
-    ],
-    "Servine": [
-      require("../../assets/images/locations/Servine Indigo Disk Location Map.jpg")
-    ],
-    "Seviper": [
-      require("../../assets/images/locations/Seviper Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Seviper Location Map.jpg")
-    ],
-    "Sewaddle": [
-      require("../../assets/images/locations/Sewaddle Teal Mask Location Map.jpg")
-    ],
-    "Shelgon": [
-      require("../../assets/images/locations/Shelgon Location Map.jpg")
-    ],
-    "Shellder": [
-      require("../../assets/images/locations/Shellder Location Map.jpg")
-    ],
-    "Shellos": [
-      require("../../assets/images/locations/Shellos (East Sea) Location Map.jpg"),
-      require("../../assets/images/locations/Shellos (West Sea) Location Map.jpg")
-    ],
-    "Shieldon": [
-      require("../../assets/images/locations/Shieldon Indigo Disk Location Map.jpg")
-    ],
-    "Shinx": [
-      require("../../assets/images/locations/Shinx Location Map.jpg"),
-      require("../../assets/images/locations/Shinx Teal Mask Location Map.jpg")
-    ],
-    "Shroodle": [
-      require("../../assets/images/locations/Shroodle Location Map.jpg")
-    ],
-    "Shroomish": [
-      require("../../assets/images/locations/Shroomish Location Map.jpg")
-    ],
-    "Shuppet": [
-      require("../../assets/images/locations/Shuppet Location Map.jpg")
-    ],
-    "Silicobra": [
-      require("../../assets/images/locations/Silicobra Location Map.jpg")
-    ],
-    "Sinistea": [
-      require("../../assets/images/locations/Sinistea Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Sinistea Location Map.jpg")
-    ],
-    "Skarmory": [
-      require("../../assets/images/locations/Skarmory Indigo Disk Location Map.jpg")
-    ],
-    "Skiddo": [
-      require("../../assets/images/locations/Skiddo Location Map.jpg")
-    ],
-    "Skiploom": [
-      require("../../assets/images/locations/Skiploom Location Map.jpg")
-    ],
-    "Skrelp": [
-      require("../../assets/images/locations/Skrelp Location Map.jpg")
-    ],
-    "Skuntank": [
-      require("../../assets/images/locations/Skuntank Location Map.jpg")
-    ],
-    "Skwovet": [
-      require("../../assets/images/locations/Skwovet Location Map.jpg"),
-      require("../../assets/images/locations/Skwovet Teal Mask Location Map.jpg")
-    ],
-    "Slaking": [
-      require("../../assets/images/locations/Slaking Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Slaking Location Map.jpg")
-    ],
-    "Slakoth": [
-      require("../../assets/images/locations/Slakoth Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Slakoth Location Map.jpg")
-    ],
-    "Sliggoo": [
-      require("../../assets/images/locations/Sliggoo Location Map.jpg"),
-      require("../../assets/images/locations/Sliggoo Teal Mask Location Map.jpg")
-    ],
-    "Slowbro": [
-      require("../../assets/images/locations/Slowbro Location Map.jpg")
-    ],
-    "Slowpoke": [
-      require("../../assets/images/locations/Slowpoke Location Map.jpg")
-    ],
-    "Slugma": [
-      require("../../assets/images/locations/Slugma Teal Mask Location Map.jpg")
-    ],
-    "Smeargle": [
-      require("../../assets/images/locations/Smeargle Indigo Disk Location Map.jpg")
-    ],
-    "Smoliv": [
-      require("../../assets/images/locations/Smoliv Location Map.jpg")
-    ],
-    "Sneasel": [
-      require("../../assets/images/locations/Sneasel Location Map.jpg"),
-      require("../../assets/images/locations/Sneasel Teal Mask Location Map.jpg")
-    ],
-    "Snivy": [
-      require("../../assets/images/locations/Snivy Indigo Disk Location Map.jpg")
-    ],
-    "Snom": [
-      require("../../assets/images/locations/Snom Location Map.jpg")
-    ],
-    "Snorunt": [
-      require("../../assets/images/locations/Snorunt Location Map.jpg"),
-      require("../../assets/images/locations/Snorunt Teal Mask Location Map.jpg")
-    ],
-    "Snover": [
-      require("../../assets/images/locations/Snover Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Snover Location Map.jpg")
-    ],
-    "Snubbull": [
-      require("../../assets/images/locations/Snubbull Indigo Disk Location Map.jpg")
-    ],
-    "Sobble": [
-      require("../../assets/images/locations/Sobble Indigo Disk Location Map.jpg")
-    ],
-    "Solosis": [
-      require("../../assets/images/locations/Solosis Indigo Disk Location Map.jpg")
-    ],
-    "Spewpa": [
-      require("../../assets/images/locations/Spewpa Location Map.jpg")
-    ],
-    "Spidops": [
-      require("../../assets/images/locations/Spidops Location Map.jpg")
-    ],
-    "Spinarak": [
-      require("../../assets/images/locations/Spinarak Teal Mask Location Map.jpg")
-    ],
-    "Spoink": [
-      require("../../assets/images/locations/Spoink Location Map.jpg"),
-      require("../../assets/images/locations/Spoink Teal Mask Location Map.jpg")
-    ],
-    "Squawkabilly": [
-      require("../../assets/images/locations/Squawkabilly Location Map.jpg")
-    ],
-    "Squirtle": [
-      require("../../assets/images/locations/Squirtle Indigo Disk Location Map.jpg")
-    ],
-    "Stantler": [
-      require("../../assets/images/locations/Stantler Location Map.jpg"),
-      require("../../assets/images/locations/Stantler Teal Mask Location Map.jpg")
-    ],
-    "Staraptor": [
-      require("../../assets/images/locations/Staraptor Location Map.jpg"),
-      require("../../assets/images/locations/Staraptor Teal Mask Location Map.jpg")
-    ],
-    "Staravia": [
-      require("../../assets/images/locations/Staravia Location Map.jpg"),
-      require("../../assets/images/locations/Staravia Teal Mask Location Map.jpg")
-    ],
-    "Starly": [
-      require("../../assets/images/locations/Starly Location Map.jpg"),
-      require("../../assets/images/locations/Starly Teal Mask Location Map.jpg")
-    ],
-    "Steenee": [
-      require("../../assets/images/locations/Steenee Location Map.jpg")
-    ],
-    "Stonjourner": [
-      require("../../assets/images/locations/Stonjourner Location Map.jpg")
-    ],
-    "Stunky": [
-      require("../../assets/images/locations/Stunky Location Map.jpg")
-    ],
-    "Sudowoodo": [
-      require("../../assets/images/locations/Sudowoodo Location Map.jpg"),
-      require("../../assets/images/locations/Sudowoodo Teal Mask Location Map.jpg")
-    ],
-    "Sunflora": [
-      require("../../assets/images/locations/Sunflora Location Map.jpg")
-    ],
-    "Sunkern": [
-      require("../../assets/images/locations/Sunkern Location Map.jpg")
-    ],
-    "Surskit": [
-      require("../../assets/images/locations/Surskit Location Map.jpg"),
-      require("../../assets/images/locations/Surskit Teal Mask Location Map.jpg")
-    ],
-    "Swablu": [
-      require("../../assets/images/locations/Swablu Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Swablu Location Map.jpg")
-    ],
-    "Swadloon": [
-      require("../../assets/images/locations/Swadloon Teal Mask Location Map.jpg")
-    ],
-    "Swalot": [
-      require("../../assets/images/locations/Swalot Location Map.jpg")
-    ],
-    "Swampert": [
-      require("../../assets/images/locations/Swampert Indigo Disk Location Map.jpg")
-    ],
-    "Swinub": [
-      require("../../assets/images/locations/Swinub Teal Mask Location Map.jpg")
-    ],
-    "Sylveon": [
-      require("../../assets/images/locations/Sylveon Location Map.jpg")
-    ],
-    "Tadbulb": [
-      require("../../assets/images/locations/Tadbulb Location Map.jpg")
-    ],
-    "Talonflame": [
-      require("../../assets/images/locations/Talonflame Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Talonflame Location Map.jpg")
-    ],
-    "Tandemaus": [
-      require("../../assets/images/locations/Tandemaus Location Map.jpg"),
-      require("../../assets/images/locations/Tandemaus Teal Mask Location Map.jpg")
-    ],
-    "Tarountula": [
-      require("../../assets/images/locations/Tarountula Location Map.jpg")
-    ],
-    "Tatsugiri": [
-      require("../../assets/images/locations/Tatsugiri Location Map.jpg")
-    ],
-    "Tauros": [
-      require("../../assets/images/locations/Tauros Indigo Disk Location Map.jpg")
-    ],
-    "Teddiursa": [
-      require("../../assets/images/locations/Teddiursa Location Map.jpg")
-    ],
-    "Tentacool": [
-      require("../../assets/images/locations/Tentacool Indigo Disk Location Map.jpg")
-    ],
-    "Tentacruel": [
-      require("../../assets/images/locations/Tentacruel Indigo Disk Location Map.jpg")
-    ],
-    "Tepig": [
-      require("../../assets/images/locations/Tepig Indigo Disk Location Map.jpg")
-    ],
-    "Thwackey": [
-      require("../../assets/images/locations/Thwackey Indigo Disk Location Map.jpg")
-    ],
-    "Timburr": [
-      require("../../assets/images/locations/Timburr Teal Mask Location Map.jpg")
-    ],
-    "Tinkatink": [
-      require("../../assets/images/locations/Tinkatink Location Map.jpg")
-    ],
-    "Tinkatuff": [
-      require("../../assets/images/locations/Tinkatuff Location Map.jpg")
-    ],
-    "Toedscool": [
-      require("../../assets/images/locations/Toedscool Location Map.jpg"),
-      require("../../assets/images/locations/Toedscool Teal Mask Location Map.jpg")
-    ],
-    "Toedscruel": [
-      require("../../assets/images/locations/Toedscruel Location Map.jpg"),
-      require("../../assets/images/locations/Toedscruel Teal Mask Location Map.jpg")
-    ],
-    "Torchic": [
-      require("../../assets/images/locations/Torchic Indigo Disk Location Map.jpg")
-    ],
-    "Torkoal": [
-      require("../../assets/images/locations/Torkoal Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Torkoal Location Map.jpg")
-    ],
-    "Torracat": [
-      require("../../assets/images/locations/Torracat Indigo Disk Location Map.jpg")
-    ],
-    "Torterra": [
-      require("../../assets/images/locations/Torterra Indigo Disk Location Map.jpg")
-    ],
-    "Totodile": [
-      require("../../assets/images/locations/Totodile Indigo Disk Location Map.jpg")
-    ],
-    "Toucannon": [
-      require("../../assets/images/locations/Toucannon Indigo Disk Location Map.jpg")
-    ],
-    "Toxel": [
-      require("../../assets/images/locations/Toxel Location Map.jpg")
-    ],
-    "Toxicroak": [
-      require("../../assets/images/locations/Toxicroak Location Map.jpg")
-    ],
-    "Toxtricity": [
-      require("../../assets/images/locations/Toxtricity (Amped Form) Location Map.jpg")
-    ],
-    "Trapinch": [
-      require("../../assets/images/locations/Trapinch Indigo Disk Location Map.jpg")
-    ],
-    "Treecko": [
-      require("../../assets/images/locations/Treecko Indigo Disk Location Map.jpg")
-    ],
-    "Trevenant": [
-      require("../../assets/images/locations/Trevenant Teal Mask Location Map.jpg")
-    ],
-    "Tropius": [
-      require("../../assets/images/locations/Tropius Location Map.jpg")
-    ],
-    "Trumbeak": [
-      require("../../assets/images/locations/Trumbeak Indigo Disk Location Map.jpg")
-    ],
-    "Turtwig": [
-      require("../../assets/images/locations/Turtwig Indigo Disk Location Map.jpg")
-    ],
-    "Tynamo": [
-      require("../../assets/images/locations/Tynamo Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Tynamo Location Map.jpg"),
-      require("../../assets/images/locations/Tynamo Teal Mask Location Map.jpg")
-    ],
-    "Typhlosion": [
-      require("../../assets/images/locations/Typhlosion Indigo Disk Location Map.jpg")
-    ],
-    "Tyrogue": [
-      require("../../assets/images/locations/Tyrogue Indigo Disk Location Map.jpg")
-    ],
-    "Umbreon": [
-      require("../../assets/images/locations/Umbreon Location Map.jpg")
-    ],
-    "Ursaring": [
-      require("../../assets/images/locations/Ursaring Location Map.jpg")
-    ],
-    "Vaporeon": [
-      require("../../assets/images/locations/Vaporeon Location Map.jpg")
-    ],
-    "Varoom": [
-      require("../../assets/images/locations/Varoom Location Map.jpg")
-    ],
-    "Veluza": [
-      require("../../assets/images/locations/Veluza Location Map.jpg")
-    ],
-    "Venomoth": [
-      require("../../assets/images/locations/Venomoth Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Venomoth Location Map.jpg")
-    ],
-    "Venonat": [
-      require("../../assets/images/locations/Venonat Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Venonat Location Map.jpg")
-    ],
-    "Venusaur": [
-      require("../../assets/images/locations/Venusaur Indigo Disk Location Map.jpg")
-    ],
-    "Vespiquen": [
-      require("../../assets/images/locations/Vespiquen Location Map.jpg")
-    ],
-    "Vibrava": [
-      require("../../assets/images/locations/Vibrava Indigo Disk Location Map.jpg")
-    ],
-    "Vigoroth": [
-      require("../../assets/images/locations/Vigoroth Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Vigoroth Location Map.jpg")
-    ],
-    "Vileplume": [
-      require("../../assets/images/locations/Vileplume Indigo Disk Location Map.jpg")
-    ],
-    "Vivillon": [
-      require("../../assets/images/locations/Vivillon Location Map.jpg")
-    ],
-    "Volbeat": [
-      require("../../assets/images/locations/Volbeat Teal Mask Location Map.jpg")
-    ],
-    "Voltorb": [
-      require("../../assets/images/locations/Voltorb Location Map.jpg")
-    ],
-    "Vullaby": [
-      require("../../assets/images/locations/Vullaby Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Vullaby Teal Mask Location Map.jpg")
-    ],
-    "Vulpix": [
-      require("../../assets/images/locations/Vulpix Teal Mask Location Map.jpg")
-    ],
-    "Wartortle": [
-      require("../../assets/images/locations/Wartortle Indigo Disk Location Map.jpg")
-    ],
-    "Wattrel": [
-      require("../../assets/images/locations/Wattrel Location Map.jpg")
-    ],
-    "Weavile": [
-      require("../../assets/images/locations/Weavile Location Map.jpg")
-    ],
-    "Weepinbell": [
-      require("../../assets/images/locations/Weepinbell Teal Mask Location Map.jpg")
-    ],
-    "Whimsicott": [
-      require("../../assets/images/locations/Whimsicott Indigo Disk Location Map.jpg")
-    ],
-    "Whiscash": [
-      require("../../assets/images/locations/Whiscash Location Map.jpg"),
-      require("../../assets/images/locations/Whiscash Teal Mask Location Map.jpg")
-    ],
-    "Wigglytuff": [
-      require("../../assets/images/locations/Wigglytuff Location Map.jpg")
-    ],
-    "Wiglett": [
-      require("../../assets/images/locations/Wiglett Location Map.jpg")
-    ],
-    "Wingull": [
-      require("../../assets/images/locations/Wingull Location Map.jpg")
-    ],
-    "Wooper": [
-      require("../../assets/images/locations/Wooper Teal Mask Location Map.jpg")
-    ],
-    "Wugtrio": [
-      require("../../assets/images/locations/Wugtrio Location Map.jpg")
-    ],
-    "Yanma": [
-      require("../../assets/images/locations/Yanma Teal Mask Location Map.jpg")
-    ],
-    "Yungoos": [
-      require("../../assets/images/locations/Yungoos Location Map.jpg")
-    ],
-    "Zangoose": [
-      require("../../assets/images/locations/Zangoose Indigo Disk Location Map.jpg"),
-      require("../../assets/images/locations/Zangoose Location Map.jpg")
-    ],
-    "Zebstrika": [
-      require("../../assets/images/locations/Zebstrika Indigo Disk Location Map.jpg")
-    ],
-    "Zoroark": [
-      require("../../assets/images/locations/Zoroark Location Map.jpg")
-    ],
-    "Zorua": [
-      require("../../assets/images/locations/Zorua Location Map.jpg")
-    ],
-    "Zweilous": [
-      require("../../assets/images/locations/Zweilous Location Map.jpg")
-    ]
-};
+    "Bulbasaur": require("../../assets/images/pokemon/0001-Bulbasaur.png"),
+    "Ivysaur": require("../../assets/images/pokemon/0002-Ivysaur.png"),
+    "Venusaur": require("../../assets/images/pokemon/0003-Venusaur.png"),
+    "Charmander": require("../../assets/images/pokemon/0004-Charmander.png"),
+    "Charmeleon": require("../../assets/images/pokemon/0005-Charmeleon.png"),
+    "Charizard": require("../../assets/images/pokemon/0006-Charizard.png"),
+    "Squirtle": require("../../assets/images/pokemon/0007-Squirtle.png"),
+    "Wartortle": require("../../assets/images/pokemon/0008-Wartortle.png"),
+    "Blastoise": require("../../assets/images/pokemon/0009-Blastoise.png"),
+    "Ekans": require("../../assets/images/pokemon/0023-Ekans.png"),
+    "Arbok": require("../../assets/images/pokemon/0024-Arbok.png"),
+    "Pikachu(Alola Cap)": require("../../assets/images/pokemon/0025-Pikachu(Alola Cap).png"),
+    "Pikachu(Hoenn Cap)": require("../../assets/images/pokemon/0025-Pikachu(Hoenn Cap).png"),
+    "Pikachu(Kalos Cap)": require("../../assets/images/pokemon/0025-Pikachu(Kalos Cap).png"),
+    "Pikachu(Original Cap)": require("../../assets/images/pokemon/0025-Pikachu(Original Cap).png"),
+    "Pikachu(Partner Cap)": require("../../assets/images/pokemon/0025-Pikachu(Partner Cap).png"),
+    "Pikachu(Sinnoh Cap)": require("../../assets/images/pokemon/0025-Pikachu(Sinnoh Cap).png"),
+    "Pikachu(Unova Cap)": require("../../assets/images/pokemon/0025-Pikachu(Unova Cap).png"),
+    "Pikachu(World's Cap)": require("../../assets/images/pokemon/0025-Pikachu(World's Cap).png"),
+    "Pikachu": require("../../assets/images/pokemon/0025-Pikachu.png"),
+    "Alolan Raichu": require("../../assets/images/pokemon/0026-Alolan Raichu.png"),
+    "Raichu": require("../../assets/images/pokemon/0026-Raichu.png"),
+    "Alolan Sandshrew": require("../../assets/images/pokemon/0027-Alolan Sandshrew.png"),
+    "Sandshrew": require("../../assets/images/pokemon/0027-Sandshrew.png"),
+    "Alolan Sandslash": require("../../assets/images/pokemon/0028-Alolan Sandslash.png"),
+    "Sandslash": require("../../assets/images/pokemon/0028-Sandslash.png"),
+    "Clefairy": require("../../assets/images/pokemon/0035-Clefairy.png"),
+    "Clefable": require("../../assets/images/pokemon/0036-Clefable.png"),
+    "Alolan Vulpix": require("../../assets/images/pokemon/0037-Alolan Vulpix.png"),
+    "Vulpix": require("../../assets/images/pokemon/0037-Vulpix.png"),
+    "Alolan Ninetales": require("../../assets/images/pokemon/0038-Alolan Ninetales.png"),
+    "Ninetales": require("../../assets/images/pokemon/0038-Ninetales.png"),
+    "Jigglypuff": require("../../assets/images/pokemon/0039-Jigglypuff.png"),
+    "Wigglytuff": require("../../assets/images/pokemon/0040-Wigglytuff.png"),
+    "Oddish": require("../../assets/images/pokemon/0043-Oddish.png"),
+    "Gloom": require("../../assets/images/pokemon/0044-Gloom.png"),
+    "Vileplume": require("../../assets/images/pokemon/0045-Vileplume.png"),
+    "Venonat": require("../../assets/images/pokemon/0048-Venonat.png"),
+    "Venomoth": require("../../assets/images/pokemon/0049-Venomoth.png"),
+    "Alolan Diglett": require("../../assets/images/pokemon/0050-Alolan Diglett.png"),
+    "Diglett": require("../../assets/images/pokemon/0050-Diglett.png"),
+    "Alolan Dugtrio": require("../../assets/images/pokemon/0051-Alolan Dugtrio.png"),
+    "Dugtrio": require("../../assets/images/pokemon/0051-Dugtrio.png"),
+    "Alolan Meowth": require("../../assets/images/pokemon/0052-Alolan Meowth.png"),
+    "Galarian Meowth": require("../../assets/images/pokemon/0052-Galarian Meowth.png"),
+    "Meowth": require("../../assets/images/pokemon/0052-Meowth.png"),
+    "Alolan Persian": require("../../assets/images/pokemon/0053-Alolan Persian.png"),
+    "Persian": require("../../assets/images/pokemon/0053-Persian.png"),
+    "Psyduck": require("../../assets/images/pokemon/0054-Psyduck.png"),
+    "Golduck": require("../../assets/images/pokemon/0055-Golduck.png"),
+    "Mankey": require("../../assets/images/pokemon/0056-Mankey.png"),
+    "Primeape": require("../../assets/images/pokemon/0057-Primeape.png"),
+    "Growlithe": require("../../assets/images/pokemon/0058-Growlithe.png"),
+    "Hisuian Growlithe": require("../../assets/images/pokemon/0058-Hisuian Growlithe.png"),
+    "Arcanine": require("../../assets/images/pokemon/0059-Arcanine.png"),
+    "Hisuian Arcanine": require("../../assets/images/pokemon/0059-Hisuian Arcanine.png"),
+    "Poliwag": require("../../assets/images/pokemon/0060-Poliwag.png"),
+    "Poliwhirl": require("../../assets/images/pokemon/0061-Poliwhirl.png"),
+    "Poliwrath": require("../../assets/images/pokemon/0062-Poliwrath.png"),
+    "Bellsprout": require("../../assets/images/pokemon/0069-Bellsprout.png"),
+    "Weepinbell": require("../../assets/images/pokemon/0070-Weepinbell.png"),
+    "Victreebel": require("../../assets/images/pokemon/0071-Victreebel.png"),
+    "Tentacool": require("../../assets/images/pokemon/0072-Tentacool.png"),
+    "Tentacruel": require("../../assets/images/pokemon/0073-Tentacruel.png"),
+    "Alolan Geodude": require("../../assets/images/pokemon/0074-Alolan Geodude.png"),
+    "Geodude": require("../../assets/images/pokemon/0074-Geodude.png"),
+    "Alolan Graveler": require("../../assets/images/pokemon/0075-Alolan Graveler.png"),
+    "Graveler": require("../../assets/images/pokemon/0075-Graveler.png"),
+    "Alolan Golem": require("../../assets/images/pokemon/0076-Alolan Golem.png"),
+    "Golem": require("../../assets/images/pokemon/0076-Golem.png"),
+    "Galarian Slowpoke": require("../../assets/images/pokemon/0079-Galarian Slowpoke.png"),
+    "Slowpoke": require("../../assets/images/pokemon/0079-Slowpoke.png"),
+    "Galarian Slowbro": require("../../assets/images/pokemon/0080-Galarian Slowbro.png"),
+    "Slowbro": require("../../assets/images/pokemon/0080-Slowbro.png"),
+    "Magnemite": require("../../assets/images/pokemon/0081-Magnemite.png"),
+    "Magneton": require("../../assets/images/pokemon/0082-Magneton.png"),
+    "Doduo": require("../../assets/images/pokemon/0084-Doduo.png"),
+    "Dodrio": require("../../assets/images/pokemon/0085-Dodrio.png"),
+    "Seel": require("../../assets/images/pokemon/0086-Seel.png"),
+    "Dewgong": require("../../assets/images/pokemon/0087-Dewgong.png"),
+    "Alolan Grimer": require("../../assets/images/pokemon/0088-Alolan Grimer.png"),
+    "Grimer": require("../../assets/images/pokemon/0088-Grimer.png"),
+    "Alolan Muk": require("../../assets/images/pokemon/0089-Alolan Muk.png"),
+    "Muk": require("../../assets/images/pokemon/0089-Muk.png"),
+    "Shellder": require("../../assets/images/pokemon/0090-Shellder.png"),
+    "Cloyster": require("../../assets/images/pokemon/0091-Cloyster.png"),
+    "Gastly": require("../../assets/images/pokemon/0092-Gastly.png"),
+    "Haunter": require("../../assets/images/pokemon/0093-Haunter.png"),
+    "Gengar": require("../../assets/images/pokemon/0094-Gengar.png"),
+    "Drowzee": require("../../assets/images/pokemon/0096-Drowzee.png"),
+    "Hypno": require("../../assets/images/pokemon/0097-Hypno.png"),
+    "Hisuian Voltorb": require("../../assets/images/pokemon/0100-Hisuian Voltorb.png"),
+    "Voltorb": require("../../assets/images/pokemon/0100-Voltorb.png"),
+    "Electrode": require("../../assets/images/pokemon/0101-Electrode.png"),
+    "Hisuian Electrode": require("../../assets/images/pokemon/0101-Hisuian Electrode.png"),
+    "Exeggcute": require("../../assets/images/pokemon/0102-Exeggcute.png"),
+    "Alolan Exeggutor": require("../../assets/images/pokemon/0103-Alolan Exeggutor.png"),
+    "Exeggutor": require("../../assets/images/pokemon/0103-Exeggutor.png"),
+    "Hitmonlee": require("../../assets/images/pokemon/0106-Hitmonlee.png"),
+    "Hitmonchan": require("../../assets/images/pokemon/0107-Hitmonchan.png"),
+    "Koffing": require("../../assets/images/pokemon/0109-Koffing.png"),
+    "Galarian Weezing": require("../../assets/images/pokemon/0110-Galarian Weezing.png"),
+    "Weezing": require("../../assets/images/pokemon/0110-Weezing.png"),
+    "Rhyhorn": require("../../assets/images/pokemon/0111-Rhyhorn.png"),
+    "Rhydon": require("../../assets/images/pokemon/0112-Rhydon.png"),
+    "Chansey": require("../../assets/images/pokemon/0113-Chansey.png"),
+    "Horsea": require("../../assets/images/pokemon/0116-Horsea.png"),
+    "Seadra": require("../../assets/images/pokemon/0117-Seadra.png"),
+    "Scyther": require("../../assets/images/pokemon/0123-Scyther.png"),
+    "Electabuzz": require("../../assets/images/pokemon/0125-Electabuzz.png"),
+    "Magmar": require("../../assets/images/pokemon/0126-Magmar.png"),
+    "Paldean Tauros(Aqua Breed)": require("../../assets/images/pokemon/0128-Paldean Tauros(Aqua Breed).png"),
+    "Paldean Tauros(Blaze Breed)": require("../../assets/images/pokemon/0128-Paldean Tauros(Blaze Breed).png"),
+    "Paldean Tauros(Combat Breed)": require("../../assets/images/pokemon/0128-Paldean Tauros(Combat Breed).png"),
+    "Tauros": require("../../assets/images/pokemon/0128-Tauros.png"),
+    "Magikarp": require("../../assets/images/pokemon/0129-Magikarp.png"),
+    "Gyarados": require("../../assets/images/pokemon/0130-Gyarados.png"),
+    "Lapras": require("../../assets/images/pokemon/0131-Lapras.png"),
+    "Ditto": require("../../assets/images/pokemon/0132-Ditto.png"),
+    "Eevee": require("../../assets/images/pokemon/0133-Eevee.png"),
+    "Vaporeon": require("../../assets/images/pokemon/0134-Vaporeon.png"),
+    "Jolteon": require("../../assets/images/pokemon/0135-Jolteon.png"),
+    "Flareon": require("../../assets/images/pokemon/0136-Flareon.png"),
+    "Porygon": require("../../assets/images/pokemon/0137-Porygon.png"),
+    "Snorlax": require("../../assets/images/pokemon/0143-Snorlax.png"),
+    "Articuno": require("../../assets/images/pokemon/0144-Articuno.png"),
+    "Galarian Articuno": require("../../assets/images/pokemon/0144-Galarian Articuno.png"),
+    "Galarian Zapdos": require("../../assets/images/pokemon/0145-Galarian Zapdos.png"),
+    "Zapdos": require("../../assets/images/pokemon/0145-Zapdos.png"),
+    "Galarian Moltres": require("../../assets/images/pokemon/0146-Galarian Moltres.png"),
+    "Moltres": require("../../assets/images/pokemon/0146-Moltres.png"),
+    "Dratini": require("../../assets/images/pokemon/0147-Dratini.png"),
+    "Dragonair": require("../../assets/images/pokemon/0148-Dragonair.png"),
+    "Dragonite": require("../../assets/images/pokemon/0149-Dragonite.png"),
+    "Mewtwo": require("../../assets/images/pokemon/0150-Mewtwo.png"),
+    "Mew": require("../../assets/images/pokemon/0151-Mew.png"),
+    "Chikorita": require("../../assets/images/pokemon/0152-Chikorita.png"),
+    "Bayleef": require("../../assets/images/pokemon/0153-Bayleef.png"),
+    "Meganium": require("../../assets/images/pokemon/0154-Meganium.png"),
+    "Cyndaquil": require("../../assets/images/pokemon/0155-Cyndaquil.png"),
+    "Quilava": require("../../assets/images/pokemon/0156-Quilava.png"),
+    "Hisuian Typhlosion": require("../../assets/images/pokemon/0157-Hisuian Typhlosion.png"),
+    "Typhlosion": require("../../assets/images/pokemon/0157-Typhlosion.png"),
+    "Totodile": require("../../assets/images/pokemon/0158-Totodile.png"),
+    "Croconaw": require("../../assets/images/pokemon/0159-Croconaw.png"),
+    "Feraligatr": require("../../assets/images/pokemon/0160-Feraligatr.png"),
+    "Sentret": require("../../assets/images/pokemon/0161-Sentret.png"),
+    "Furret": require("../../assets/images/pokemon/0162-Furret.png"),
+    "Hoothoot": require("../../assets/images/pokemon/0163-Hoothoot.png"),
+    "Noctowl": require("../../assets/images/pokemon/0164-Noctowl.png"),
+    "Spinarak": require("../../assets/images/pokemon/0167-Spinarak.png"),
+    "Ariados": require("../../assets/images/pokemon/0168-Ariados.png"),
+    "Chinchou": require("../../assets/images/pokemon/0170-Chinchou.png"),
+    "Lanturn": require("../../assets/images/pokemon/0171-Lanturn.png"),
+    "Pichu": require("../../assets/images/pokemon/0172-Pichu.png"),
+    "Cleffa": require("../../assets/images/pokemon/0173-Cleffa.png"),
+    "Igglybuff": require("../../assets/images/pokemon/0174-Igglybuff.png"),
+    "Mareep": require("../../assets/images/pokemon/0179-Mareep.png"),
+    "Flaaffy": require("../../assets/images/pokemon/0180-Flaaffy.png"),
+    "Ampharos": require("../../assets/images/pokemon/0181-Ampharos.png"),
+    "Bellossom": require("../../assets/images/pokemon/0182-Bellossom.png"),
+    "Marill": require("../../assets/images/pokemon/0183-Marill.png"),
+    "Azumarill": require("../../assets/images/pokemon/0184-Azumarill.png"),
+    "Sudowoodo": require("../../assets/images/pokemon/0185-Sudowoodo.png"),
+    "Politoed": require("../../assets/images/pokemon/0186-Politoed.png"),
+    "Hoppip": require("../../assets/images/pokemon/0187-Hoppip.png"),
+    "Skiploom": require("../../assets/images/pokemon/0188-Skiploom.png"),
+    "Jumpluff": require("../../assets/images/pokemon/0189-Jumpluff.png"),
+    "Aipom": require("../../assets/images/pokemon/0190-Aipom.png"),
+    "Sunkern": require("../../assets/images/pokemon/0191-Sunkern.png"),
+    "Sunflora": require("../../assets/images/pokemon/0192-Sunflora.png"),
+    "Yanma": require("../../assets/images/pokemon/0193-Yanma.png"),
+    "Paldean Wooper": require("../../assets/images/pokemon/0194-Paldean Wooper.png"),
+    "Wooper": require("../../assets/images/pokemon/0194-Wooper.png"),
+    "Quagsire": require("../../assets/images/pokemon/0195-Quagsire.png"),
+    "Espeon": require("../../assets/images/pokemon/0196-Espeon.png"),
+    "Umbreon": require("../../assets/images/pokemon/0197-Umbreon.png"),
+    "Murkrow": require("../../assets/images/pokemon/0198-Murkrow.png"),
+    "Galarian Slowking": require("../../assets/images/pokemon/0199-Galarian Slowking.png"),
+    "Slowking": require("../../assets/images/pokemon/0199-Slowking.png"),
+    "Misdreavus": require("../../assets/images/pokemon/0200-Misdreavus.png"),
+    "Girafarig": require("../../assets/images/pokemon/0203-Girafarig.png"),
+    "Pineco": require("../../assets/images/pokemon/0204-Pineco.png"),
+    "Forretress": require("../../assets/images/pokemon/0205-Forretress.png"),
+    "Dunsparce": require("../../assets/images/pokemon/0206-Dunsparce.png"),
+    "Gligar": require("../../assets/images/pokemon/0207-Gligar.png"),
+    "Snubbull": require("../../assets/images/pokemon/0209-Snubbull.png"),
+    "Granbull": require("../../assets/images/pokemon/0210-Granbull.png"),
+    "Hisuian Qwilfish": require("../../assets/images/pokemon/0211-Hisuian Qwilfish.png"),
+    "Qwilfish": require("../../assets/images/pokemon/0211-Qwilfish.png"),
+    "Scizor": require("../../assets/images/pokemon/0212-Scizor.png"),
+    "Heracross": require("../../assets/images/pokemon/0214-Heracross.png"),
+    "Hisuian Sneasel": require("../../assets/images/pokemon/0215-Hisuian Sneasel.png"),
+    "Sneasel": require("../../assets/images/pokemon/0215-Sneasel.png"),
+    "Teddiursa": require("../../assets/images/pokemon/0216-Teddiursa.png"),
+    "Ursaring": require("../../assets/images/pokemon/0217-Ursaring.png"),
+    "Slugma": require("../../assets/images/pokemon/0218-Slugma.png"),
+    "Magcargo": require("../../assets/images/pokemon/0219-Magcargo.png"),
+    "Swinub": require("../../assets/images/pokemon/0220-Swinub.png"),
+    "Piloswine": require("../../assets/images/pokemon/0221-Piloswine.png"),
+    "Delibird": require("../../assets/images/pokemon/0225-Delibird.png"),
+    "Skarmory": require("../../assets/images/pokemon/0227-Skarmory.png"),
+    "Houndour": require("../../assets/images/pokemon/0228-Houndour.png"),
+    "Houndoom": require("../../assets/images/pokemon/0229-Houndoom.png"),
+    "Kingdra": require("../../assets/images/pokemon/0230-Kingdra.png"),
+    "Phanpy": require("../../assets/images/pokemon/0231-Phanpy.png"),
+    "Donphan": require("../../assets/images/pokemon/0232-Donphan.png"),
+    "Porygon2": require("../../assets/images/pokemon/0233-Porygon2.png"),
+    "Stantler": require("../../assets/images/pokemon/0234-Stantler.png"),
+    "Smeargle": require("../../assets/images/pokemon/0235-Smeargle.png"),
+    "Tyrogue": require("../../assets/images/pokemon/0236-Tyrogue.png"),
+    "Hitmontop": require("../../assets/images/pokemon/0237-Hitmontop.png"),
+    "Elekid": require("../../assets/images/pokemon/0239-Elekid.png"),
+    "Magby": require("../../assets/images/pokemon/0240-Magby.png"),
+    "Blissey": require("../../assets/images/pokemon/0242-Blissey.png"),
+    "Raikou": require("../../assets/images/pokemon/0243-Raikou.png"),
+    "Entei": require("../../assets/images/pokemon/0244-Entei.png"),
+    "Suicune": require("../../assets/images/pokemon/0245-Suicune.png"),
+    "Larvitar": require("../../assets/images/pokemon/0246-Larvitar.png"),
+    "Pupitar": require("../../assets/images/pokemon/0247-Pupitar.png"),
+    "Tyranitar": require("../../assets/images/pokemon/0248-Tyranitar.png"),
+    "Lugia": require("../../assets/images/pokemon/0249-Lugia.png"),
+    "Ho": require("../../assets/images/pokemon/0250-Ho-Oh.png"),
+    "Treecko": require("../../assets/images/pokemon/0252-Treecko.png"),
+    "Grovyle": require("../../assets/images/pokemon/0253-Grovyle.png"),
+    "Sceptile": require("../../assets/images/pokemon/0254-Sceptile.png"),
+    "Torchic": require("../../assets/images/pokemon/0255-Torchic.png"),
+    "Combusken": require("../../assets/images/pokemon/0256-Combusken.png"),
+    "Blaziken": require("../../assets/images/pokemon/0257-Blaziken.png"),
+    "Mudkip": require("../../assets/images/pokemon/0258-Mudkip.png"),
+    "Marshtomp": require("../../assets/images/pokemon/0259-Marshtomp.png"),
+    "Swampert": require("../../assets/images/pokemon/0260-Swampert.png"),
+    "Poochyena": require("../../assets/images/pokemon/0261-Poochyena.png"),
+    "Mightyena": require("../../assets/images/pokemon/0262-Mightyena.png"),
+    "Lotad": require("../../assets/images/pokemon/0270-Lotad.png"),
+    "Lombre": require("../../assets/images/pokemon/0271-Lombre.png"),
+    "Ludicolo": require("../../assets/images/pokemon/0272-Ludicolo.png"),
+    "Seedot": require("../../assets/images/pokemon/0273-Seedot.png"),
+    "Nuzleaf": require("../../assets/images/pokemon/0274-Nuzleaf.png"),
+    "Shiftry": require("../../assets/images/pokemon/0275-Shiftry.png"),
+    "Wingull": require("../../assets/images/pokemon/0278-Wingull.png"),
+    "Pelipper": require("../../assets/images/pokemon/0279-Pelipper.png"),
+    "Ralts": require("../../assets/images/pokemon/0280-Ralts.png"),
+    "Kirlia": require("../../assets/images/pokemon/0281-Kirlia.png"),
+    "Gardevoir": require("../../assets/images/pokemon/0282-Gardevoir.png"),
+    "Surskit": require("../../assets/images/pokemon/0283-Surskit.png"),
+    "Masquerain": require("../../assets/images/pokemon/0284-Masquerain.png"),
+    "Shroomish": require("../../assets/images/pokemon/0285-Shroomish.png"),
+    "Breloom": require("../../assets/images/pokemon/0286-Breloom.png"),
+    "Slakoth": require("../../assets/images/pokemon/0287-Slakoth.png"),
+    "Vigoroth": require("../../assets/images/pokemon/0288-Vigoroth.png"),
+    "Slaking": require("../../assets/images/pokemon/0289-Slaking.png"),
+    "Makuhita": require("../../assets/images/pokemon/0296-Makuhita.png"),
+    "Hariyama": require("../../assets/images/pokemon/0297-Hariyama.png"),
+    "Azurill": require("../../assets/images/pokemon/0298-Azurill.png"),
+    "Nosepass": require("../../assets/images/pokemon/0299-Nosepass.png"),
+    "Sableye": require("../../assets/images/pokemon/0302-Sableye.png"),
+    "Meditite": require("../../assets/images/pokemon/0307-Meditite.png"),
+    "Medicham": require("../../assets/images/pokemon/0308-Medicham.png"),
+    "Plusle": require("../../assets/images/pokemon/0311-Plusle.png"),
+    "Minun": require("../../assets/images/pokemon/0312-Minun.png"),
+    "Volbeat": require("../../assets/images/pokemon/0313-Volbeat.png"),
+    "Illumise": require("../../assets/images/pokemon/0314-Illumise.png"),
+    "Gulpin": require("../../assets/images/pokemon/0316-Gulpin.png"),
+    "Swalot": require("../../assets/images/pokemon/0317-Swalot.png"),
+    "Numel": require("../../assets/images/pokemon/0322-Numel.png"),
+    "Camerupt": require("../../assets/images/pokemon/0323-Camerupt.png"),
+    "Torkoal": require("../../assets/images/pokemon/0324-Torkoal.png"),
+    "Spoink": require("../../assets/images/pokemon/0325-Spoink.png"),
+    "Grumpig": require("../../assets/images/pokemon/0326-Grumpig.png"),
+    "Trapinch": require("../../assets/images/pokemon/0328-Trapinch.png"),
+    "Vibrava": require("../../assets/images/pokemon/0329-Vibrava.png"),
+    "Flygon": require("../../assets/images/pokemon/0330-Flygon.png"),
+    "Cacnea": require("../../assets/images/pokemon/0331-Cacnea.png"),
+    "Cacturne": require("../../assets/images/pokemon/0332-Cacturne.png"),
+    "Swablu": require("../../assets/images/pokemon/0333-Swablu.png"),
+    "Altaria": require("../../assets/images/pokemon/0334-Altaria.png"),
+    "Zangoose": require("../../assets/images/pokemon/0335-Zangoose.png"),
+    "Seviper": require("../../assets/images/pokemon/0336-Seviper.png"),
+    "Barboach": require("../../assets/images/pokemon/0339-Barboach.png"),
+    "Whiscash": require("../../assets/images/pokemon/0340-Whiscash.png"),
+    "Corphish": require("../../assets/images/pokemon/0341-Corphish.png"),
+    "Crawdaunt": require("../../assets/images/pokemon/0342-Crawdaunt.png"),
+    "Feebas": require("../../assets/images/pokemon/0349-Feebas.png"),
+    "Milotic": require("../../assets/images/pokemon/0350-Milotic.png"),
+    "Shuppet": require("../../assets/images/pokemon/0353-Shuppet.png"),
+    "Banette": require("../../assets/images/pokemon/0354-Banette.png"),
+    "Duskull": require("../../assets/images/pokemon/0355-Duskull.png"),
+    "Dusclops": require("../../assets/images/pokemon/0356-Dusclops.png"),
+    "Tropius": require("../../assets/images/pokemon/0357-Tropius.png"),
+    "Chimecho": require("../../assets/images/pokemon/0358-Chimecho.png"),
+    "Snorunt": require("../../assets/images/pokemon/0361-Snorunt.png"),
+    "Glalie": require("../../assets/images/pokemon/0362-Glalie.png"),
+    "Luvdisc": require("../../assets/images/pokemon/0370-Luvdisc.png"),
+    "Bagon": require("../../assets/images/pokemon/0371-Bagon.png"),
+    "Shelgon": require("../../assets/images/pokemon/0372-Shelgon.png"),
+    "Salamence": require("../../assets/images/pokemon/0373-Salamence.png"),
+    "Beldum": require("../../assets/images/pokemon/0374-Beldum.png"),
+    "Metang": require("../../assets/images/pokemon/0375-Metang.png"),
+    "Metagross": require("../../assets/images/pokemon/0376-Metagross.png"),
+    "Regirock": require("../../assets/images/pokemon/0377-Regirock.png"),
+    "Regice": require("../../assets/images/pokemon/0378-Regice.png"),
+    "Registeel": require("../../assets/images/pokemon/0379-Registeel.png"),
+    "Latias": require("../../assets/images/pokemon/0380-Latias.png"),
+    "Latios": require("../../assets/images/pokemon/0381-Latios.png"),
+    "Kyogre": require("../../assets/images/pokemon/0382-Kyogre.png"),
+    "Groudon": require("../../assets/images/pokemon/0383-Groudon.png"),
+    "Rayquaza": require("../../assets/images/pokemon/0384-Rayquaza.png"),
+    "Jirachi": require("../../assets/images/pokemon/0385-Jirachi.png"),
+    "Deoxys(Attack Forme)": require("../../assets/images/pokemon/0386-Deoxys(Attack Forme).png"),
+    "Deoxys(Defense Forme)": require("../../assets/images/pokemon/0386-Deoxys(Defense Forme).png"),
+    "Deoxys(Normal Forme)": require("../../assets/images/pokemon/0386-Deoxys(Normal Forme).png"),
+    "Deoxys(Speed Forme)": require("../../assets/images/pokemon/0386-Deoxys(Speed Forme).png"),
+    "Turtwig": require("../../assets/images/pokemon/0387-Turtwig.png"),
+    "Grotle": require("../../assets/images/pokemon/0388-Grotle.png"),
+    "Torterra": require("../../assets/images/pokemon/0389-Torterra.png"),
+    "Chimchar": require("../../assets/images/pokemon/0390-Chimchar.png"),
+    "Monferno": require("../../assets/images/pokemon/0391-Monferno.png"),
+    "Infernape": require("../../assets/images/pokemon/0392-Infernape.png"),
+    "Piplup": require("../../assets/images/pokemon/0393-Piplup.png"),
+    "Prinplup": require("../../assets/images/pokemon/0394-Prinplup.png"),
+    "Empoleon": require("../../assets/images/pokemon/0395-Empoleon.png"),
+    "Starly": require("../../assets/images/pokemon/0396-Starly.png"),
+    "Staravia": require("../../assets/images/pokemon/0397-Staravia.png"),
+    "Staraptor": require("../../assets/images/pokemon/0398-Staraptor.png"),
+    "Kricketot": require("../../assets/images/pokemon/0401-Kricketot.png"),
+    "Kricketune": require("../../assets/images/pokemon/0402-Kricketune.png"),
+    "Shinx": require("../../assets/images/pokemon/0403-Shinx.png"),
+    "Luxio": require("../../assets/images/pokemon/0404-Luxio.png"),
+    "Luxray": require("../../assets/images/pokemon/0405-Luxray.png"),
+    "Cranidos": require("../../assets/images/pokemon/0408-Cranidos.png"),
+    "Rampardos": require("../../assets/images/pokemon/0409-Rampardos.png"),
+    "Shieldon": require("../../assets/images/pokemon/0410-Shieldon.png"),
+    "Bastiodon": require("../../assets/images/pokemon/0411-Bastiodon.png"),
+    "Combee": require("../../assets/images/pokemon/0415-Combee.png"),
+    "Vespiquen": require("../../assets/images/pokemon/0416-Vespiquen.png"),
+    "Pachirisu": require("../../assets/images/pokemon/0417-Pachirisu.png"),
+    "Buizel": require("../../assets/images/pokemon/0418-Buizel.png"),
+    "Floatzel": require("../../assets/images/pokemon/0419-Floatzel.png"),
+    "Shellos": require("../../assets/images/pokemon/0422-Shellos(East Sea).png"),
+    "Shellos(West Sea)": require("../../assets/images/pokemon/0422-Shellos(West Sea).png"),
+    "Gastrodon(East Sea)": require("../../assets/images/pokemon/0423-Gastrodon(East Sea).png"),
+    "Gastrodon(West Sea)": require("../../assets/images/pokemon/0423-Gastrodon(West Sea).png"),
+    "Ambipom": require("../../assets/images/pokemon/0424-Ambipom.png"),
+    "Drifloon": require("../../assets/images/pokemon/0425-Drifloon.png"),
+    "Drifblim": require("../../assets/images/pokemon/0426-Drifblim.png"),
+    "Mismagius": require("../../assets/images/pokemon/0429-Mismagius.png"),
+    "Honchkrow": require("../../assets/images/pokemon/0430-Honchkrow.png"),
+    "Chingling": require("../../assets/images/pokemon/0433-Chingling.png"),
+    "Stunky": require("../../assets/images/pokemon/0434-Stunky.png"),
+    "Skuntank": require("../../assets/images/pokemon/0435-Skuntank.png"),
+    "Bronzor": require("../../assets/images/pokemon/0436-Bronzor.png"),
+    "Bronzong": require("../../assets/images/pokemon/0437-Bronzong.png"),
+    "Bonsly": require("../../assets/images/pokemon/0438-Bonsly.png"),
+    "Happiny": require("../../assets/images/pokemon/0440-Happiny.png"),
+    "Spiritomb": require("../../assets/images/pokemon/0442-Spiritomb.png"),
+    "Gible": require("../../assets/images/pokemon/0443-Gible.png"),
+    "Gabite": require("../../assets/images/pokemon/0444-Gabite.png"),
+    "Garchomp": require("../../assets/images/pokemon/0445-Garchomp.png"),
+    "Munchlax": require("../../assets/images/pokemon/0446-Munchlax.png"),
+    "Riolu": require("../../assets/images/pokemon/0447-Riolu.png"),
+    "Lucario": require("../../assets/images/pokemon/0448-Lucario.png"),
+    "Hippopotas": require("../../assets/images/pokemon/0449-Hippopotas.png"),
+    "Hippowdon": require("../../assets/images/pokemon/0450-Hippowdon.png"),
+    "Croagunk": require("../../assets/images/pokemon/0453-Croagunk.png"),
+    "Toxicroak": require("../../assets/images/pokemon/0454-Toxicroak.png"),
+    "Finneon": require("../../assets/images/pokemon/0456-Finneon.png"),
+    "Lumineon(Female)": require("../../assets/images/pokemon/0457-Lumineon(Female).png"),
+    "Lumineon(Male)": require("../../assets/images/pokemon/0457-Lumineon(Male).png"),
+    "Snover": require("../../assets/images/pokemon/0459-Snover.png"),
+    "Abomasnow": require("../../assets/images/pokemon/0460-Abomasnow.png"),
+    "Weavile": require("../../assets/images/pokemon/0461-Weavile.png"),
+    "Magnezone": require("../../assets/images/pokemon/0462-Magnezone.png"),
+    "Rhyperior": require("../../assets/images/pokemon/0464-Rhyperior.png"),
+    "Electivire": require("../../assets/images/pokemon/0466-Electivire.png"),
+    "Magmortar": require("../../assets/images/pokemon/0467-Magmortar.png"),
+    "Yanmega": require("../../assets/images/pokemon/0469-Yanmega.png"),
+    "Leafeon": require("../../assets/images/pokemon/0470-Leafeon.png"),
+    "Glaceon": require("../../assets/images/pokemon/0471-Glaceon.png"),
+    "Gliscor": require("../../assets/images/pokemon/0472-Gliscor.png"),
+    "Mamoswine": require("../../assets/images/pokemon/0473-Mamoswine.png"),
+    "Gallade": require("../../assets/images/pokemon/0475-Gallade.png"),
+    "Probopass": require("../../assets/images/pokemon/0476-Probopass.png"),
+    "Dusknoir": require("../../assets/images/pokemon/0477-Dusknoir.png"),
+    "Froslass": require("../../assets/images/pokemon/0478-Froslass.png"),
+    "Rotom(Fan)": require("../../assets/images/pokemon/0479-Rotom(Fan).png"),
+    "Rotom(Frost)": require("../../assets/images/pokemon/0479-Rotom(Frost).png"),
+    "Rotom(Heat)": require("../../assets/images/pokemon/0479-Rotom(Heat).png"),
+    "Rotom(Mow)": require("../../assets/images/pokemon/0479-Rotom(Mow).png"),
+    "Rotom(Wash)": require("../../assets/images/pokemon/0479-Rotom(Wash).png"),
+    "Rotom": require("../../assets/images/pokemon/0479-Rotom.png"),
+    "Uxie": require("../../assets/images/pokemon/0480-Uxie.png"),
+    "Mesprit": require("../../assets/images/pokemon/0481-Mesprit.png"),
+    "Azelf": require("../../assets/images/pokemon/0482-Azelf.png"),
+    "Dialga(Origin Forme)": require("../../assets/images/pokemon/0483-Dialga(Origin Forme).png"),
+    "Dialga": require("../../assets/images/pokemon/0483-Dialga.png"),
+    "Palkia(Origin Forme)": require("../../assets/images/pokemon/0484-Palkia(Origin Forme).png"),
+    "Palkia": require("../../assets/images/pokemon/0484-Palkia.png"),
+    "Heatran": require("../../assets/images/pokemon/0485-Heatran.png"),
+    "Regigigas": require("../../assets/images/pokemon/0486-Regigigas.png"),
+    "Giratina(Altered Forme)": require("../../assets/images/pokemon/0487-Giratina(Altered Forme).png"),
+    "Giratina(Origin Forme)": require("../../assets/images/pokemon/0487-Giratina(Origin Forme).png"),
+    "Cresselia": require("../../assets/images/pokemon/0488-Cresselia.png"),
+    "Phione": require("../../assets/images/pokemon/0489-Phione.png"),
+    "Manaphy": require("../../assets/images/pokemon/0490-Manaphy.png"),
+    "Darkrai": require("../../assets/images/pokemon/0491-Darkrai.png"),
+    "Shaymin(Land Forme)": require("../../assets/images/pokemon/0492-Shaymin(Land Forme).png"),
+    "Shaymin(Sky Forme)": require("../../assets/images/pokemon/0492-Shaymin(Sky Forme).png"),
+    "Arceus(Bug)": require("../../assets/images/pokemon/0493-Arceus(Bug).png"),
+    "Arceus(Dark)": require("../../assets/images/pokemon/0493-Arceus(Dark).png"),
+    "Arceus(Dragon)": require("../../assets/images/pokemon/0493-Arceus(Dragon).png"),
+    "Arceus(Electric)": require("../../assets/images/pokemon/0493-Arceus(Electric).png"),
+    "Arceus(Fairy)": require("../../assets/images/pokemon/0493-Arceus(Fairy).png"),
+    "Arceus(Fighting)": require("../../assets/images/pokemon/0493-Arceus(Fighting).png"),
+    "Arceus(Fire)": require("../../assets/images/pokemon/0493-Arceus(Fire).png"),
+    "Arceus(Flying)": require("../../assets/images/pokemon/0493-Arceus(Flying).png"),
+    "Arceus(Ghost)": require("../../assets/images/pokemon/0493-Arceus(Ghost).png"),
+    "Arceus(Grass)": require("../../assets/images/pokemon/0493-Arceus(Grass).png"),
+    "Arceus(Ground)": require("../../assets/images/pokemon/0493-Arceus(Ground).png"),
+    "Arceus(Ice)": require("../../assets/images/pokemon/0493-Arceus(Ice).png"),
+    "Arceus(Poison)": require("../../assets/images/pokemon/0493-Arceus(Poison).png"),
+    "Arceus(Psychic)": require("../../assets/images/pokemon/0493-Arceus(Psychic).png"),
+    "Arceus(Rock)": require("../../assets/images/pokemon/0493-Arceus(Rock).png"),
+    "Arceus(Steel)": require("../../assets/images/pokemon/0493-Arceus(Steel).png"),
+    "Arceus(Water)": require("../../assets/images/pokemon/0493-Arceus(Water).png"),
+    "Arceus": require("../../assets/images/pokemon/0493-Arceus.png"),
+    "Snivy": require("../../assets/images/pokemon/0495-Snivy.png"),
+    "Servine": require("../../assets/images/pokemon/0496-Servine.png"),
+    "Serperior": require("../../assets/images/pokemon/0497-Serperior.png"),
+    "Tepig": require("../../assets/images/pokemon/0498-Tepig.png"),
+    "Pignite": require("../../assets/images/pokemon/0499-Pignite.png"),
+    "Emboar": require("../../assets/images/pokemon/0500-Emboar.png"),
+    "Oshawott": require("../../assets/images/pokemon/0501-Oshawott.png"),
+    "Dewott": require("../../assets/images/pokemon/0502-Dewott.png"),
+    "Hisuian Samurott": require("../../assets/images/pokemon/0503-Hisuian Samurott.png"),
+    "Samurott": require("../../assets/images/pokemon/0503-Samurott.png"),
+    "Blitzle": require("../../assets/images/pokemon/0522-Blitzle.png"),
+    "Zebstrika": require("../../assets/images/pokemon/0523-Zebstrika.png"),
+    "Drilbur": require("../../assets/images/pokemon/0529-Drilbur.png"),
+    "Excadrill": require("../../assets/images/pokemon/0530-Excadrill.png"),
+    "Timburr": require("../../assets/images/pokemon/0532-Timburr.png"),
+    "Gurdurr": require("../../assets/images/pokemon/0533-Gurdurr.png"),
+    "Conkeldurr": require("../../assets/images/pokemon/0534-Conkeldurr.png"),
+    "Sewaddle": require("../../assets/images/pokemon/0540-Sewaddle.png"),
+    "Swadloon": require("../../assets/images/pokemon/0541-Swadloon.png"),
+    "Leavanny": require("../../assets/images/pokemon/0542-Leavanny.png"),
+    "Cottonee": require("../../assets/images/pokemon/0546-Cottonee.png"),
+    "Whimsicott": require("../../assets/images/pokemon/0547-Whimsicott.png"),
+    "Petilil": require("../../assets/images/pokemon/0548-Petilil.png"),
+    "Hisuian Lilligant": require("../../assets/images/pokemon/0549-Hisuian Lilligant.png"),
+    "Lilligant": require("../../assets/images/pokemon/0549-Lilligant.png"),
+    "Basculin(Blue-Striped Form)": require("../../assets/images/pokemon/0550-Basculin(Blue-Striped Form).png"),
+    "Basculin": require("../../assets/images/pokemon/0550-Basculin(Red-Striped Form).png"),
+    "Basculin(White-Striped Form)": require("../../assets/images/pokemon/0550-Basculin(White-Striped Form).png"),
+    "Sandile": require("../../assets/images/pokemon/0551-Sandile.png"),
+    "Krokorok": require("../../assets/images/pokemon/0552-Krokorok.png"),
+    "Krookodile": require("../../assets/images/pokemon/0553-Krookodile.png"),
+    "Scraggy": require("../../assets/images/pokemon/0559-Scraggy.png"),
+    "Scrafty": require("../../assets/images/pokemon/0560-Scrafty.png"),
+    "Hisuian Zorua": require("../../assets/images/pokemon/0570-Hisuian Zorua.png"),
+    "Zorua": require("../../assets/images/pokemon/0570-Zorua.png"),
+    "Hisuian Zoroark": require("../../assets/images/pokemon/0571-Hisuian Zoroark.png"),
+    "Zoroark": require("../../assets/images/pokemon/0571-Zoroark.png"),
+    "Minccino": require("../../assets/images/pokemon/0572-Minccino.png"),
+    "Cinccino": require("../../assets/images/pokemon/0573-Cinccino.png"),
+    "Gothita": require("../../assets/images/pokemon/0574-Gothita.png"),
+    "Gothorita": require("../../assets/images/pokemon/0575-Gothorita.png"),
+    "Gothitelle": require("../../assets/images/pokemon/0576-Gothitelle.png"),
+    "Solosis": require("../../assets/images/pokemon/0577-Solosis.png"),
+    "Duosion": require("../../assets/images/pokemon/0578-Duosion.png"),
+    "Reuniclus": require("../../assets/images/pokemon/0579-Reuniclus.png"),
+    "Ducklett": require("../../assets/images/pokemon/0580-Ducklett.png"),
+    "Swanna": require("../../assets/images/pokemon/0581-Swanna.png"),
+    "Deerling(Autumn Form)": require("../../assets/images/pokemon/0585-Deerling(Autumn Form).png"),
+    "Deerling": require("../../assets/images/pokemon/0585-Deerling(Spring Form).png"),
+    "Deerling(Summer Form)": require("../../assets/images/pokemon/0585-Deerling(Summer Form).png"),
+    "Deerling(Winter Form)": require("../../assets/images/pokemon/0585-Deerling(Winter Form).png"),
+    "Sawsbuck(Autumn Form)": require("../../assets/images/pokemon/0586-Sawsbuck(Autumn Form).png"),
+    "Sawsbuck(Spring Form)": require("../../assets/images/pokemon/0586-Sawsbuck(Spring Form).png"),
+    "Sawsbuck(Summer Form)": require("../../assets/images/pokemon/0586-Sawsbuck(Summer Form).png"),
+    "Sawsbuck(Winter Form)": require("../../assets/images/pokemon/0586-Sawsbuck(Winter Form).png"),
+    "Foongus": require("../../assets/images/pokemon/0590-Foongus.png"),
+    "Amoonguss": require("../../assets/images/pokemon/0591-Amoonguss.png"),
+    "Alomomola": require("../../assets/images/pokemon/0594-Alomomola.png"),
+    "Joltik": require("../../assets/images/pokemon/0595-Joltik.png"),
+    "Galvantula": require("../../assets/images/pokemon/0596-Galvantula.png"),
+    "Tynamo": require("../../assets/images/pokemon/0602-Tynamo.png"),
+    "Eelektrik": require("../../assets/images/pokemon/0603-Eelektrik.png"),
+    "Eelektross": require("../../assets/images/pokemon/0604-Eelektross.png"),
+    "Litwick": require("../../assets/images/pokemon/0607-Litwick.png"),
+    "Lampent": require("../../assets/images/pokemon/0608-Lampent.png"),
+    "Chandelure": require("../../assets/images/pokemon/0609-Chandelure.png"),
+    "Axew": require("../../assets/images/pokemon/0610-Axew.png"),
+    "Fraxure": require("../../assets/images/pokemon/0611-Fraxure.png"),
+    "Haxorus": require("../../assets/images/pokemon/0612-Haxorus.png"),
+    "Cubchoo": require("../../assets/images/pokemon/0613-Cubchoo.png"),
+    "Beartic": require("../../assets/images/pokemon/0614-Beartic.png"),
+    "Cryogonal": require("../../assets/images/pokemon/0615-Cryogonal.png"),
+    "Mienfoo": require("../../assets/images/pokemon/0619-Mienfoo.png"),
+    "Mienshao": require("../../assets/images/pokemon/0620-Mienshao.png"),
+    "Golett": require("../../assets/images/pokemon/0622-Golett.png"),
+    "Golurk": require("../../assets/images/pokemon/0623-Golurk.png"),
+    "Pawniard": require("../../assets/images/pokemon/0624-Pawniard.png"),
+    "Bisharp": require("../../assets/images/pokemon/0625-Bisharp.png"),
+    "Rufflet": require("../../assets/images/pokemon/0627-Rufflet.png"),
+    "Braviary": require("../../assets/images/pokemon/0628-Braviary.png"),
+    "Hisuian Braviary": require("../../assets/images/pokemon/0628-Hisuian Braviary.png"),
+    "Vullaby": require("../../assets/images/pokemon/0629-Vullaby.png"),
+    "Mandibuzz": require("../../assets/images/pokemon/0630-Mandibuzz.png"),
+    "Deino": require("../../assets/images/pokemon/0633-Deino.png"),
+    "Zweilous": require("../../assets/images/pokemon/0634-Zweilous.png"),
+    "Hydreigon": require("../../assets/images/pokemon/0635-Hydreigon.png"),
+    "Larvesta": require("../../assets/images/pokemon/0636-Larvesta.png"),
+    "Volcarona": require("../../assets/images/pokemon/0637-Volcarona.png"),
+    "Cobalion": require("../../assets/images/pokemon/0638-Cobalion.png"),
+    "Terrakion": require("../../assets/images/pokemon/0639-Terrakion.png"),
+    "Virizion": require("../../assets/images/pokemon/0640-Virizion.png"),
+    "Tornadus(Incarnate Forme)": require("../../assets/images/pokemon/0641-Tornadus(Incarnate Forme).png"),
+    "Tornadus(Therian Forme)": require("../../assets/images/pokemon/0641-Tornadus(Therian Forme).png"),
+    "Thundurus(Incarnate Forme)": require("../../assets/images/pokemon/0642-Thundurus(Incarnate Forme).png"),
+    "Thundurus(Therian Forme)": require("../../assets/images/pokemon/0642-Thundurus(Therian Forme).png"),
+    "Reshiram": require("../../assets/images/pokemon/0643-Reshiram.png"),
+    "Zekrom": require("../../assets/images/pokemon/0644-Zekrom.png"),
+    "Landorus(Incarnate Forme)": require("../../assets/images/pokemon/0645-Landorus(Incarnate Forme).png"),
+    "Landorus(Therian Forme)": require("../../assets/images/pokemon/0645-Landorus(Therian Forme).png"),
+    "Kyurem(Black)": require("../../assets/images/pokemon/0646-Kyurem(Black).png"),
+    "Kyurem(White)": require("../../assets/images/pokemon/0646-Kyurem(White).png"),
+    "Kyurem": require("../../assets/images/pokemon/0646-Kyurem.png"),
+    "Keldeo(Ordinary Form)": require("../../assets/images/pokemon/0647-Keldeo(Ordinary Form).png"),
+    "Keldeo(Resolute Form)": require("../../assets/images/pokemon/0647-Keldeo(Resolute Form).png"),
+    "Meloetta(Aria Forme)": require("../../assets/images/pokemon/0648-Meloetta(Aria Forme).png"),
+    "Meloetta(Pirouette Forme)": require("../../assets/images/pokemon/0648-Meloetta(Pirouette Forme).png"),
+    "Chespin": require("../../assets/images/pokemon/0650-Chespin.png"),
+    "Quilladin": require("../../assets/images/pokemon/0651-Quilladin.png"),
+    "Chesnaught": require("../../assets/images/pokemon/0652-Chesnaught.png"),
+    "Fennekin": require("../../assets/images/pokemon/0653-Fennekin.png"),
+    "Braixen": require("../../assets/images/pokemon/0654-Braixen.png"),
+    "Delphox": require("../../assets/images/pokemon/0655-Delphox.png"),
+    "Froakie": require("../../assets/images/pokemon/0656-Froakie.png"),
+    "Frogadier": require("../../assets/images/pokemon/0657-Frogadier.png"),
+    "Greninja": require("../../assets/images/pokemon/0658-Greninja.png"),
+    "Fletchling": require("../../assets/images/pokemon/0661-Fletchling.png"),
+    "Fletchinder": require("../../assets/images/pokemon/0662-Fletchinder.png"),
+    "Talonflame": require("../../assets/images/pokemon/0663-Talonflame.png"),
+    "Scatterbug": require("../../assets/images/pokemon/0664-Scatterbug.png"),
+    "Spewpa": require("../../assets/images/pokemon/0665-Spewpa.png"),
+    "Vivillon(Archipelago)": require("../../assets/images/pokemon/0666-Vivillon(Archipelago).png"),
+    "Vivillon(Continental)": require("../../assets/images/pokemon/0666-Vivillon(Continental).png"),
+    "Vivillon(Elegant)": require("../../assets/images/pokemon/0666-Vivillon(Elegant).png"),
+    "Vivillon(Fancy)": require("../../assets/images/pokemon/0666-Vivillon(Fancy).png"),
+    "Vivillon(Garden)": require("../../assets/images/pokemon/0666-Vivillon(Garden).png"),
+    "Vivillon(High Plains)": require("../../assets/images/pokemon/0666-Vivillon(High Plains).png"),
+    "Vivillon(Icy Snow)": require("../../assets/images/pokemon/0666-Vivillon(Icy Snow).png"),
+    "Vivillon(Jungle)": require("../../assets/images/pokemon/0666-Vivillon(Jungle).png"),
+    "Vivillon(Marine)": require("../../assets/images/pokemon/0666-Vivillon(Marine).png"),
+    "Vivillon(Meadow)": require("../../assets/images/pokemon/0666-Vivillon(Meadow).png"),
+    "Vivillon(Modern)": require("../../assets/images/pokemon/0666-Vivillon(Modern).png"),
+    "Vivillon(Monsoon)": require("../../assets/images/pokemon/0666-Vivillon(Monsoon).png"),
+    "Vivillon(Ocean)": require("../../assets/images/pokemon/0666-Vivillon(Ocean).png"),
+    "Vivillon(Poke Ball)": require("../../assets/images/pokemon/0666-Vivillon(Poke Ball).png"),
+    "Vivillon(Polar)": require("../../assets/images/pokemon/0666-Vivillon(Polar).png"),
+    "Vivillon(River)": require("../../assets/images/pokemon/0666-Vivillon(River).png"),
+    "Vivillon(Sandstorm)": require("../../assets/images/pokemon/0666-Vivillon(Sandstorm).png"),
+    "Vivillon(Savanna)": require("../../assets/images/pokemon/0666-Vivillon(Savanna).png"),
+    "Vivillon(Sun)": require("../../assets/images/pokemon/0666-Vivillon(Sun).png"),
+    "Vivillon(Tundra)": require("../../assets/images/pokemon/0666-Vivillon(Tundra).png"),
+    "Litleo": require("../../assets/images/pokemon/0667-Litleo.png"),
+    "Pyroar(Female)": require("../../assets/images/pokemon/0668-Pyroar(Female).png"),
+    "Pyroar(Male)": require("../../assets/images/pokemon/0668-Pyroar(Male).png"),
+    "Flabébé(Blue Flower)": require("../../assets/images/pokemon/0669-Flabébé(Blue Flower).png"),
+    "Flabébé(Orange Flower)": require("../../assets/images/pokemon/0669-Flabébé(Orange Flower).png"),
+    "Flabébé": require("../../assets/images/pokemon/0669-Flabébé(Red Flower).png"),
+    "Flabébé(White Flower)": require("../../assets/images/pokemon/0669-Flabébé(White Flower).png"),
+    "Flabébé(Yellow Flower)": require("../../assets/images/pokemon/0669-Flabébé(Yellow Flower).png"),
+    "Floette(Blue Flower)": require("../../assets/images/pokemon/0670-Floette(Blue Flower).png"),
+    "Floette(Orange Flower)": require("../../assets/images/pokemon/0670-Floette(Orange Flower).png"),
+    "Floette(Red Flower)": require("../../assets/images/pokemon/0670-Floette(Red Flower).png"),
+    "Floette(White Flower)": require("../../assets/images/pokemon/0670-Floette(White Flower).png"),
+    "Floette(Yellow Flower)": require("../../assets/images/pokemon/0670-Floette(Yellow Flower).png"),
+    "Florges(Blue Flower)": require("../../assets/images/pokemon/0671-Florges(Blue Flower).png"),
+    "Florges(Orange Flower)": require("../../assets/images/pokemon/0671-Florges(Orange Flower).png"),
+    "Florges(Red Flower)": require("../../assets/images/pokemon/0671-Florges(Red Flower).png"),
+    "Florges(White Flower)": require("../../assets/images/pokemon/0671-Florges(White Flower).png"),
+    "Florges(Yellow Flower)": require("../../assets/images/pokemon/0671-Florges(Yellow Flower).png"),
+    "Skiddo": require("../../assets/images/pokemon/0672-Skiddo.png"),
+    "Gogoat": require("../../assets/images/pokemon/0673-Gogoat.png"),
+    "Espurr": require("../../assets/images/pokemon/0677-Espurr.png"),
+    "Meowstic(Female)": require("../../assets/images/pokemon/0678-Meowstic(Female).png"),
+    "Meowstic(Male)": require("../../assets/images/pokemon/0678-Meowstic(Male).png"),
+    "Inkay": require("../../assets/images/pokemon/0686-Inkay.png"),
+    "Malamar": require("../../assets/images/pokemon/0687-Malamar.png"),
+    "Skrelp": require("../../assets/images/pokemon/0690-Skrelp.png"),
+    "Dragalge": require("../../assets/images/pokemon/0691-Dragalge.png"),
+    "Clauncher": require("../../assets/images/pokemon/0692-Clauncher.png"),
+    "Clawitzer": require("../../assets/images/pokemon/0693-Clawitzer.png"),
+    "Sylveon": require("../../assets/images/pokemon/0700-Sylveon.png"),
+    "Hawlucha": require("../../assets/images/pokemon/0701-Hawlucha.png"),
+    "Dedenne": require("../../assets/images/pokemon/0702-Dedenne.png"),
+    "Carbink": require("../../assets/images/pokemon/0703-Carbink.png"),
+    "Goomy": require("../../assets/images/pokemon/0704-Goomy.png"),
+    "Hisuian Sliggoo": require("../../assets/images/pokemon/0705-Hisuian Sliggoo.png"),
+    "Sliggoo": require("../../assets/images/pokemon/0705-Sliggoo.png"),
+    "Goodra": require("../../assets/images/pokemon/0706-Goodra.png"),
+    "Hisuian Goodra": require("../../assets/images/pokemon/0706-Hisuian Goodra.png"),
+    "Klefki": require("../../assets/images/pokemon/0707-Klefki.png"),
+    "Phantump": require("../../assets/images/pokemon/0708-Phantump.png"),
+    "Trevenant": require("../../assets/images/pokemon/0709-Trevenant.png"),
+    "Bergmite": require("../../assets/images/pokemon/0712-Bergmite.png"),
+    "Avalugg": require("../../assets/images/pokemon/0713-Avalugg.png"),
+    "Hisuian Avalugg": require("../../assets/images/pokemon/0713-Hisuian Avalugg.png"),
+    "Noibat": require("../../assets/images/pokemon/0714-Noibat.png"),
+    "Noivern": require("../../assets/images/pokemon/0715-Noivern.png"),
+    "Diancie": require("../../assets/images/pokemon/0719-Diancie.png"),
+    "Hoopa(Confined)": require("../../assets/images/pokemon/0720-Hoopa(Confined).png"),
+    "Hoopa(Unbound)": require("../../assets/images/pokemon/0720-Hoopa(Unbound).png"),
+    "Volcanion": require("../../assets/images/pokemon/0721-Volcanion.png"),
+    "Rowlet": require("../../assets/images/pokemon/0722-Rowlet.png"),
+    "Dartrix": require("../../assets/images/pokemon/0723-Dartrix.png"),
+    "Decidueye": require("../../assets/images/pokemon/0724-Decidueye.png"),
+    "Hisuian Decidueye": require("../../assets/images/pokemon/0724-Hisuian Decidueye.png"),
+    "Litten": require("../../assets/images/pokemon/0725-Litten.png"),
+    "Torracat": require("../../assets/images/pokemon/0726-Torracat.png"),
+    "Incineroar": require("../../assets/images/pokemon/0727-Incineroar.png"),
+    "Popplio": require("../../assets/images/pokemon/0728-Popplio.png"),
+    "Brionne": require("../../assets/images/pokemon/0729-Brionne.png"),
+    "Primarina": require("../../assets/images/pokemon/0730-Primarina.png"),
+    "Pikipek": require("../../assets/images/pokemon/0731-Pikipek.png"),
+    "Trumbeak": require("../../assets/images/pokemon/0732-Trumbeak.png"),
+    "Toucannon": require("../../assets/images/pokemon/0733-Toucannon.png"),
+    "Yungoos": require("../../assets/images/pokemon/0734-Yungoos.png"),
+    "Gumshoos": require("../../assets/images/pokemon/0735-Gumshoos.png"),
+    "Grubbin": require("../../assets/images/pokemon/0736-Grubbin.png"),
+    "Charjabug": require("../../assets/images/pokemon/0737-Charjabug.png"),
+    "Vikavolt": require("../../assets/images/pokemon/0738-Vikavolt.png"),
+    "Crabrawler": require("../../assets/images/pokemon/0739-Crabrawler.png"),
+    "Crabominable": require("../../assets/images/pokemon/0740-Crabominable.png"),
+    "Oricorio(Baile Style)": require("../../assets/images/pokemon/0741-Oricorio(Baile Style).png"),
+    "Oricorio(Pa'U Style)": require("../../assets/images/pokemon/0741-Oricorio(Pa'U Style).png"),
+    "Oricorio": require("../../assets/images/pokemon/0741-Oricorio(Pom-Pom Style).png"),
+    "Oricorio(Sensu Style)": require("../../assets/images/pokemon/0741-Oricorio(Sensu Style).png"),
+    "Cutiefly": require("../../assets/images/pokemon/0742-Cutiefly.png"),
+    "Ribombee": require("../../assets/images/pokemon/0743-Ribombee.png"),
+    "Rockruff": require("../../assets/images/pokemon/0744-Rockruff.png"),
+    "Lycanroc(Dusk Form)": require("../../assets/images/pokemon/0745-Lycanroc(Dusk Form).png"),
+    "Lycanroc(Midday Form)": require("../../assets/images/pokemon/0745-Lycanroc(Midday Form).png"),
+    "Lycanroc(Midnight Form)": require("../../assets/images/pokemon/0745-Lycanroc(Midnight Form).png"),
+    "Mareanie": require("../../assets/images/pokemon/0747-Mareanie.png"),
+    "Toxapex": require("../../assets/images/pokemon/0748-Toxapex.png"),
+    "Mudbray": require("../../assets/images/pokemon/0749-Mudbray.png"),
+    "Mudsdale": require("../../assets/images/pokemon/0750-Mudsdale.png"),
+    "Dewpider": require("../../assets/images/pokemon/0751-Dewpider.png"),
+    "Araquanid": require("../../assets/images/pokemon/0752-Araquanid.png"),
+    "Fomantis": require("../../assets/images/pokemon/0753-Fomantis.png"),
+    "Lurantis": require("../../assets/images/pokemon/0754-Lurantis.png"),
+    "Salandit": require("../../assets/images/pokemon/0757-Salandit.png"),
+    "Salazzle": require("../../assets/images/pokemon/0758-Salazzle.png"),
+    "Bounsweet": require("../../assets/images/pokemon/0761-Bounsweet.png"),
+    "Steenee": require("../../assets/images/pokemon/0762-Steenee.png"),
+    "Tsareena": require("../../assets/images/pokemon/0763-Tsareena.png"),
+    "Comfey": require("../../assets/images/pokemon/0764-Comfey.png"),
+    "Oranguru": require("../../assets/images/pokemon/0765-Oranguru.png"),
+    "Passimian": require("../../assets/images/pokemon/0766-Passimian.png"),
+    "Sandygast": require("../../assets/images/pokemon/0769-Sandygast.png"),
+    "Palossand": require("../../assets/images/pokemon/0770-Palossand.png"),
+    "Minior(Blue Core)": require("../../assets/images/pokemon/0774-Minior(Blue Core).png"),
+    "Minior(Green Core)": require("../../assets/images/pokemon/0774-Minior(Green Core).png"),
+    "Minior(Indigo Core)": require("../../assets/images/pokemon/0774-Minior(Indigo Core).png"),
+    "Minior": require("../../assets/images/pokemon/0774-Minior(Meteor Form).png"),
+    "Minior(Orange Core)": require("../../assets/images/pokemon/0774-Minior(Orange Core).png"),
+    "Minior(Red Core)": require("../../assets/images/pokemon/0774-Minior(Red Core).png"),
+    "Minior(Violet Core)": require("../../assets/images/pokemon/0774-Minior(Violet Core).png"),
+    "Minior(Yellow Core)": require("../../assets/images/pokemon/0774-Minior(Yellow Core).png"),
+    "Komala": require("../../assets/images/pokemon/0775-Komala.png"),
+    "Mimikyu": require("../../assets/images/pokemon/0778-Mimikyu.png"),
+    "Bruxish": require("../../assets/images/pokemon/0779-Bruxish.png"),
+    "Jangmo": require("../../assets/images/pokemon/0782-Jangmo-o.png"),
+    "Hakamo": require("../../assets/images/pokemon/0783-Hakamo-o.png"),
+    "Kommo": require("../../assets/images/pokemon/0784-Kommo-o.png"),
+    "Cosmog": require("../../assets/images/pokemon/0789-Cosmog.png"),
+    "Cosmoem": require("../../assets/images/pokemon/0790-Cosmoem.png"),
+    "Solgaleo": require("../../assets/images/pokemon/0791-Solgaleo.png"),
+    "Lunala": require("../../assets/images/pokemon/0792-Lunala.png"),
+    "Necrozma(Dawn Wings)": require("../../assets/images/pokemon/0800-Necrozma(Dawn Wings).png"),
+    "Necrozma(Dusk Mane)": require("../../assets/images/pokemon/0800-Necrozma(Dusk Mane).png"),
+    "Necrozma": require("../../assets/images/pokemon/0800-Necrozma.png"),
+    "Magearna(Original Color)": require("../../assets/images/pokemon/0801-Magearna(Original Color).png"),
+    "Magearna": require("../../assets/images/pokemon/0801-Magearna.png"),
+    "Grookey": require("../../assets/images/pokemon/0810-Grookey.png"),
+    "Thwackey": require("../../assets/images/pokemon/0811-Thwackey.png"),
+    "Rillaboom": require("../../assets/images/pokemon/0812-Rillaboom.png"),
+    "Scorbunny": require("../../assets/images/pokemon/0813-Scorbunny.png"),
+    "Raboot": require("../../assets/images/pokemon/0814-Raboot.png"),
+    "Cinderace": require("../../assets/images/pokemon/0815-Cinderace.png"),
+    "Sobble": require("../../assets/images/pokemon/0816-Sobble.png"),
+    "Drizzile": require("../../assets/images/pokemon/0817-Drizzile.png"),
+    "Inteleon": require("../../assets/images/pokemon/0818-Inteleon.png"),
+    "Skwovet": require("../../assets/images/pokemon/0819-Skwovet.png"),
+    "Greedent": require("../../assets/images/pokemon/0820-Greedent.png"),
+    "Rookidee": require("../../assets/images/pokemon/0821-Rookidee.png"),
+    "Corvisquire": require("../../assets/images/pokemon/0822-Corvisquire.png"),
+    "Corviknight": require("../../assets/images/pokemon/0823-Corviknight.png"),
+    "Chewtle": require("../../assets/images/pokemon/0833-Chewtle.png"),
+    "Drednaw": require("../../assets/images/pokemon/0834-Drednaw.png"),
+    "Rolycoly": require("../../assets/images/pokemon/0837-Rolycoly.png"),
+    "Carkol": require("../../assets/images/pokemon/0838-Carkol.png"),
+    "Coalossal": require("../../assets/images/pokemon/0839-Coalossal.png"),
+    "Applin": require("../../assets/images/pokemon/0840-Applin.png"),
+    "Flapple": require("../../assets/images/pokemon/0841-Flapple.png"),
+    "Appletun": require("../../assets/images/pokemon/0842-Appletun.png"),
+    "Silicobra": require("../../assets/images/pokemon/0843-Silicobra.png"),
+    "Sandaconda": require("../../assets/images/pokemon/0844-Sandaconda.png"),
+    "Cramorant(Gorging Form)": require("../../assets/images/pokemon/0845-Cramorant(Gorging Form).png"),
+    "Cramorant(Gulping Form)": require("../../assets/images/pokemon/0845-Cramorant(Gulping Form).png"),
+    "Cramorant": require("../../assets/images/pokemon/0845-Cramorant.png"),
+    "Arrokuda": require("../../assets/images/pokemon/0846-Arrokuda.png"),
+    "Barraskewda": require("../../assets/images/pokemon/0847-Barraskewda.png"),
+    "Toxel": require("../../assets/images/pokemon/0848-Toxel.png"),
+    "Toxtricity(Amped Form)": require("../../assets/images/pokemon/0849-Toxtricity(Amped Form).png"),
+    "Toxtricity(Low Key Form)": require("../../assets/images/pokemon/0849-Toxtricity(Low Key Form).png"),
+    "Sinistea": require("../../assets/images/pokemon/0854-Sinistea.png"),
+    "Polteageist": require("../../assets/images/pokemon/0855-Polteageist.png"),
+    "Hatenna": require("../../assets/images/pokemon/0856-Hatenna.png"),
+    "Hattrem": require("../../assets/images/pokemon/0857-Hattrem.png"),
+    "Hatterene": require("../../assets/images/pokemon/0858-Hatterene.png"),
+    "Impidimp": require("../../assets/images/pokemon/0859-Impidimp.png"),
+    "Morgrem": require("../../assets/images/pokemon/0860-Morgrem.png"),
+    "Grimmsnarl": require("../../assets/images/pokemon/0861-Grimmsnarl.png"),
+    "Galarian Perrserker": require("../../assets/images/pokemon/0863-Galarian Perrserker.png"),
+    "Milcery": require("../../assets/images/pokemon/0868-Milcery.png"),
+    "Alcremie(Caramel Swirl)": require("../../assets/images/pokemon/0869-Alcremie(Caramel Swirl).png"),
+    "Alcremie(Lemon Cream)": require("../../assets/images/pokemon/0869-Alcremie(Lemon Cream).png"),
+    "Alcremie(Matcha Cream)": require("../../assets/images/pokemon/0869-Alcremie(Matcha Cream).png"),
+    "Alcremie(Mint Cream)": require("../../assets/images/pokemon/0869-Alcremie(Mint Cream).png"),
+    "Alcremie(Rainbow Swirl)": require("../../assets/images/pokemon/0869-Alcremie(Rainbow Swirl).png"),
+    "Alcremie(Ruby Cream)": require("../../assets/images/pokemon/0869-Alcremie(Ruby Cream).png"),
+    "Alcremie(Ruby Swirl)": require("../../assets/images/pokemon/0869-Alcremie(Ruby Swirl).png"),
+    "Alcremie(Salted Cream)": require("../../assets/images/pokemon/0869-Alcremie(Salted Cream).png"),
+    "Alcremie(Vanilla Cream)": require("../../assets/images/pokemon/0869-Alcremie(Vanilla Cream).png"),
+    "Falinks": require("../../assets/images/pokemon/0870-Falinks.png"),
+    "Pincurchin": require("../../assets/images/pokemon/0871-Pincurchin.png"),
+    "Snom": require("../../assets/images/pokemon/0872-Snom.png"),
+    "Frosmoth": require("../../assets/images/pokemon/0873-Frosmoth.png"),
+    "Stonjourner": require("../../assets/images/pokemon/0874-Stonjourner.png"),
+    "Eiscue(Ice)": require("../../assets/images/pokemon/0875-Eiscue(Ice).png"),
+    "Eiscue(Noice)": require("../../assets/images/pokemon/0875-Eiscue(Noice).png"),
+    "Indeedee(Female)": require("../../assets/images/pokemon/0876-Indeedee(Female).png"),
+    "Indeedee(Male)": require("../../assets/images/pokemon/0876-Indeedee(Male).png"),
+    "Morpeko(Full Belly Mode)": require("../../assets/images/pokemon/0877-Morpeko(Full Belly Mode).png"),
+    "Morpeko(Hangry Mode)": require("../../assets/images/pokemon/0877-Morpeko(Hangry Mode).png"),
+    "Cufant": require("../../assets/images/pokemon/0878-Cufant.png"),
+    "Copperajah": require("../../assets/images/pokemon/0879-Copperajah.png"),
+    "Duraludon": require("../../assets/images/pokemon/0884-Duraludon.png"),
+    "Dreepy": require("../../assets/images/pokemon/0885-Dreepy.png"),
+    "Drakloak": require("../../assets/images/pokemon/0886-Drakloak.png"),
+    "Dragapult": require("../../assets/images/pokemon/0887-Dragapult.png"),
+    "Zacian(Crowned Sword)": require("../../assets/images/pokemon/0888-Zacian(Crowned Sword).png"),
+    "Zacian(Hero of Many Battles)": require("../../assets/images/pokemon/0888-Zacian(Hero of Many Battles).png"),
+    "Zamazenta(Crowned Shield)": require("../../assets/images/pokemon/0889-Zamazenta(Crowned Shield).png"),
+    "Zamazenta(Hero of Many Battles)": require("../../assets/images/pokemon/0889-Zamazenta(Hero of Many Battles).png"),
+    "Eternatus": require("../../assets/images/pokemon/0890-Eternatus.png"),
+    "Kubfu": require("../../assets/images/pokemon/0891-Kubfu.png"),
+    "Urshifu": require("../../assets/images/pokemon/0892-Urshifu.png"),
+    "Zarude(Dada)": require("../../assets/images/pokemon/0893-Zarude(Dada).png"),
+    "Zarude": require("../../assets/images/pokemon/0893-Zarude.png"),
+    "Regieleki": require("../../assets/images/pokemon/0894-Regieleki.png"),
+    "Regidrago": require("../../assets/images/pokemon/0895-Regidrago.png"),
+    "Glastrier": require("../../assets/images/pokemon/0896-Glastrier.png"),
+    "Spectrier": require("../../assets/images/pokemon/0897-Spectrier.png"),
+    "Calyrex(Ice Rider)": require("../../assets/images/pokemon/0898-Calyrex(Ice Rider).png"),
+    "Calyrex(Shadow Rider)": require("../../assets/images/pokemon/0898-Calyrex(Shadow Rider).png"),
+    "Calyrex": require("../../assets/images/pokemon/0898-Calyrex.png"),
+    "Wyrdeer": require("../../assets/images/pokemon/0899-Wyrdeer.png"),
+    "Kleavor": require("../../assets/images/pokemon/0900-Kleavor.png"),
+    "Ursaluna(Bloodmoon)": require("../../assets/images/pokemon/0901-Ursaluna(Bloodmoon).png"),
+    "Ursaluna": require("../../assets/images/pokemon/0901-Ursaluna.png"),
+    "Basculegion(Female)": require("../../assets/images/pokemon/0902-Basculegion(Female).png"),
+    "Basculegion(Male)": require("../../assets/images/pokemon/0902-Basculegion(Male).png"),
+    "Sneasler": require("../../assets/images/pokemon/0903-Sneasler.png"),
+    "Overqwil": require("../../assets/images/pokemon/0904-Overqwil.png"),
+    "Enamorus(Incarnate Forme)": require("../../assets/images/pokemon/0905-Enamorus(Incarnate Forme).png"),
+    "Enamorus(Therian Forme)": require("../../assets/images/pokemon/0905-Enamorus(Therian Forme).png"),
+    "Sprigatito": require("../../assets/images/pokemon/0906-Sprigatito.png"),
+    "Floragato": require("../../assets/images/pokemon/0907-Floragato.png"),
+    "Meowscarada": require("../../assets/images/pokemon/0908-Meowscarada.png"),
+    "Fuecoco": require("../../assets/images/pokemon/0909-Fuecoco.png"),
+    "Crocalor": require("../../assets/images/pokemon/0910-Crocalor.png"),
+    "Skeledirge": require("../../assets/images/pokemon/0911-Skeledirge.png"),
+    "Quaxly": require("../../assets/images/pokemon/0912-Quaxly.png"),
+    "Quaxwell": require("../../assets/images/pokemon/0913-Quaxwell.png"),
+    "Quaquaval": require("../../assets/images/pokemon/0914-Quaquaval.png"),
+    "Lechonk": require("../../assets/images/pokemon/0915-Lechonk.png"),
+    "Oinkologne(Female)": require("../../assets/images/pokemon/0916-Oinkologne(Female).png"),
+    "Oinkologne(Male)": require("../../assets/images/pokemon/0916-Oinkologne(Male).png"),
+    "Tarountula": require("../../assets/images/pokemon/0917-Tarountula.png"),
+    "Spidops": require("../../assets/images/pokemon/0918-Spidops.png"),
+    "Nymble": require("../../assets/images/pokemon/0919-Nymble.png"),
+    "Lokix": require("../../assets/images/pokemon/0920-Lokix.png"),
+    "Pawmi": require("../../assets/images/pokemon/0921-Pawmi.png"),
+    "Pawmo": require("../../assets/images/pokemon/0922-Pawmo.png"),
+    "Pawmot": require("../../assets/images/pokemon/0923-Pawmot.png"),
+    "Tandemaus": require("../../assets/images/pokemon/0924-Tandemaus.png"),
+    "Maushold(Family of Four)": require("../../assets/images/pokemon/0925-Maushold(Family of Four).png"),
+    "Maushold(Family of Three)": require("../../assets/images/pokemon/0925-Maushold(Family of Three).png"),
+    "Fidough": require("../../assets/images/pokemon/0926-Fidough.png"),
+    "Dachsbun": require("../../assets/images/pokemon/0927-Dachsbun.png"),
+    "Smoliv": require("../../assets/images/pokemon/0928-Smoliv.png"),
+    "Dolliv": require("../../assets/images/pokemon/0929-Dolliv.png"),
+    "Arboliva": require("../../assets/images/pokemon/0930-Arboliva.png"),
+    "Squawkabilly(Blue Plumage)": require("../../assets/images/pokemon/0931-Squawkabilly(Blue Plumage).png"),
+    "Squawkabilly": require("../../assets/images/pokemon/0931-Squawkabilly(Green Plumage).png"),
+    "Squawkabilly(White Plumage)": require("../../assets/images/pokemon/0931-Squawkabilly(White Plumage).png"),
+    "Squawkabilly(Yellow Plumage)": require("../../assets/images/pokemon/0931-Squawkabilly(Yellow Plumage).png"),
+    "Nacli": require("../../assets/images/pokemon/0932-Nacli.png"),
+    "Naclstack": require("../../assets/images/pokemon/0933-Naclstack.png"),
+    "Garganacl": require("../../assets/images/pokemon/0934-Garganacl.png"),
+    "Charcadet": require("../../assets/images/pokemon/0935-Charcadet.png"),
+    "Armarouge": require("../../assets/images/pokemon/0936-Armarouge.png"),
+    "Ceruledge": require("../../assets/images/pokemon/0937-Ceruledge.png"),
+    "Tadbulb": require("../../assets/images/pokemon/0938-Tadbulb.png"),
+    "Bellibolt": require("../../assets/images/pokemon/0939-Bellibolt.png"),
+    "Wattrel": require("../../assets/images/pokemon/0940-Wattrel.png"),
+    "Kilowattrel": require("../../assets/images/pokemon/0941-Kilowattrel.png"),
+    "Maschiff": require("../../assets/images/pokemon/0942-Maschiff.png"),
+    "Mabosstiff": require("../../assets/images/pokemon/0943-Mabosstiff.png"),
+    "Shroodle": require("../../assets/images/pokemon/0944-Shroodle.png"),
+    "Grafaiai": require("../../assets/images/pokemon/0945-Grafaiai.png"),
+    "Bramblin": require("../../assets/images/pokemon/0946-Bramblin.png"),
+    "Brambleghast": require("../../assets/images/pokemon/0947-Brambleghast.png"),
+    "Toedscool": require("../../assets/images/pokemon/0948-Toedscool.png"),
+    "Toedscruel": require("../../assets/images/pokemon/0949-Toedscruel.png"),
+    "Klawf": require("../../assets/images/pokemon/0950-Klawf.png"),
+    "Capsakid": require("../../assets/images/pokemon/0951-Capsakid.png"),
+    "Scovillain": require("../../assets/images/pokemon/0952-Scovillain.png"),
+    "Rellor": require("../../assets/images/pokemon/0953-Rellor.png"),
+    "Rabsca": require("../../assets/images/pokemon/0954-Rabsca.png"),
+    "Flittle": require("../../assets/images/pokemon/0955-Flittle.png"),
+    "Espathra": require("../../assets/images/pokemon/0956-Espathra.png"),
+    "Tinkatink": require("../../assets/images/pokemon/0957-Tinkatink.png"),
+    "Tinkatuff": require("../../assets/images/pokemon/0958-Tinkatuff.png"),
+    "Tinkaton": require("../../assets/images/pokemon/0959-Tinkaton.png"),
+    "Wiglett": require("../../assets/images/pokemon/0960-Wiglett.png"),
+    "Wugtrio": require("../../assets/images/pokemon/0961-Wugtrio.png"),
+    "Bombirdier": require("../../assets/images/pokemon/0962-Bombirdier.png"),
+    "Finizen": require("../../assets/images/pokemon/0963-Finizen.png"),
+    "Palafin(Hero Form)": require("../../assets/images/pokemon/0964-Palafin(Hero Form).png"),
+    "Palafin(Zero Form)": require("../../assets/images/pokemon/0964-Palafin(Zero Form).png"),
+    "Varoom": require("../../assets/images/pokemon/0965-Varoom.png"),
+    "Revavroom": require("../../assets/images/pokemon/0966-Revavroom.png"),
+    "Cyclizar": require("../../assets/images/pokemon/0967-Cyclizar.png"),
+    "Orthworm": require("../../assets/images/pokemon/0968-Orthworm.png"),
+    "Glimmet": require("../../assets/images/pokemon/0969-Glimmet.png"),
+    "Glimmora": require("../../assets/images/pokemon/0970-Glimmora.png"),
+    "Greavard": require("../../assets/images/pokemon/0971-Greavard.png"),
+    "Houndstone": require("../../assets/images/pokemon/0972-Houndstone.png"),
+    "Flamigo": require("../../assets/images/pokemon/0973-Flamigo.png"),
+    "Cetoddle": require("../../assets/images/pokemon/0974-Cetoddle.png"),
+    "Cetitan": require("../../assets/images/pokemon/0975-Cetitan.png"),
+    "Veluza": require("../../assets/images/pokemon/0976-Veluza.png"),
+    "Dondozo": require("../../assets/images/pokemon/0977-Dondozo.png"),
+    "Tatsugiri": require("../../assets/images/pokemon/0978-Tatsugiri(Curly Form).png"),
+    "Tatsugiri(Droopy Form)": require("../../assets/images/pokemon/0978-Tatsugiri(Droopy Form).png"),
+    "Tatsugiri(Stretch Form)": require("../../assets/images/pokemon/0978-Tatsugiri(Stretch Form).png"),
+    "Annihilape": require("../../assets/images/pokemon/0979-Annihilape.png"),
+    "Paldean Clodsire": require("../../assets/images/pokemon/0980-Paldean Clodsire.png"),
+    "Farigiraf": require("../../assets/images/pokemon/0981-Farigiraf.png"),
+    "Dudunsparce": require("../../assets/images/pokemon/0982-Dudunsparce.png"),
+    "Kingambit": require("../../assets/images/pokemon/0983-Kingambit.png"),
+    "Great Tusk": require("../../assets/images/pokemon/0984-Great Tusk.png"),
+    "Scream Tail": require("../../assets/images/pokemon/0985-Scream Tail.png"),
+    "Brute Bonnet": require("../../assets/images/pokemon/0986-Brute Bonnet.png"),
+    "Flutter Mane": require("../../assets/images/pokemon/0987-Flutter Mane.png"),
+    "Slither Wing": require("../../assets/images/pokemon/0988-Slither Wing.png"),
+    "Sandy Shocks": require("../../assets/images/pokemon/0989-Sandy Shocks.png"),
+    "Iron Treads": require("../../assets/images/pokemon/0990-Iron Treads.png"),
+    "Iron Bundle": require("../../assets/images/pokemon/0991-Iron Bundle.png"),
+    "Iron Hands": require("../../assets/images/pokemon/0992-Iron Hands.png"),
+    "Iron Jugulis": require("../../assets/images/pokemon/0993-Iron Jugulis.png"),
+    "Iron Moth": require("../../assets/images/pokemon/0994-Iron Moth.png"),
+    "Iron Thorns": require("../../assets/images/pokemon/0995-Iron Thorns.png"),
+    "Frigibax": require("../../assets/images/pokemon/0996-Frigibax.png"),
+    "Arctibax": require("../../assets/images/pokemon/0997-Arctibax.png"),
+    "Baxcalibur": require("../../assets/images/pokemon/0998-Baxcalibur.png"),
+    "Gimmighoul(Chest Form)": require("../../assets/images/pokemon/0999-Gimmighoul(Chest Form).png"),
+    "Gimmighoul": require("../../assets/images/pokemon/0999-Gimmighoul(Roaming Form).png"),
+    "Gholdengo": require("../../assets/images/pokemon/1000-Gholdengo.png"),
+    "Wo": require("../../assets/images/pokemon/1001-Wo-Chien.png"),
+    "Chien": require("../../assets/images/pokemon/1002-Chien-Pao.png"),
+    "Ting": require("../../assets/images/pokemon/1003-Ting-Lu.png"),
+    "Chi": require("../../assets/images/pokemon/1004-Chi-Yu.png"),
+    "Roaring Moon": require("../../assets/images/pokemon/1005-Roaring Moon.png"),
+    "Iron Valiant": require("../../assets/images/pokemon/1006-Iron Valiant.png"),
+    "Koraidon(Bike Mode)": require("../../assets/images/pokemon/1007-Koraidon(Bike Mode).png"),
+    "Koraidon": require("../../assets/images/pokemon/1007-Koraidon.png"),
+    "Miraidon(Bike Mode)": require("../../assets/images/pokemon/1008-Miraidon(Bike Mode).png"),
+    "Miraidon": require("../../assets/images/pokemon/1008-Miraidon.png"),
+    "Walking Wake": require("../../assets/images/pokemon/1009-Walking Wake.png"),
+    "Iron Leaves": require("../../assets/images/pokemon/1010-Iron Leaves.png"),
+    "Dipplin": require("../../assets/images/pokemon/1011-Dipplin.png"),
+    "Poltchageist": require("../../assets/images/pokemon/1012-Poltchageist.png"),
+    "Sinistcha": require("../../assets/images/pokemon/1013-Sinistcha.png"),
+    "Okidogi": require("../../assets/images/pokemon/1014-Okidogi.png"),
+    "Munkidori": require("../../assets/images/pokemon/1015-Munkidori.png"),
+    "Fezandipiti": require("../../assets/images/pokemon/1016-Fezandipiti.png"),
+    "Ogerpon(Cornerstone Mask)": require("../../assets/images/pokemon/1017-Ogerpon(Cornerstone Mask).png"),
+    "Ogerpon(Hearthflame Mask)": require("../../assets/images/pokemon/1017-Ogerpon(Hearthflame Mask).png"),
+    "Ogerpon(Teal Mask)": require("../../assets/images/pokemon/1017-Ogerpon(Teal Mask).png"),
+    "Ogerpon(Wellspring Mask)": require("../../assets/images/pokemon/1017-Ogerpon(Wellspring Mask).png"),
+    "Archaludon": require("../../assets/images/pokemon/1018-Archaludon.png"),
+    "Hydrapple": require("../../assets/images/pokemon/1019-Hydrapple.png"),
+    "Gouging Fire": require("../../assets/images/pokemon/1020-Gouging Fire.png"),
+    "Raging Bolt": require("../../assets/images/pokemon/1021-Raging Bolt.png"),
+    "Iron Boulder": require("../../assets/images/pokemon/1022-Iron Boulder.png"),
+    "Iron Crown": require("../../assets/images/pokemon/1023-Iron Crown.png"),
+    "Terapagos(Normal Form)": require("../../assets/images/pokemon/1024-Terapagos(Normal Form).png"),
+    "Terapagos(Stellar Form)": require("../../assets/images/pokemon/1024-Terapagos(Stellar Form).png"),
+    "Terapagos(Terastal Form)": require("../../assets/images/pokemon/1024-Terapagos(Terastal Form).png"),
+    "Pecharunt": require("../../assets/images/pokemon/1025-Pecharunt.png"),
+    "None": require("../../assets/images/pokemon/None-None.png")
+}
 
 export default pokemonImages;

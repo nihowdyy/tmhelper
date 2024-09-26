@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal } from 'react-native';
+import pokemonLocations from '../../assets/images/pokemonLocations';
+import moveTypes from '../../assets/images/moveTypes';
+import moveCategories from '../../assets/images/moveCategories';
 import pokemonImages from '../../assets/images/pokemonImages';
+import LPIcon from '../../assets/images/LP Icon.png';
 
 const TMDetailScreen = ({ route }: any) => {
   const { tm } = route.params;
@@ -18,7 +22,7 @@ const TMDetailScreen = ({ route }: any) => {
   const pokemonImagesToDisplay = materialsPokemonNames.map((pokemonName: string) => {
     return {
       name: pokemonName,
-      images: pokemonImages[pokemonName] || [], // Access images or return an empty array
+      locationImages: pokemonLocations[pokemonName] || [], // Access images or return an empty array
     };
   });
 
@@ -33,11 +37,11 @@ const TMDetailScreen = ({ route }: any) => {
   };
 
   // Render item function for FlatList
-  const renderItem = ({ item }: { item: { name: string; images: string[] } }) => (
+  const renderItem = ({ item }: { item: { name: string; locationImages: string[]} }) => (
     <View style={styles.item}>
       <Text style={styles.pokemonName}>{item.name} Images:</Text>
-      {item.images.length > 0 ? (
-        item.images.map((image, i) => (
+      {item.locationImages.length > 0 ? (
+        item.locationImages.map((image, i) => (
           <Pressable key={i} onPress={() => openImage(image)}>
             <Image source={image} style={styles.image} />
           </Pressable>
@@ -48,6 +52,37 @@ const TMDetailScreen = ({ route }: any) => {
     </View>
   );
 
+  // Move Types
+  type MoveType = 
+  | "Bug"
+  | "Dark"
+  | "Dragon"
+  | "Electric"
+  | "Fairy"
+  | "Fighting"
+  | "Fire"
+  | "Flying"
+  | "Ghost"
+  | "Grass"
+  | "Ground"
+  | "Ice"
+  | "Normal"
+  | "Poison"
+  | "Psychic"
+  | "Rock"
+  | "Steel"
+  | "Water";
+
+  // Move Categories
+  type MoveCategory =
+  | "Physical"
+  | "Special"
+  | "Status";  
+
+  // Move Type and Category Images
+  const moveTypeImage = moveTypes[tm.move_info.type as MoveType];
+  const moveCategoryImage = moveCategories[tm.move_info.category as MoveCategory];
+
   return (
     <View style={styles.container}>
       <FlatList
@@ -56,25 +91,56 @@ const TMDetailScreen = ({ route }: any) => {
         renderItem={renderItem}
         ListHeaderComponent={
           <>
-            <Text style={styles.title}>{tm.tm_info.name} (TM {tm.tm_info.number})</Text>
-            <Text style={styles.subtitle}>Location:</Text>
-            {tm.tm_info.location.map((loc: string, index: number) => (
-              <Text key={index} style={styles.text}>{loc}</Text>
-            ))}
-            <Text style={styles.subtitle}>LP Cost: {tm.tm_info.lp_cost}</Text>
-            <Text style={styles.subtitle}>Sell Price: {tm.tm_info.sell_price}</Text>
-            <Text style={styles.subtitle}>Materials:</Text>
-            {tm.tm_info.materials.map((material: any, index: number) => (
-              <Text key={index} style={styles.text}>
-                {material.quantity} x {material.material_name}
-              </Text>
-            ))}
-            <Text style={styles.subtitle}>Move Info:</Text>
-            <Text style={styles.text}>Type: {tm.move_info.type}</Text>
-            <Text style={styles.text}>Category: {tm.move_info.category}</Text>
-            <Text style={styles.text}>Power: {tm.move_info.power}</Text>
-            <Text style={styles.text}>Accuracy: {tm.move_info.accuracy}</Text>
-            <Text style={styles.text}>PP: {tm.move_info.pp}</Text>
+            <Text>TM {tm.tm_info.number}</Text>
+            <Text style={styles.title}>{tm.tm_info.name}</Text>
+
+            <View style={styles.imageContainer}>
+              <Image source={moveTypeImage} style={styles.moveType} resizeMode='contain' />
+              <Text>{tm.move_info.type}</Text>
+              <Image source={moveCategoryImage} style={styles.moveCategory} resizeMode='contain' />
+              <Text>{tm.move_info.category}</Text>
+            </View>
+
+            <View style={styles.table}>
+              <View style={styles.row}>
+                <Text style={styles.headerCell}>Power</Text>
+                <Text style={styles.headerCell}>Accuracy</Text>
+                <Text style={styles.headerCell}>PP</Text>
+              </View>
+
+              <View style={styles.row}>
+                <Text style={styles.cell}>{tm.move_info.power}</Text>
+                <Text style={styles.cell}>{tm.move_info.accuracy}</Text>
+                <Text style={styles.cell}>{tm.move_info.pp}</Text>
+              </View>
+            </View>
+
+            <Text style={styles.subtitle}>Required Resources</Text>
+
+            <View style={styles.row}>
+              <Image
+                source={LPIcon}
+                style={styles.pokemonImage}
+                resizeMode='contain'
+              />
+              <Text style={styles.text}>League Points</Text>
+              <Text style={styles.quantityText}>{tm.tm_info.lp_cost}</Text>
+            </View>
+            {tm.tm_info.materials.map((material: any, index: number) => {
+              const pokemonImage = pokemonImages[material.pokemon_name]; // Image for the Pokémon
+              
+              return (
+                <View key={index} style={styles.row}>
+                  <Image
+                    source={pokemonImage || pokemonImages["None"]} // Replace with default image if not found
+                    style={styles.pokemonImage}
+                    resizeMode='contain'
+                  />
+                  <Text style={styles.text}>{material.material_name}</Text>
+                  <Text style={styles.quantityText}>{material.quantity}</Text>
+                </View>
+              );
+            })}
           </>
         }
         contentContainerStyle={{ paddingBottom: 100 }} // Ensure there's padding at the bottom if needed
@@ -103,6 +169,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: 'bold',
+    marginBottom: 10,
   },
   subtitle: {
     fontSize: 18,
@@ -110,6 +177,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   text: {
+    flex: 1,
     fontSize: 16,
     marginBottom: 5,
   },
@@ -138,6 +206,58 @@ const styles = StyleSheet.create({
     height: '80%',
     resizeMode: 'contain',
   },
+  imageContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  moveCategory: {
+    width: 25,
+    height: 25,
+    marginLeft: 10,
+    marginRight: 5, 
+  },
+  moveType: {
+    width: 20,
+    height: 20,
+    marginRight: 5, 
+  },
+  table: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 10,
+    overflow: 'hidden',
+    margin: 10,
+    backgroundColor: '#fff',
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#eee',
+  },
+  headerCell: {
+    fontWeight: 'bold',
+    fontSize: 18,
+    color: '#333',
+    flex: 1,
+    textAlign: 'center',
+  },
+  cell: {
+    fontSize: 16,
+    color: '#333',
+    flex: 1,
+    textAlign: 'center',
+  },
+  pokemonImage: {
+    width: 25,
+    height: 25,
+    marginRight: 10,
+  },
+  quantityText: {
+    textAlign: 'right', // Right-align the quantity text
+},
 });
 
 export default TMDetailScreen;
