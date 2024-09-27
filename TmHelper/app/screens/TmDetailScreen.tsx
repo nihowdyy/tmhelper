@@ -5,20 +5,19 @@ import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
 import pokemonImages from '../../assets/images/pokemonImages';
 
-// LP Icon
+// Icons
 const LPIcon = require('../../assets/images/LP Icon.png');
+const leftArrow = require('../../assets/images/leftArrow.png');
+const rightArrow = require('../../assets/images/rightArrow.png');
 
 const TMDetailScreen = ({ route }: any) => {
   const { tm } = route.params;
-
-  const [modalVisible, setModalVisible] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // Extract properties from tm
   const { materials } = tm.tm_info;
 
   // Get the list of Pokémon names from materials
-  const materialsPokemonNames = materials.map((material: { pokemon_name: string; }) => material.pokemon_name);
+  const materialsPokemonNames = materials.map((material: { pokemon_name: string }) => material.pokemon_name);
 
   // Access images for each Pokémon name
   const pokemonImagesToDisplay = materialsPokemonNames.map((pokemonName: string) => {
@@ -27,6 +26,10 @@ const TMDetailScreen = ({ route }: any) => {
       locationImages: pokemonLocations[pokemonName] || [], // Access images or return an empty array
     };
   });
+
+  // Handling Full Screen Images
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const openImage = (imageUri: string) => {
     setSelectedImage(imageUri);
@@ -38,57 +41,77 @@ const TMDetailScreen = ({ route }: any) => {
     setSelectedImage(null);
   };
 
+  // Track current image index for each Pokémon
+  const [imageIndexes, setImageIndexes] = useState<{ [key: string]: number }>({});
+
+  // Function to change the image index (for left/right arrows)
+  const changeImageIndex = (pokemonName: string, direction: 'left' | 'right') => {
+    setImageIndexes((prevIndexes) => {
+      const currentIndex = prevIndexes[pokemonName] || 0;
+      const totalImages = pokemonLocations[pokemonName]?.length || 1;
+      let newIndex = currentIndex;
+
+      if (direction === 'left') {
+        newIndex = currentIndex > 0 ? currentIndex - 1 : totalImages - 1;
+      } else {
+        newIndex = currentIndex < totalImages - 1 ? currentIndex + 1 : 0;
+      }
+
+      return { ...prevIndexes, [pokemonName]: newIndex };
+    });
+  };
+
   // Render item function for FlatList
   const renderItem = ({ item }: { item: { name: string; locationImages: string[] } }) => {
+    const currentImageIndex = imageIndexes[item.name] || 0;
+    const currentImage = item.locationImages[currentImageIndex] || pokemonLocations["None"][0];
+
     return (
       <View style={styles.item}>
         <Text style={styles.pokemonName}>{item.name} Locations:</Text>
-        {item.locationImages.length > 0 ? (
-          item.locationImages.map((image, i) => (
-            <Pressable key={i} onPress={() => openImage(image)}>
-              <Image source={image} style={styles.image} />
-            </Pressable>
-          ))
-        ) : (
-          <View>
-            <Pressable onPress={() => openImage(pokemonLocations["None"][0])}>
-              <Image 
-                source={pokemonLocations["None"][0]} // Use the placeholder image when no images are available
-                style={styles.image} 
-              />
-            </Pressable>
-          </View>
-        )}
+        <Pressable onPress={() => openImage(currentImage)} style={styles.imageWrapper}>
+            <Image source={currentImage} style={styles.image} />
+        </Pressable>
+        
+        <View style={styles.imageNavigator}>
+          <Pressable onPress={() => changeImageIndex(item.name, 'left')}>
+            <Image source={leftArrow} style={styles.arrow}></Image>
+          </Pressable>
+          <Text>Tap Arrows to Swap Between Maps</Text>
+          <Pressable onPress={() => changeImageIndex(item.name, 'right')}>
+            <Image source={rightArrow} style={styles.arrow}></Image>
+          </Pressable>
+        </View>
       </View>
     );
   };
 
   // Move Types
-  type MoveType = 
-  | "Bug"
-  | "Dark"
-  | "Dragon"
-  | "Electric"
-  | "Fairy"
-  | "Fighting"
-  | "Fire"
-  | "Flying"
-  | "Ghost"
-  | "Grass"
-  | "Ground"
-  | "Ice"
-  | "Normal"
-  | "Poison"
-  | "Psychic"
-  | "Rock"
-  | "Steel"
-  | "Water";
+  type MoveType =
+    | 'Bug'
+    | 'Dark'
+    | 'Dragon'
+    | 'Electric'
+    | 'Fairy'
+    | 'Fighting'
+    | 'Fire'
+    | 'Flying'
+    | 'Ghost'
+    | 'Grass'
+    | 'Ground'
+    | 'Ice'
+    | 'Normal'
+    | 'Poison'
+    | 'Psychic'
+    | 'Rock'
+    | 'Steel'
+    | 'Water';
 
   // Move Categories
   type MoveCategory =
-  | "Physical"
-  | "Special"
-  | "Status";  
+    | 'Physical'
+    | 'Special'
+    | 'Status';
 
   // Move Type and Category Images
   const moveTypeImage = moveTypes[tm.move_info.type as MoveType];
@@ -106,9 +129,9 @@ const TMDetailScreen = ({ route }: any) => {
             <Text style={styles.title}>{tm.tm_info.name}</Text>
 
             <View style={styles.imageContainer}>
-              <Image source={moveTypeImage} style={styles.moveType} resizeMode='contain' />
+              <Image source={moveTypeImage} style={styles.moveType} resizeMode="contain" />
               <Text>{tm.move_info.type}</Text>
-              <Image source={moveCategoryImage} style={styles.moveCategory} resizeMode='contain' />
+              <Image source={moveCategoryImage} style={styles.moveCategory} resizeMode="contain" />
               <Text>{tm.move_info.category}</Text>
             </View>
 
@@ -129,23 +152,19 @@ const TMDetailScreen = ({ route }: any) => {
             <Text style={styles.subtitle}>Required Resources</Text>
 
             <View style={styles.row}>
-              <Image
-                source={LPIcon}
-                style={styles.pokemonImage}
-                resizeMode='contain'
-              />
+              <Image source={LPIcon} style={styles.pokemonImage} resizeMode="contain" />
               <Text style={styles.text}>League Points</Text>
               <Text style={styles.quantityText}>{tm.tm_info.lp_cost}</Text>
             </View>
             {tm.tm_info.materials.map((material: any, index: number) => {
               const pokemonImage = pokemonImages[material.pokemon_name]; // Image for the Pokémon
-              
+
               return (
                 <View key={index} style={styles.row}>
                   <Image
-                    source={pokemonImage || pokemonImages["None"]} // Replace with default image if not found
+                    source={pokemonImage || pokemonImages['None']} // Replace with default image if not found
                     style={styles.pokemonImage}
-                    resizeMode='contain'
+                    resizeMode="contain"
                   />
                   <Text style={styles.text}>{material.material_name}</Text>
                   <Text style={styles.quantityText}>{material.quantity}</Text>
@@ -161,10 +180,7 @@ const TMDetailScreen = ({ route }: any) => {
       {selectedImage && (
         <Modal visible={modalVisible} transparent={true} onRequestClose={closeImage}>
           <Pressable style={styles.modalBackground} onPress={closeImage}>
-            <Image
-              source={selectedImage}
-              style={styles.fullscreenImage}
-            />
+            <Image source={selectedImage} style={styles.fullscreenImage} />
           </Pressable>
         </Modal>
       )}
@@ -202,10 +218,14 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   image: {
-    width: '30%',
-    height: 100,
-    marginBottom: 10,
-    resizeMode: 'contain',
+    width: 300,
+    height: 300,
+    alignItems: 'center',
+    borderRadius: 10,
+  },
+  imageWrapper: {
+    marginTop: 10,
+    alignItems: 'center',
   },
   modalBackground: {
     flex: 1,
@@ -226,12 +246,12 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
     marginLeft: 10,
-    marginRight: 5, 
+    marginRight: 5,
   },
   moveType: {
     width: 20,
     height: 20,
-    marginRight: 5, 
+    marginRight: 5,
   },
   table: {
     borderWidth: 1,
@@ -275,7 +295,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginBottom: 5,
     textAlign: 'right',
-},
+  },
+  arrow: {
+    marginHorizontal: 10,
+  },
+  imageNavigator: {
+    marginTop: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
 
 export default TMDetailScreen;
