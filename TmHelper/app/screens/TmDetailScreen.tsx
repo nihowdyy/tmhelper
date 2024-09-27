@@ -123,6 +123,7 @@ const TMDetailScreen = ({ route }: any) => {
         data={pokemonImagesToDisplay}
         keyExtractor={(item) => item.name}
         renderItem={renderItem}
+        showsVerticalScrollIndicator={false}
         ListHeaderComponent={
           <>
             <Text>TM {tm.tm_info.number}</Text>
@@ -300,10 +301,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   leftArrowButton: {
-    paddingLeft: 15,
+    paddingLeft: 20,
   },
   rightArrowButton: {
-    paddingRight: 15,
+    paddingRight: 30,
   },
   imageNavigator: {
     marginTop: 15,

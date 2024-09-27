@@ -81,6 +81,7 @@ const HomeScreen = ({ navigation }: any) => {
       keyExtractor={(item) => item.tm_info.number}
       initialNumToRender={10}
       maxToRenderPerBatch={10}
+      showsVerticalScrollIndicator={false}
       />
     </View>
   );
