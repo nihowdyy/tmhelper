@@ -88,10 +88,10 @@ const HomeScreen = ({ navigation }: any) => {
 
 const styles = StyleSheet.create({
   row: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    alignItems: 'center', 
   },
   item: {
     padding: 10,
