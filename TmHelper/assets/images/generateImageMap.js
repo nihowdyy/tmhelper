@@ -27,7 +27,7 @@ const extractPokemonName = (fileName) => {
             return baseName;
         }
     }
-    
+
     // Default handling if no prefix is found
     const baseName = parts[0];
     console.log(`Parsing file name: ${fileName}, extracted name part: ${baseName}`);
@@ -55,12 +55,19 @@ const generateImageMap = () => {
                 const pokemonName = extractPokemonName(file);
 
                 if (pokemonName) {
+                    // Initialize the Pokémon entry if it doesn't exist
                     if (!imageMap[pokemonName]) {
                         imageMap[pokemonName] = [];
                     }
-      
-                    // Add the image path to the Pokémon's list
-                    imageMap[pokemonName].push('../../assets/images/' + path.posix.join('locations', file));
+
+                    // Generate a friendly name based on the file name
+                    const friendlyName = path.parse(file).name.replace(/_/g, ' '); // Convert underscores to spaces
+
+                    // Add the image path and friendly name to the Pokémon's list
+                    imageMap[pokemonName].push({
+                        name: friendlyName,
+                        image: path.posix.join('..', '..', 'assets', 'images', 'locations', file)
+                    });
                 }
             } else {
                 console.log(`Skipping non-image file: ${file}`);

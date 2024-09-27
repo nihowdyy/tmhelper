@@ -27,6 +27,38 @@ const TMDetailScreen = ({ route }: any) => {
     };
   });
 
+  
+  // Move Types
+  type MoveType =
+    | 'Bug'
+    | 'Dark'
+    | 'Dragon'
+    | 'Electric'
+    | 'Fairy'
+    | 'Fighting'
+    | 'Fire'
+    | 'Flying'
+    | 'Ghost'
+    | 'Grass'
+    | 'Ground'
+    | 'Ice'
+    | 'Normal'
+    | 'Poison'
+    | 'Psychic'
+    | 'Rock'
+    | 'Steel'
+    | 'Water';
+
+  // Move Categories
+  type MoveCategory =
+    | 'Physical'
+    | 'Special'
+    | 'Status';
+
+  // Move Type and Category Images
+  const moveTypeImage = moveTypes[tm.move_info.type as MoveType];
+  const moveCategoryImage = moveCategories[tm.move_info.category as MoveCategory];
+
   // Handling Full Screen Images
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -61,10 +93,30 @@ const TMDetailScreen = ({ route }: any) => {
     });
   };
 
+  // Get Map Name from Source
+  const getMapNameFromSource = (item: { name: string; locationImages: { name: string, image: any }[] }, currentImage: number) => {
+    // Check the file name in locationImages for specific keywords
+    const currentLocationImage = item.locationImages[currentImage];
+
+    if (currentLocationImage) {
+      const fileName = currentLocationImage.name; // Assuming the name contains the file name
+
+      if (fileName.includes("Indigo Disk")) {
+        return "Blueberry Map";
+      } else if (fileName.includes("Teal Mask")) {
+        return "Kitakami Map";
+      }
+    }
+
+    return "Paldean Map"; // Default return value
+  };
+
   // Render item function for FlatList
-  const renderItem = ({ item }: { item: { name: string; locationImages: string[] } }) => {
+  const renderItem = ({ item }: { item: { name: string; locationImages: { name: string, image: any }[] } }) => {
     const currentImageIndex = imageIndexes[item.name] || 0;
-    const currentImage = item.locationImages[currentImageIndex] || pokemonLocations["None"][0];
+    const currentImageData = item.locationImages[currentImageIndex] || { image: pokemonLocations["None"][0] }; // Access image data
+    const currentImage = currentImageData.image;
+    const currentMap = getMapNameFromSource(item, currentImageIndex);
 
     return (
       <View style={styles.item}>
@@ -77,7 +129,7 @@ const TMDetailScreen = ({ route }: any) => {
           <Pressable onPress={() => changeImageIndex(item.name, 'left')} style={styles.leftArrowButton}>
             <Image source={leftArrow} style={styles.arrow}></Image>
           </Pressable>
-          <Text>Tap Arrows to Swap Between Maps</Text>
+          <Text style={styles.mapText}>{currentMap}</Text>
           <Pressable onPress={() => changeImageIndex(item.name, 'right')} style={styles.rightArrowButton}>
             <Image source={rightArrow} style={styles.arrow}></Image>
           </Pressable>
@@ -85,37 +137,6 @@ const TMDetailScreen = ({ route }: any) => {
       </View>
     );
   };
-
-  // Move Types
-  type MoveType =
-    | 'Bug'
-    | 'Dark'
-    | 'Dragon'
-    | 'Electric'
-    | 'Fairy'
-    | 'Fighting'
-    | 'Fire'
-    | 'Flying'
-    | 'Ghost'
-    | 'Grass'
-    | 'Ground'
-    | 'Ice'
-    | 'Normal'
-    | 'Poison'
-    | 'Psychic'
-    | 'Rock'
-    | 'Steel'
-    | 'Water';
-
-  // Move Categories
-  type MoveCategory =
-    | 'Physical'
-    | 'Special'
-    | 'Status';
-
-  // Move Type and Category Images
-  const moveTypeImage = moveTypes[tm.move_info.type as MoveType];
-  const moveCategoryImage = moveCategories[tm.move_info.category as MoveCategory];
 
   return (
     <View style={styles.container}>
@@ -311,6 +332,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  mapText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginVertical: 10,
   },
 });
 
