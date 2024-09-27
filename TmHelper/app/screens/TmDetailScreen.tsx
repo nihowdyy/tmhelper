@@ -74,11 +74,11 @@ const TMDetailScreen = ({ route }: any) => {
         </Pressable>
         
         <View style={styles.imageNavigator}>
-          <Pressable onPress={() => changeImageIndex(item.name, 'left')}>
+          <Pressable onPress={() => changeImageIndex(item.name, 'left')} style={styles.leftArrowButton}>
             <Image source={leftArrow} style={styles.arrow}></Image>
           </Pressable>
           <Text>Tap Arrows to Swap Between Maps</Text>
-          <Pressable onPress={() => changeImageIndex(item.name, 'right')}>
+          <Pressable onPress={() => changeImageIndex(item.name, 'right')} style={styles.rightArrowButton}>
             <Image source={rightArrow} style={styles.arrow}></Image>
           </Pressable>
         </View>
@@ -298,6 +298,12 @@ const styles = StyleSheet.create({
   },
   arrow: {
     marginHorizontal: 10,
+  },
+  leftArrowButton: {
+    paddingLeft: 15,
+  },
+  rightArrowButton: {
+    paddingRight: 15,
   },
   imageNavigator: {
     marginTop: 15,
