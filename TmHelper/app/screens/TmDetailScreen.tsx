@@ -110,7 +110,7 @@ const TMDetailScreen = ({ route }: any) => {
         return ["Kitakami Map", KitakamiIcon];
       }
     }
-    
+
     return ["Paldea Map", PaldeaIcon]; // Default return value
   };
 
@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   image: {
-    width: 300,
+    width: '80%',
     height: 300,
     alignItems: 'center',
     borderRadius: 10,
@@ -341,7 +341,7 @@ const styles = StyleSheet.create({
     paddingRight: 30,
   },
   imageNavigator: {
-    marginTop: 15,
+    marginTop: 10,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
@@ -350,11 +350,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginVertical: 10,
+    width: 130,
+    textAlign: 'center',
   },
   mapIcon: {
     height: 30,
     width: 30,
-    marginLeft: 10,
   }
 });
 
