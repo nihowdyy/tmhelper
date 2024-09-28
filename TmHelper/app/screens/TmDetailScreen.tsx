@@ -110,8 +110,8 @@ const TMDetailScreen = ({ route }: any) => {
         return ["Kitakami Map", KitakamiIcon];
       }
     }
-
-    return ["Paldean Map", PaldeaIcon]; // Default return value
+    
+    return ["Paldea Map", PaldeaIcon]; // Default return value
   };
 
   // Render item function for FlatList
