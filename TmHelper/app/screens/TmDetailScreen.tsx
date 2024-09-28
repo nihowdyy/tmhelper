@@ -9,6 +9,9 @@ import pokemonImages from '../../assets/images/pokemonImages';
 const LPIcon = require('../../assets/images/LP Icon.png');
 const leftArrow = require('../../assets/images/leftArrow.png');
 const rightArrow = require('../../assets/images/rightArrow.png');
+const BBIcon = require('../../assets/images/blueberry.png');
+const PaldeaIcon = require('../../assets/images/pokeball.png');
+const KitakamiIcon = require('../../assets/images/kitakami.png')
 
 const TMDetailScreen = ({ route }: any) => {
   const { tm } = route.params;
@@ -102,13 +105,13 @@ const TMDetailScreen = ({ route }: any) => {
       const fileName = currentLocationImage.name; // Assuming the name contains the file name
 
       if (fileName.includes("Indigo Disk")) {
-        return "Blueberry Map";
+        return ["Blueberry Map", BBIcon];
       } else if (fileName.includes("Teal Mask")) {
-        return "Kitakami Map";
+        return ["Kitakami Map", KitakamiIcon];
       }
     }
 
-    return "Paldean Map"; // Default return value
+    return ["Paldean Map", PaldeaIcon]; // Default return value
   };
 
   // Render item function for FlatList
@@ -116,7 +119,10 @@ const TMDetailScreen = ({ route }: any) => {
     const currentImageIndex = imageIndexes[item.name] || 0;
     const currentImageData = item.locationImages[currentImageIndex] || { image: pokemonLocations["None"][0] }; // Access image data
     const currentImage = currentImageData.image;
-    const currentMap = getMapNameFromSource(item, currentImageIndex);
+    const [currentMap, mapIcon] = getMapNameFromSource(item, currentImageIndex);
+
+    // Check if there is more than one location image
+    const hasMultipleImages = item.locationImages.length > 1;
 
     return (
       <View style={styles.item}>
@@ -126,15 +132,22 @@ const TMDetailScreen = ({ route }: any) => {
         </Pressable>
         
         <View style={styles.imageNavigator}>
+        {hasMultipleImages && (
           <Pressable onPress={() => changeImageIndex(item.name, 'left')} style={styles.leftArrowButton}>
-            <Image source={leftArrow} style={styles.arrow}></Image>
+            <Image source={leftArrow} style={styles.arrow} />
           </Pressable>
-          <Text style={styles.mapText}>{currentMap}</Text>
+        )}
+
+        <Text style={styles.mapText}>{currentMap}</Text>
+        <Image source={mapIcon} style={styles.mapIcon} />
+
+        {hasMultipleImages && (
           <Pressable onPress={() => changeImageIndex(item.name, 'right')} style={styles.rightArrowButton}>
-            <Image source={rightArrow} style={styles.arrow}></Image>
+            <Image source={rightArrow} style={styles.arrow} />
           </Pressable>
-        </View>
+        )}
       </View>
+    </View>
     );
   };
 
@@ -338,6 +351,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginVertical: 10,
   },
+  mapIcon: {
+    height: 30,
+    width: 30,
+    marginLeft: 10,
+  }
 });
 
 export default TMDetailScreen;
