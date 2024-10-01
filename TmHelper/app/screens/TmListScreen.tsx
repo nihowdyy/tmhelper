@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, Pressable, Image, TextInput } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome'
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
 const tmData = require('../../assets/json/PKMN-SV-TMS.json');
@@ -73,11 +74,20 @@ const HomeScreen = ({ navigation }: any) => {
   const handleSearch = (text: string) => {
     setQuery(text);
 
-    // Filter the data by TM number or name
-    const newData = data.filter(item => 
-      item.tm_info.name.toLowerCase().includes(text.toLowerCase()) || 
-      item.tm_info.number.includes(text)
-    );
+
+    // Split the query by spaces to handle multiple search terms
+    const searchTerms = text.toLowerCase().split(' ').filter(term => term.length > 0);
+
+    // Filter the data by TM number, name, type, or category
+    const newData = data.filter(item => {
+      return searchTerms.every(term => 
+        item.tm_info.name.toLowerCase().includes(term) || 
+        item.tm_info.number.includes(term) ||
+        item.move_info.type.toLowerCase().includes(term) || 
+        item.move_info.category.toLowerCase().includes(term)
+      );
+    });
+    
     setFilteredData(newData);
   };
 
@@ -88,13 +98,16 @@ const HomeScreen = ({ navigation }: any) => {
   return (
     <View style={{ flex: 1 }}>
       {/* Search Bar */}
-      <TextInput
-        style={styles.searchInput}
-        placeholder="Search by TM Number or Name"
-        value={query}
-        onChangeText={handleSearch}
-        autoCorrect={false}
-      />
+      <View style={styles.searchContainer}>
+        <Icon name="search" size={20} color="#000" style={styles.icon} />
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Search by number, name, type, or category"
+          value={query}
+          onChangeText={handleSearch}
+          autoCorrect={false}
+        />
+      </View>
       {/* List */}
       <FlatList
         data={filteredData}
@@ -145,13 +158,23 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  searchInput: {
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
     padding: 10,
-    borderColor: '#ccc',
+    backgroundColor: '#ffffff',
+    borderColor: '#eeeeee',
     borderWidth: 1,
     margin: 10,
     borderRadius: 5,
+  },
+  searchInput: {
+    flex: 1,
     fontSize: 16,
+    marginLeft: 10,
+  },
+  icon: {
+    color:  '#000000'
   },
 });
 
