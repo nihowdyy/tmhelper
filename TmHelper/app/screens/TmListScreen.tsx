@@ -1,7 +1,5 @@
-// screens/HomeScreen.tsx
-
-import React from 'react';
-import { StyleSheet, Text, View, FlatList, Pressable, Image} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, FlatList, Pressable, Image, TextInput } from 'react-native';
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
 const tmData = require('../../assets/json/PKMN-SV-TMS.json');
@@ -69,19 +67,42 @@ const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item
 });
 
 const HomeScreen = ({ navigation }: any) => {
+  const [query, setQuery] = useState('');  // State to hold the search query
+  const [filteredData, setFilteredData] = useState<TMData[]>(data);  // State to hold filtered data
+
+  const handleSearch = (text: string) => {
+    setQuery(text);
+
+    // Filter the data by TM number or name
+    const newData = data.filter(item => 
+      item.tm_info.name.toLowerCase().includes(text.toLowerCase()) || 
+      item.tm_info.number.includes(text)
+    );
+    setFilteredData(newData);
+  };
+
   const handlePress = React.useCallback((tm: TMData) => {
     navigation.navigate('TMDetails', { tm });
   }, [navigation]);
 
   return (
-    <View style={styles.row}>
+    <View style={{ flex: 1 }}>
+      {/* Search Bar */}
+      <TextInput
+        style={styles.searchInput}
+        placeholder="Search by TM Number or Name"
+        value={query}
+        onChangeText={handleSearch}
+        autoCorrect={false}
+      />
+      {/* List */}
       <FlatList
-      data={data}
-      renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
-      keyExtractor={(item) => item.tm_info.number}
-      initialNumToRender={10}
-      maxToRenderPerBatch={10}
-      showsVerticalScrollIndicator={false}
+        data={filteredData}
+        renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
+        keyExtractor={(item) => item.tm_info.number}
+        initialNumToRender={10}
+        maxToRenderPerBatch={10}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );
@@ -123,6 +144,14 @@ const styles = StyleSheet.create({
   imageContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  searchInput: {
+    padding: 10,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    margin: 10,
+    borderRadius: 5,
+    fontSize: 16,
   },
 });
 
