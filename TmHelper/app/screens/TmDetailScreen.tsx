@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal } from 'react-native';
+import RNPickerSelect from 'react-native-picker-select';
+import Icon from 'react-native-vector-icons/Ionicons';
+
+// Importing Assets
 import pokemonLocations from '../../assets/images/pokemonLocations';
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
@@ -11,7 +15,7 @@ const leftArrow = require('../../assets/images/leftArrow.png');
 const rightArrow = require('../../assets/images/rightArrow.png');
 const BBIcon = require('../../assets/images/blueberry.png');
 const PaldeaIcon = require('../../assets/images/pokeball.png');
-const KitakamiIcon = require('../../assets/images/kitakami.png')
+const KitakamiIcon = require('../../assets/images/kitakami.png');
 
 const TMDetailScreen = ({ route }: any) => {
   const { tm } = route.params;
@@ -19,18 +23,6 @@ const TMDetailScreen = ({ route }: any) => {
   // Extract properties from tm
   const { materials } = tm.tm_info;
 
-  // Get the list of Pokémon names from materials
-  const materialsPokemonNames = materials.map((material: { pokemon_name: string }) => material.pokemon_name);
-
-  // Access images for each Pokémon name
-  const pokemonImagesToDisplay = materialsPokemonNames.map((pokemonName: string) => {
-    return {
-      name: pokemonName,
-      locationImages: pokemonLocations[pokemonName] || [], // Access images or return an empty array
-    };
-  });
-
-  
   // Move Types
   type MoveType =
     | 'Bug'
@@ -79,6 +71,12 @@ const TMDetailScreen = ({ route }: any) => {
   // Track current image index for each Pokémon
   const [imageIndexes, setImageIndexes] = useState<{ [key: string]: number }>({});
 
+  // Track the selected Pokémon material in the dropdown
+  const [selectedPokemon, setSelectedPokemon] = useState(materials[0].pokemon_name);
+
+  // Track Picker State
+  const [isPickerOpen, setIsPickerOpen] = useState(false); 
+
   // Function to change the image index (for left/right arrows)
   const changeImageIndex = (pokemonName: string, direction: 'left' | 'right') => {
     setImageIndexes((prevIndexes) => {
@@ -97,9 +95,8 @@ const TMDetailScreen = ({ route }: any) => {
   };
 
   // Get Map Name from Source
-  const getMapNameFromSource = (item: { name: string; locationImages: { name: string, image: any }[] }, currentImage: number) => {
-    // Check the file name in locationImages for specific keywords
-    const currentLocationImage = item.locationImages[currentImage];
+  const getMapNameFromSource = (pokemonName: string, currentImage: number) => {
+    const currentLocationImage = pokemonLocations[pokemonName][currentImage];
 
     if (currentLocationImage) {
       const fileName = currentLocationImage.name; // Assuming the name contains the file name
@@ -114,49 +111,19 @@ const TMDetailScreen = ({ route }: any) => {
     return ["Paldea Map", PaldeaIcon]; // Default return value
   };
 
-  // Render item function for FlatList
-  const renderItem = ({ item }: { item: { name: string; locationImages: { name: string, image: any }[] } }) => {
-    const currentImageIndex = imageIndexes[item.name] || 0;
-    const currentImageData = item.locationImages[currentImageIndex] || { image: pokemonLocations["None"][0] }; // Access image data
-    const currentImage = currentImageData.image;
-    const [currentMap, mapIcon] = getMapNameFromSource(item, currentImageIndex);
+  // Get images and locations for the selected Pokémon
+  const selectedPokemonImages = pokemonLocations[selectedPokemon] || [];
+  const currentImageIndex = imageIndexes[selectedPokemon] || 0;
+  const currentImageData = selectedPokemonImages[currentImageIndex] || pokemonLocations["None"][0];
+  const [currentMap, mapIcon] = getMapNameFromSource(selectedPokemon, currentImageIndex);
 
-    // Check if there is more than one location image
-    const hasMultipleImages = item.locationImages.length > 1;
-
-    return (
-      <View style={styles.item}>
-        <Text style={styles.pokemonName}>{item.name} Locations:</Text>
-        <Pressable onPress={() => openImage(currentImage)} style={styles.imageWrapper}>
-            <Image source={currentImage} style={styles.image} />
-        </Pressable>
-        
-        <View style={styles.imageNavigator}>
-        {hasMultipleImages && (
-          <Pressable onPress={() => changeImageIndex(item.name, 'left')} style={styles.leftArrowButton}>
-            <Image source={leftArrow} style={styles.arrow} />
-          </Pressable>
-        )}
-
-        <Text style={styles.mapText}>{currentMap}</Text>
-        <Image source={mapIcon} style={styles.mapIcon} />
-
-        {hasMultipleImages && (
-          <Pressable onPress={() => changeImageIndex(item.name, 'right')} style={styles.rightArrowButton}>
-            <Image source={rightArrow} style={styles.arrow} />
-          </Pressable>
-        )}
-      </View>
-    </View>
-    );
-  };
+  // Determine whether to show the navigation buttons
+  const showNavigationButtons = selectedPokemonImages.length > 1;
 
   return (
     <View style={styles.container}>
       <FlatList
-        data={pokemonImagesToDisplay}
-        keyExtractor={(item) => item.name}
-        renderItem={renderItem}
+        data={[]}
         showsVerticalScrollIndicator={false}
         ListHeaderComponent={
           <>
@@ -191,13 +158,14 @@ const TMDetailScreen = ({ route }: any) => {
               <Text style={styles.text}>League Points</Text>
               <Text style={styles.quantityText}>{tm.tm_info.lp_cost}</Text>
             </View>
-            {tm.tm_info.materials.map((material: any, index: number) => {
-              const pokemonImage = pokemonImages[material.pokemon_name]; // Image for the Pokémon
 
+            {/* List all Pokémon materials */}
+            {materials.map((material: any, index: number) => {
+              const pokemonImage = pokemonImages[material.pokemon_name];
               return (
                 <View key={index} style={styles.row}>
                   <Image
-                    source={pokemonImage || pokemonImages['None']} // Replace with default image if not found
+                    source={pokemonImage || pokemonImages['None']}
                     style={styles.pokemonImage}
                     resizeMode="contain"
                   />
@@ -206,6 +174,78 @@ const TMDetailScreen = ({ route }: any) => {
                 </View>
               );
             })}
+
+            <Text style={styles.subtitle}> Pokemon Material Map </Text>
+            {/* Picker to select the Pokémon Material*/}
+            <RNPickerSelect
+              value={selectedPokemon} // Value of the selected Pokémon
+              onValueChange={(itemValue) => {
+                // Only update if the value is not null
+                if (itemValue) {
+                  setSelectedPokemon(itemValue);
+                }
+              }}
+              items={materials.map((material) => ({
+                label: material.pokemon_name,
+                value: material.pokemon_name,
+              }))}
+              placeholder={{}} // Placeholder text
+              style={pickerSelectStyles} // Add your custom styles
+              useNativeAndroidPickerStyle={false} // Use custom styles for Android
+              onOpen={() => setIsPickerOpen(true)} // Set picker open state
+              onClose={() => setIsPickerOpen(false)} // Set picker close state
+              Icon={() => {
+                return (
+                  <View style={styles.iconContainer}>
+                    <Icon 
+                      name={isPickerOpen ? "chevron-up" : "chevron-down"} // Change icon based on picker state
+                      size={20} 
+                      color="black" 
+                    />
+                  </View>
+                );
+              }}
+            />
+
+            {/* Display Pokémon Material's Image and Quantity */}
+            {materials.map((material: any, index: number) => {
+              if (material.pokemon_name === selectedPokemon) {
+                const pokemonImage = pokemonImages[material.pokemon_name];
+                return (
+                  <View key={index} style={styles.row}>
+                    <Image
+                      source={pokemonImage || pokemonImages['None']}
+                      style={styles.pokemonImage}
+                      resizeMode="contain"
+                    />
+                    <Text style={styles.text}>{material.material_name}</Text>
+                  </View>
+                );
+              }
+              return null;
+            })}
+
+            {/* Display Pokémon Locations */}
+            <Pressable onPress={() => openImage(currentImageData.image)} style={styles.imageWrapper}>
+              <Image source={currentImageData.image} style={styles.image} />
+            </Pressable>
+
+           <View style={styles.imageNavigator}>
+              {showNavigationButtons && 
+                <Pressable 
+                onPress={() => changeImageIndex(selectedPokemon, 'left')} style={styles.leftArrowButton}>
+                  <Image source={leftArrow} style={styles.arrow} />
+                </Pressable>}
+
+              <Text style={styles.mapText}>{currentMap}</Text>
+              <Image source={mapIcon} style={styles.mapIcon} />
+
+              {showNavigationButtons && 
+                <Pressable 
+                onPress={() => changeImageIndex(selectedPokemon, 'right')} style={styles.rightArrowButton}>
+                  <Image source={rightArrow} style={styles.arrow} />
+                </Pressable>}
+            </View>
           </>
         }
         contentContainerStyle={{ paddingBottom: 100 }} // Ensure there's padding at the bottom if needed
@@ -253,7 +293,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   image: {
-    width: '80%',
+    width: 300,
     height: 300,
     alignItems: 'center',
     borderRadius: 10,
@@ -341,7 +381,7 @@ const styles = StyleSheet.create({
     paddingRight: 30,
   },
   imageNavigator: {
-    marginTop: 10,
+    marginTop: 15,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
@@ -349,14 +389,57 @@ const styles = StyleSheet.create({
   mapText: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginVertical: 10,
-    width: 130,
     textAlign: 'center',
+    width: 130,
   },
   mapIcon: {
     height: 30,
     width: 30,
+    marginLeft: 10,
+  },
+  picker: {
+    width: '100%',
+    backgroundColor: '#fff', 
+    borderWidth: 1,
+    borderColor: '#eee',
+    borderRadius: 5,
+    paddingVertical: 0,
+  },
+  icon: {
+    alignContent: 'center',
+    justifyContent: 'center',
+  },
+  iconContainer: {
+    position: 'absolute',
+    right: 10, // Adjust as necessary for padding
+    transform: [{ translateY: +15 }], // Adjust for your icon's height
   }
+});
+
+// Styles for the picker
+const pickerSelectStyles = StyleSheet.create({
+  inputIOS: {
+    fontSize: 16,
+    paddingVertical: 12,
+    paddingHorizontal: 10,
+    borderWidth: 1,
+    borderColor: '#eee',
+    borderRadius: 5,
+    backgroundColor: '#fff',
+    color: 'black',
+    marginBottom: 15,
+  },
+  inputAndroid: {
+    fontSize: 16,
+    paddingVertical: 8,
+    paddingHorizontal: 10,
+    borderWidth: 1,
+    borderColor: '#eee',
+    borderRadius: 5,
+    backgroundColor: '#fff',
+    color: 'black',
+    marginBottom: 15,
+  },
 });
 
 export default TMDetailScreen;
