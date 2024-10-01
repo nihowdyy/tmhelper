@@ -7,6 +7,9 @@
       "web",
       "ios"
     ],
+    "cli": {
+      "appVersionSource": "version"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -31,11 +34,6 @@
       "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.png"
-    },
-    "expo": {
-      "assetBundlePatterns": [
-        "./assets/images"
-      ]
     },
     "plugins": [
       "expo-router"

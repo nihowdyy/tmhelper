@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal } from 'react-native';
-import RNPickerSelect from 'react-native-picker-select';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal} from 'react-native';
+import { Picker } from '@react-native-picker/picker'
 
 // Importing Assets
 import pokemonLocations from '../../assets/images/pokemonLocations';
@@ -177,35 +176,24 @@ const TMDetailScreen = ({ route }: any) => {
 
             <Text style={styles.subtitle}> Pokemon Material Map </Text>
             {/* Picker to select the Pokémon Material*/}
-            <RNPickerSelect
-              value={selectedPokemon} // Value of the selected Pokémon
+            <Picker
+              selectedValue={selectedPokemon} // Value of the selected Pokémon
               onValueChange={(itemValue) => {
-                // Only update if the value is not null
-                if (itemValue) {
+                if (itemValue !== null && itemValue !== undefined) {
                   setSelectedPokemon(itemValue);
                 }
               }}
-              items={materials.map((material) => ({
-                label: material.pokemon_name,
-                value: material.pokemon_name,
-              }))}
-              placeholder={{}} // Placeholder text
-              style={pickerSelectStyles} // Add your custom styles
-              useNativeAndroidPickerStyle={false} // Use custom styles for Android
-              onOpen={() => setIsPickerOpen(true)} // Set picker open state
-              onClose={() => setIsPickerOpen(false)} // Set picker close state
-              Icon={() => {
-                return (
-                  <View style={styles.iconContainer}>
-                    <Icon 
-                      name={isPickerOpen ? "chevron-up" : "chevron-down"} // Change icon based on picker state
-                      size={20} 
-                      color="black" 
-                    />
-                  </View>
-                );
-              }}
-            />
+              style={styles.picker} // Custom picker styles
+            >
+              {/* Map through the materials array */}
+              {materials?.map((material) => (
+                <Picker.Item
+                  key={material.pokemon_name}
+                  label={material.pokemon_name}
+                  value={material.pokemon_name}
+                />
+              ))}
+            </Picker>
 
             {/* Display Pokémon Material's Image and Quantity */}
             {materials.map((material: any, index: number) => {
@@ -416,30 +404,5 @@ const styles = StyleSheet.create({
   }
 });
 
-// Styles for the picker
-const pickerSelectStyles = StyleSheet.create({
-  inputIOS: {
-    fontSize: 16,
-    paddingVertical: 12,
-    paddingHorizontal: 10,
-    borderWidth: 1,
-    borderColor: '#eee',
-    borderRadius: 5,
-    backgroundColor: '#fff',
-    color: 'black',
-    marginBottom: 15,
-  },
-  inputAndroid: {
-    fontSize: 16,
-    paddingVertical: 8,
-    paddingHorizontal: 10,
-    borderWidth: 1,
-    borderColor: '#eee',
-    borderRadius: 5,
-    backgroundColor: '#fff',
-    color: 'black',
-    marginBottom: 15,
-  },
-});
 
 export default TMDetailScreen;

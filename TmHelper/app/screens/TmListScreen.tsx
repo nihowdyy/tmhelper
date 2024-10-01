@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, Pressable, Image, TextInput } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/FontAwesome';
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
 const tmData = require('../../assets/json/PKMN-SV-TMS.json');
@@ -74,7 +74,6 @@ const HomeScreen = ({ navigation }: any) => {
   const handleSearch = (text: string) => {
     setQuery(text);
 
-
     // Split the query by spaces to handle multiple search terms
     const searchTerms = text.toLowerCase().split(' ').filter(term => term.length > 0);
 
@@ -87,36 +86,44 @@ const HomeScreen = ({ navigation }: any) => {
         item.move_info.category.toLowerCase().includes(term)
       );
     });
-    
+
     setFilteredData(newData);
   };
 
   const handlePress = React.useCallback((tm: TMData) => {
-    navigation.navigate('TMDetails', { tm });
+    try {
+      console.log('Navigating to TMDetails with:', tm);
+      navigation.navigate('TMDetails', { tm });
+    } catch (error) {
+      console.error("Navigation error:", error);
+    }
   }, [navigation]);
 
   return (
     <View style={{ flex: 1 }}>
-      {/* Search Bar */}
       <View style={styles.searchContainer}>
         <Icon name="search" size={20} color="#000" style={styles.icon} />
         <TextInput
           style={styles.searchInput}
           placeholder="Search by number, name, type, or category"
+          placeholderTextColor="#ccc"
           value={query}
           onChangeText={handleSearch}
           autoCorrect={false}
         />
       </View>
-      {/* List */}
-      <FlatList
-        data={filteredData}
-        renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
-        keyExtractor={(item) => item.tm_info.number}
-        initialNumToRender={10}
-        maxToRenderPerBatch={10}
-        showsVerticalScrollIndicator={false}
-      />
+      {filteredData.length === 0 ? (
+        <Text>No Results Found</Text>
+      ) : (
+        <FlatList
+          data={filteredData}
+          renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
+          keyExtractor={(item) => item.tm_info.number}
+          initialNumToRender={10}
+          maxToRenderPerBatch={10}
+          showsVerticalScrollIndicator={false}
+        />
+      )}
     </View>
   );
 };
@@ -176,6 +183,6 @@ const styles = StyleSheet.create({
   icon: {
     color:  '#000000'
   },
-});
+});  
 
 export default HomeScreen;
