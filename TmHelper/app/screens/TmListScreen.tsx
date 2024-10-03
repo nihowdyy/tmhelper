@@ -59,8 +59,8 @@ const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item
           <Text style={styles.tmName}>{item.tm_info.name}</Text>
         </View>
         <View style={styles.imageContainer}>
-          <Image source={moveTypeImage} style={styles.typeImage} resizeMode='contain' />
-          <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode='contain' />
+          <Image source={moveTypeImage} style={styles.typeImage} resizeMode='contain'/>
+          <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode='contain'/>
         </View>
       </View>
     </Pressable>
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     height: 24,
   },
   categoryImage: {
-    width: 30,
+    width: 24,
     height: 24,
     marginHorizontal: 5,
   },
