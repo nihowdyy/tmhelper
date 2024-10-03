@@ -21,7 +21,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nihowdy.TmHelper"
     },
     "android": {
       "adaptiveIcon": {

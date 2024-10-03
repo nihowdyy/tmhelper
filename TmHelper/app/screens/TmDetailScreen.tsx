@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal} from 'react-native';
-import { Picker } from '@react-native-picker/picker'
+import DropdownPicker from 'react-native-dropdown-picker'
 
 // Importing Assets
 import pokemonLocations from '../../assets/images/pokemonLocations';
@@ -72,9 +72,7 @@ const TMDetailScreen = ({ route }: any) => {
 
   // Track the selected Pokémon material in the dropdown
   const [selectedPokemon, setSelectedPokemon] = useState(materials[0].pokemon_name);
-
-  // Track Picker State
-  const [isPickerOpen, setIsPickerOpen] = useState(false); 
+  const [openDropdown, setOpenDropdown] = useState(false);
 
   // Function to change the image index (for left/right arrows)
   const changeImageIndex = (pokemonName: string, direction: 'left' | 'right') => {
@@ -182,45 +180,29 @@ const TMDetailScreen = ({ route }: any) => {
               );
             })}
 
-            <Text style={styles.subtitle}> Pokemon Material Map </Text>
+            <Text style={styles.subtitle}>Pokemon Material Map </Text>
             {/* Picker to select the Pokémon Material*/}
-            <Picker
-              selectedValue={selectedPokemon} // Value of the selected Pokémon
-              onValueChange={(itemValue) => {
-                if (itemValue !== null && itemValue !== undefined) {
-                  setSelectedPokemon(itemValue);
-                }
-              }}
-              style={styles.picker} // Custom picker styles
-              mode={'dropdown'}
-            >
-              {/* Map through the materials array */}
-              {materials?.map((material) => (
-                <Picker.Item
-                  key={material.pokemon_name}
-                  label={material.pokemon_name}
-                  value={material.pokemon_name}
-                />
-              ))}
-            </Picker>
-
-            {/* Display Pokémon Material's Image and Quantity */}
-            {materials.map((material: any, index: number) => {
-              if (material.pokemon_name === selectedPokemon) {
-                const pokemonImage = pokemonImages[material.pokemon_name];
-                return (
-                  <View key={index} style={styles.row}>
+            <DropdownPicker
+              open={openDropdown}
+              value={selectedPokemon}
+              items={materials.map(material => ({
+                  label: material.material_name,
+                  value: material.pokemon_name,
+                  icon: () => (
                     <Image
-                      source={pokemonImage || pokemonImages['None']}
+                      source={pokemonImages[material.pokemon_name]}
                       style={styles.pokemonImage}
                       resizeMode="contain"
                     />
-                    <Text style={styles.text}>{material.material_name}</Text>
-                  </View>
-                );
-              }
-              return null;
-            })}
+                  ),
+              }))}
+              setOpen={setOpenDropdown}
+              setValue={setSelectedPokemon}
+              containerStyle={{ height: 60 }} // Style to maintain consistent height
+              style={styles.picker}
+              labelStyle={styles.dropdownLabel}
+              dropDownContainerStyle={styles.dropdownContainer}
+            />
 
             {/* Map Display*/}
             <Pressable onPress={() => openImage(currentImageData.image)} style={styles.imageWrapper}>
@@ -420,6 +402,14 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     paddingVertical: 0,
   },
+  dropdownLabel: {
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  dropdownContainer: {
+    borderWidth: 1,
+    borderColor: '#eee',
+},
   icon: {
     alignContent: 'center',
     justifyContent: 'center',
