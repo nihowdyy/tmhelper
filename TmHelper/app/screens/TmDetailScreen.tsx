@@ -282,14 +282,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   moveCategory: {
-    width: 27,
-    height: 22,
-    marginHorizontal: 5,
+    width: 31,
+    height: 25,
+    marginHorizontal: 4,
   },
   moveType: {
-    width: 22,
-    height: 22,
-    
+    width: 25,
+    height: 25,
+    marginHorizontal: 4,
   },
   tmDescription: {
     fontSize: 20,

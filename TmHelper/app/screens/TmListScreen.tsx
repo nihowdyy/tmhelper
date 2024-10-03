@@ -135,20 +135,26 @@ const styles = StyleSheet.create({
   row: {
     flex: 1,
     flexDirection: 'row',
+    alignItems: 'center',
     alignSelf: 'center',
     width: '95%',
     paddingVertical: 5,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
   },
+  imageContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   typeImage: {
     width: 24,
     height: 24,
+    marginHorizontal: 4,
   },
   categoryImage: {
-    width: 24,
+    width: 32,
     height: 24,
-    marginHorizontal: 5,
+    marginHorizontal: 4,
   },
   textContainer: {
     flex: 1,
@@ -169,10 +175,6 @@ const styles = StyleSheet.create({
   tmName: {
     fontSize: 20,
     fontWeight: 'bold',
-  },
-  imageContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
   },
   searchContainer: {
     flexDirection: 'row',
