@@ -52,15 +52,15 @@ const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item
   const moveCategoryImage = moveCategories[item.move_info.category as MoveCategory] || moveCategories['Status'];
 
   return (
-    <Pressable onPress={() => onPress(item)} style={styles.item}>
+    <Pressable onPress={() => onPress(item)}>
+      <Text style={styles.tmNumber}>TM {item.tm_info.number}</Text>
       <View style={styles.row}>
         <View style={styles.textContainer}>
-          <Text style={styles.tmNumber}>TM {item.tm_info.number}</Text>
           <Text style={styles.tmName}>{item.tm_info.name}</Text>
         </View>
         <View style={styles.imageContainer}>
-          <Image source={moveTypeImage} style={styles.image} resizeMode='contain' />
-          <Image source={moveCategoryImage} style={styles.image} resizeMode='contain' />
+          <Image source={moveTypeImage} style={styles.typeImage} resizeMode='contain' />
+          <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode='contain' />
         </View>
       </View>
     </Pressable>
@@ -99,7 +99,7 @@ const HomeScreen = ({ navigation }: any) => {
   }, [navigation]);
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.screen}>
       <View style={styles.searchContainer}>
         <Icon name="search" size={20} color="#000" style={styles.icon} />
         <TextInput
@@ -128,21 +128,27 @@ const HomeScreen = ({ navigation }: any) => {
 };
 
 const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: '#FFFFFF'
+  },
   row: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
-  },
-  item: {
-    padding: 10,
+    alignSelf: 'center',
+    width: '95%',
+    paddingVertical: 5,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
   },
-  image: {
+  typeImage: {
+    width: 24,
+    height: 24,
+  },
+  categoryImage: {
     width: 30,
-    height: 30,
-    marginLeft: 5, 
+    height: 24,
+    marginHorizontal: 5,
   },
   textContainer: {
     flex: 1,
@@ -153,11 +159,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   tmNumber: {
-    fontSize: 14,
-    color: '#555',
+    fontSize: 16,
+    flex: 1,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    width: '95%',
+    paddingTop: 10,
   },
   tmName: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   imageContainer: {
@@ -168,7 +178,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#F2F2F2',
     borderColor: '#eeeeee',
     borderWidth: 1,
     margin: 10,
