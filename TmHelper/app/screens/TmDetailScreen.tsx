@@ -123,7 +123,7 @@ const TMDetailScreen = ({ route }: any) => {
   const showNavigationButtons = selectedPokemonImages.length > 1;
 
   return (
-    <View style={styles.container}>
+    <View style={styles.screen}>
       <FlatList
         showsVerticalScrollIndicator={false}
         ListHeaderComponent={
@@ -258,7 +258,7 @@ const TMDetailScreen = ({ route }: any) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
     flex: 1,
     padding: 16,
     backgroundColor: '#FFFFFF'

@@ -104,8 +104,8 @@ const HomeScreen = ({ navigation }: any) => {
         <Icon name="search" size={20} color="#000" style={styles.icon} />
         <TextInput
           style={styles.searchInput}
-          placeholder="Search by number, name, type, or category"
-          placeholderTextColor="#ccc"
+          placeholder="Search by No., Name, Type, or Category"
+          placeholderTextColor="#aaa"
           value={query}
           onChangeText={handleSearch}
           autoCorrect={false}
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 10,
+    padding: 15,
     backgroundColor: '#F2F2F2',
     borderColor: '#eeeeee',
     borderWidth: 1,
