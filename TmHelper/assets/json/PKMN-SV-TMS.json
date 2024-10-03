@@ -476,7 +476,7 @@
                 }
             ],
             "sell_price": "$400",
-            "description": "The user attacks by struggling against opposing Pok\u00c3\u00a9mon. This also lowers their Sp. Atk stats."
+            "description": "The user attacks by struggling against opposing Pokémon. This also lowers their Sp. Atk stats."
         },
         "move_info": {
             "type": "Bug",
@@ -601,7 +601,7 @@
                 }
             ],
             "sell_price": "$200",
-            "description": "Letting out a charming cry, the user does emotional damage to opposing Pok\u00c3\u00a9mon. This attack never misses."
+            "description": "Letting out a charming cry, the user does emotional damage to opposing Pokémon. This attack never misses."
         },
         "move_info": {
             "type": "Fairy",
@@ -978,7 +978,7 @@
                 }
             ],
             "sell_price": "$800",
-            "description": "The user yells as if it's ranting about something, which lowers the Sp. Atk stats of opposing Pok\u00c3\u00a9mon."
+            "description": "The user yells as if it's ranting about something, which lowers the Sp. Atk stats of opposing Pokémon."
         },
         "move_info": {
             "type": "Dark",
@@ -1037,7 +1037,7 @@
                 }
             ],
             "sell_price": "$200",
-            "description": "Star-shaped rays are shot at opposing Pok\u00c3\u00a9mon. This attack never misses."
+            "description": "Star-shaped rays are shot at opposing Pokémon. This attack never misses."
         },
         "move_info": {
             "type": "Normal",
@@ -1109,7 +1109,7 @@
                 }
             ],
             "sell_price": "$800",
-            "description": "The user attacks with a gust of chilled air. This also lowers opposing Pok\u00c3\u00a9mon's Speed stats."
+            "description": "The user attacks with a gust of chilled air. This also lowers opposing Pokémon's Speed stats."
         },
         "move_info": {
             "type": "Ice",
@@ -1207,8 +1207,8 @@
                     "quantity": 3
                 },
                 {
-                    "material_name": "Flab\u00c3\u00a9b\u00c3\u00a9 Pollen",
-                    "pokemon_name": "Flab\u00c3\u00a9b\u00c3\u00a9",
+                    "material_name": "Flabébé Pollen",
+                    "pokemon_name": "Flabébé",
                     "quantity": 3
                 }
             ],
@@ -1311,7 +1311,7 @@
                 }
             ],
             "sell_price": "$400",
-            "description": "The user launches razor-like wind to slash opposing Pok\u00c3\u00a9mon. This move has a heightened chance of landing a critical hit."
+            "description": "The user launches razor-like wind to slash opposing Pokémon. This move has a heightened chance of landing a critical hit."
         },
         "move_info": {
             "type": "Flying",
@@ -1456,7 +1456,7 @@
                 }
             ],
             "sell_price": "$1,500",
-            "description": "The target is knocked away, and a different Pok\u00c3\u00a9mon is dragged out. In the wild, this ends a battle against a single Pok\u00c3\u00a9mon."
+            "description": "The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon."
         },
         "move_info": {
             "type": "Dragon",
@@ -1582,7 +1582,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "After making its attack, the user rushes back to switch places with a party Pok\u00c3\u00a9mon in waiting."
+            "description": "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
         },
         "move_info": {
             "type": "Electric",
@@ -1700,7 +1700,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "A five-turn sandstorm is summoned to damage all Pok\u00c3\u00a9mon except Rock, Ground, and Steel types. The sandstorm also boosts the Sp. Def stats of Rock types."
+            "description": "A five-turn sandstorm is summoned to damage all Pokémon except Rock, Ground, and Steel types. The sandstorm also boosts the Sp. Def stats of Rock types."
         },
         "move_info": {
             "type": "Rock",
@@ -2037,7 +2037,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "After making its attack, the user rushes back to switch places with a party Pok\u00c3\u00a9mon in waiting."
+            "description": "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
         },
         "move_info": {
             "type": "Bug",
@@ -2746,7 +2746,7 @@
                 }
             ],
             "sell_price": "$8,000",
-            "description": "The user damages opposing Pok\u00c3\u00a9mon by emitting a powerful flash."
+            "description": "The user damages opposing Pokémon by emitting a powerful flash."
         },
         "move_info": {
             "type": "Fairy",
@@ -2995,7 +2995,7 @@
                 }
             ],
             "sell_price": "$5,000",
-            "description": "Large boulders are hurled at opposing Pok\u00c3\u00a9mon to inflict damage. This may also make the opposing Pok\u00c3\u00a9mon flinch."
+            "description": "Large boulders are hurled at opposing Pokémon to inflict damage. This may also make the opposing Pokémon flinch."
         },
         "move_info": {
             "type": "Rock",
@@ -3158,7 +3158,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "The user lays a trap of spikes at the feet of the opposing team. The spikes will damage opposing Pok\u00c3\u00a9mon that switch into battle."
+            "description": "The user lays a trap of spikes at the feet of the opposing team. The spikes will damage opposing Pokémon that switch into battle."
         },
         "move_info": {
             "type": "Ground",
@@ -3191,7 +3191,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "The user lays a trap of poison spikes at the feet of the opposing team. The spikes will poison opposing Pok\u00c3\u00a9mon that switch into battle."
+            "description": "The user lays a trap of poison spikes at the feet of the opposing team. The spikes will poison opposing Pokémon that switch into battle."
         },
         "move_info": {
             "type": "Poison",
@@ -3225,7 +3225,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "If opposing Pok\u00c3\u00a9mon know any move also known by the user, they are prevented from using it."
+            "description": "If opposing Pokémon know any move also known by the user, they are prevented from using it."
         },
         "move_info": {
             "type": "Psychic",
@@ -4178,7 +4178,7 @@
                 }
             ],
             "sell_price": "$5,000",
-            "description": "The user lays a trap of levitating stones around the opposing team. The trap damages opposing Pok\u00c3\u00a9mon that switch into battle."
+            "description": "The user lays a trap of levitating stones around the opposing team. The trap damages opposing Pokémon that switch into battle."
         },
         "move_info": {
             "type": "Rock",
@@ -4260,7 +4260,7 @@
                 }
             ],
             "sell_price": "$10,000",
-            "description": "The user attacks by exhaling hot breath on opposing Pok\u00c3\u00a9mon. This may also leave them with a burn."
+            "description": "The user attacks by exhaling hot breath on opposing Pokémon. This may also leave them with a burn."
         },
         "move_info": {
             "type": "Fire",
@@ -4802,7 +4802,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "The user switches places with a party Pok\u00c3\u00a9mon in waiting and passes along any stat changes."
+            "description": "The user switches places with a party Pokémon in waiting and passes along any stat changes."
         },
         "move_info": {
             "type": "Normal",
@@ -4965,7 +4965,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "The user turns the ground into Electric Terrain for five turns, powering up Electric-type moves. Pok\u00c3\u00a9mon on the ground can no longer fall asleep."
+            "description": "The user turns the ground into Electric Terrain for five turns, powering up Electric-type moves. Pokémon on the ground can no longer fall asleep."
         },
         "move_info": {
             "type": "Electric",
@@ -4992,8 +4992,8 @@
             "lp_cost": "3,000",
             "materials": [
                 {
-                    "material_name": "Flab\u00c3\u00a9b\u00c3\u00a9 Pollen",
-                    "pokemon_name": "Flab\u00c3\u00a9b\u00c3\u00a9",
+                    "material_name": "Flabébé Pollen",
+                    "pokemon_name": "Flabébé",
                     "quantity": 3
                 },
                 {
@@ -5008,7 +5008,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "The user turns the ground into Grassy Terrain for five turns. This restores the HP of Pok\u00c3\u00a9mon on the ground a little every turn and powers up Grass-type moves."
+            "description": "The user turns the ground into Grassy Terrain for five turns. This restores the HP of Pokémon on the ground a little every turn and powers up Grass-type moves."
         },
         "move_info": {
             "type": "Grass",
@@ -5049,7 +5049,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "This protects Pok\u00c3\u00a9mon on the ground from priority moves and powers up Psychic-type moves for five turns."
+            "description": "This protects Pokémon on the ground from priority moves and powers up Psychic-type moves for five turns."
         },
         "move_info": {
             "type": "Psychic",
@@ -5083,13 +5083,13 @@
                     "quantity": 3
                 },
                 {
-                    "material_name": "Flab\u00c3\u00a9b\u00c3\u00a9 Pollen",
-                    "pokemon_name": "Flab\u00c3\u00a9b\u00c3\u00a9",
+                    "material_name": "Flabébé Pollen",
+                    "pokemon_name": "Flabébé",
                     "quantity": 3
                 }
             ],
             "sell_price": "$3,000",
-            "description": "This protects Pok\u00c3\u00a9mon on the ground from status conditions and halves damage from Dragon-type moves for five turns."
+            "description": "This protects Pokémon on the ground from status conditions and halves damage from Dragon-type moves for five turns."
         },
         "move_info": {
             "type": "Fairy",
@@ -5253,7 +5253,7 @@
                 }
             ],
             "sell_price": "$12,000",
-            "description": "A howling blizzard is summoned to strike opposing Pok\u00c3\u00a9mon. This may also leave the opposing Pok\u00c3\u00a9mon frozen."
+            "description": "A howling blizzard is summoned to strike opposing Pokémon. This may also leave the opposing Pokémon frozen."
         },
         "move_info": {
             "type": "Ice",
@@ -5487,7 +5487,7 @@
                 }
             ],
             "sell_price": "$12,000",
-            "description": "The user sets off an earthquake that strikes every Pok\u00c3\u00a9mon around it."
+            "description": "The user sets off an earthquake that strikes every Pokémon around it."
         },
         "move_info": {
             "type": "Ground",
@@ -5959,7 +5959,7 @@
                 }
             ],
             "sell_price": "$5,000",
-            "description": "The user creates a bizarre area in which slower Pok\u00c3\u00a9mon get to move first for five turns."
+            "description": "The user creates a bizarre area in which slower Pokémon get to move first for five turns."
         },
         "move_info": {
             "type": "Psychic",
@@ -6376,7 +6376,7 @@
                 }
             ],
             "sell_price": "$200",
-            "description": "The target is scared off, and a different Pok\u00c3\u00a9mon is dragged out. In the wild, this ends a battle against a single Pok\u00c3\u00a9mon."
+            "description": "The target is scared off, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon."
         },
         "move_info": {
             "type": "Normal",
@@ -6429,7 +6429,7 @@
                 }
             ],
             "sell_price": "$400",
-            "description": "The user creates a haze that eliminates every stat change among all the Pok\u00c3\u00a9mon engaged in battle."
+            "description": "The user creates a haze that eliminates every stat change among all the Pokémon engaged in battle."
         },
         "move_info": {
             "type": "Ice",
@@ -6553,7 +6553,7 @@
                 }
             ],
             "sell_price": "$400",
-            "description": "Enables Flying types or Pok\u00c3\u00a9mon with the Levitate Ability to be hit by Ground-type moves for five turns. Moves that involve flying can't be used."
+            "description": "Enables Flying types or Pokémon with the Levitate Ability to be hit by Ground-type moves for five turns. Moves that involve flying can't be used."
         },
         "move_info": {
             "type": "Psychic",
@@ -6968,7 +6968,7 @@
                 }
             ],
             "sell_price": "$5,000",
-            "description": "The user attacks in an uproar for three turns. During that time, no Pok\u00c3\u00a9mon can fall asleep."
+            "description": "The user attacks in an uproar for three turns. During that time, no Pokémon can fall asleep."
         },
         "move_info": {
             "type": "Normal",
@@ -7099,7 +7099,7 @@
                 }
             ],
             "sell_price": "$8,000",
-            "description": "The user attacks with energy from jealousy. This leaves all opposing Pok\u00c3\u00a9mon that have had their stats boosted during the turn with a burn."
+            "description": "The user attacks with energy from jealousy. This leaves all opposing Pokémon that have had their stats boosted during the turn with a burn."
         },
         "move_info": {
             "type": "Fire",
@@ -7137,7 +7137,7 @@
                 }
             ],
             "sell_price": "$5,000",
-            "description": "After making its attack, the user rushes back to switch places with a party Pok\u00c3\u00a9mon in waiting."
+            "description": "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
         },
         "move_info": {
             "type": "Water",
@@ -7569,7 +7569,7 @@
                 }
             ],
             "sell_price": "$10,000",
-            "description": "The user attacks by shooting muddy water at opposing Pok\u00c3\u00a9mon. This may also lower their accuracy."
+            "description": "The user attacks by shooting muddy water at opposing Pokémon. This may also lower their accuracy."
         },
         "move_info": {
             "type": "Water",
@@ -7627,7 +7627,7 @@
                 }
             ],
             "sell_price": "$800",
-            "description": "The user captures opposing Pok\u00c3\u00a9mon in an electric net to inflict damage. This also lowers their Speed stats."
+            "description": "The user captures opposing Pokémon in an electric net to inflict damage. This also lowers their Speed stats."
         },
         "move_info": {
             "type": "Electric",
@@ -7699,7 +7699,7 @@
                 }
             ],
             "sell_price": "$800",
-            "description": "The user properly coaches its ally Pok\u00c3\u00a9mon, boosting their Attack and Defense stats."
+            "description": "The user properly coaches its ally Pokémon, boosting their Attack and Defense stats."
         },
         "move_info": {
             "type": "Fighting",
@@ -7870,7 +7870,7 @@
                 }
             ],
             "sell_price": "$10,000",
-            "description": "The user attacks the target with its psychic power. When the ground is Psychic Terrain, this move's power is boosted and it damages all opposing Pok\u00c3\u00a9mon."
+            "description": "The user attacks the target with its psychic power. When the ground is Psychic Terrain, this move's power is boosted and it damages all opposing Pokémon."
         },
         "move_info": {
             "type": "Psychic",
@@ -7996,7 +7996,7 @@
                 }
             ],
             "sell_price": "$3,000",
-            "description": "The user swings its tough tail wildly and attacks opposing Pok\u00c3\u00a9mon. This also lowers their Attack stats."
+            "description": "The user swings its tough tail wildly and attacks opposing Pokémon. This also lowers their Attack stats."
         },
         "move_info": {
             "type": "Dragon",
