@@ -125,23 +125,34 @@ const TMDetailScreen = ({ route }: any) => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={[]}
         showsVerticalScrollIndicator={false}
         ListHeaderComponent={
           <>
-            <Text>TM {tm.tm_info.number}</Text>
-            <Text style={styles.title}>{tm.tm_info.name}</Text>
+            {/* TM Information Header*/}
+            <View style={styles.tmHeader}>
+              {/* TM Number*/}
+              <Text style={styles.headerText}>{tm.tm_info.number}</Text>
 
-            <View style={styles.imageContainer}>
-              <Image source={moveTypeImage} style={styles.moveType} resizeMode="contain" />
-              <Text style={styles.moveIconLabel}>{tm.move_info.type}</Text>
-              <Image source={moveCategoryImage} style={styles.moveCategory} resizeMode="contain" />
-              <Text style={styles.moveIconLabel}>{tm.move_info.category}</Text>
+              {/* Seperator */}
+              <View style={styles.separator}></View>
+
+              {/* TM Name */}
+              <Text style={styles.headerText}>{tm.tm_info.name}</Text>
+
+              {/* Seperator */}
+              <View style={styles.separator}></View>
+
+              {/* Move Icons */}
+              <View style={styles.imageContainer}>
+                <Image source={moveTypeImage} style={styles.moveType} resizeMode="contain" />
+                <Image source={moveCategoryImage} style={styles.moveCategory} resizeMode="contain" />
+              </View>
             </View>
 
-            <Text style={styles.tmDescHeader}>Description</Text>
+            {/* Move Description */}
             <Text style={styles.tmDescription}>{tm.tm_info.description}</Text>
 
+            {/* Move Battle Stats */}
             <View style={styles.table}>
               <View style={styles.tableRowHeader}>
                 <Text style={styles.headerCell}>Power</Text>
@@ -151,20 +162,22 @@ const TMDetailScreen = ({ route }: any) => {
 
               <View style={styles.tableRow}>
                 <Text style={styles.cell}>{tm.move_info.power === 'None' ? '——' : tm.move_info.power}</Text>
-                <Text style={styles.cell}>{tm.move_info.accuracy === 'Cannot Miss' ? '——%' : `${tm.move_info.accuracy}%`}</Text>
+                <Text style={styles.cell}>{tm.move_info.accuracy === 'Cannot Miss' ? '——' : `${tm.move_info.accuracy}`}</Text>
                 <Text style={styles.cell}>{tm.move_info.pp}</Text>
               </View>
             </View>
 
+            {/* Required Resources */}
             <Text style={styles.subtitle}>Required Resources</Text>
 
+            {/* League Point Requirements */}
             <View style={styles.row}>
               <Image source={LPIcon} style={styles.pokemonImage} resizeMode="contain" />
-              <Text style={styles.text}>League Points</Text>
-              <Text style={styles.quantityText}>{tm.tm_info.lp_cost}</Text>
+              <Text style={styles.materialLabel}>League Points</Text>
+              <Text style={styles.materialQuantity}>{tm.tm_info.lp_cost}</Text>
             </View>
 
-            {/* List all Pokémon materials */}
+            {/* Pokemon Material Requirements */}
             {materials.map((material: any, index: number) => {
               const pokemonImage = pokemonImages[material.pokemon_name];
               return (
@@ -174,14 +187,14 @@ const TMDetailScreen = ({ route }: any) => {
                     style={styles.pokemonImage}
                     resizeMode="contain"
                   />
-                  <Text style={styles.text}>{material.material_name}</Text>
-                  <Text style={styles.quantityText}>{material.quantity}</Text>
+                  <Text style={styles.materialLabel}>{material.material_name}</Text>
+                  <Text style={styles.materialQuantity}>{material.quantity}</Text>
                 </View>
               );
             })}
 
+            {/* Dropdown Selector to Select Pokemon Material */}
             <Text style={styles.subtitle}>Pokemon Material Map </Text>
-            {/* Picker to select the Pokémon Material*/}
             <DropdownPicker
               open={openDropdown}
               value={selectedPokemon}
@@ -198,9 +211,10 @@ const TMDetailScreen = ({ route }: any) => {
               }))}
               setOpen={setOpenDropdown}
               setValue={setSelectedPokemon}
-              containerStyle={{ height: 60 }} // Style to maintain consistent height
+              containerStyle={{ height: 60 }} 
               style={styles.picker}
               labelStyle={styles.dropdownLabel}
+              listItemLabelStyle={styles.dropdownLabel}
               dropDownContainerStyle={styles.dropdownContainer}
             />
 
@@ -247,88 +261,50 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
+    backgroundColor: '#FFFFFF'
   },
-  title: {
+  tmHeader: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+  },
+  headerText: {
     fontSize: 22,
     fontWeight: 'bold',
-    marginBottom: 10,
   },
-  subtitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginVertical: 10,
-  },
-  text: {
-    flex: 1,
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  quantityText: {
-    fontSize: 16,
-    textAlign: 'right',
-  },
-  resourcesRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 5,
-    
-  },
-  item: {
-    marginBottom: 5,
-  },
-  pokemonName: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  image: {
-    width: 300,
-    height: 300,
-    alignItems: 'center',
-    borderRadius: 10,
-  },
-  imageWrapper: {
-    marginTop: 10,
-    alignItems: 'center',
-  },
-  modalBackground: {
-    flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  fullscreenImage: {
-    width: '100%',
-    height: '80%',
-    resizeMode: 'contain',
+  separator: {
+    width: 1, 
+    backgroundColor: '#ccc',
+    height: '100%', 
+    marginHorizontal: 5,
   },
   imageContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   moveCategory: {
-    width: 25,
-    height: 25,
-    marginLeft: 10,
-    marginRight: 5,
+    width: 27,
+    height: 22,
+    marginHorizontal: 5,
   },
   moveType: {
-    width: 20,
-    height: 20,
-    marginRight: 5,
+    width: 22,
+    height: 22,
+    
   },
-  moveIconLabel: {
-    fontSize: 18,
+  tmDescription: {
+    fontSize: 20,
+    fontWeight: '500',
+    textAlign: 'center',
+    marginTop: 10,
+    marginBottom: 10,
   },
   table: {
-    borderWidth: 1,
-    borderColor: '#eee',
-    borderRadius: 10,
-    overflow: 'hidden',
+    borderWidth: 0.5,
+    borderColor: '#D9D9D9',
+    borderRadius: 8,
     marginVertical: 10,
     paddingVertical: 5,
-    backgroundColor: '#fff',
+    backgroundColor: '#EEEEEE',
   },
   tableRowHeader: {
     flexDirection: 'row',
@@ -342,31 +318,96 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 5,
   },
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 5,
-  },
   headerCell: {
     fontWeight: 'bold',
-    fontSize: 18,
-    color: '#333',
+    fontSize: 20,
     flex: 1,
     textAlign: 'center',
     padding: 5,
   },
   cell: {
-    fontSize: 16,
-    color: '#333',
+    fontSize: 20,
     flex: 1,
     textAlign: 'center',
     marginBottom: 5, 
   },
+  subtitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginVertical: 10,
+  },
+    row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 10,
+  },
   pokemonImage: {
-    width: 25,
-    height: 25,
-    marginRight: 10,
+    height: 33,
+    width: 33,
+  },
+  materialLabel: {
+    flex: 1,
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginLeft: 20,
+  },
+  materialQuantity: {
+    fontSize: 20,
+    textAlign: 'right',
+    marginLeft: 20,
+  },
+  picker: {
+    backgroundColor: '#FFFFFF', 
+    borderWidth: 0.25,
+    borderColor: '#D9D9D9',
+  },
+  dropdownLabel: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginLeft: 10,
+  },
+  dropdownContainer: {
+    borderWidth: 1,
+    borderColor: '#eee',
+  },
+  image: {
+    width: 350,
+    height: 350,
+    alignItems: 'center',
+    borderRadius: 10,
+  },
+  imageWrapper: {
+    marginTop: 10,
+    alignItems: 'center',
+  },
+  imageNavigator: {
+    marginTop: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  mapText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    width: 140,
+  },
+  mapIcon: {
+    height: 28,
+    width: 28,
+    marginLeft: 5,
+  },
+  modalBackground: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  fullscreenImage: {
+    width: '100%',
+    height: '80%',
+    resizeMode: 'contain',
   },
   arrow: {
     marginHorizontal: 10,
@@ -377,60 +418,6 @@ const styles = StyleSheet.create({
   rightArrowButton: {
     paddingRight: 30,
   },
-  imageNavigator: {
-    marginTop: 15,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  mapText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    width: 130,
-  },
-  mapIcon: {
-    height: 30,
-    width: 30,
-    marginLeft: 10,
-  },
-  picker: {
-    width: '100%',
-    backgroundColor: '#fff', 
-    borderWidth: 1,
-    borderColor: '#eee',
-    borderRadius: 5,
-    paddingVertical: 0,
-  },
-  dropdownLabel: {
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
-  dropdownContainer: {
-    borderWidth: 1,
-    borderColor: '#eee',
-},
-  icon: {
-    alignContent: 'center',
-    justifyContent: 'center',
-  },
-  iconContainer: {
-    position: 'absolute',
-    right: 10, // Adjust as necessary for padding
-    transform: [{ translateY: +15 }], // Adjust for your icon's height
-  },
-  tmDescription: {
-    fontSize: 14,
-    textAlign: 'left',
-    marginTop: 5,
-    marginBottom: 10,
-  },
-  tmDescHeader: {
-    fontSize: 16,
-    fontWeight: '500',
-    textAlign: 'left',
-    marginTop: 10,
-  }
 });
 
 
