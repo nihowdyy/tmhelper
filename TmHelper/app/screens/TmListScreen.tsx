@@ -92,7 +92,6 @@ const HomeScreen = ({ navigation }: any) => {
 
   const handlePress = React.useCallback((tm: TMData) => {
     try {
-      console.log('Navigating to TMDetails with:', tm);
       navigation.navigate('TMDetails', { tm });
     } catch (error) {
       console.error("Navigation error:", error);

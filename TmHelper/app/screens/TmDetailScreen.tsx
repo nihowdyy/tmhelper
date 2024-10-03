@@ -94,20 +94,25 @@ const TMDetailScreen = ({ route }: any) => {
   };
 
   // Get Map Name from Source
-  const getMapNameFromSource = (pokemonName: string, currentImage: number) => {
-    const currentLocationImage = pokemonLocations[pokemonName][currentImage];
-
-    if (currentLocationImage) {
-      const fileName = currentLocationImage.name; // Assuming the name contains the file name
-
-      if (fileName.includes("Indigo Disk")) {
-        return ["Blueberry Map", BBIcon];
-      } else if (fileName.includes("Teal Mask")) {
-        return ["Kitakami Map", KitakamiIcon];
-      }
+  const getMapNameFromSource = (pokemonName: string, currentImage?: number) => {
+    // Check if currentImage is undefined or if the location doesn't exist
+    if (typeof currentImage === 'undefined' || !pokemonLocations[pokemonName] || !pokemonLocations[pokemonName][currentImage]) {
+      return ["Location Not Found", PaldeaIcon];
     }
-
-    return ["Paldea Map", PaldeaIcon]; // Default return value
+  
+    // If location exists, retrieve the current image
+    const currentLocationImage = pokemonLocations[pokemonName][currentImage];
+    const fileName = currentLocationImage.name; // Assuming the file has a 'name' property
+  
+    // Check if the fileName contains specific keywords
+    if (fileName.includes("Indigo Disk")) {
+      return ["Blueberry Map", BBIcon];
+    } else if (fileName.includes("Teal Mask")) {
+      return ["Kitakami Map", KitakamiIcon];
+    }
+  
+    // Default case: location exists but doesn't match any specific names
+    return ["Paldea Map", PaldeaIcon];
   };
 
   // Get images and locations for the selected Pokémon
@@ -131,21 +136,24 @@ const TMDetailScreen = ({ route }: any) => {
 
             <View style={styles.imageContainer}>
               <Image source={moveTypeImage} style={styles.moveType} resizeMode="contain" />
-              <Text>{tm.move_info.type}</Text>
+              <Text style={styles.moveIconLabel}>{tm.move_info.type}</Text>
               <Image source={moveCategoryImage} style={styles.moveCategory} resizeMode="contain" />
-              <Text>{tm.move_info.category}</Text>
+              <Text style={styles.moveIconLabel}>{tm.move_info.category}</Text>
             </View>
 
+            <Text style={styles.tmDescHeader}>Description</Text>
+            <Text style={styles.tmDescription}>{tm.tm_info.description}</Text>
+
             <View style={styles.table}>
-              <View style={styles.tableRow}>
+              <View style={styles.tableRowHeader}>
                 <Text style={styles.headerCell}>Power</Text>
                 <Text style={styles.headerCell}>Accuracy</Text>
                 <Text style={styles.headerCell}>PP</Text>
               </View>
 
               <View style={styles.tableRow}>
-                <Text style={styles.cell}>{tm.move_info.power}</Text>
-                <Text style={styles.cell}>{tm.move_info.accuracy}</Text>
+                <Text style={styles.cell}>{tm.move_info.power === 'None' ? '——' : tm.move_info.power}</Text>
+                <Text style={styles.cell}>{tm.move_info.accuracy === 'Cannot Miss' ? '——%' : `${tm.move_info.accuracy}%`}</Text>
                 <Text style={styles.cell}>{tm.move_info.pp}</Text>
               </View>
             </View>
@@ -184,6 +192,7 @@ const TMDetailScreen = ({ route }: any) => {
                 }
               }}
               style={styles.picker} // Custom picker styles
+              mode={'dropdown'}
             >
               {/* Map through the materials array */}
               {materials?.map((material) => (
@@ -213,11 +222,12 @@ const TMDetailScreen = ({ route }: any) => {
               return null;
             })}
 
-            {/* Display Pokémon Locations */}
+            {/* Map Display*/}
             <Pressable onPress={() => openImage(currentImageData.image)} style={styles.imageWrapper}>
               <Image source={currentImageData.image} style={styles.image} />
             </Pressable>
 
+            {/* Map Navigation and Label */}
            <View style={styles.imageNavigator}>
               {showNavigationButtons && 
                 <Pressable 
@@ -269,8 +279,18 @@ const styles = StyleSheet.create({
   text: {
     flex: 1,
     fontSize: 16,
-    marginBottom: 5,
     fontWeight: 'bold',
+  },
+  quantityText: {
+    fontSize: 16,
+    textAlign: 'right',
+  },
+  resourcesRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 5,
+    
   },
   item: {
     marginBottom: 5,
@@ -316,19 +336,29 @@ const styles = StyleSheet.create({
     height: 20,
     marginRight: 5,
   },
+  moveIconLabel: {
+    fontSize: 18,
+  },
   table: {
     borderWidth: 1,
     borderColor: '#eee',
     borderRadius: 10,
     overflow: 'hidden',
-    margin: 10,
+    marginVertical: 10,
+    paddingVertical: 5,
     backgroundColor: '#fff',
+  },
+  tableRowHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: 5,
   },
   tableRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 10,
+    marginBottom: 5,
   },
   row: {
     flexDirection: 'row',
@@ -342,22 +372,19 @@ const styles = StyleSheet.create({
     color: '#333',
     flex: 1,
     textAlign: 'center',
+    padding: 5,
   },
   cell: {
     fontSize: 16,
     color: '#333',
     flex: 1,
     textAlign: 'center',
+    marginBottom: 5, 
   },
   pokemonImage: {
     width: 25,
     height: 25,
     marginRight: 10,
-  },
-  quantityText: {
-    fontSize: 16,
-    marginBottom: 5,
-    textAlign: 'right',
   },
   arrow: {
     marginHorizontal: 10,
@@ -401,6 +428,18 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 10, // Adjust as necessary for padding
     transform: [{ translateY: +15 }], // Adjust for your icon's height
+  },
+  tmDescription: {
+    fontSize: 14,
+    textAlign: 'left',
+    marginTop: 5,
+    marginBottom: 10,
+  },
+  tmDescHeader: {
+    fontSize: 16,
+    fontWeight: '500',
+    textAlign: 'left',
+    marginTop: 10,
   }
 });
 
