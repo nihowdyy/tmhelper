@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Pressable, Image, TextInput } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Pressable, Image, Platform, TextInput, Animated } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
@@ -90,6 +90,7 @@ const HomeScreen = ({ navigation }: any) => {
     setFilteredData(newData);
   };
 
+  // Handling Navigation Errors
   const handlePress = React.useCallback((tm: TMData) => {
     try {
       navigation.navigate('TMDetails', { tm });
@@ -100,29 +101,33 @@ const HomeScreen = ({ navigation }: any) => {
 
   return (
     <View style={styles.screen}>
-      <View style={styles.searchContainer}>
-        <Icon name="search" size={20} color="#000" style={styles.icon} />
-        <TextInput
-          style={styles.searchInput}
-          placeholder="Search by No., Name, Type, or Category"
-          placeholderTextColor="#aaa"
-          value={query}
-          onChangeText={handleSearch}
-          autoCorrect={false}
-        />
+      <View style={styles.screenContainer}>
+        <View style={styles.searchContainer}>
+          <Icon name="search" size={20} color="#000" style={styles.icon} />
+          <TextInput
+            style={styles.searchInput}
+            placeholder="Search by No., Name, Type, or Category"
+            placeholderTextColor="#aaa"
+            value={query}
+            onChangeText={handleSearch}
+            autoCorrect={false}
+          />
+        </View>
+        {filteredData.length === 0 ? (
+          <Text>No Results Found</Text>
+        ) : (
+          <FlatList
+            data={filteredData}
+            renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
+            keyExtractor={(item) => item.tm_info.number}
+            initialNumToRender={10}
+            maxToRenderPerBatch={10}
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={{aspectRatio: Platform.OS === 'web' ? 1 : undefined}}
+            style={styles.flatlist}
+          />
+        )}
       </View>
-      {filteredData.length === 0 ? (
-        <Text>No Results Found</Text>
-      ) : (
-        <FlatList
-          data={filteredData}
-          renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
-          keyExtractor={(item) => item.tm_info.number}
-          initialNumToRender={10}
-          maxToRenderPerBatch={10}
-          showsVerticalScrollIndicator={false}
-        />
-      )}
     </View>
   );
 };
@@ -130,7 +135,13 @@ const HomeScreen = ({ navigation }: any) => {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#FAFAFA'
+  },
+  screenContainer: {
+    flex: 1,
+    padding: Platform.OS === 'web' ? 16: 0,
+    backgroundColor: '#FAFAFA',
+    marginHorizontal: Platform.OS === 'web' ? 'auto' : 0,
+    minWidth: Platform.OS === 'web' ? 800 : '100%',
   },
   row: {
     flex: 1,
@@ -193,6 +204,9 @@ const styles = StyleSheet.create({
   },
   icon: {
     color:  '#000000'
+  },
+  flatlist: {
+    flexGrow: 1,
   },
 });  
 

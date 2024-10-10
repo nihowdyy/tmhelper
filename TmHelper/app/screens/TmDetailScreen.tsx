@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal, TouchableWithoutFeedback} from 'react-native';
+import { StyleSheet, Text, View, FlatList, Image, Pressable, Platform, Modal, TouchableWithoutFeedback} from 'react-native';
 import DropdownPicker from 'react-native-dropdown-picker'
 
 // Importing Assets
@@ -126,6 +126,7 @@ const TMDetailScreen = ({ route }: any) => {
     <View style={styles.screen}>
       <FlatList
         showsVerticalScrollIndicator={false}
+        contentContainerStyle={{aspectRatio: Platform.OS === 'web' ? 1 : undefined}}
         ListHeaderComponent={
           <>
             {/* TM Information Header*/}
@@ -241,7 +242,6 @@ const TMDetailScreen = ({ route }: any) => {
             </View>
           </>
         }
-        contentContainerStyle={{ paddingBottom: 100 }} // Ensure there's padding at the bottom if needed
       />
 
       {/* Fullscreen image modal */}
@@ -264,7 +264,9 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#FAFAFA'
+    backgroundColor: '#FAFAFA',
+    marginHorizontal: Platform.OS === 'web' ? 'auto' : 0,
+    minWidth: Platform.OS === 'web' ? 800 : '100%',
   },
   tmHeader: {
     justifyContent: 'space-between',
