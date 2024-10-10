@@ -130,7 +130,7 @@ const HomeScreen = ({ navigation }: any) => {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#FFFFFF'
+    backgroundColor: '#FAFAFA'
   },
   row: {
     flex: 1,

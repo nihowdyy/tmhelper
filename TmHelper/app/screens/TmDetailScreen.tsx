@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal} from 'react-native';
+import { StyleSheet, Text, View, FlatList, Image, Pressable, Modal, TouchableWithoutFeedback} from 'react-native';
 import DropdownPicker from 'react-native-dropdown-picker'
 
 // Importing Assets
@@ -131,25 +131,24 @@ const TMDetailScreen = ({ route }: any) => {
             {/* TM Information Header*/}
             <View style={styles.tmHeader}>
               {/* TM Number*/}
-              <Text style={styles.headerText}>{tm.tm_info.number}</Text>
-
-              {/* Seperator */}
-              <View style={styles.separator}></View>
+              <Text style={styles.tmNumber}>TM {tm.tm_info.number}</Text>
 
               {/* TM Name */}
-              <Text style={styles.headerText}>{tm.tm_info.name}</Text>
-
-              {/* Seperator */}
-              <View style={styles.separator}></View>
+              <Text style={styles.tmName}>{tm.tm_info.name}</Text>
 
               {/* Move Icons */}
               <View style={styles.imageContainer}>
                 <Image source={moveTypeImage} style={styles.moveType} resizeMode="contain" />
+                <Text style={styles.iconLabel}>{tm.move_info.type}</Text>
+                {/* Seperator */}
+                <View style={styles.separator}></View>
                 <Image source={moveCategoryImage} style={styles.moveCategory} resizeMode="contain" />
+                <Text style={styles.iconLabel}>{tm.move_info.category}</Text>
               </View>
             </View>
 
             {/* Move Description */}
+            <Text style={styles.tmDescriptionHeader}>Description</Text>
             <Text style={styles.tmDescription}>{tm.tm_info.description}</Text>
 
             {/* Move Battle Stats */}
@@ -161,8 +160,8 @@ const TMDetailScreen = ({ route }: any) => {
               </View>
 
               <View style={styles.tableRow}>
-                <Text style={styles.cell}>{tm.move_info.power === 'None' ? '——' : tm.move_info.power}</Text>
-                <Text style={styles.cell}>{tm.move_info.accuracy === 'Cannot Miss' ? '——' : `${tm.move_info.accuracy}`}</Text>
+                <Text style={styles.cell}>{tm.move_info.power === 'None' ? '—' : tm.move_info.power}</Text>
+                <Text style={styles.cell}>{tm.move_info.accuracy === 'Cannot Miss' ? '—' : `${tm.move_info.accuracy}`}</Text>
                 <Text style={styles.cell}>{tm.move_info.pp}</Text>
               </View>
             </View>
@@ -248,9 +247,13 @@ const TMDetailScreen = ({ route }: any) => {
       {/* Fullscreen image modal */}
       {selectedImage && (
         <Modal visible={modalVisible} transparent={true} onRequestClose={closeImage}>
-          <Pressable style={styles.modalBackground} onPress={closeImage}>
-            <Image source={selectedImage} style={styles.fullscreenImage} />
-          </Pressable>
+          <TouchableWithoutFeedback onPress={closeImage}>
+            <View style={styles.modalBackground}>
+              <TouchableWithoutFeedback onPress={(e) => e.stopPropagation()}>
+                <Image source={selectedImage} style={styles.fullscreenImage} resizeMode="contain" />
+              </TouchableWithoutFeedback>
+            </View>
+          </TouchableWithoutFeedback>
         </Modal>
       )}
     </View>
@@ -261,50 +264,63 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#FFFFFF'
+    backgroundColor: '#FAFAFA'
   },
   tmHeader: {
     justifyContent: 'space-between',
-    flexDirection: 'row',
+    flexDirection: 'column',
   },
-  headerText: {
-    fontSize: 22,
+  tmNumber: {
+    fontSize: 14,
+    paddingBottom: 4,
+  },
+  tmName: {
+    fontSize: 26,
     fontWeight: 'bold',
-  },
-  separator: {
-    width: 1, 
-    backgroundColor: '#ccc',
-    height: '100%', 
-    marginHorizontal: 5,
+    paddingBottom: 8,
   },
   imageContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    paddingBottom: 16,
+  },
+  separator: {
+    width: 1, 
+    backgroundColor: '#9099A1', 
+    height: 25,
+    marginHorizontal: 8,
   },
   moveCategory: {
     width: 31,
     height: 25,
-    marginHorizontal: 4,
+    marginRight: 8,
   },
   moveType: {
     width: 25,
     height: 25,
-    marginHorizontal: 4,
+    marginRight: 8,
+  },
+  iconLabel: {
+    fontSize: 20,
+    fontWeight: '400',
+  },
+  tmDescriptionHeader: {
+    fontSize: 18,
+    fontWeight: '600',
   },
   tmDescription: {
-    fontSize: 20,
-    fontWeight: '500',
-    textAlign: 'center',
-    marginTop: 10,
-    marginBottom: 10,
+    fontSize: 16,
+    marginTop: 8,
+    marginBottom: 16,
+    color: "#444444",
   },
   table: {
     borderWidth: 0.5,
-    borderColor: '#D9D9D9',
+    borderColor: '#EEEEEE',
     borderRadius: 8,
     marginVertical: 10,
     paddingVertical: 5,
-    backgroundColor: '#EEEEEE',
+    backgroundColor: '#FFFFFF',
   },
   tableRowHeader: {
     flexDirection: 'row',
@@ -336,7 +352,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginVertical: 10,
   },
-    row: {
+  row: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -349,27 +365,28 @@ const styles = StyleSheet.create({
   materialLabel: {
     flex: 1,
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: '600',
     marginLeft: 20,
   },
   materialQuantity: {
     fontSize: 20,
     textAlign: 'right',
     marginLeft: 20,
+    color: '#444444'
   },
   picker: {
     backgroundColor: '#FFFFFF', 
     borderWidth: 0.25,
-    borderColor: '#D9D9D9',
+    borderColor: '#EEEEEE',
   },
   dropdownLabel: {
-    fontWeight: 'bold',
+    fontWeight: '600',
     fontSize: 20,
     marginLeft: 10,
   },
   dropdownContainer: {
     borderWidth: 1,
-    borderColor: '#eee',
+    borderColor: '#EEEEEE',
   },
   image: {
     width: 350,
@@ -406,7 +423,6 @@ const styles = StyleSheet.create({
   },
   fullscreenImage: {
     width: '100%',
-    height: '80%',
     resizeMode: 'contain',
   },
   arrow: {

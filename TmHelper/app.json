@@ -16,7 +16,7 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/splashFULL.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -25,6 +25,11 @@
       "bundleIdentifier": "com.nihowdy.TmHelper"
     },
     "android": {
+      "splash": {
+        "image": "./assets/images/splashFULL.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
