@@ -47,6 +47,7 @@ type MoveCategory =
 
 const data: TMData[] = tmData as TMData[];
 
+// Render for Move and their corresponding Information
 const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item: TMData) => void }) => {
   const moveTypeImage = moveTypes[item.move_info.type as MoveType] || moveTypes['Normal'];
   const moveCategoryImage = moveCategories[item.move_info.category as MoveCategory] || moveCategories['Status'];
@@ -58,10 +59,24 @@ const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item
         <View style={styles.textContainer}>
           <Text style={styles.tmName}>{item.tm_info.name}</Text>
         </View>
-        <View style={styles.imageContainer}>
-          <Image source={moveTypeImage} style={styles.typeImage} resizeMode='contain'/>
-          <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode='contain'/>
-        </View>
+        {Platform.OS != 'web' ? (
+          <View style={styles.imageContainer}>
+            <Image source={moveTypeImage} style={styles.typeImage} resizeMode='contain'/>
+            <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode='contain'/>
+          </View>
+        ) : (
+          <View style={styles.imageContainer}>
+              {/* Move Icons */}
+              <View style={styles.imageContainer}>
+                <Image source={moveTypeImage} style={styles.typeImage} resizeMode="contain" />
+                <Text style={styles.iconLabel}>{item.move_info.type}</Text>
+                {/* Seperator */}
+                <View style={styles.separator}></View>
+                <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode="contain" />
+                <Text style={styles.iconLabel}>{item.move_info.category}</Text>
+              </View>
+          </View>
+        )}
       </View>
     </Pressable>
   );
@@ -102,6 +117,7 @@ const HomeScreen = ({ navigation }: any) => {
   return (
     <View style={styles.screen}>
       <View style={styles.screenContainer}>
+        {/* Search Bar */}
         <View style={styles.searchContainer}>
           <Icon name="search" size={20} color="#000" style={styles.icon} />
           <TextInput
@@ -113,8 +129,17 @@ const HomeScreen = ({ navigation }: any) => {
             autoCorrect={false}
           />
         </View>
+        {/* TM Results */}
         {filteredData.length === 0 ? (
-          <Text>No Results Found</Text>
+          <View style={{  flex: 1,
+                          flexDirection: 'row',
+                          alignSelf: 'center',
+                          width: '95%',
+                          paddingVertical: 5  }}>
+            <Text style={{  fontSize: 18  }}>
+              No Results Found
+            </Text>
+          </View>
         ) : (
           <FlatList
             data={filteredData}
@@ -156,6 +181,17 @@ const styles = StyleSheet.create({
   imageContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  separator: {
+    width: 1, 
+    height: 25,
+    backgroundColor: '#9099A1', 
+    marginHorizontal: 4,
+  },
+  iconLabel: {
+    fontSize: 18,
+    fontWeight: '400',
+    marginHorizontal: 4,
   },
   typeImage: {
     width: 24,
