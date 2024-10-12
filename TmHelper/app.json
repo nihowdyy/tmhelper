@@ -8,7 +8,7 @@
       "ios"
     ],
     "cli": {
-      "appVersionSource": "version"
+      "appVersionSource": "expo"
     },
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,24 +22,19 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.nihowdy.TmHelper"
+      "bundleIdentifier": "com.nihowdo.TmHelper"
     },
     "android": {
-      "splash": {
-        "image": "./assets/images/splashFULL.png",
-        "resizeMode": "contain",
-        "backgroundColor": "#ffffff"
-      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.nihowdy.TmHelper"
+      "package": "com.nihowdo.TmHelper"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon.png"
     },
     "plugins": [
       "expo-router"

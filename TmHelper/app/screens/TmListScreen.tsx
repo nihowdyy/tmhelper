@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Pressable, Image, Platform, TextInput, Animated } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Pressable, Image, Platform, TextInput} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
@@ -54,30 +54,45 @@ const RenderItem = React.memo(({ item, onPress }: { item: TMData; onPress: (item
 
   return (
     <Pressable onPress={() => onPress(item)}>
-      <Text style={styles.tmNumber}>TM {item.tm_info.number}</Text>
-      <View style={styles.row}>
-        <View style={styles.textContainer}>
-          <Text style={styles.tmName}>{item.tm_info.name}</Text>
-        </View>
-        {Platform.OS != 'web' ? (
-          <View style={styles.imageContainer}>
+      {/* Mobile View */}
+      {Platform.OS != 'web' ? (
+        <View>
+          <Text style={styles.tmNumber}>TM {item.tm_info.number}</Text>
+          <View style={styles.row}>
+            <View style={styles.textContainer}>
+              <Text style={styles.tmName}>{item.tm_info.name}</Text>
+            </View>
+            <View style={styles.imageContainer}>
             <Image source={moveTypeImage} style={styles.typeImage} resizeMode='contain'/>
             <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode='contain'/>
+            </View>
           </View>
-        ) : (
+        </View>
+      ) : (
+      // Web View
+      <View>
+        <View style={{  flex: 1,
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        alignSelf: 'center',
+                        width: '95%',}}>
+          <Text style={styles.tmNumber}>TM {item.tm_info.number}</Text>
           <View style={styles.imageContainer}>
-              {/* Move Icons */}
-              <View style={styles.imageContainer}>
-                <Image source={moveTypeImage} style={styles.typeImage} resizeMode="contain" />
-                <Text style={styles.iconLabel}>{item.move_info.type}</Text>
-                {/* Seperator */}
-                <View style={styles.separator}></View>
-                <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode="contain" />
-                <Text style={styles.iconLabel}>{item.move_info.category}</Text>
-              </View>
+            <Image source={moveTypeImage} style={styles.typeImage} resizeMode="contain" />
+            <Text style={styles.iconLabel}>{item.move_info.type}</Text>
           </View>
-        )}
+        </View>
+        <View style={styles.row}>
+          <View style={styles.textContainer}>
+            <Text style={styles.tmName}>{item.tm_info.name}</Text>
+          </View>
+          <View style={styles.imageContainer}>
+            <Image source={moveCategoryImage} style={styles.categoryImage} resizeMode="contain" />
+            <Text style={styles.iconLabel}>{item.move_info.category}</Text>
+          </View>
+        </View>
       </View>
+    )}
     </Pressable>
   );
 });
@@ -129,7 +144,6 @@ const HomeScreen = ({ navigation }: any) => {
             autoCorrect={false}
           />
         </View>
-        {/* TM Results */}
         {filteredData.length === 0 ? (
           <View style={{  flex: 1,
                           flexDirection: 'row',
@@ -180,23 +194,18 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flexDirection: 'row',
-    alignItems: 'center',
-  },
-  separator: {
-    width: 1, 
-    height: 25,
-    backgroundColor: '#9099A1', 
-    marginHorizontal: 4,
+    alignItems: 'flex-start',
+    minWidth: Platform.OS === 'web' ? 110 : undefined,
   },
   iconLabel: {
     fontSize: 18,
-    fontWeight: '400',
-    marginHorizontal: 4,
+    textAlign: 'right',
+    minWidth: 68,
   },
   typeImage: {
     width: 24,
     height: 24,
-    marginHorizontal: 4,
+    marginHorizontal: Platform.OS === 'web' ? 8 : 4,
   },
   categoryImage: {
     width: 32,

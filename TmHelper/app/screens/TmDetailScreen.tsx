@@ -211,11 +211,14 @@ const TMDetailScreen = ({ route }: any) => {
               }))}
               setOpen={setOpenDropdown}
               setValue={setSelectedPokemon}
-              containerStyle={{ height: 60 }} 
+              dropDownDirection={'BOTTOM'}
+              containerStyle={{ height: 80 }} 
               style={styles.picker}
               labelStyle={styles.dropdownLabel}
-              listItemLabelStyle={styles.dropdownLabel}
+              listItemLabelStyle={styles.dropdownItems}
               dropDownContainerStyle={styles.dropdownContainer}
+              itemSeparator={true}
+              itemSeparatorStyle={styles.dropdownSeperator}
             />
 
             {/* Map Display*/}
@@ -320,39 +323,39 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#EEEEEE',
     borderRadius: 8,
-    marginVertical: 10,
-    paddingVertical: 5,
+    marginVertical: 8,
+    paddingVertical: 4,
     backgroundColor: '#FFFFFF',
   },
   tableRowHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginVertical: 5,
+    marginVertical: 4,
   },
   tableRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 5,
+    marginBottom: 4,
   },
   headerCell: {
     fontWeight: 'bold',
     fontSize: 20,
     flex: 1,
     textAlign: 'center',
-    padding: 5,
+    padding: 4,
   },
   cell: {
     fontSize: 20,
     flex: 1,
     textAlign: 'center',
-    marginBottom: 5, 
+    marginBottom: 4, 
   },
   subtitle: {
     fontSize: 22,
     fontWeight: 'bold',
-    marginVertical: 10,
+    marginVertical: 1,
   },
   row: {
     flexDirection: 'row',
@@ -378,17 +381,30 @@ const styles = StyleSheet.create({
   },
   picker: {
     backgroundColor: '#FFFFFF', 
-    borderWidth: 0.25,
+    borderWidth: 1,
     borderColor: '#EEEEEE',
+    paddingVertical: 8,
+    marginVertical: 16,
   },
   dropdownLabel: {
     fontWeight: '600',
     fontSize: 20,
     marginLeft: 10,
   },
+  dropdownItems: {
+    fontWeight: '400',
+    fontSize: 20,
+    marginLeft: 10,
+  },
+  dropdownSeperator: {
+    backgroundColor: '#FFFFFF',
+    marginVertical: 4,
+  },
   dropdownContainer: {
     borderWidth: 1,
     borderColor: '#EEEEEE',
+    paddingVertical: 4,
+    marginVertical: 16,
   },
   image: {
     width: 350,
@@ -397,14 +413,15 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   imageWrapper: {
-    marginTop: 10,
+    marginTop: 8,
     alignItems: 'center',
   },
   imageNavigator: {
-    marginTop: 15,
+    marginTop: 20,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingBottom: 40,
   },
   mapText: {
     fontSize: 20,
@@ -428,13 +445,17 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   arrow: {
-    marginHorizontal: 10,
+    marginHorizontal: 8,
+    height: 28,
+    width: 28,
+    resizeMode: 'contain',
+    aspectRatio: 1,
   },
   leftArrowButton: {
     paddingLeft: 20,
   },
   rightArrowButton: {
-    paddingRight: 30,
+    paddingRight: 20,
   },
 });
 
