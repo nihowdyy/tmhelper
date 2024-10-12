@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Pressable, Image, Platform, TextInput} from 'react-native';
+import { StyleSheet, Text, View, FlatList, Pressable, Image, Platform, TextInput, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
@@ -104,20 +104,41 @@ const HomeScreen = ({ navigation }: any) => {
   const handleSearch = (text: string) => {
     setQuery(text);
 
+    // If the search query is empty, reset filteredData to the original data
+    if (text.trim() === '') {
+      setFilteredData(data);
+      return;
+    }
+
     // Split the query by spaces to handle multiple search terms
     const searchTerms = text.toLowerCase().split(' ').filter(term => term.length > 0);
-
-    // Filter the data by TM number, name, type, or category
+  
+    // Normalize TM numbers in the data by converting them to lowercase and removing any prefix (e.g., "TM")
     const newData = data.filter(item => {
-      return searchTerms.every(term => 
-        item.tm_info.name.toLowerCase().includes(term) || 
-        item.tm_info.number.includes(term) ||
-        item.move_info.type.toLowerCase().includes(term) || 
-        item.move_info.category.toLowerCase().includes(term)
-      );
+      return searchTerms.every(term => {
+        const normalizedNumber = item.tm_info.number;  // Normalize the TM number (e.g., "001")
+        const normalizedName = item.tm_info.name.toLowerCase();
+        const normalizedType = item.move_info.type.toLowerCase();
+        const normalizedCategory = item.move_info.category.toLowerCase();
+        
+        // Check if the search term matches the name, type, category, or TM number (with or without the "tm" prefix)
+        return (
+          normalizedName.includes(term) ||
+          normalizedNumber.includes(term.replace("tm", "")) ||  // Remove "tm" from the search term if it exists
+          normalizedType.includes(term) ||
+          normalizedCategory.includes(term)
+        );
+      });
     });
-
+  
     setFilteredData(newData);
+  };
+
+  // Function to clear search
+  const clearSearch = () => {
+    setQuery('');
+
+    setFilteredData(data);
   };
 
   // Handling Navigation Errors
@@ -143,6 +164,11 @@ const HomeScreen = ({ navigation }: any) => {
             onChangeText={handleSearch}
             autoCorrect={false}
           />
+          {query.length > 0 && (
+            <TouchableOpacity onPress={clearSearch} style={styles.clearButton}>
+                <Icon name="times-circle" size={20} color="#888"/>
+            </TouchableOpacity>
+          )}
         </View>
         {filteredData.length === 0 ? (
           <View style={{  flex: 1,
@@ -241,6 +267,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     margin: 10,
     borderRadius: 5,
+  },
+  clearButton: {
+    marginLeft: 10,
+    padding: 5,
   },
   searchInput: {
     flex: 1,
