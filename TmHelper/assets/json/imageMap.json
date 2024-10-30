@@ -1762,5 +1762,11 @@
       "name": "Zorua Location Map",
       "image": "../../assets/images/locations/Zorua Location Map.jpg"
     }
-  ]
+  ],
+  "None": [
+    {
+      "name": "Location Not Found",
+      "image": "../../assets/images/locations/Location Not Found.jpg"
+    }
+  ],
 }
