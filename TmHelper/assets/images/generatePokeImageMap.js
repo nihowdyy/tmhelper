@@ -7,6 +7,19 @@ const imagesDir = path.posix.join(__dirname, 'pokemon');
 // Directory where the JSON file will be saved
 const outputDir = path.posix.join(__dirname, '..', '..', 'json');
 
+// Load base stage Pokemon from JSON file
+const baseStageFilePath = path.posix.join(__dirname, "..", "..", 'json', 'PokedexSV.json')
+let baseStagePokemon = [];
+
+try {
+    const baseStageData = JSON.parse(fs.readFileSync(baseStageFilePath, 'utf8'));
+    // Use a Set to ensure unique base stage names
+    baseStagePokemon = Array.from(new Set(baseStageData.map(pokemon => pokemon.pokemon_info.basic_stage)));
+    console.log("Unique base stage Pokémon:", baseStagePokemon); // Debug line
+} catch (error) {
+    console.error('Error reading base stage Pokémon JSON file:', error);
+}
+
 // Function to extract Pokémon names including prefixes
 const extractPokemonName = (fileName) => {
     const parts = fileName.split('-');
@@ -37,7 +50,7 @@ const generateImageMap = () => {
 
                 if (pokemonName) {
                     // Directly assign the image path to the Pokémon's key
-                    if (!imageMap[pokemonName]) {
+                    if (!imageMap[pokemonName] && baseStagePokemon.includes(pokemonName)) {
                         imageMap[pokemonName] = '../../assets/images/' + path.posix.join('pokemon', file);
                     }
                 }

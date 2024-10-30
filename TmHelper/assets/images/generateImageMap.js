@@ -7,6 +7,19 @@ const imagesDir = path.posix.join(__dirname, 'locations');
 // Directory where the JSON file will be saved
 const outputDir = path.posix.join(__dirname, '..', '..', 'json');
 
+// Load base stage Pokemon from JSON file
+const baseStageFilePath = path.posix.join(__dirname, "..", "..", 'json', 'PokedexSV.json')
+let baseStagePokemon = [];
+
+try {
+    const baseStageData = JSON.parse(fs.readFileSync(baseStageFilePath, 'utf8'));
+    // Use a Set to ensure unique base stage names
+    baseStagePokemon = Array.from(new Set(baseStageData.map(pokemon => pokemon.pokemon_info.basic_stage)));
+    console.log("Unique base stage Pokémon:", baseStagePokemon); // Debug line
+} catch (error) {
+    console.error('Error reading base stage Pokémon JSON file:', error);
+}
+
 // Function to extract Pokémon names including prefixes and handle multiple map types
 const extractPokemonName = (fileName) => {
     // Remove the file extension
@@ -39,7 +52,6 @@ const generateImageMap = () => {
     const imageMap = {};
 
     try {
-        // Read the filenames in the directory
         const imageFiles = fs.readdirSync(imagesDir);
         console.log('Files found:', imageFiles); // Debug line
 
@@ -50,30 +62,24 @@ const generateImageMap = () => {
         imageFiles.forEach(file => {
             console.log('Processing file:', file); // Debug line
 
-            // Check if the file is a valid image
             if (path.extname(file) === '.jpg') { // Adjust to your file type
                 const pokemonName = extractPokemonName(file);
 
-                if (pokemonName) {
-                    // Initialize the Pokémon entry if it doesn't exist
-                    if (!imageMap[pokemonName]) {
-                        imageMap[pokemonName] = [];
-                    }
+                // Only proceed if the Pokémon name is in the base stage list and not already in imageMap
+                if (pokemonName && baseStagePokemon.includes(pokemonName) && !imageMap[pokemonName]) {
+                    const friendlyName = path.parse(file).name.replace(/_/g, ' ');
 
-                    // Generate a friendly name based on the file name
-                    const friendlyName = path.parse(file).name.replace(/_/g, ' '); // Convert underscores to spaces
-
-                    // Add the image path and friendly name to the Pokémon's list
-                    imageMap[pokemonName].push({
+                    imageMap[pokemonName] = [{
                         name: friendlyName,
                         image: path.posix.join('..', '..', 'assets', 'images', 'locations', file)
-                    });
+                    }];
+                } else {
+                    console.log(`Skipping duplicate or non-base stage Pokémon: ${pokemonName}`);
                 }
             } else {
                 console.log(`Skipping non-image file: ${file}`);
             }
         });
-
     } catch (error) {
         console.error('Error reading directory or processing files:', error);
     }

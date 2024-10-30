@@ -10,7 +10,7 @@
     "cli": {
       "appVersionSource": "expo"
     },
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -20,16 +20,17 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.nihowdo.TmHelper"
-    },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.nihowdo.TmHelper"
+      "package": "com.nihowdy.TmHelper"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nihowdy.TmHelper"
     },
     "web": {
       "bundler": "metro",
