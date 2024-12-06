@@ -4039,7 +4039,7 @@
             "number": "145"
         },
         "pokemon_info": {
-            "name": "Flabebe",
+            "name": "Flabébé",
             "type": [
                 "Fairy"
             ],
@@ -4047,7 +4047,7 @@
                 "Flower Veil",
                 "Symbiosis"
             ],
-            "basic_stage": "Flabebe",
+            "basic_stage": "Flabébé",
             "stats": {
                 "hp": "44",
                 "atk": "38",
@@ -4073,7 +4073,7 @@
                 "Flower Veil",
                 "Symbiosis"
             ],
-            "basic_stage": "Flabebe",
+            "basic_stage": "Flabébé",
             "stats": {
                 "hp": "54",
                 "atk": "45",
@@ -4099,7 +4099,7 @@
                 "Flower Veil",
                 "Symbiosis"
             ],
-            "basic_stage": "Flabebe",
+            "basic_stage": "Flabébé",
             "stats": {
                 "hp": "78",
                 "atk": "65",
@@ -6180,7 +6180,7 @@
             "number": "223"
         },
         "pokemon_info": {
-            "name": "Paldean Tauros (Fighting Form)",
+            "name": "Paldean Tauros (Combat Breed)",
             "type": [
                 "Fighting"
             ],
@@ -6189,7 +6189,7 @@
                 "Anger Point",
                 "Cud Chew"
             ],
-            "basic_stage": "Paldean Tauros (Fighting Form)",
+            "basic_stage": "Paldean Tauros (Combat Breed)",
             "stats": {
                 "hp": "75",
                 "atk": "110",
@@ -6207,7 +6207,7 @@
             "number": "223.1"
         },
         "pokemon_info": {
-            "name": "Paldean Tauros (Fighting/Fire Form)",
+            "name": "Paldean Tauros (Blaze Breed)",
             "type": [
                 "Fighting",
                 "Fire"
@@ -6217,7 +6217,7 @@
                 "Anger Point",
                 "Cud Chew"
             ],
-            "basic_stage": "Paldean Tauros (Fighting/Fire Form)",
+            "basic_stage": "Paldean Tauros (Blaze Breed)",
             "stats": {
                 "hp": "75",
                 "atk": "110",
@@ -6235,7 +6235,7 @@
             "number": "223.2"
         },
         "pokemon_info": {
-            "name": "Paldean Tauros (Fighting/Water Form)",
+            "name": "Paldean Tauros (Aqua Breed)",
             "type": [
                 "Fighting",
                 "Water"
@@ -6245,7 +6245,7 @@
                 "Anger Point",
                 "Cud Chew"
             ],
-            "basic_stage": "Paldean Tauros (Fighting/Water Form)",
+            "basic_stage": "Paldean Tauros (Aqua Breed)",
             "stats": {
                 "hp": "75",
                 "atk": "110",
@@ -8133,7 +8133,7 @@
             "number": "292"
         },
         "pokemon_info": {
-            "name": "Palafin",
+            "name": "Palafin (Zero Form)",
             "type": [
                 "Water"
             ],
@@ -8673,7 +8673,7 @@
             "number": "310.1"
         },
         "pokemon_info": {
-            "name": "Heat Rotom",
+            "name": "Rotom (Heat)",
             "type": [
                 "Electric",
                 "Fire"
@@ -8681,7 +8681,7 @@
             "abilities": [
                 "Levitate"
             ],
-            "basic_stage": "Heat Rotom",
+            "basic_stage": "Rotom",
             "stats": {
                 "hp": "50",
                 "atk": "65",
@@ -8699,7 +8699,7 @@
             "number": "310.2"
         },
         "pokemon_info": {
-            "name": "Wash Rotom",
+            "name": "Rotom (Wash)",
             "type": [
                 "Electric",
                 "Water"
@@ -8707,7 +8707,7 @@
             "abilities": [
                 "Levitate"
             ],
-            "basic_stage": "Wash Rotom",
+            "basic_stage": "Rotom",
             "stats": {
                 "hp": "50",
                 "atk": "65",
@@ -8725,7 +8725,7 @@
             "number": "310.3"
         },
         "pokemon_info": {
-            "name": "Frost Rotom",
+            "name": "Rotom (Frost)",
             "type": [
                 "Electric",
                 "Ice"
@@ -8733,7 +8733,7 @@
             "abilities": [
                 "Levitate"
             ],
-            "basic_stage": "Frost Rotom",
+            "basic_stage": "Rotom",
             "stats": {
                 "hp": "50",
                 "atk": "65",
@@ -8751,7 +8751,7 @@
             "number": "310.4"
         },
         "pokemon_info": {
-            "name": "Fan Rotom",
+            "name": "Rotom (Fan)",
             "type": [
                 "Electric",
                 "Flying"
@@ -8759,7 +8759,7 @@
             "abilities": [
                 "Levitate"
             ],
-            "basic_stage": "Fan Rotom",
+            "basic_stage": "Rotom",
             "stats": {
                 "hp": "50",
                 "atk": "65",
@@ -8777,7 +8777,7 @@
             "number": "310.5"
         },
         "pokemon_info": {
-            "name": "Mow Rotom",
+            "name": "Rotom (Mow)",
             "type": [
                 "Electric",
                 "Grass"
@@ -9039,14 +9039,14 @@
             "number": "320"
         },
         "pokemon_info": {
-            "name": "Eiscue (Ice Face)",
+            "name": "Eiscue",
             "type": [
                 "Ice"
             ],
             "abilities": [
                 "Ice Face"
             ],
-            "basic_stage": "Stonjourner",
+            "basic_stage": "Eiscue",
             "stats": {
                 "hp": "75",
                 "atk": "80",
@@ -12829,7 +12829,7 @@
             "number": "720"
         },
         "pokemon_info": {
-            "name": "Hoopa Confined",
+            "name": "Hoopa (Confined)",
             "type": [
                 "Psychic",
                 "Ghost"
@@ -12837,7 +12837,7 @@
             "abilities": [
                 "Magician"
             ],
-            "basic_stage": "Hoopa Confined",
+            "basic_stage": "Hoopa",
             "stats": {
                 "hp": "80",
                 "atk": "110",
@@ -12855,7 +12855,7 @@
             "number": "720.1"
         },
         "pokemon_info": {
-            "name": "Hoopa Unbound",
+            "name": "Hoopa (Unbound)",
             "type": [
                 "Psychic",
                 "Dark"
@@ -18958,7 +18958,7 @@
             "number": "196"
         },
         "pokemon_info": {
-            "name": "Bloodmoon Ursaluna",
+            "name": "Ursaluna (Bloodmoon)",
             "type": [
                 "Ground",
                 "Normal"
@@ -18966,7 +18966,7 @@
             "abilities": [
                 "Mind's Eye"
             ],
-            "basic_stage": "Bloodmoon Ursaluna",
+            "basic_stage": "Teddiursa",
             "stats": {
                 "hp": "113",
                 "atk": "70",
@@ -22082,7 +22082,7 @@
             "number": "106"
         },
         "pokemon_info": {
-            "name": "Minior (Meteor Form)",
+            "name": "Minior",
             "type": [
                 "Rock",
                 "Flying"
@@ -22108,7 +22108,7 @@
             "number": "106.1"
         },
         "pokemon_info": {
-            "name": "Minior (Core)",
+            "name": "Minior (Core Form)",
             "type": [
                 "Rock",
                 "Flying"
