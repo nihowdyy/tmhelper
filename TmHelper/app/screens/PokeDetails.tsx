@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, FlatList, ScrollView } from 'react-native';
+import { Platform, View, Text, StyleSheet, Image, TouchableOpacity, FlatList} from 'react-native';
 import Collapsible from 'react-native-collapsible';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 // Resources
 import pokemonTypes from '../../assets/images/moveTypes';
 
-const moveData = require('../../assets/json/LearnableMoves.json');
+const moveData = require('../../assets/json/PokemonMoves.json');
+const learnableData = require('../../assets/json/LearnableMoves.json');
 const pokeData = require('../../assets/json/PokedexSV.json');
 
 // Pokemon Types
@@ -77,13 +78,30 @@ const PokeDetails = ({ route }: any) => {
   const [isCollapsed, setIsCollapsed] = useState(true); // Tracking Collapsible State
 
   // Filter data to match the current Pokémon's name
-  const filteredMoveData = moveData.filter((entry: any) => entry.name === pokemon.pokemon_info.name);
+  const filteredMoveData = learnableData.filter((entry: any) => entry.name === pokemon.pokemon_info.name);
 
   // Flatten the learnset into an array of { level, move }
-  const flattenedMoves = filteredMoveData[0].learnset.level_up.map(item => {
-    const [level, move] = item.split(': '); // Splitting each level and move pair
+  const flattenedMoves = filteredMoveData[0].learnset.level_up.map(entry => {
+    const [level, move] = entry.split(': '); // Splitting each level and move pair
     return { level: level, move: move };
   });
+
+  // Merge the flattened moves with the move details
+  const mergedMoves = flattenedMoves.map(move => {
+    // Find the corresponding move details based on the move name
+    const moveDetail = moveData.find(detail => detail.name === move.move);
+    
+    if (moveDetail) {
+      // Combine the level and move details into one object
+      return {
+        level: move.level,
+        move: move.move,
+        ...moveDetail.move_details // Spread move details into the object
+      };
+    }
+    return null; // If no move details were found for a move
+  }).filter(move => move !== null); // Filter out any null results
+
 
   const stats = pokemon.pokemon_info.stats; // Specific Pokemon Base stat information
 
@@ -145,70 +163,93 @@ const PokeDetails = ({ route }: any) => {
   };
 
   return (
-    <View style={styles.container}>
-      {/* Basic Pokemon Information */}
-      <DisplayDexNumbers pokemonEntries={pokeData} targetName={pokemon.pokemon_info.name} />
-      <Text style={styles.pokemonName}>{pokemon.pokemon_info.name}</Text>
-      <DisplayPokemonTypes types={pokemon.pokemon_info.type} />
-      <Text style={styles.abilityLabel}>Abilities:</Text>
-      <Text>{pokemon.pokemon_info.abilities.join(', ')}</Text>
-  
-      {/* Base Stat Information */}
-      <Text style={styles.label}>Base Stats:</Text>
-      {statEntries.map(([statName, statValue], index) => (
-        <StatBar
-          key={statName}
-          statName={statName}
-          statValue={statValue as number}
-          barColor={barData[index]?.barColor || '#4CAF50'}
-        />
-      ))}
-      <View style={styles.totalContainer}>
-        <Text style={styles.total}>Total:</Text>
-        <Text style={styles.totalValue}>{pokemon.pokemon_info.stats.bst}</Text>
-      </View>
-  
-      {/* Pokemon Learnset Information */}
-      <View style={styles.learnsetContainer}>
-        <TouchableOpacity
-          style={styles.learnsetHeader}
-          onPress={() => setIsCollapsed(!isCollapsed)}
-        >
-          <Text style={styles.learnsetHeaderText}>Pokemon Learnset</Text>
-          <Icon
-            name={isCollapsed ? 'expand-more' : 'expand-less'} // Chevron up/down based on state
-            size={24}
-            color="#000"
-          />
-        </TouchableOpacity>
-        <Collapsible collapsed={isCollapsed}>
-          <View style={{ padding: 10, backgroundColor: 'lightgray' }}>
-            <View style={styles.tableContainer}>
-              <View style={styles.tableHeader}>
-                <Text style={styles.columnHeader}>Level</Text>
-                <Text style={styles.columnHeader}>Move</Text>
-              </View>
-              <FlatList
-                data={flattenedMoves}
-                keyExtractor={(item, index) => index.toString()}
-                renderItem={({ item }) => (
-                  <View style={styles.tableRow}>
-                    <Text style={styles.cell}>{item.level}</Text>
-                    <Text style={styles.cell}>{item.move}</Text>
-                  </View>
-                )}
-              />
-            </View>
+    <View style={styles.screen}>
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{aspectRatio: Platform.OS === 'web' ? 1 : undefined}}
+        ListHeaderComponent={
+          <>
+          {/* Basic Pokemon Information */}
+          <DisplayDexNumbers pokemonEntries={pokeData} targetName={pokemon.pokemon_info.name} />
+          <Text style={styles.pokemonName}>{pokemon.pokemon_info.name}</Text>
+          <DisplayPokemonTypes types={pokemon.pokemon_info.type} />
+          <Text style={styles.abilityLabel}>Abilities:</Text>
+          <Text>{pokemon.pokemon_info.abilities.join(', ')}</Text>
+      
+          {/* Base Stat Information */}
+          <Text style={styles.label}>Base Stats:</Text>
+          {statEntries.map(([statName, statValue], index) => (
+            <StatBar
+              key={statName}
+              statName={statName}
+              statValue={statValue as number}
+              barColor={barData[index]?.barColor || '#4CAF50'}
+            />
+          ))}
+          <View style={styles.totalContainer}>
+            <Text style={styles.total}>Total:</Text>
+            <Text style={styles.totalValue}>{pokemon.pokemon_info.stats.bst}</Text>
           </View>
-        </Collapsible>
-      </View>
+      
+          {/* Pokemon Learnset Information */}
+          <View style={styles.learnsetContainer}>
+            <TouchableOpacity
+              style={styles.learnsetHeader}
+              onPress={() => setIsCollapsed(!isCollapsed)}
+            >
+              <Text style={styles.learnsetHeaderText}>Pokemon Learnset</Text>
+              <Icon
+                name={isCollapsed ? 'expand-more' : 'expand-less'} // Chevron up/down based on state
+                size={24}
+                color="#000"
+              />
+            </TouchableOpacity>
+            <Collapsible collapsed={isCollapsed}>
+              <View style={{ padding: 10, backgroundColor: 'lightgray' }}>
+                <View style={styles.tableContainer}>
+                  <View style={styles.tableHeader}>
+                    <Text style={styles.columnHeader}>Level</Text>
+                    <Text style={styles.columnHeader}>Move</Text>
+                    <Text style={styles.columnHeader}>Type</Text>
+                    <Text style={styles.columnHeader}>Category</Text>
+                    <Text style={styles.columnHeader}>Power</Text>
+                    <Text style={styles.columnHeader}>Accuracy</Text>
+                    <Text style={styles.columnHeader}>PP</Text>
+                    <Text style={styles.columnHeader}>Effect</Text>
+                  </View>
+                  {/* Move Table */}
+                  <View>
+                    {mergedMoves.map((item, index) => (
+                      <View key={index.toString()} style={styles.tableRow}>
+                        <Text style={styles.cell}>{item.level}</Text>
+                        <Text style={styles.cell}>{item.move}</Text>
+                        <Text style={styles.cell}>{item.type}</Text>
+                        <Text style={styles.cell}>{item.category}</Text>
+                        <Text style={styles.cell}>{item.power}</Text>
+                        <Text style={styles.cell}>{item.accuracy}</Text>
+                        <Text style={styles.cell}>{item.pp}</Text>
+                        <Text style={styles.cell}>{item.effect.short}</Text>
+                      </View>
+                    ))}
+                  </View>
+                </View>
+              </View>
+            </Collapsible>
+          </View>
+          </>
+        }
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
+    flex: 1,
     padding: 16,
+    backgroundColor: '#FAFAFA',
+    marginHorizontal: Platform.OS === 'web' ? 'auto' : 0,
+    minWidth: Platform.OS === 'web' ? 800 : '100%',
   },
   dexContainer: {
     flexDirection: 'row',
