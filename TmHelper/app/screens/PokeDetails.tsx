@@ -140,22 +140,34 @@ const PokeDetails = ({ route }: any) => {
 
   const renderContent = (section: any) => (
     <View style={styles.tableContainer}>
-      <View style={styles.tableHeader}>
-        {section.title === 'Pokemon Learnset'? (
-          <Text style={styles.columnHeader}>Level</Text>
-        ) : []}
-        <Text style={styles.columnHeader}>Move</Text>
-        <Text style={styles.effectColumnHeader}>Effect</Text>
-      </View>
-      {section.content.map((item: any, index: number) => (
-      <View key={index} style={styles.tableRow}>
-        {section.title === 'Pokemon Learnset' ? (
-          <Text style={styles.cell}>{item.level}</Text>
-        ) : []}
-        <Text style={styles.cell}>{item.move}</Text>
-        <Text style={styles.effectCell}>{item.details.effect.full}</Text>
-      </View>
-      ))}
+      {/* Check if there's only one item and it's "No Egg Moves" */}
+      {section.content[0].move === "No Egg Moves" ? (
+        <View style={styles.tableRow}>
+          <Text>No Egg Moves</Text>
+        </View>
+      ) : (
+        <>
+          <View style={styles.tableHeader}>
+            {section.title === 'Pokemon Learnset' ? (
+              <Text style={styles.columnHeader}>Level</Text>
+            ) : null}
+            <Text style={styles.columnHeader}>Move</Text>
+            <Text style={styles.effectColumnHeader}>Effect</Text>
+          </View>
+
+          {section.content.map((item: any, index: number) => {
+            return (
+              <View key={index} style={styles.tableRow}>
+                {section.title === 'Pokemon Learnset' ? (
+                  <Text style={styles.cell}>{item.level}</Text>
+                ) : null}
+                <Text style={styles.cell}>{item.move}</Text>
+                <Text style={styles.effectCell}>{item.details.effect.full}</Text>
+              </View>
+            );
+          })}
+        </>
+      )}
     </View>
   );
 
