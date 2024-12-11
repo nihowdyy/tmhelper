@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Platform, View, Text, StyleSheet, Image, TouchableOpacity, FlatList} from 'react-native';
-import Collapsible from 'react-native-collapsible';
+import Accordion from 'react-native-collapsible/Accordion';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 // Resources
@@ -75,33 +75,93 @@ const StatBar = ({ statName, statValue, barColor }: BarProps) => {
 const PokeDetails = ({ route }: any) => {
   const { pokemon } = route.params; // Retrieve the pokemon data passed through navigation
 
-  const [isCollapsed, setIsCollapsed] = useState(true); // Tracking Collapsible State
+  // Helper to find move details by name
+  function getMoveDetails(moveName) {
+    return moveData.find((move) => move.name === moveName)?.move_details || null;
+  }
+
+  // Process the learnset
+  function processLearnset(pokemon) {
+    const { learnset } = pokemon;
+
+    const processCategory = (category, includeLevel = false) => {
+      return learnset[category]?.map((entry) => {
+        let level = null;
+        let moveName = entry;
+
+        // If level is included, extract it
+        if (includeLevel && entry.includes(":")) {
+          const [levelPart, namePart] = entry.split(": ").map((str) => str.trim());
+          level = levelPart;
+          moveName = namePart;
+        }
+
+        const moveDetails = getMoveDetails(moveName);
+        return {
+          move: moveName,
+          ...(level !== null && { level }),
+          details: moveDetails
+        };
+      }) || [];
+    };
+
+    return {
+      level_up: processCategory("level_up", true),
+      tms: processCategory("tms"),
+      egg_moves: processCategory("egg_moves")
+    };
+  }
 
   // Filter data to match the current Pokémon's name
-  const filteredMoveData = learnableData.filter((entry: any) => entry.name === pokemon.pokemon_info.name);
+  const filteredPokeData = learnableData.filter((entry: any) => entry.name === pokemon.pokemon_info.name);
 
-  // Flatten the learnset into an array of { level, move }
-  const flattenedMoves = filteredMoveData[0].learnset.level_up.map(entry => {
-    const [level, move] = entry.split(': '); // Splitting each level and move pair
-    return { level: level, move: move };
-  });
+  const enrichedLearnset = processLearnset(filteredPokeData[0]);
 
-  // Merge the flattened moves with the move details
-  const mergedMoves = flattenedMoves.map(move => {
-    // Find the corresponding move details based on the move name
-    const moveDetail = moveData.find(detail => detail.name === move.move);
-    
-    if (moveDetail) {
-      // Combine the level and move details into one object
-      return {
-        level: move.level,
-        move: move.move,
-        ...moveDetail.move_details // Spread move details into the object
-      };
-    }
-    return null; // If no move details were found for a move
-  }).filter(move => move !== null); // Filter out any null results
+  // Accordion Headers
+  const sections = [
+    { title: 'Pokemon Learnset', content: enrichedLearnset.level_up },
+    { title: 'Learnable TMs', content: enrichedLearnset.tms },
+    { title: 'Egg Moves', content: enrichedLearnset.egg_moves },
+  ];
 
+  // Accordion active state
+  const [activeSections, setActiveSections] = useState<number[]>([]);
+
+  const renderHeader = (section: any, index: number, isActive: boolean) => (
+    <View style={styles.learnsetHeader}>
+      <Text style={styles.learnsetHeaderText}>{section.title}</Text>
+      <Icon
+        name={isActive ? 'expand-less' : 'expand-more'}
+        size={24}
+        color="#000"
+      />
+    </View>
+  );
+
+  const renderContent = (section: any) => (
+    <View style={styles.tableContainer}>
+      <View style={styles.tableHeader}>
+        {section.title === 'Pokemon Learnset'? (
+          <Text style={styles.columnHeader}>Level</Text>
+        ) : []}
+        <Text style={styles.columnHeader}>Move</Text>
+        <Text style={styles.effectColumnHeader}>Effect</Text>
+      </View>
+      {section.content.map((item: any, index: number) => (
+      <View key={index} style={styles.tableRow}>
+        {section.title === 'Pokemon Learnset' ? (
+          <Text style={styles.cell}>{item.level}</Text>
+        ) : []}
+        <Text style={styles.cell}>{item.move}</Text>
+        <Text style={styles.effectCell}>{item.details.effect.full}</Text>
+      </View>
+      ))}
+    </View>
+  );
+
+  const updateSections = (activeSections: number[]) => {
+    setActiveSections(activeSections);
+  };
 
   const stats = pokemon.pokemon_info.stats; // Specific Pokemon Base stat information
 
@@ -192,50 +252,15 @@ const PokeDetails = ({ route }: any) => {
           </View>
       
           {/* Pokemon Learnset Information */}
-          <View style={styles.learnsetContainer}>
-            <TouchableOpacity
-              style={styles.learnsetHeader}
-              onPress={() => setIsCollapsed(!isCollapsed)}
-            >
-              <Text style={styles.learnsetHeaderText}>Pokemon Learnset</Text>
-              <Icon
-                name={isCollapsed ? 'expand-more' : 'expand-less'} // Chevron up/down based on state
-                size={24}
-                color="#000"
-              />
-            </TouchableOpacity>
-            <Collapsible collapsed={isCollapsed}>
-              <View style={{ padding: 10, backgroundColor: 'lightgray' }}>
-                <View style={styles.tableContainer}>
-                  <View style={styles.tableHeader}>
-                    <Text style={styles.columnHeader}>Level</Text>
-                    <Text style={styles.columnHeader}>Move</Text>
-                    <Text style={styles.columnHeader}>Type</Text>
-                    <Text style={styles.columnHeader}>Category</Text>
-                    <Text style={styles.columnHeader}>Power</Text>
-                    <Text style={styles.columnHeader}>Accuracy</Text>
-                    <Text style={styles.columnHeader}>PP</Text>
-                    <Text style={styles.columnHeader}>Effect</Text>
-                  </View>
-                  {/* Move Table */}
-                  <View>
-                    {mergedMoves.map((item, index) => (
-                      <View key={index.toString()} style={styles.tableRow}>
-                        <Text style={styles.cell}>{item.level}</Text>
-                        <Text style={styles.cell}>{item.move}</Text>
-                        <Text style={styles.cell}>{item.type}</Text>
-                        <Text style={styles.cell}>{item.category}</Text>
-                        <Text style={styles.cell}>{item.power}</Text>
-                        <Text style={styles.cell}>{item.accuracy}</Text>
-                        <Text style={styles.cell}>{item.pp}</Text>
-                        <Text style={styles.cell}>{item.effect.short}</Text>
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              </View>
-            </Collapsible>
-          </View>
+          {/* Accordion */}
+          <Accordion
+              sections={sections}
+              activeSections={activeSections}
+              renderHeader={renderHeader}
+              renderContent={renderContent}
+              onChange={updateSections}
+              touchableComponent={TouchableOpacity}
+            />
           </>
         }
       />
@@ -337,41 +362,56 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 15,
-    backgroundColor: '#ffffff',
+    padding: 8,
+    backgroundColor: '#e6e6e6',
     borderRadius: 5,
+    marginTop: 8,
   },
   learnsetHeaderText: {
     fontSize: 18,
     fontWeight: 'bold',
   },
   tableContainer: {
-    marginTop: 10,
+    marginTop: 8,
     backgroundColor: '#e6e6e6',
-    padding: 10,
+    padding: 8,
     borderRadius: 5,
   },
   tableHeader: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-evenly',
     borderBottomWidth: 1,
     borderBottomColor: '#333',
-    paddingBottom: 5,
-    marginBottom: 5,
+    paddingBottom: 4,
   },
   columnHeader: {
-    flex: 1,
+    width: 80,
     fontSize: 16,
     fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  effectColumnHeader: {
+    width: 180,
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   tableRow: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingVertical: 5,
+    justifyContent: 'space-evenly',
+    paddingVertical: 8,
+    borderBottomWidth: 1,
+    borderBottomColor: '#dddddd',
   },
   cell: {
-    flex: 1,
+    width: 80,
     fontSize: 16,
+    textAlign: 'center',
+  },
+  effectCell: {
+    width: 180,
+    fontSize: 16,
+    textAlign: 'center',
   },
 });
 
