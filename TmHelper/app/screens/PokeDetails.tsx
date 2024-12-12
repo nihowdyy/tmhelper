@@ -225,9 +225,9 @@ const PokeDetails = ({ route }: any) => {
   const DisplayAbilities = ( { abilities } : {abilities: string[]} ) => {
     return (
       <View style = {styles.abilitiesRow}>
-        {abilities.map((ability) => {
+        {abilities.map((ability, index) => {
           return (
-            <View style = {styles.abilityContainer}>
+            <View key={ability} style = {styles.abilityContainer}>
               <Text style={styles.abilityText}>{ability}</Text>
             </View>
           );
