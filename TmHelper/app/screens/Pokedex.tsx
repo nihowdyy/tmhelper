@@ -150,7 +150,7 @@ const Pokedex = ({ navigation }: any) => {
 const styles = StyleSheet.create({
     screen: {
         flex: 1,
-        paddingEnd: 16,
+        paddingBottom: 16,
     },
     screenContainer: {
         flex: 1,
