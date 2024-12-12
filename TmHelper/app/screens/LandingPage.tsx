@@ -1,46 +1,60 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Platform, Pressable } from 'react-native';
+import Icon from 'react-native-vector-icons/Entypo';
+
+const DonutIcon = () => <Icon name="donut-large" size={30} color="black" />;
+const CalculatorIcon = () => <Icon name="calculate" size={30} color="black" />;
 
 export default function LandingPage({ navigation }: any) {
     return (
-        <View>
-            <Text style={styles.title}>TMHelper</Text>
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => navigation.navigate('TMList')}>
-                <Text>TMs</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => navigation.navigate("Pokedex")}>
-                <Text> Pokedex</Text>
-            </TouchableOpacity>
+        <View style={styles.screen}>
+            <Text style={styles.title}>ROTODEX</Text>
+            <Pressable
+              style={styles.button}
+              onPress={() => navigation.navigate('TMList')}>
+              <View style={styles.buttonRow}>
+                <Text style={styles.buttonText}>TMs</Text>
+                <Icon name="vinyl" size={20}></Icon>
+              </View>
+            </Pressable>
+            <Pressable
+              style={styles.button}
+              onPress={() => navigation.navigate("Pokedex")}>
+              <View style={styles.buttonRow}>
+                <Text style={styles.buttonText}>Pokedex</Text>
+                <Icon name="calculator" size={20}></Icon>
+              </View>
+            </Pressable>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#f5f5f5',
-    },
-    title: {
-      fontSize: 24,
-      marginBottom: 20,
-      fontWeight: 'bold',
-    },
-    button: {
-      backgroundColor: '#ffffff',
-      padding: 10,
-      marginVertical: 10,
-      borderRadius: 5,
-      width: '80%',
-      alignItems: 'center',
-    },
-    buttonText: {
-      color: '#fff',
-      fontSize: 18,
-    },
-  });
+  screen: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#F7f7f7',
+    marginHorizontal: Platform.OS === 'web' ? 'auto' : 0,
+    minWidth: Platform.OS === 'web' ? 800 : '100%',
+  },
+  title: {
+    fontSize: 14,
+    marginVertical: 12,
+  },
+  buttonRow: {
+    flexDirection: 'row',
+  },
+  button: {
+    backgroundColor: '#ffffff',
+    paddingVertical: 16,
+    paddingHorizontal: 20,
+    marginBottom: 12,
+    borderRadius: 5,
+  },
+  buttonText: {
+    flex: 1,
+    fontSize: 16,
+    fontWeight: 'bold',
+    alignSelf: 'center',
+  },
+});
