@@ -149,7 +149,7 @@ const PokeDetails = ({ route }: any) => {
         <>
           <View style={styles.tableHeader}>
             {section.title === 'Pokemon Learnset' ? (
-              <Text style={styles.columnHeader}>Level</Text>
+              <Text style={styles.levelHeader}>Level</Text>
             ) : null}
             <Text style={styles.columnHeader}>Move</Text>
             <Text style={styles.effectColumnHeader}>Effect</Text>
@@ -159,7 +159,7 @@ const PokeDetails = ({ route }: any) => {
             return (
               <View key={index} style={styles.tableRow}>
                 {section.title === 'Pokemon Learnset' ? (
-                  <Text style={styles.cell}>{item.level}</Text>
+                  <Text style={styles.levelCell}>{item.level}</Text>
                 ) : null}
                 <Text style={styles.cell}>{item.move}</Text>
                 <Text style={styles.effectCell}>{item.details.effect.full}</Text>
@@ -189,6 +189,12 @@ const PokeDetails = ({ route }: any) => {
   // Extract stats excluding 'bst'
   const statEntries = Object.entries(stats).filter(([key]) => key !== 'bst');
 
+  // Format number to our usecase
+  function formatNum(num: string) {
+    const integerPart = parseInt(num); // Remove decimals by rounding down
+    const formattedInteger = integerPart.toString().padStart(3, '0'); // Pad the integer part to 3 digits
+    return formattedInteger;
+  }
   const DisplayDexNumbers = ({ pokemonEntries, targetName }: DisplayDexNumbersProps) => {
     // Predefine region order
     const regionOrder = ['Paldea', 'Kitakami', 'Blueberry', 'National'];
@@ -205,7 +211,7 @@ const PokeDetails = ({ route }: any) => {
     const displayText = sortedEntries
       .map(
         (entry) =>
-          `${entry.dex_info.type} #${entry.dex_info.number}`
+          `${entry.dex_info.type} #${formatNum(entry.dex_info.number)}`
       )
       .join(', ');
 
@@ -216,17 +222,34 @@ const PokeDetails = ({ route }: any) => {
     );
   };
 
+  const DisplayAbilities = ( { abilities } : {abilities: string[]} ) => {
+    return (
+      <View style = {styles.abilitiesRow}>
+        {abilities.map((ability) => {
+          return (
+            <View style = {styles.abilityContainer}>
+              <Text style={styles.abilityText}>{ability}</Text>
+            </View>
+          );
+        })}
+
+      </View>
+    );
+  };
+
   const DisplayPokemonTypes = ({ types }: { types: Types[] }) => {
     return (
       <View style={styles.typeContainer}>
-        {types.map((type) => {
+        {types.map((type, index) => {
           const typeImage = pokemonTypes[type];
           if (!typeImage) return null;
-
+  
           return (
             <View key={type} style={styles.typeRow}>
               <Image source={typeImage} style={styles.typeIcon} />
               <Text style={styles.typeText}>{type}</Text>
+              {/* Add separator if this is not the last type */}
+              {index < types.length - 1 && <View style={styles.separator} />}
             </View>
           );
         })}
@@ -245,34 +268,38 @@ const PokeDetails = ({ route }: any) => {
           <DisplayDexNumbers pokemonEntries={pokeData} targetName={pokemon.pokemon_info.name} />
           <Text style={styles.pokemonName}>{pokemon.pokemon_info.name}</Text>
           <DisplayPokemonTypes types={pokemon.pokemon_info.type} />
-          <Text style={styles.abilityLabel}>Abilities:</Text>
-          <Text>{pokemon.pokemon_info.abilities.join(', ')}</Text>
+          <Text style={styles.subtitle}>ABILITIES</Text>
+          <DisplayAbilities abilities={pokemon.pokemon_info.abilities} />
       
           {/* Base Stat Information */}
-          <Text style={styles.label}>Base Stats:</Text>
-          {statEntries.map(([statName, statValue], index) => (
-            <StatBar
-              key={statName}
-              statName={statName}
-              statValue={statValue as number}
-              barColor={barData[index]?.barColor || '#4CAF50'}
-            />
-          ))}
-          <View style={styles.totalContainer}>
-            <Text style={styles.total}>Total:</Text>
-            <Text style={styles.totalValue}>{pokemon.pokemon_info.stats.bst}</Text>
+          <Text style={styles.subtitle}>BASESTATS</Text>
+          <View style={styles.bstTable}>
+            {statEntries.map(([statName, statValue], index) => (
+              <StatBar
+                key={statName}
+                statName={statName}
+                statValue={statValue as number}
+                barColor={barData[index]?.barColor || '#4CAF50'}
+              />
+            ))}
+            <View style={styles.totalRow}>
+              <Text style={styles.total}>TOTAL</Text>
+              <Text style={styles.statValue}>{pokemon.pokemon_info.stats.bst}</Text>
+            </View>
           </View>
-      
           {/* Pokemon Learnset Information */}
-          {/* Accordion */}
-          <Accordion
-              sections={sections}
-              activeSections={activeSections}
-              renderHeader={renderHeader}
-              renderContent={renderContent}
-              onChange={updateSections}
-              touchableComponent={TouchableOpacity}
-            />
+          <View>
+            <Text style={styles.subtitle}>POKEMON MOVES</Text>
+            {/* Accordion */}
+            <Accordion
+                sections={sections}
+                activeSections={activeSections}
+                renderHeader={renderHeader}
+                renderContent={renderContent}
+                onChange={updateSections}
+                touchableComponent={TouchableOpacity}
+              />
+          </View>
           </>
         }
       />
@@ -283,13 +310,14 @@ const PokeDetails = ({ route }: any) => {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    padding: 16,
-    backgroundColor: '#FAFAFA',
+    padding: 20,
+    backgroundColor: '#F7f7f7',
     marginHorizontal: Platform.OS === 'web' ? 'auto' : 0,
     minWidth: Platform.OS === 'web' ? 800 : '100%',
   },
   dexContainer: {
     flexDirection: 'row',
+    marginTop: 4,
   },
   dexText: {
     fontSize: 16,
@@ -297,37 +325,13 @@ const styles = StyleSheet.create({
   pokemonName: {
     fontSize: 26,
     fontWeight: '500',
-    paddingBottom: 4,
-  },
-  statRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginVertical: 5,
-  },
-  statName: {
-    width: 80,
-    fontWeight: 'bold',
-    textTransform: 'uppercase',
-  },
-  barContainer: {
-    flex: 1,
-    backgroundColor: '#e0e0e0',
-    height: 10,
-    borderRadius: 5,
-    overflow: 'hidden',
-    marginHorizontal: 10,
-  },
-  statBar: {
-    height: '100%',
-  },
-  statValue: {
-    width: 50,
-    textAlign: 'right',
+    paddingVertical: 4,
   },
   typeContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
+    marginBottom: 8,
   },
   typeRow: {
     flexDirection: 'row',
@@ -340,32 +344,83 @@ const styles = StyleSheet.create({
   },
   typeText: {
     fontSize: 20,
-    marginRight: 8,
+    marginRight: 4,
   },
-  abilityLabel: {
-    fontSize: 18,
-    fontWeight: '500',
-    marginVertical: 4,
+  separator: {
+    width: 1, 
+    backgroundColor: '#9099A1', 
+    height: 21,
+    marginHorizontal: 8,
   },
-  label: {
-    fontSize: 22,
+  subtitle: {
+    fontSize: 14,
     fontWeight: '500',
-    marginVertical: 4,
+    marginVertical: 12,
+    marginLeft: 8,
+  },
+  abilitiesRow: {
+    flexDirection: 'row',
+    marginBottom: 8,
+  },
+  abilityContainer: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    marginRight: 12,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 5,
+  },
+  abilityText: {
+    fontSize: 14,
+    fontWeight: 'regular',
+  },
+  bstTable: {
+    backgroundColor: '#FFFFFF',
+    paddingHorizontal: 20,
+    borderRadius: 10,
+  },
+  statRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 16,
+    borderBottomColor: '#EEEEEE',
+    borderBottomWidth: 1,
+  },
+  statName: {
+    width: 52,
+    fontSize: 14,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+  },
+  barContainer: {
+    flex: 1,
+    backgroundColor: '#d3d3d3',
+    height: 8,
+    borderRadius: 5,
+    overflow: 'hidden',
+  },
+  statBar: {
+    height: '100%',
+  },
+  statValue: {
+    width: 40,
+    textAlign: 'right',
+    fontWeight: 'bold',
   },
   totalContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  total: {
-    fontSize: 20,
-    flex: 1,
-    fontWeight: '500',
+  totalRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 12,
   },
-  totalValue: {
-    width: 50,
-    fontWeight: '500',
-    textAlign: 'right',
+  total: {
+    width: 40,
+    fontSize: 14,
+    fontWeight: 'bold',
+    flex: 1,
   },
   learnsetContainer: {
     padding: 16,
@@ -374,54 +429,66 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 8,
-    backgroundColor: '#e6e6e6',
+    paddingVertical: 16,
+    paddingHorizontal: 20,
+    backgroundColor: '#ffffff',
     borderRadius: 5,
     marginTop: 8,
   },
   learnsetHeaderText: {
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: 'bold',
   },
   tableContainer: {
-    marginTop: 8,
-    backgroundColor: '#e6e6e6',
-    padding: 8,
+    backgroundColor: '#ffffff',
+    paddingVertical: 16,
+    paddingHorizontal: 20,
     borderRadius: 5,
+    borderTopColor: '#DDDDDD',
+    borderTopWidth: 1,
   },
   tableHeader: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    borderBottomWidth: 1,
-    borderBottomColor: '#333',
     paddingBottom: 4,
-  },
-  columnHeader: {
-    width: 80,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  effectColumnHeader: {
-    width: 180,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
   },
   tableRow: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     paddingVertical: 8,
-    borderBottomWidth: 1,
-    borderBottomColor: '#dddddd',
+    borderTopWidth: 1,
+    borderTopColor: '#EEEEEE',
   },
-  cell: {
-    width: 80,
+  levelHeader: {
+    width: '15%',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  levelCell: {
+    width: '15%',
     fontSize: 16,
     textAlign: 'center',
   },
+  columnHeader: {
+    width: '35%',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  cell: {
+    width: '35%',
+    fontSize: 16,
+    textAlign: 'center',
+  },
+  effectColumnHeader: {
+    width: '50%',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
   effectCell: {
-    width: 180,
+    width: '50%',
     fontSize: 16,
     textAlign: 'center',
   },
