@@ -556,7 +556,7 @@ const pokemonImages: Record<string, any> = {
   "Vivillon(Icy Snow)": require("../../assets/images/pokemon/0666-Vivillon(Icy Snow).png"),
   "Vivillon(Jungle)": require("../../assets/images/pokemon/0666-Vivillon(Jungle).png"),
   "Vivillon(Marine)": require("../../assets/images/pokemon/0666-Vivillon(Marine).png"),
-  "Vivillon(Meadow)": require("../../assets/images/pokemon/0666-Vivillon(Meadow).png"),
+  "Vivillon": require("../../assets/images/pokemon/0666-Vivillon(Meadow).png"),
   "Vivillon(Modern)": require("../../assets/images/pokemon/0666-Vivillon(Modern).png"),
   "Vivillon(Monsoon)": require("../../assets/images/pokemon/0666-Vivillon(Monsoon).png"),
   "Vivillon(Ocean)": require("../../assets/images/pokemon/0666-Vivillon(Ocean).png"),
