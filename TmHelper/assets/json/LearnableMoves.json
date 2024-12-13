@@ -6805,7 +6805,10 @@
                 "Upper Hand"
             ],
             "egg_moves": [
-                "No Egg Moves"
+                "Endeavor",
+                "Last Resort",
+                "Sucker Punch",
+                "Thrash"
             ]
         }
     },
@@ -6887,7 +6890,10 @@
                 "Throat Chop"
             ],
             "egg_moves": [
-                "No Egg Moves"
+                "Endeavor",
+                "Last Resort",
+                "Sucker Punch",
+                "Thrash"
             ]
         }
     },
@@ -11007,7 +11013,7 @@
         }
     },
     {
-        "name": "Flabebe",
+        "name": "Flabébé",
         "learnset": {
             "level_up": [
                 "Base: Vine Whip",
@@ -17183,7 +17189,7 @@
         }
     },
     {
-        "name": "Paldean Tauros (Fighting Form)",
+        "name": "Paldean Tauros (Combat Breed)",
         "learnset": {
             "level_up": [
                 "Base: Tackle",
@@ -17251,7 +17257,7 @@
         }
     },
     {
-        "name": "Paldean Tauros (Fighting/Fire Form)",
+        "name": "Paldean Tauros (Blaze Breed)",
         "learnset": {
             "level_up": [
                 "Base: Tackle",
@@ -17325,7 +17331,7 @@
         }
     },
     {
-        "name": "Paldean Tauros (Fighting/Water Form)",
+        "name": "Paldean Tauros (Aqua Breed)",
         "learnset": {
             "level_up": [
                 "Base: Tackle",
@@ -22398,7 +22404,7 @@
         }
     },
     {
-        "name": "Palafin",
+        "name": "Palafin (Zero Form)",
         "learnset": {
             "level_up": [
                 "Base: Jet Punch",
@@ -23886,11 +23892,12 @@
         }
     },
     {
-        "name": "Heat Rotom",
+        "name": "Rotom (Heat)",
         "learnset": {
             "level_up": [
                 "Base: Double Team",
                 "Base: Astonish",
+                "Form: Overheat",
                 "5: Thunder Shock",
                 "10: Confuse Ray",
                 "15: Charge",
@@ -23950,11 +23957,12 @@
         }
     },
     {
-        "name": "Wash Rotom",
+        "name": "Rotom (Wash)",
         "learnset": {
             "level_up": [
                 "Base: Double Team",
                 "Base: Astonish",
+                "Form: Hydro Pump",
                 "5: Thunder Shock",
                 "10: Confuse Ray",
                 "15: Charge",
@@ -24014,11 +24022,12 @@
         }
     },
     {
-        "name": "Frost Rotom",
+        "name": "Rotom (Frost)",
         "learnset": {
             "level_up": [
                 "Base: Double Team",
                 "Base: Astonish",
+                "Form: Blizzard",
                 "5: Thunder Shock",
                 "10: Confuse Ray",
                 "15: Charge",
@@ -24078,11 +24087,12 @@
         }
     },
     {
-        "name": "Fan Rotom",
+        "name": "Rotom (Fan)",
         "learnset": {
             "level_up": [
                 "Base: Double Team",
                 "Base: Astonish",
+                "Form: Air Slash",
                 "5: Thunder Shock",
                 "10: Confuse Ray",
                 "15: Charge",
@@ -24142,11 +24152,12 @@
         }
     },
     {
-        "name": "Mow Rotom",
+        "name": "Rotom (Mow)",
         "learnset": {
             "level_up": [
                 "Base: Double Team",
                 "Base: Astonish",
+                "Form: Leaf Storm",
                 "5: Thunder Shock",
                 "10: Confuse Ray",
                 "15: Charge",
@@ -24941,7 +24952,7 @@
         }
     },
     {
-        "name": "Eiscue (Ice Face)",
+        "name": "Eiscue",
         "learnset": {
             "level_up": [
                 "Base: Tackle",
@@ -32735,7 +32746,22 @@
     {
         "name": "Deoxys (Normal Forme)",
         "learnset": {
-            "level_up": [],
+            "level_up": [
+                "Base: Leer",
+                "Base: Wrap",
+                "7: Night Shade",
+                "13: Teleport",
+                "19: Knock Off",
+                "25: Psyshock",
+                "31: Psychic",
+                "37: Gravity",
+                "43: Skill Swap",
+                "49: Zen Headbutt",
+                "55: Cosmic Power",
+                "61: Recover",
+                "67: Psycho Boost",
+                "73: Hyper Beam"
+            ],
             "tms": [
                 "Take Down",
                 "Agility",
@@ -32813,7 +32839,22 @@
     {
         "name": "Deoxys (Attack Forme)",
         "learnset": {
-            "level_up": [],
+            "level_up": [
+                "Base: Leer",
+                "Base: Wrap",
+                "7: Night Shade",
+                "13: Teleport",
+                "19: Taunt",
+                "25: Psyshock",
+                "31: Psychic",
+                "37: Superpower",
+                "43: Skill Swap",
+                "49: Zen Headbutt",
+                "55: Cosmic Power",
+                "61: Zap Cannon",
+                "67: Psycho Boost",
+                "73: Hyper Beam"
+            ],
             "tms": [
                 "Take Down",
                 "Agility",
@@ -32891,7 +32932,24 @@
     {
         "name": "Deoxys (Defense Forme)",
         "learnset": {
-            "level_up": [],
+            "level_up": [
+                "Base: Leer",
+                "Base: Wrap",
+                "7: Night Shade",
+                "13: Teleport",
+                "19: Knock Off",
+                "25: Spikes",
+                "31: Psychic",
+                "37: Protect",
+                "43: Skill Swap",
+                "49: Zen Headbutt",
+                "55: Amnesia",
+                "55: Cosmic Power",
+                "61: Recover",
+                "67: Psycho Boost",
+                "73: Counter",
+                "73: Mirror Coat"
+            ],
             "tms": [
                 "Take Down",
                 "Agility",
@@ -32969,7 +33027,22 @@
     {
         "name": "Deoxys (Speed Forme)",
         "learnset": {
-            "level_up": [],
+            "level_up": [
+                "Base: Leer",
+                "Base: Wrap",
+                "7: Night Shade",
+                "13: Double Team",
+                "19: Knock Off",
+                "25: Psyshock",
+                "31: Psychic",
+                "37: Swift",
+                "43: Skill Swap",
+                "49: Zen Headbutt",
+                "55: Agility",
+                "61: Recover",
+                "67: Psycho Boost",
+                "73: Extreme Speed"
+            ],
             "tms": [
                 "Take Down",
                 "Agility",
@@ -35922,7 +35995,7 @@
         }
     },
     {
-        "name": "Hoopa Confined",
+        "name": "Hoopa (Confined)",
         "learnset": {
             "level_up": [
                 "Base: Confusion",
@@ -36008,7 +36081,7 @@
         }
     },
     {
-        "name": "Hoopa Unbound",
+        "name": "Hoopa (Unbound)",
         "learnset": {
             "level_up": [
                 "Base: Confusion",
@@ -45101,7 +45174,7 @@
         }
     },
     {
-        "name": "Bloodmoon Ursaluna",
+        "name": "Ursaluna (Bloodmoon)",
         "learnset": {
             "level_up": [
                 "Base: Scratch",
@@ -45180,7 +45253,18 @@
                 "Hard Press"
             ],
             "egg_moves": [
-                "No Egg Moves"
+                "Belly Drum",
+                "Close Combat",
+                "Counter",
+                "Cross Chop",
+                "Crunch",
+                "Double-Edge",
+                "Fake Tears",
+                "Fury Cutter",
+                "Metal Claw",
+                "Night Slash",
+                "Seismic Toss",
+                "Yawn"
             ]
         }
     },
@@ -50517,7 +50601,7 @@
         }
     },
     {
-        "name": "Minior (Meteor Form)",
+        "name": "Minior",
         "learnset": {
             "level_up": [
                 "Base : Tackle",
@@ -50578,12 +50662,12 @@
                 "Meteor Beam"
             ],
             "egg_moves": [
-                "N/A"
+                "No Egg Moves"
             ]
         }
     },
     {
-        "name": "Minior (Core)",
+        "name": "Minior (Core Form)",
         "learnset": {
             "level_up": [
                 "Base : Tackle",
@@ -50644,7 +50728,7 @@
                 "Meteor Beam"
             ],
             "egg_moves": [
-                "N/A"
+                "No Egg Moves"
             ]
         }
     },

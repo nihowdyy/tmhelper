@@ -108,6 +108,11 @@ const Pokedex = ({ navigation }: any) => {
         setFilteredData(newData);
     };
 
+    // Helper function to normalize accents
+    const normalizeText = (text: string): string => {
+        return text.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Normalize accents
+    };
+
     // Function to search by text
     const handleSearch = (text: string) => {
         setQuery(text);
@@ -115,19 +120,21 @@ const Pokedex = ({ navigation }: any) => {
             handleRegionFilter(activeButton || 'paldean');  // Reset to region filter if search is empty
             return;
         }
-        const searchTerms = text.toLowerCase().split(' ').filter(term => term.length > 0);
+        const normalizedText = normalizeText(text).toLowerCase(); // Normalize search input
+        const searchTerms = normalizedText.split(' ').filter(term => term.length > 0);
+        
         const newData = data.filter(item => 
             // Check if it matches the selected region
             item.dex_info.type.toLowerCase() === activeButton && 
             searchTerms.every(term => {
-                const normalizedName = item.pokemon_info.name.toLowerCase();
+                const normalizedName = normalizeText(item.pokemon_info.name).toLowerCase();
                 const normalizedTypes = item.pokemon_info.type
-                    .map((type: string) => type.toLowerCase().trim()); // Normalize type list
+                    .map((type: string) => normalizeText(type).toLowerCase().trim()); // Normalize type list
                 const normalizedAbilities = item.pokemon_info.abilities
-                    .map((ability: string) => ability.toLowerCase().trim()); // Normalize abilities list
+                    .map((ability: string) => normalizeText(ability).toLowerCase().trim()); // Normalize abilities list
                 const number = item.dex_info.number;
                 
-                // check if search terms match the name, number, any type, or any ability
+                // Check if search terms match the name, number, any type, or any ability
                 return (
                     normalizedName.includes(term) ||
                     normalizedTypes.includes(term) ||
