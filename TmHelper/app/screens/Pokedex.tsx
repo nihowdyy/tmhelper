@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Pressable, Platform, Image } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Pressable, Platform, Image, TouchableOpacity, TextInput } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const pokeData = require('../../assets/json/PokedexSV.json');
 
@@ -57,9 +58,8 @@ const RenderItem = React.memo(({ item, onPress }: { item: PokeData; onPress: (it
 
 const Pokedex = ({ navigation }: any) => {
     const [activeButton, setActiveButton] = useState<string | null>('paldean');
-    const [filteredData, setFilteredData] = useState<PokeData[]>(
-        data.filter(item => item.dex_info.type.toLowerCase() === 'paldean')
-    ); 
+    const [filteredData, setFilteredData] = useState<PokeData[]>(data.filter(item => item.dex_info.type.toLowerCase() === 'paldean'));
+    const [query, setQuery] = useState('');
 
     // Icon Definition
     type ButtonNames = 'paldean' | 'blueberry' | 'kitakami' | 'national';
@@ -80,50 +80,97 @@ const Pokedex = ({ navigation }: any) => {
         }
     }, [navigation]);
 
-    const handleButtonPress = (buttonName: string) => {
-        setActiveButton(buttonName);
-        handleSearch(buttonName);
+    // Function to clear search
+    const clearSearch = () => {
+        setQuery('');
+        setFilteredData(data.filter(item => item.dex_info.type.toLowerCase() === activeButton));
     };
 
-    // Filter based on the selected region (query)
-    const handleSearch = (text: string) => {
-        // If the search query is empty, reset filteredData to the original data
-        if (text.trim() === '') {
-            setFilteredData(data);
-            return;
-        }
+    // Function to handle region button press
+    const handleButtonPress = (buttonName: string) => {
+        setActiveButton(buttonName);
+        handleRegionFilter(buttonName);
+        setQuery('');
+    };
 
-        // Filter the data based on the selected region (query)
-        const newData = data.filter(item => {
-            const normalizedType = item.dex_info.type.toLowerCase();
-            return normalizedType === text.toLowerCase();
-        });
-
+    // Function to filter based on selected region
+    const handleRegionFilter = (region: string) => {
+        const newData = data.filter(item => item.dex_info.type.toLowerCase() === region.toLowerCase());
         setFilteredData(newData);
     };
 
+    // Function to search by text
+    const handleSearch = (text: string) => {
+        setQuery(text);
+        if (text.trim() === '') {
+            handleRegionFilter(activeButton || 'paldean');  // Reset to region filter if search is empty
+            return;
+        }
+        const searchTerms = text.toLowerCase().split(' ').filter(term => term.length > 0);
+        const newData = data.filter(item => 
+            // Check if it matches the selected region
+            item.dex_info.type.toLowerCase() === activeButton && 
+            searchTerms.every(term => {
+                const normalizedName = item.pokemon_info.name.toLowerCase();
+                const normalizedTypes = item.pokemon_info.type
+                    .map((type: string) => type.toLowerCase().trim()); // Normalize type list
+                const normalizedAbilities = item.pokemon_info.abilities
+                    .map((ability: string) => ability.toLowerCase().trim()); // Normalize abilities list
+                const number = item.dex_info.number;
+                
+                // check if search terms match the name, number, any type, or any ability
+                return (
+                    normalizedName.includes(term) ||
+                    normalizedTypes.includes(term) ||
+                    normalizedAbilities.some(ability => ability.includes(term)) || 
+                    number.includes(term)
+                );
+            })
+        );
+        setFilteredData(newData);
+    };
+
+    // Button rendering logic
     const renderButton = (buttonName: ButtonNames, label: string) => (
         <Pressable onPress={() => handleButtonPress(buttonName)} style={styles.button}>
-        {activeButton === buttonName ? (
-            <View style={styles.buttonWrapper}>
-            <Text style={styles.activeText}>{label}</Text>
-            <Image source={icons[buttonName]} style={styles.icon} />
-            </View>
-        ) : (
-            <View style={styles.buttonWrapper}>
-            <Text style={styles.inactiveText}>{label}</Text>
-            <View style={styles.imageWrapper}>
-                <Image source={icons[buttonName]} style={[styles.icon, { tintColor: 'gray' }]} />
-                <Image source={icons[buttonName]} style={[styles.icon, { position: 'absolute', opacity: 0.5 }]} />
-            </View>
-            </View>
-        )}
+            {activeButton === buttonName ? (
+                <View style={styles.buttonWrapper}>
+                    <Text style={styles.activeText}>{label}</Text>
+                    <Image source={icons[buttonName]} style={styles.icon} />
+                </View>
+            ) : (
+                <View style={styles.buttonWrapper}>
+                    <Text style={styles.inactiveText}>{label}</Text>
+                    <View style={styles.imageWrapper}>
+                        <Image source={icons[buttonName]} style={[styles.icon, { tintColor: 'gray' }]} />
+                        <Image source={icons[buttonName]} style={[styles.icon, { position: 'absolute', opacity: 0.5 }]} />
+                    </View>
+                </View>
+            )}
         </Pressable>
     );
+
 
     return (
         <View style={styles.screen}>
         <View style={styles.screenContainer}>
+            {/* Search Bar */}
+            <View style={styles.searchContainer}>
+                <Icon name="search" size={20} color="#000" style={styles.searchIcon} />
+                <TextInput
+                style={styles.searchInput}
+                placeholder="Search by Name, Number, Type, or Ability"
+                placeholderTextColor="#aaa"
+                value={query}
+                onChangeText={handleSearch}
+                autoCorrect={false}
+                />
+                {query.length > 0 && (
+                <TouchableOpacity onPress={clearSearch} style={styles.clearButton}>
+                    <Icon name="times-circle" size={20} color="#888"/>
+                </TouchableOpacity>
+                )}
+            </View>
             {/* Pokedex Selection Buttons */}
             <View style={styles.navigationContainer}>
             {renderButton('paldean', 'Paldea')}
@@ -159,6 +206,28 @@ const styles = StyleSheet.create({
         marginHorizontal: Platform.OS === 'web' ? 'auto' : 0,
         minWidth: Platform.OS === 'web' ? 800 : '100%',
         paddingBottom: 40,
+    },
+    searchContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 15,
+        backgroundColor: '#F2F2F2',
+        borderColor: '#eeeeee',
+        borderWidth: 1,
+        margin: 10,
+        borderRadius: 5,
+    },
+    searchIcon: {
+        color:  '#000000'
+    },
+    clearButton: {
+        marginLeft: 10,
+        padding: 5,
+    },
+    searchInput: {
+        flex: 1,
+        fontSize: 16,
+        marginLeft: 10,
     },
     navigationContainer: {
         flexDirection: 'row',
