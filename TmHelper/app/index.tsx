@@ -1,7 +1,7 @@
 // Index.tsx
 
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationIndependentTree } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import TMListScreen from './screens/TmListScreen';
 import TMDetailScreen from './screens/TmDetailScreen';
@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <NavigationContainer independent={true}>
+    <NavigationIndependentTree>
       <Stack.Navigator initialRouteName="LandingPage">
         <Stack.Screen
           name="LandingPage"
@@ -41,7 +41,7 @@ const App = () => {
           options={{ title: 'TM Details', headerTitleStyle: { fontWeight: 'bold' } }} 
         />
       </Stack.Navigator>
-    </NavigationContainer>
+    </NavigationIndependentTree>
   );
 };
 
