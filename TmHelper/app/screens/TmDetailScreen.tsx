@@ -78,7 +78,8 @@ const TMDetailScreen = ({ route }: any) => {
   const changeImageIndex = (pokemonName: string, direction: 'left' | 'right') => {
     setImageIndexes((prevIndexes) => {
       const currentIndex = prevIndexes[pokemonName] || 0;
-      const totalImages = pokemonLocations[pokemonName]?.length || 1;
+      const pokeImages = pokemonLocations[pokemonName] || [];
+      const totalImages = pokeImages?.length || 1;
       let newIndex = currentIndex;
 
       if (direction === 'left') {
@@ -127,6 +128,8 @@ const TMDetailScreen = ({ route }: any) => {
       <FlatList
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{aspectRatio: Platform.OS === 'web' ? 1 : undefined}}
+        data={null}
+        renderItem={null}
         ListHeaderComponent={
           <>
             {/* TM Information Header*/}
@@ -198,7 +201,7 @@ const TMDetailScreen = ({ route }: any) => {
             <DropdownPicker
               open={openDropdown}
               value={selectedPokemon}
-              items={materials.map(material => ({
+              items={materials.map((material: { material_name: any; pokemon_name: string | number; }) => ({
                   label: material.material_name,
                   value: material.pokemon_name,
                   icon: () => (
@@ -253,7 +256,7 @@ const TMDetailScreen = ({ route }: any) => {
           <TouchableWithoutFeedback onPress={closeImage}>
             <View style={styles.modalBackground}>
               <TouchableWithoutFeedback onPress={(e) => e.stopPropagation()}>
-                <Image source={selectedImage} style={styles.fullscreenImage} resizeMode="contain" />
+                <Image source={require(selectedImage)} style={styles.fullscreenImage} resizeMode="contain" />
               </TouchableWithoutFeedback>
             </View>
           </TouchableWithoutFeedback>

@@ -1,4 +1,4 @@
-const pokemonLocations = {
+const pokemonLocations: Record<string, { name: string; image: any }[]> = {
   "Abomasnow": [
     {
       "name": "Abomasnow Indigo Disk Location Map",

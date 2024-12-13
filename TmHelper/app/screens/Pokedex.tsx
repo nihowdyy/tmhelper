@@ -30,7 +30,7 @@ interface PokeData {
 
 const data: PokeData[] = pokeData as PokeData[];
 
-function formatNum(num) {
+function formatNum(num: any) {
     const integerPart = Math.floor(num); // Remove decimals by rounding down
     const formattedInteger = integerPart.toString().padStart(3, '0'); // Pad the integer part to 3 digits
     return formattedInteger;

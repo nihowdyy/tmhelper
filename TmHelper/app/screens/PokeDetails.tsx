@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Platform, View, Text, StyleSheet, Image, TouchableOpacity, FlatList} from 'react-native';
+import { Platform, View, Text, StyleSheet, Image, TouchableOpacity, FlatList, DimensionValue} from 'react-native';
 import Accordion from 'react-native-collapsible/Accordion';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -65,7 +65,7 @@ const StatBar = ({ statName, statValue, barColor }: BarProps) => {
     <View style={styles.statRow}>
       <Text style={styles.statName}>{shortStat}</Text>
       <View style={styles.barContainer}>
-        <View style={[styles.statBar, { width: barWidth, backgroundColor: barColor }]} />
+        <View style={[styles.statBar, { width: barWidth as DimensionValue, backgroundColor: barColor }]} />
       </View>
       <Text style={styles.statValue}>{statValue}</Text>
     </View>
@@ -76,22 +76,22 @@ const PokeDetails = ({ route }: any) => {
   const { pokemon } = route.params; // Retrieve the pokemon data passed through navigation
 
   // Helper to find move details by name
-  function getMoveDetails(moveName) {
-    return moveData.find((move) => move.name === moveName)?.move_details || null;
+  function getMoveDetails(moveName: any) {
+    return moveData.find((move: any) => move.name === moveName)?.move_details || null;
   }
 
   // Process the learnset
-  function processLearnset(pokemon) {
+  function processLearnset(pokemon: any) {
     const { learnset } = pokemon;
 
-    const processCategory = (category, includeLevel = false) => {
-      return learnset[category]?.map((entry) => {
+    const processCategory = (category: string, includeLevel = false) => {
+      return learnset[category]?.map((entry: any) => {
         let level = null;
         let moveName = entry;
 
         // If level is included, extract it
         if (includeLevel && entry.includes(":")) {
-          const [levelPart, namePart] = entry.split(": ").map((str) => str.trim());
+          const [levelPart, namePart] = entry.split(": ").map((str: string) => str.trim());
           level = levelPart;
           moveName = namePart;
         }
@@ -262,6 +262,8 @@ const PokeDetails = ({ route }: any) => {
       <FlatList
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{aspectRatio: Platform.OS === 'web' ? 1 : undefined}}
+        data={null}
+        renderItem={null}
         ListHeaderComponent={
           <>
           {/* Basic Pokemon Information */}
