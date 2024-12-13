@@ -142,8 +142,8 @@ const PokeDetails = ({ route }: any) => {
     <View style={styles.tableContainer}>
       {/* Check if there's only one item and it's "No Egg Moves" */}
       {section.content[0].move === "No Egg Moves" ? (
-        <View style={styles.tableRow}>
-          <Text>No Egg Moves</Text>
+        <View style={[styles.tableRow, {borderTopWidth: 0} ]}>
+          <Text style={styles.cell}>No Egg Moves</Text>
         </View>
       ) : (
         <>
