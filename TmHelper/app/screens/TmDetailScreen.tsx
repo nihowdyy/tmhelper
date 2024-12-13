@@ -256,7 +256,7 @@ const TMDetailScreen = ({ route }: any) => {
           <TouchableWithoutFeedback onPress={closeImage}>
             <View style={styles.modalBackground}>
               <TouchableWithoutFeedback onPress={(e) => e.stopPropagation()}>
-                <Image source={require(selectedImage)} style={styles.fullscreenImage} resizeMode="contain" />
+                <Image source={{uri: selectedImage}} style={styles.fullscreenImage} resizeMode="contain" />
               </TouchableWithoutFeedback>
             </View>
           </TouchableWithoutFeedback>
