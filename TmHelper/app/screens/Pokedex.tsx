@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { StyleSheet, Text, View, FlatList, Pressable, Platform, Image, TouchableOpacity, TextInput } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -61,6 +61,9 @@ const Pokedex = ({ navigation }: any) => {
     const [filteredData, setFilteredData] = useState<PokeData[]>(data.filter(item => item.dex_info.type.toLowerCase() === 'paldean'));
     const [query, setQuery] = useState('');
 
+    // Create ref for FlatList
+    const flatListRef = useRef<FlatList>(null);
+
     // Icon Definition
     type ButtonNames = 'paldean' | 'blueberry' | 'kitakami' | 'national';
 
@@ -84,6 +87,9 @@ const Pokedex = ({ navigation }: any) => {
     const clearSearch = () => {
         setQuery('');
         setFilteredData(data.filter(item => item.dex_info.type.toLowerCase() === activeButton));
+        if (flatListRef.current) {
+            flatListRef.current.scrollToOffset({ offset: 0, animated: true });
+        }
     };
 
     // Function to handle region button press
@@ -91,6 +97,9 @@ const Pokedex = ({ navigation }: any) => {
         setActiveButton(buttonName);
         handleRegionFilter(buttonName);
         setQuery('');
+        if (flatListRef.current) {
+            flatListRef.current.scrollToOffset({ offset: 0, animated: true });
+        }
     };
 
     // Function to filter based on selected region
@@ -128,6 +137,9 @@ const Pokedex = ({ navigation }: any) => {
             })
         );
         setFilteredData(newData);
+        if (flatListRef.current) {
+            flatListRef.current.scrollToOffset({ offset: 0, animated: true });
+        }
     };
 
     // Button rendering logic
@@ -149,7 +161,6 @@ const Pokedex = ({ navigation }: any) => {
             )}
         </Pressable>
     );
-
 
     return (
         <View style={styles.screen}>
@@ -180,6 +191,7 @@ const Pokedex = ({ navigation }: any) => {
             </View>
 
             <FlatList
+            ref={flatListRef}  // Attach ref to FlatList
             data={filteredData}
             renderItem={({ item }) => <RenderItem item={item} onPress={handlePress} />}
             keyExtractor={(item) => `${item.dex_info.type}-${item.dex_info.number}-${item.pokemon_info.name}`}
