@@ -1,9 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Platform, Pressable } from 'react-native';
-import Icon from 'react-native-vector-icons/Entypo';
-
-const DonutIcon = () => <Icon name="donut-large" size={30} color="black" />;
-const CalculatorIcon = () => <Icon name="calculate" size={30} color="black" />;
+import Icon from '@expo/vector-icons/Entypo';
 
 export default function LandingPage({ navigation }: any) {
     return (

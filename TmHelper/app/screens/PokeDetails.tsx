@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Platform, View, Text, StyleSheet, Image, TouchableOpacity, FlatList, DimensionValue} from 'react-native';
 import Accordion from 'react-native-collapsible/Accordion';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from '@expo/vector-icons/MaterialIcons';
 
 // Resources
 import pokemonTypes from '../../assets/images/moveTypes';
