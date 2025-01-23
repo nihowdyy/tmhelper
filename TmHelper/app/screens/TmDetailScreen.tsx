@@ -3,10 +3,12 @@ import { StyleSheet, Text, View, FlatList, Image, Pressable, Platform, Modal, To
 import DropdownPicker from 'react-native-dropdown-picker'
 
 // Importing Assets
-import pokemonLocations from '../../assets/images/pokemonLocations';
 import moveTypes from '../../assets/images/moveTypes';
 import moveCategories from '../../assets/images/moveCategories';
 import pokemonImages from '../../assets/images/pokemonImages';
+
+// Importing Pokemon Location directory locations for Azure
+import pokemonLocations from '../../assets/images/pokemonLocations';
 
 // Icons
 const LPIcon = require('../../assets/images/LP Icon.png');
@@ -55,7 +57,7 @@ const TMDetailScreen = ({ route }: any) => {
 
   // Handling Full Screen Images
   const [modalVisible, setModalVisible] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string>(null);
 
   const openImage = (imageUri: string) => {
     setSelectedImage(imageUri);
@@ -226,7 +228,7 @@ const TMDetailScreen = ({ route }: any) => {
 
             {/* Map Display*/}
             <Pressable onPress={() => openImage(currentImageData.image)} style={styles.imageWrapper}>
-              <Image source={currentImageData.image} style={styles.image} />
+              <Image source={{uri: currentImageData.image}} style={styles.image} />
             </Pressable>
 
             {/* Map Navigation and Label */}
@@ -445,6 +447,7 @@ const styles = StyleSheet.create({
   },
   fullscreenImage: {
     width: '100%',
+    height: '50%',
     resizeMode: 'contain',
   },
   arrow: {
