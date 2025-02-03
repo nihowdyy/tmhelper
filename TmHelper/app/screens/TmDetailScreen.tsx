@@ -57,7 +57,7 @@ const TMDetailScreen = ({ route }: any) => {
 
   // Handling Full Screen Images
   const [modalVisible, setModalVisible] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<string>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const openImage = (imageUri: string) => {
     setSelectedImage(imageUri);
