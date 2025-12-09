@@ -24,24 +24,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.nihowdy.TmHelper",
-      "gradleExtra": {
-        "buildscript": {
-          "ext": {
-            "kotlinVersion": "2.1.20"
-          },
-          "dependencies": {
-            "classpath": "org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20"
-          }
-        },
-        "allprojects": {
-          "ext": {
-            "kotlinVersion": "2.1.20"
-          }
-        },
-        "ext": {
-          "kotlinVersion": "2.1.20"
-        }
-      }
+      "gradleExtra": "buildscript {\n  ext.kotlinVersion = '2.1.20'\n  dependencies {\n    classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20\"\n  }\n}\nallprojects {\n  ext.kotlinVersion = '2.1.20'\n  configurations.all {\n    exclude group: 'com.caverock', module: 'androidsvg'\n  }\n}\next.kotlinVersion = '2.1.20'"
     },
     "ios": {
       "supportsTablet": true,
