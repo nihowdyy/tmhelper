@@ -23,7 +23,25 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.nihowdy.TmHelper"
+      "package": "com.nihowdy.TmHelper",
+      "gradleExtra": {
+        "buildscript": {
+          "ext": {
+            "kotlinVersion": "2.1.20"
+          },
+          "dependencies": {
+            "classpath": "org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20"
+          }
+        },
+        "allprojects": {
+          "ext": {
+            "kotlinVersion": "2.1.20"
+          }
+        },
+        "ext": {
+          "kotlinVersion": "2.1.20"
+        }
+      }
     },
     "ios": {
       "supportsTablet": true,
@@ -35,7 +53,17 @@
       "favicon": "./assets/images/icon.png"
     },
     "plugins": [
-      "expo-router"
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "2.1.20"
+          }
+        }
+      ],
+      "expo-router",
+      "expo-font",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
